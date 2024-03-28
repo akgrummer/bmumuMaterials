@@ -1,0 +1,178 @@
+
+npv
+
+root -l -b -q 'VarEfficiencyRatios.cpp("All", "npv")'
+
+Processing VarEfficiencyRatios.cpp("All", "npv")...
+
+Applying ATLAS style settings...
+
+ Tree Entries: 1216285 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2_BDT2020_out_Run1_npvweights.root
+ Tree Entries: 1216285 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2_BDT2020_out_Run1nPV_npvweights.root
+Npv
+creating histo:Npv>>Npvh1(30,0,30) event survived the cut(s): 0
+integral of: Npvh1 0
+creating histo:Npv>>NpvFullBDTh1(30,0,30) event survived the cut(s): 1216285
+integral of: NpvFullBDTh1 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:Npv>>Npvh2(30,0,30) event survived the cut(s): 0
+integral of: Npvh2 0
+creating histo:Npv>>NpvFullBDTh2(30,0,30) event survived the cut(s): 1216285
+integral of: NpvFullBDTh2 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/BkgBDT18/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npvh1(30,0,30) event survived the cut(s): 30
+integral of: Npvh1 30
+creating histo:Npv>>NpvFullBDTh1(30,0,30) event survived the cut(s): 1216285
+integral of: NpvFullBDTh1 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:Npv>>Npvh2(30,0,30) event survived the cut(s): 29
+integral of: Npvh2 29
+creating histo:Npv>>NpvFullBDTh2(30,0,30) event survived the cut(s): 1216285
+integral of: NpvFullBDTh2 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/BkgBDT36/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npvh1(30,0,30) event survived the cut(s): 183
+integral of: Npvh1 183
+creating histo:Npv>>NpvFullBDTh1(30,0,30) event survived the cut(s): 1216285
+integral of: NpvFullBDTh1 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:Npv>>Npvh2(30,0,30) event survived the cut(s): 177
+integral of: Npvh2 177
+creating histo:Npv>>NpvFullBDTh2(30,0,30) event survived the cut(s): 1216285
+integral of: NpvFullBDTh2 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/BkgBDT54/Npv.pdf has been created
+ Tree Entries: 166752 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight_BDT2020_out_Run1_npvweights.root
+ Tree Entries: 166752 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight_BDT2020_out_Run1nPV_npvweights.root
+Npv
+creating histo:Npv>>Npvh1(30,0,30) event survived the cut(s): 27757
+integral of: Npvh1 18284.3
+creating histo:Npv>>NpvFullBDTh1(30,0,30) event survived the cut(s): 166516
+integral of: NpvFullBDTh1 101474
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:Npv>>Npvh2(30,0,30) event survived the cut(s): 28032
+integral of: Npvh2 18260.5
+creating histo:Npv>>NpvFullBDTh2(30,0,30) event survived the cut(s): 166516
+integral of: NpvFullBDTh2 101474
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/SigBDT18/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npvh1(30,0,30) event survived the cut(s): 56474
+integral of: Npvh1 36543.8
+creating histo:Npv>>NpvFullBDTh1(30,0,30) event survived the cut(s): 166516
+integral of: NpvFullBDTh1 101474
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:Npv>>Npvh2(30,0,30) event survived the cut(s): 57111
+integral of: Npvh2 36516.4
+creating histo:Npv>>NpvFullBDTh2(30,0,30) event survived the cut(s): 166516
+integral of: NpvFullBDTh2 101474
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/SigBDT36/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npvh1(30,0,30) event survived the cut(s): 86495
+integral of: Npvh1 54792.9
+creating histo:Npv>>NpvFullBDTh1(30,0,30) event survived the cut(s): 166516
+integral of: NpvFullBDTh1 101474
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:Npv>>Npvh2(30,0,30) event survived the cut(s): 87410
+integral of: Npvh2 54791.9
+creating histo:Npv>>NpvFullBDTh2(30,0,30) event survived the cut(s): 166516
+integral of: NpvFullBDTh2 101474
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/SigBDT54/Npv.pdf has been created
+Time taken in secs: 4.57
+
+
+
+
+
+mu:
+
+
+
+-bash-4.2$ root -l -b -q 'VarEfficiencyRatios.cpp("All", "mu")'
+
+Processing VarEfficiencyRatios.cpp("All", "mu")...
+
+Applying ATLAS style settings...
+
+ Tree Entries: 1216285 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2_BDT2020_out_Run1.root
+ Tree Entries: 1216285 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2_BDT2020_out_Run1privxmu_round.root
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh1(45,0,45) event survived the cut(s): 1
+integral of: PRIVX_mu_roundh1 1
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh1(45,0,45) event survived the cut(s): 1216285
+integral of: PRIVX_mu_roundFullBDTh1 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh2(45,0,45) event survived the cut(s): 1
+integral of: PRIVX_mu_roundh2 1
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh2(45,0,45) event survived the cut(s): 1216285
+integral of: PRIVX_mu_roundFullBDTh2 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/BkgBDT18/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh1(45,0,45) event survived the cut(s): 23
+integral of: PRIVX_mu_roundh1 23
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh1(45,0,45) event survived the cut(s): 1216285
+integral of: PRIVX_mu_roundFullBDTh1 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh2(45,0,45) event survived the cut(s): 30
+integral of: PRIVX_mu_roundh2 30
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh2(45,0,45) event survived the cut(s): 1216285
+integral of: PRIVX_mu_roundFullBDTh2 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/BkgBDT36/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh1(45,0,45) event survived the cut(s): 184
+integral of: PRIVX_mu_roundh1 184
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh1(45,0,45) event survived the cut(s): 1216285
+integral of: PRIVX_mu_roundFullBDTh1 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh2(45,0,45) event survived the cut(s): 188
+integral of: PRIVX_mu_roundh2 188
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh2(45,0,45) event survived the cut(s): 1216285
+integral of: PRIVX_mu_roundFullBDTh2 1.21628e+06
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/BkgBDT54/PRIVX_mu_round.pdf has been created
+ Tree Entries: 166752 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight_BDT2020_out_Run1.root
+ Tree Entries: 166752 from file/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight_BDT2020_out_Run1privxmu_round.root
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh1(45,0,45) event survived the cut(s): 27906
+integral of: PRIVX_mu_roundh1 18269.6
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh1(45,0,45) event survived the cut(s): 166596
+integral of: PRIVX_mu_roundFullBDTh1 101483
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh2(45,0,45) event survived the cut(s): 28932
+integral of: PRIVX_mu_roundh2 18271.8
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh2(45,0,45) event survived the cut(s): 166596
+integral of: PRIVX_mu_roundFullBDTh2 101483
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/SigBDT18/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh1(45,0,45) event survived the cut(s): 56730
+integral of: PRIVX_mu_roundh1 36529.6
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh1(45,0,45) event survived the cut(s): 166596
+integral of: PRIVX_mu_roundFullBDTh1 101483
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh2(45,0,45) event survived the cut(s): 57996
+integral of: PRIVX_mu_roundh2 36525.1
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh2(45,0,45) event survived the cut(s): 166596
+integral of: PRIVX_mu_roundFullBDTh2 101483
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/SigBDT36/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh1(45,0,45) event survived the cut(s): 86767
+integral of: PRIVX_mu_roundh1 54805.8
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh1(45,0,45) event survived the cut(s): 166596
+integral of: PRIVX_mu_roundFullBDTh1 101483
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundh2(45,0,45) event survived the cut(s): 88285
+integral of: PRIVX_mu_roundh2 54799.1
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDTh2(45,0,45) event survived the cut(s): 166596
+integral of: PRIVX_mu_roundFullBDTh2 101483
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/PUcomps2020July30/SigBDT54/PRIVX_mu_round.pdf has been created
+Time taken in secs: 4.18

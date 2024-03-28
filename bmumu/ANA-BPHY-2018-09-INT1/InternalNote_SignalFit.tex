@@ -1,0 +1,169 @@
+\section{SignalFit}
+\label{sec:SignalFit}
+
+To extract the signal yield, an unbinned maximum-likelihood fit is performed on
+the selected events, mostly based on the fit performed in the previous analysis, 
+based on the full Run1 dataset. The fit is performed on the invariant mass distribution,
+classifying the events according to different intervals in the continuum-BDT
+output. This is similar to the strategy used by CMS and LHCb.\\
+The events have been classified according to the \yel[still work in progress]{three} bins in
+continuum BDT$_{ss}$ output. The bins are chosen to correspond
+to a signal efficiency equal to \yel[still work in progress]{$.....~\%$}, and they result ordered
+according to increasing signal-to-noise ratio. \\
+The sensitivity of our study is discussed in this chapter. The model for
+describing signal and background is based on MC and on data collected in
+the sidebands of the search region. 
+\begin{itemize}
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parskip}{0pt}%
+\item The models used for the signal and the backgrounds are discussed in
+Sections~\ref{sub:sec:signal-description}%, \ref{sub:sec:bkg-description-1}
+and~\ref{sub:sec:bkg-description-2}.
+\item The results of the fit to the data in the sidebands and the interpolation
+in the signal region are presented in Section~\ref{sub:sec:bkg-normalisation-fit}.
+\item A summary of the baseline fit configuration is given in Section~\ref{sub:sec:fit_summary}.
+%\item The studies of the sensitivity to the signal, obtained with toy experiments,
+%are discussed in Sections~\ref{sub:sec:bkg-signal-fit-1} and~\ref{sub:sec:bkg-signal-fit-2}.
+\item Systematic uncertainties on the fit are discussed in Section~\ref{sub:sec:fit_syst}.
+\end{itemize}
+
+\subsection{Signal and peaking background}
+\label{sub:sec:signal-description}
+The mass shape of the {\bf {\boldmath $\Bsmumu$}}, as well as the one of {\bf {\boldmath $\Bdmumu$}},
+is described by a superposition of two Gaussian distributions, 
+both centred at the world average value of the mass.
+The parameters of this distribution will be extracted from MC. % with the fitsshown in figure~\ref{fig:Bs-mass-fit}. 
+%The mass PDF is found to be independent from the output of the continuum BDT used to reduce the combinatorial background.
+
+
+The {\bf peaking background} is composed of \Bhh, mainly $B_s \to K^+K^-$ and
+$B_d \to K^\pm\pi^\mp$, in which both hadrons are misidentified as muons. 
+Due to the mass distortion related to the $K \to \mu$ mass assignment, and the
+smaller one for $\pi \to \mu$, the mass distribution of these events is substantially
+superimposed with the $B_d$ signal.
+
+
+%\subsection{Background components}
+%\label{sub:sec:bkg-description-1}
+
+
+
+
+
+\subsection{Parametrisation of background components}
+\label{sub:sec:bkg-description-2}
+The {\bf combinatorial\/} (opposite-side) background, 
+following the Run1 analysis, will be  described with a Chebychev
+first order polynomial like $f(x) = 1 + \alpha \,T_1(x) = 1 +\alpha\, x / 1200 MeV$.\\
+The  {\bf same-side and same-vertex (SS+SV)} background includes double
+semileptonic cascade events (e.g., $B \to D\mu X \to \mu \mu X^\prime$),
+which we call SS, where the muons do not originate from the same vertex,
+and events where the muons come from the same vertex (e.g., $B \to K\mu\mu$),
+which we call SV. 
+In both cases, in Run1 the mass distribution of the two muons was peaked far below
+the signal region, and the analysis was sensitive to a tail of the distribution
+determined by kinematic limits and detector resolution effects. 
+In Run1 this background was fitted with an exponential PDF $f(x) = \exp(\alpha x)$
+used for MC events of this class, we expect to ba able to use the same model. \\
+%The {\boldmath \Bc} component of the background is mainly due to a small number
+%of events in which \Bc\ decays into $J\!/\!\psi\mu\nu$ feed into our sample.
+%Their BDT values are distributed between the signal-like and
+%background-like values. The mass shape is smoothly decreasing
+%towards the signal region. It may be fitted with an exponential ($f(x) = \exp(\alpha x)$). 
+%Figure~\ref{fig:Bcbins} shows the fit to the \Bc\ events in the invariant mass
+%distribution in each BDT$_{ss}$ bin, superimposed with an exponential
+%PDF parametrisation. Given the relatively smaller amplitude, these events
+%are expected to feed into the continuum and partially in the SS+SV events.
+%Therefore no PDF is added in the fit to model the \Bc\ component of the
+%background as further discussed below. 
+
+
+The {\bf semileptonic} background is due to few-body semileptonic 
+$B$ decays feeding into our final selections though a misidentification
+$h \to \mu$, in the limit of low energy neutrinos.
+In particular  $B_d \to \pi\mu\nu$ and $B_s \to K\mu\nu$ can contribute,
+together with $\Lambda_b \to p\mu\nu$. The mass distribution for the last
+process extends closer to the signal region, but it is highly suppressed
+because of a very low probability of misidentifying the proton as muon in
+ATLAS.
+The contribution from this  background is expected to be significantly smaller than the SS+SV
+and the combinatorial background contributions in all bins of the BDT output. 
+It is expected to be described with 
+sufficient accuracy by the first-order polynomial and the exponential PDF used for the main 
+background components, without adding an extra PDF.\\
+
+\subsection{Fit to background components from MC and to sideband data}
+\label{sub:sec:bkg-normalisation-fit}
+In each bin in the continuum BDT, the background will been fitted in the
+sideband of the data sample,  and interpolated in the search region. 
+This is done in order to optimise the analysis and evaluate its sensitivity 
+before proceeding to the unblinding of the signal region and performing a
+simultaneous fit to signal and background.\\
+
+
+
+
+\subsection{Summary of the fit configuration}\label{sub:sec:fit_summary}
+The baseline signal fit to the number of events is expected to include the following PDFs: 
+\begin{enumerate}
+\item{signal PDF:} the mass dependence is described  by the sum of 2 Gaussians 
+centred at the $B_s$ (or $B_d$) mass. The widths of the Gaussians and their relative fraction, assumed to
+be identical in all continuum-BDT bins, will be taken from MC and fixed in the fit. 
+%The BDT bins are defined to contain each 1/3 of the total number of signal events.
+%Systematic uncertainties in these fractions are derived from the studies discussed in  Section~\ref{sec:BDTbineff},
+%and are described with Gaussian constraints, so that  $33.3\pm4.3$\% of the signal events are 
+%expected in bin-3, $33.3\pm2.0$\% are expected in bin-2, and the fraction in bin-1 is constrained so that the total 
+%is equal to 100\%.\footnote{
+%The uncertainty in the total efficiency of the continuum-BDT selection, summed over the three bins, 
+%is included in the uncertainty of the efficiency ratio between \Bp\ and \Bds, discussed in Section~\ref{subsec:eff}}
+
+\item{Continuum background PDF:} the mass dependence is first order polynomial. The normalisation and the 
+slope will be extracted independently in each bin of the continuum-BDT.  
+In full Run1 analysis Gaussian constraints were placed on the uniformity of the slope, so 
+that the slope in bin-2  (bin-3) was equal to the one in bin-1 within $\pm 40$\% 
+($\pm 80$\%). 
+
+\item{Low-mass background PDF:} exponential dependence on the mass.
+The normalisation will be extracted independently in each bin of the continuum-BDT, 
+while the shape will be assumed to be uniform.
+
+\item {Peaking background:} the mass dependence is described with a Gaussian describing the total
+background. % shown in Figure~\ref{fig:massBhh}. 
+%A Gaussian constraint of $1.0\pm0.8$ is applied to the normalisation. 
+%The uncertainty is conservatively taken from the upper limit to the number of events containing pairs of 
+%{\em fake muons}, studied through inversion of the corresponding selection cuts as discussed in Section~\ref{app:fake-sel-inverted} of the Appendix. This background is equally shared in the three bins of continuum-BDT. 
+\end{enumerate}
+
+%The following free parameters are determined by the fit:
+%\begin{itemize}
+%\item the total number of \Bs\ events, and the total number of \Bz\ events in case of simultaneous fit to both channels;
+%\item the number of continuum background events in each continuum-BDT bin (3 free parameters);  
+%\item the number of low-mass background events in each continuum-BDT bin (3 free parameters); 
+%\item the parameter describing the shape of the continuum background in bin-1 of the continuum-BDT;
+%\item the parameter describing the shape of the low-mass background.
+%\end{itemize}
+
+%The following parameters subject to Gaussian constraints are also determined by the fit:
+%\begin{itemize}
+%\item the fractions of signal events contained in each bin of the continuum-BDT;
+%\item the parameters describing the shape of the continuum background in bin-2 and bin-3 of the continuum-BDT;
+%\item the total number of peaking-background events;
+%\item in case of simultaneous fit to the \Bs\ and \Bz components, two smearing parameters describing the correlated systematic error in the fit to the number of events.
+%\end{itemize}
+
+%The use of three bins in the BDT output is found to optimise the determination
+%of the mass dependence of the two backgrounds, using events contained in the
+%first and second bin, while the second and in particular the third bin provide
+%sensitivity to the signal. 
+
+
+\subsection{Systematic uncertainties on the fit in the simultaneous fit to $B_s$ and $B_d$}
+\label{sub:sec:fit_syst}
+The evaluation of the systematic uncertainties due to the fitting procedure 
+will be evaluated as in the full Run1 analysis, by applying 
+variations to the baseline model and testing the result beahviour 
+with toy-experiments. The corresponding variations in the result of the fit in the baseline
+configuration will be taken as systematic uncertainties.
+
+
+\clearpage

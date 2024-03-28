@@ -1,0 +1,59 @@
+\begin{tabular}{p{2cm} p{10.9cm} p{2.1cm}}
+\hline \hline
+Variable  &  Description \\ 
+\midrule
+% 1. TMath::Abs(BvtxPointingAngle2D) TMath::Abs(a_2D) angle btw. dX and pB in xy plane used in 2011 analysis
+$|\alpha_{2D}|$ & Absolute value of the angle in the transverse plane
+between $\Delta\overrightarrow{x}$ and $\overrightarrow{p}^{B}$ \\ \\   
+% 2. BvtxIsolation B_iso_7_Chi2_5_MedPt05 isolation of B candidate used in 2011 analysis(*)
+Isolation $I_{0.7}$ & Ratio of $|\overrightarrow{p}^{B}_{T}|$ to the sum of $|\overrightarrow{p}^{B}_{T}|$ and
+the transverse momenta of all tracks with $p_T > 0.5$ GeV within a
+cone $\Delta{R} < 0.7$ from the $B$ direction, excluding $B$ decay products  \\ \\  
+% 3. BvtxDR DR sqrt(df^2+deta^2) btw. dX and pB used in 2011 analysis
+$\Delta{R}$ & Angle $\sqrt{\left(\Delta\phi\right)^{2} + \left(\Delta\eta\right)^{2}} $
+between $\Delta\overrightarrow{x}$ and $\overrightarrow{p}^{B}$ \\ \\  
+% 4.  BvtxPt B_pT pT of B candidate used in 2011 analysis
+$p_{T}^{B}$ & $B$ transverse momentum  \\ \\  
+% 5.  minChi2MuonsIP2AnyPV B_minChi2MuonsIPtoAnyPV
+$\chi^2_{\mu,xPV}$ & Minimum $\chi^2$ between the muon candidates and any PV  \\  
+% 6. lnChi2PVtxBVtx2D chi2_PVSV_log2D chi2 btw. PV and SV in xy used in 2011 analysis
+%        $\chi^{2}_{z}, \chi^{2}_{xy}$ & Significance of the separation between production
+%        (PV) and decay (SV) vertices, $\Delta\overrightarrow{x}^{T}\cdot
+%        \left(\sigma^{2}_{\Delta\overrightarrow{x}}\right)^{-1}\cdot\Delta\overrightarrow{x}$,
+%        in $z$ and $(x,y)$, respectively & used in $2011$\\ \\
+$\log[\chi^{2}_{\mathrm{PV,SV}}]_{xy}$ & separation between production
+(PV) and decay (SV) vertices, $\Delta\overrightarrow{x}^{T}\cdot
+\left(\sigma^{2}_{\Delta\overrightarrow{x}}\right)^{-1}\cdot\Delta\overrightarrow{x}$,
+in the transverse plane $(x,y)$ \\ \\  
+% 7. Bvtx3DIP Bvtx3DIP 3D impact parameter (POCA) of B candidate
+IP$_B^{3D}$ & 3-dimensional impact parameter (POCA) of the $B$ candidate \\  
+% 8. TMath::Abs(d0MaxSign) d0Max_sig IP significance of the muon track with max IP
+$|d_{0}|^{max}$ sig. & Significance of the maximum absolute value of impact
+parameters of the two muon candidates in the transverse plane of the $B$
+decay products relative to the primary vertex \\  
+% 9. TMath::Abs(MuonsRefTrksDPhi) B_IDtrks_deltaPhi &Delta(&phi,&mu1 - &phi,&mu2)
+$\Delta\phi(\mu\mu)$ & Difference in $\phi$ between the two muon candidates  \\  
+% 10. ClosTrackDOCA closeTrkDOCA DOCA of the track closest to B vertex
+DOCA$_{xtrk}$ & DOCA of the track closest (``xtrk'') to the $B$ vertex.
+The tracks associated to pile-up vertices are excluded \\  
+% 11. TMath::Abs(MuonsDCA) TMath::Abs(B_IDtrks_DCA) DCA ot two ID tracks forming B vertex
+DOCA$_{\mu\mu}$ & DOCA of the two ID tracks forming the $B$ vertex  \\  
+% 12. ClosTrackNTracksChi2 closeTrkNtrksChi2 chi2 btw. the closest track and B vertex
+%        $\chi^2_{B,xtrk}$ & $\chi^2$ between the closest track and the $B$ vertex  & new \\
+$N^{close}_{trks}$ & Number of (``close'') tracks with $\ln(\chi^2)<1$ where
+$\chi^2$ is a test of association of a track to the reconstructed $B$ vertex.
+The tracks associated to pile-up vertices are excluded\\  
+% 13. TMath::Abs(d0MinSign) d0Min_sig IP significance of the muon track with min IP
+$|d_{0}|^{min}$ sig. & Significance of the minimum absolute value of impact
+parameters of the two muon candidates in the transverse plane of the $B$
+decay products relative to the primary vertex\\  
+% 14. BvtxLxy Lxy (dxp)xy/pt used in 2011 analysis
+$L_{xy}$ & Scalar product in the transverse plane of
+$(\Delta\overrightarrow{x}\cdot\overrightarrow{p}^{B})/|\overrightarrow{p}^{B}_{T}|$\\ \\  
+% 15. BvtxPlngMin2D PlngMin2D minimum momentum of the two muon candidates along the B direction used in 2011 analysis
+%        $P_{L}^{min}, P_{L}^{max}$ & Minimum and maximum momenta of
+%        the two muon candidates along the $B$ direction & used in $2011$\\ \\
+$P_{L}^{min}$ & Minimum momentum of the two muon candidates
+along the $B$ direction\\ \\
+\hline \hline
+\end{tabular}

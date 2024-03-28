@@ -1,0 +1,111 @@
+NotesDataCutsJune7
+
+This is for full Sidebands (right sideband is below)
+1 and 2 are training and testing,
+3 is for measuring and validating
+--Actually strategy is to rotate all three
+
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 1
+Entries in input tree: 2425768
+Entries in new tree: 807907
+Entries Cut: 1617861
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 2
+Entries in input tree: 2425768
+Entries in new tree: 809154
+Entries Cut: 1616614
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 3
+
+Entries in input tree: 2425768
+Entries in new tree: 808707
+Entries Cut: 1617061
+
+
+
+For MC signal:
+now also split into thirds
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 1
+0 of 165321
+30000 of 165321
+Entries in input tree: 165321
+Entries in new tree: 54893
+Entries Cut: 110428
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 2
+90000 of 165321
+Entries in input tree: 165321
+Entries in new tree: 55448
+Entries Cut: 109873
+
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 3
+60000 of 165321
+120000 of 165321
+150000 of 165321
+Entries in input tree: 165321
+Entries in new tree: 54980
+Entries Cut: 110341
+
+
+
+
+eval:
+For MC signal:
+Processing Mod4MC_v2.C...
+Splitting MC 3/4 and 1/4
+0 of 165321
+Entries in input tree: 165321
+Entries in new tree: 41259
+Entries Cut: 124062
+
+train/test:
+Processing Mod4MC_v2.C...
+Splitting MC 3/4 and 1/4
+30000 of 165321
+60000 of 165321
+90000 of 165321
+120000 of 165321
+150000 of 165321
+Entries in input tree: 165321
+Entries in new tree: 124062
+Entries Cut: 41259
+
+
+
+
+
+Processing SeparateRightSideband.cpp...
+Splitting 15/16 data to rightsideband:
+0 of 2425768
+Entries in input tree: 2425768
+Entries in new tree: 1201812
+Entries Cut: 1223956
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 1
+Entries in input tree: 1201812
+Entries in new tree: 400181
+Entries Cut: 801631
+
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 2
+Entries in input tree: 1201812
+Entries in new tree: 400951
+Entries Cut: 800861
+
+Processing Mod3_DataSplitting.cpp...
+Splitting 15/16 data in thirds number: 3
+Entries in input tree: 1201812
+Entries in new tree: 400680
+Entries Cut: 801132
+

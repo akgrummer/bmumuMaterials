@@ -1,0 +1,224 @@
+-bash-4.2$
+-bash-4.2$ ./bin/IsolationStudy_vChi2hist_v4 MC16a loose
+
+Applying ATLAS style settings...
+
+debug hello
+MC16aloose
+
+Applying ATLAS style settings...
+
+DEBUG 1
+MC16a loose
+DEBUG 2
+DEBUG 2
+DEBUG 2
+Filename: .
+DEBUG 2
+Filename: ..
+DEBUG 2
+Filename: LASTskim_MC16a_1.root
+processing file: LASTskim_MC16a_1.root
+# of candidates: 41620
+Entries in original tree: 41620
+DEBUG 3
+Processing event 0
+number of tracks so far: 131714
+number of candidates so far (after run cut): 528
+DEBUG 2
+Filename: LASTskim_MC16a_2.root
+processing file: LASTskim_MC16a_2.root
+# of candidates: 39998
+Entries in original tree: 39998
+DEBUG 3
+Processing event 0
+number of tracks so far: 259118
+number of candidates so far (after run cut): 1038
+DEBUG 2
+Filename: LASTskim_MC16a_3.root
+processing file: LASTskim_MC16a_3.root
+# of candidates: 40135
+Entries in original tree: 40135
+DEBUG 3
+Processing event 0
+number of tracks so far: 380287
+number of candidates so far (after run cut): 1536
+DEBUG 2
+Filename: LASTskim_MC16a_4.root
+processing file: LASTskim_MC16a_4.root
+# of candidates: 3165
+Entries in original tree: 3165
+DEBUG 3
+Processing event 0
+number of tracks so far: 390740
+number of candidates so far (after run cut): 1575
+DEBUG 2
+Filename: LASTskim_MC16a_5.root
+processing file: LASTskim_MC16a_5.root
+# of candidates: 41817
+Entries in original tree: 41817
+DEBUG 3
+Processing event 0
+number of tracks so far: 528933
+number of candidates so far (after run cut): 2151
+Collection name='TList', class='TList', size=6
+ TH1.Print Name  = h_chi2_VTX_otherPV, Entries= 369885, Total sum= 326892
+ TH1.Print Name  = h_chi2_PV_otherPV, Entries= 369885, Total sum= 326845
+ TH1.Print Name  = h_chi2_VTX_assPV, Entries= 76208, Total sum= 70542.9
+ TH1.Print Name  = h_chi2_PV_assPV, Entries= 76208, Total sum= 70542.8
+ TH1.Print Name  = h_chi2_VTX_nonAss, Entries= 78538, Total sum= 67268.4
+ TH1.Print Name  = h_chi2_PV_nonAss, Entries= 78538, Total sum= 67260.7
+Info in <TCanvas::SaveAs>: ROOT file /eos/home-a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/data/MC16a_loosechi2_2019Jun12.root has been created
+Info in <TCanvas::Print>: png file /eos/home-a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/figures/MC16a_loosechi2_2019Jun12.png has been created
+-bash-4.2$ ./bin/IsolationStudy_vChi2hist_v4 MC16a nominal
+
+Applying ATLAS style settings...
+
+debug hello
+MC16anominal
+
+Applying ATLAS style settings...
+
+DEBUG 1
+MC16a nominal
+DEBUG 2
+DEBUG 2
+DEBUG 2
+Filename: .
+DEBUG 2
+Filename: ..
+DEBUG 2
+Filename: LASTskim_MC16a_1.root
+processing file: LASTskim_MC16a_1.root
+# of candidates: 41620
+Entries in original tree: 41620
+DEBUG 3
+Processing event 0
+number of tracks so far: 131714
+number of candidates so far (after run cut): 528
+DEBUG 2
+Filename: LASTskim_MC16a_2.root
+processing file: LASTskim_MC16a_2.root
+# of candidates: 39998
+Entries in original tree: 39998
+DEBUG 3
+Processing event 0
+number of tracks so far: 259118
+number of candidates so far (after run cut): 1038
+DEBUG 2
+Filename: LASTskim_MC16a_3.root
+processing file: LASTskim_MC16a_3.root
+# of candidates: 40135
+Entries in original tree: 40135
+DEBUG 3
+Processing event 0
+number of tracks so far: 380287
+number of candidates so far (after run cut): 1536
+DEBUG 2
+Filename: LASTskim_MC16a_4.root
+processing file: LASTskim_MC16a_4.root
+# of candidates: 3165
+Entries in original tree: 3165
+DEBUG 3
+Processing event 0
+number of tracks so far: 390740
+number of candidates so far (after run cut): 1575
+DEBUG 2
+Filename: LASTskim_MC16a_5.root
+processing file: LASTskim_MC16a_5.root
+# of candidates: 41817
+Entries in original tree: 41817
+DEBUG 3
+Processing event 0
+number of tracks so far: 528933
+number of candidates so far (after run cut): 2151
+Collection name='TList', class='TList', size=6
+ TH1.Print Name  = h_chi2_VTX_otherPV, Entries= 397630, Total sum= 351023
+ TH1.Print Name  = h_chi2_PV_otherPV, Entries= 397630, Total sum= 350975
+ TH1.Print Name  = h_chi2_VTX_assPV, Entries= 70200, Total sum= 65098.8
+ TH1.Print Name  = h_chi2_PV_assPV, Entries= 70200, Total sum= 65098.8
+ TH1.Print Name  = h_chi2_VTX_nonAss, Entries= 56801, Total sum= 48581.4
+ TH1.Print Name  = h_chi2_PV_nonAss, Entries= 56801, Total sum= 48575.8
+Info in <TCanvas::SaveAs>: ROOT file /eos/home-a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/data/MC16a_nominalchi2_2019Jun12.root has been created
+Info in <TCanvas::Print>: png file /eos/home-a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/figures/MC16a_nominalchi2_2019Jun12.png has been created
+-bash-4.2$ ./bin/IsolationStudy_vChi2hist_v4 MC16a tight
+
+Applying ATLAS style settings...
+
+debug hello
+MC16atight
+
+Applying ATLAS style settings...
+
+DEBUG 1
+MC16a tight
+DEBUG 2
+DEBUG 2
+DEBUG 2
+Filename: .
+DEBUG 2
+Filename: ..
+DEBUG 2
+Filename: LASTskim_MC16a_1.root
+processing file: LASTskim_MC16a_1.root
+# of candidates: 41620
+Entries in original tree: 41620
+DEBUG 3
+Processing event 0
+number of tracks so far: 131714
+number of candidates so far (after run cut): 528
+DEBUG 2
+Filename: LASTskim_MC16a_2.root
+processing file: LASTskim_MC16a_2.root
+# of candidates: 39998
+Entries in original tree: 39998
+DEBUG 3
+Processing event 0
+number of tracks so far: 259118
+number of candidates so far (after run cut): 1038
+DEBUG 2
+Filename: LASTskim_MC16a_3.root
+processing file: LASTskim_MC16a_3.root
+# of candidates: 40135
+Entries in original tree: 40135
+DEBUG 3
+Processing event 0
+number of tracks so far: 380287
+number of candidates so far (after run cut): 1536
+DEBUG 2
+Filename: LASTskim_MC16a_4.root
+processing file: LASTskim_MC16a_4.root
+# of candidates: 3165
+Entries in original tree: 3165
+DEBUG 3
+Processing event 0
+number of tracks so far: 390740
+number of candidates so far (after run cut): 1575
+DEBUG 2
+Filename: LASTskim_MC16a_5.root
+processing file: LASTskim_MC16a_5.root
+# of candidates: 41817
+Entries in original tree: 41817
+DEBUG 3
+Processing event 0
+number of tracks so far: 528933
+number of candidates so far (after run cut): 2151
+Collection name='TList', class='TList', size=6
+ TH1.Print Name  = h_chi2_VTX_otherPV, Entries= 360844, Total sum= 319086
+ TH1.Print Name  = h_chi2_PV_otherPV, Entries= 360844, Total sum= 319037
+ TH1.Print Name  = h_chi2_VTX_assPV, Entries= 63896, Total sum= 59371.6
+ TH1.Print Name  = h_chi2_PV_assPV, Entries= 63896, Total sum= 59371.6
+ TH1.Print Name  = h_chi2_VTX_nonAss, Entries= 99891, Total sum= 86245.8
+ TH1.Print Name  = h_chi2_PV_nonAss, Entries= 99891, Total sum= 86240.2
+Info in <TCanvas::SaveAs>: ROOT file /eos/home-a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/data/MC16a_tightchi2_2019Jun12.root has been created
+Info in <TCanvas::Print>: png file /eos/home-a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/figures/MC16a_tightchi2_2019Jun12.png has been created
+-bash-4.2$
+
+
+TCanvas *c = (TCanvas*)_file0->Get("trks chi2");
+TH1F *h_chi2_PV_otherPV_loose = (TH1F*)c->GetListOfPrimitives()->FindObject("h_chi2_PV_otherPV");
+h_chi2_PV_otherPV_loose->GetEntries()
+TH1F *h_chi2_PV_assPV_loose = (TH1F*)c->GetListOfPrimitives()->FindObject("h_chi2_PV_assPV");
+h_chi2_PV_assPV_loose->GetEntries()
+TH1F *h_chi2_PV_nonAss_loose = (TH1F*)c->GetListOfPrimitives()->FindObject("h_chi2_PV_nonAss");
+h_chi2_PV_nonAss_loose->GetEntries()

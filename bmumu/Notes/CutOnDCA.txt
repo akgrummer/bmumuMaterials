@@ -1,0 +1,110 @@
+Cut on DCA < 500 
+removes the events that were set to 999*sqrt(2) in the DxAOD level
+
+for the LastSkimGBR3blinded/LASTskim.bbmumuX2Bsmumu_combinatorial_GBRweight.root:
+Entries in input tree: 1804501
+Entries in new tree: 1804160
+Entries Cut: 341
+
+0.00018897190968583557
+0.018897%
+
+for BsmumuData/LASTskim.MC16Bs.root:
+(now in BsmumuData/SignalMC/)
+Entries in input tree: 169262
+Entries in new tree: 167988
+Entries Cut: 1274
+
+0.007526792782786449
+0.752679%
+
+
+for LastSkimGBR4_Mar26/LASTskim.bbmumuX2Bsmumu_combinatorial_GBRweight.root:
+Entries in input tree: 1804501
+Entries in new tree: 1804160
+Entries Cut: 341
+
+for Right SideBand
+for /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskimRightSideband/LASTskim.Data_2015HLTand2016HLTLxy_RightSideband.root
+Entries in input tree: 1236690
+Entries in new tree: 1235808
+Entries Cut: 882
+0.07131%
+
+
+
+Training/Testing Sample and Evaluation Sample Split:
+
+LASTskim.MC16Bs_DOCAlt500_EvalSet.root
+Processing Mod4MC.C...
+Splitting MC 3/4 and 1/4
+60000 of 167988
+150000 of 167988
+Entries in input tree: 167988
+Entries in new tree: 41815
+Entries Cut: 126173
+
+
+LASTskim.MC16Bs_DOCAlt500_TrainTestSet.root
+root [0]
+Processing Mod4MC.C...
+Splitting MC 3/4 and 1/4
+0 of 167988
+30000 of 167988
+90000 of 167988
+120000 of 167988
+Entries in input tree: 167988
+Entries in new tree: 126173
+Entries Cut: 41815
+
+
+
+### Low Pile Up bin:
+From Right Sideband (with DOCA cut already applied!):
+Entries in input tree: 1235808
+Entries in new tree: 604591
+Entries Cut: 631217
+
+From Eval MC:
+Entries in input tree: 41815
+Entries in new tree: 13050
+Entries Cut: 28765
+
+### Middle Pileup bin:
+From Right Sideband (with DOCA cut already applied!):
+Entries in input tree: 1235808
+Entries in new tree: 420533
+Entries Cut: 815275
+
+From Eval MC:
+Entries in input tree: 41815
+Entries in new tree: 13824
+Entries Cut: 27991
+
+### High Pileup bin:
+From Right Sideband (with DOCA cut already applied!):
+Entries in input tree: 1235808
+Entries in new tree: 210684
+Entries Cut: 1025124
+
+From Eval MC:
+Entries in input tree: 41815
+Entries in new tree: 14941
+Entries Cut: 26874
+
+
+
+
+
+
+Kinematic Weights (on test train sample):
+Entries in input tree: 126173
+Odd Events: 42386
+Even Events 83787
+
+
+MC order should be: combweights, doca cut, test/train and eval sample
+
+test/train and eval sample should be %8 and pick an odd and an even - to keep an equal distribution of 
+combweights in each sample
+

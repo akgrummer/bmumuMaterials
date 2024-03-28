@@ -1,0 +1,12 @@
+ setupATLAS
+lsetup pyami
+
+ami list runs --year 15 -L | grep data15_13TeV > data15ami.txt
+ ami list runs --year 16 -L | grep data16_13TeV > data16ami.txt
+ ami list runs --year 17 -L | grep data17_13TeV > data17ami.txt
+
+
+ files saved on www/
+ +files that I separated into the ranges seen in the Sep Periods code and text file
+
+ careful with L10 (two digits) run_numbers not always in order. I made sure the were.

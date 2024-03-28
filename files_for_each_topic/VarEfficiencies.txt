@@ -1,0 +1,7 @@
+bmumu2020/BDTmacros/InputVars_v5_Efficiencies.C
+bmumu2020/BDTmacros/VarEfficiencyRatios.cpp
+bmumu2020/BDTmacros/VarEfficienciesPassedEvents/PassedEvents2020July25.txt
+bmumu2020/BDTmacros/VarEfficienciesPassedEvents/PassedEvents_2020July17.txt
+bmumu2020/NotesAndSyncs/VarEfficiencyNotes.txt
+bmumu2020/BDTmacros/VarEfficienciesPassedEvents/PassedEvents2020July31.txt
+bmumu2020/BDT/BDTcuts.txt/2020July16numbers.txt

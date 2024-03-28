@@ -1,0 +1,37 @@
+RunCommands.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v3.cpp
+root -l -b -q DOCA_logAccept_ROCs_v3.cpp
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v3.cpp
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v3.cpp
+root -l -b -q DOCA_MultiROCs_TTVA_v3.cpp
+root -l -b -q Iso_MultiROCs_TTVA_v3.cpp
+
+
+RunCommands.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v4.cpp
+root -l -b -q DOCA_logAccept_ROCs_v4.cpp
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v4.cpp
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v4.cpp
+root -l -b -q DOCA_MultiROCs_TTVA_v4.cpp
+root -l -b -q Iso_MultiROCs_TTVA_v4.cpp
+
+RunCommands.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v5.cpp
+root -l -b -q DOCA_logAccept_ROCs_v5.cpp
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v5.cpp
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v5.cpp
+root -l -b -q DOCA_MultiROCs_TTVA_v5.cpp
+root -l -b -q Iso_MultiROCs_TTVA_v5.cpp
+
+
+RunCommands.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v7.cpp
+root -l -b -q DOCA_logAccept_ROCs_v7.cpp
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v7.cpp
+root -l -b -q DOCA_MultiROCs_TTVA_v7.cpp
+root -l -b -q Iso_MultiROCs_TTVA_v7.cpp
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v7.cpp
+
+root -l -b -q Iso_MultiVar_TTVA_v7_PU.cpp
+root -l -b -q OtherIso_MultiVar_TTVA_v7_PU.cpp
+

@@ -1,0 +1,200 @@
+Notes on running the Comparison code
+
+Current version is in ~/Desktop/Bmumu/dataMCcomparisons/AnalysisCode/MCvsData/bbmumuX/
+The input dataset (and MC) is controlled through dmcbbmumuX.h
+Code is run in root 6 with the commands:
+
+root -l
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX.C("systVars","dt_mcXs")
+.> 
+
+root -l
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX.C("systVars","dt_mc_OnePeriod", true, "D")
+.> 
+.q
+
+root -l
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX.C("systVars","dt_mcXs_Mult", true)
+.> 
+.q
+
+root -l
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX.C("systVars","dt_mc_SepPeriods", true)
+.> 
+.q
+
+
+
+root -l
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX.C("systVars","", true)
+.> 
+.q
+
+
+
+all of the output is put into the output folder called OutputPlots
+so need to make sure that this folder is empty every time you run the code.
+Save to new folder and store these in Output folder.
+
+to make pdf of all plots copy text from PlotTexFigures.txt into table_figures.tex (just before end of document line (last line))
+
+
+
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX.C("systVars","dt_mcXs", "D")
+.> 
+
+root -l
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX_v2.C("systVars","dt_mcXs")
+.> 
+
+
+root -l
+.2> OutputPlots/err.txt
+.x dmcbbmumuX.C("systVars","dt_mcXs", "A")
+.> 
+.q
+
+
+    string input = "";
+      // gPad->Modified(); gPad->Update();
+ // How to get a string/sentence with spaces
+ cout << "Please enter a valid sentence (with spaces):\n>";
+ getline(cin, input);
+ cout << "You entered: " << input << endl;
+
+root -l
+.2> OutputPlots/err.txt
+.> OutputPlots/out.txt
+.x dmcbbmumuX.C("systVars","dt_mcXs")
+.> 
+.q
+root -l dmcbbmumuX.C("systVars","dt_mcXs")
+
+
+
+Feb. 2018: 
+
+latest code is on www/bmumu/MCvsDataCode/
+run on lxplus
+setupATLAS
+lsetup root (version 6.10)
+root -l
+.x dmcbbmumuX.C("systVars","dt_mcXs")
+.x dmcbbmumuX.C("systVars","mc_mc")
+.x dmcbbmumuX.C("B_MUCALC_mass","dt_mcXs")
+
+root -l -b -q dmcbbmumuX.C"(\"systVars\",\"dt_mcXs\")"
+root -b -q dmcbbmumuX.C"(\"B_VTX_mass\",\"dt_mcXs\")"
+root -b -l -q dmcbbmumuX.C"(\"systVars\",\"mc_mc\")"
+root -l -q dmcbbmumuX.C"(\"properTime\",\"dt_mcXs\")"
+root -l -q dmcbbmumuX.C"(\"PRIVX_mu\",\"dt_mcXs\")"
+
+
+
+create folder called 
+OutputPlots/
+(move existing one to new name)
+
+root -l -b -q dmcbbmumuX.C"(\"B_minChi2MuonsIPtoAnyPV\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX.C"(\"TMath::Sqrt(pow(closeTrkDCA,2)+pow(closeTrkZCA,2))\",\"dt_mcXs\")"
+
+latex slides now in Desktop/Bmumu/DataMCPresentations
+
+
+for SepPeriods:
+root -l -b -q dmcbbmumuX.C"(\"systVars\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"B_MUCALC_massErr\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"d0Min\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"d0Max\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"closeTrkDOCA\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"TMath::Sqrt(pow(closeTrkDCA,2)+pow(closeTrkZCA,2))\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"TMath::Sqrt(pow(B_IDtrks_deltaEta, 2) + pow(B_IDtrks_deltaPhi, 2))\",\"dt_mc_SepPeriods\")"
+
+root -l -b -q dmcbbmumuX.C"(\"properTime\",\"dt_mc_SepPeriods\")"
+
+
+root -l -b -q dmcbbmumuX.C"(\"d0Min_err\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"d0Min_err\",\"dt_mc_SepPeriods\")"
+
+
+
+
+root -l -b -q dmcbbmumuX.C"(\"systVars\",\"dt_mc_SepPeriods\")"
+root -l -b -q dmcbbmumuX.C"(\"B_MUCALC_mass\",\"dt_mc_SepPeriods\")"
+root -l dmcbbmumuX.C"(\"B_eta\",\"dt_mc_SepPeriods\")"
+root -l dmcbbmumuX.C"(\"d0Min_err\",\"dt_mc_SepPeriods\")"
+
+root -l dmcbbmumuX.C"(\"B_pT\",\"dt_mc_SepPeriods\")"
+root -l dmcbbmumuX.C"(\"B_pT\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX.C"(\"systVars\",\"dt_mcXs\")"
+
+
+June 29 version 2:
+version two includes the signal mc.
+
+root -l -b -q dmcbbmumuX_v2.C"(\"systVars\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX_v2.C"(\"B_MUCALC_mass\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX_v2.C"(\"TMath::Sqrt(pow(closeTrkDCA,2)+pow(closeTrkZCA,2))\",\"dt_mcXs\")"
+
+root -l dmcbbmumuX_v2.C"(\"Lxy\",\"dt_mcXs\")"
+root -l dmcbbmumuX_v2.C"(\"B_iso_7_Chi2_5_LoosePt05\",\"dt_mcXs\")"
+root -l dmcbbmumuX_v2.C"(\"chi2_PVSV_log2D\",\"dt_mcXs\")"
+root -l dmcbbmumuX_v2.C"(\"chi2_PVSV_log2D\",\"dt_mcXs\")"
+
+root -l -b -q dmcbbmumuX_v2.C"(\"B_minChi2MuonsIPtoAnyPV\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX_v2.C"(\"TMath::Abs(a_2D)\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX_vBkgSig.C"(\"Lxy\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX_vBkgSig.C"(\"B_iso_7_Chi2_5_LoosePt05\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX_vBkgSig.C"(\"chi2_PVSV_log2D\",\"dt_mcXs\")"
+root -l -b -q dmcbbmumuX_vBkgSig.C"(\"TMath::Abs(B_IDtrks_DCA)\",\"dt_mcXs\")"
+
+root -l -b -q dmcbbmumuX_vBkgSig.C"(\"DR\",\"dt_mcXs\")"
+
+root -l dmcbbmumuX_vBkgSig.C"(\"Lxy\",\"dt_mcXs\")"
+root -l dmcbbmumuX_vBkgSig.C"(\"B_iso_7_Chi2_5_LoosePt05\",\"dt_mcXs\")"
+root -l dmcbbmumuX_vBkgSig.C"(\"chi2_PVSV_log2D\",\"dt_mcXs\")"
+
+root -l dmcbbmumuX_vBkgSig.C"(\"TMath::Abs(B_IDtrks_DCA)\",\"dt_mcXs\")"
+
+
+root -l dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_iso_7_Chi2_5_LoosePt05\",\"dt_mcXs\")"
+root -l dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_iso_7_Chi2_5_LoosePt05\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"systVars\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"PRIVX_mu\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"Npv\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_eta\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_pT\",\"dt_mcXs_Mult\")"
+
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_iso_7_Chi2_5_LoosePt05\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_iso_Ntracks_7_Chi2_5_LoosePt05\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"closeTrkNtrksChi2\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"closeTrkDOCA\",\"dt_mcXs_Mult\")"
+
+other BDT variables:
+root -l -b -q dmcbbmumuX_vBkgSig.C"(\"DR\",\"dt_mcXs_Mult\")"
+root -l dmcbbmumuX_vBkgSig_FullRun2.C"(\"Lxy\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"systVars\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"TMath::Abs(a_2D)\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"Bvtx3DIP\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_minChi2MuonsIPtoAnyPV\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"Muon1_pT\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"Muon2_pT\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"Muon1_eta\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"Muon2_eta\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"B_eta\",\"dt_mcXs_Mult\")"
+root -l -b -q dmcbbmumuX_vBkgSig_FullRun2.C"(\"TMath::Abs(B_IDtrks_DCA)\",\"dt_mcXs_Mult\")"
+

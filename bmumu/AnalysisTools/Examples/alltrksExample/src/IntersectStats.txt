@@ -1,0 +1,113 @@
+Intersect Stats:
+
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/2016main/*.root
+Entries in original tree of file 1: 40955
+Entries in original tree of file 2: 40987
+# of unique events in file 1: 40954
+# of unique events in file 2: 40986
+intersection of both: 40357
+Union of both: 41583
+Only in first: 597
+ only in second: 629
+ sum of both: 1226
+
+new:
+number of events used: 40358
+number of tracks used: 10247111
+old: 
+number of intersect events so far: 40358
+number of tracks so far: 10247111
+
+ /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/2017/*.root
+Entries in original tree of file 1: 30031
+Entries in original tree of file 2: 30015
+# of unique events in file 1: 30030
+# of unique events in file 2: 30014
+intersection of both: 29388
+Union of both: 30656
+Only in first: 642
+ only in second: 626
+ sum of both: 1268
+
+ new:
+ number of events used: 29389
+number of tracks used: 17052236
+old:
+number of events used: 29389
+number of tracks used: 17052236
+
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/2018/*.root
+Entries in original tree of file 1: 25629
+Entries in original tree of file 2: 25666
+# of unique events in file 1: 25628
+# of unique events in file 2: 25665
+intersection of both: 25269
+Union of both: 26024
+Only in first: 359
+ only in second: 396
+ sum of both: 755
+
+new:
+number of events used: 25270
+number of tracks used: 8685085
+old:
+number of events used: 25270
+number of tracks used: 8685085
+
+MC16a
+ /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/MC16a/*.root
+Entries in original tree of file 1: 166718
+Entries in original tree of file 2: 166718
+# of unique events in file 1: 166713
+# of unique events in file 2: 166713
+intersection of both: 166713
+Union of both: 166713
+Only in first: 0
+ only in second: 0
+ sum of both: 0
+
+ new:
+ number of events used: 166718
+number of tracks used: 528933
+old:
+number of events used: 166718
+number of tracks used: 528933
+
+MC16d
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/MC16d/*.root
+ Entries in original tree of file 1: 201786
+Entries in original tree of file 2: 201787
+# of unique events in file 1: 201776
+# of unique events in file 2: 201777
+intersection of both: 201776
+Union of both: 201777
+Only in first: 0
+ only in second: 1
+ sum of both: 1
+
+new:
+number of events used: 201786
+number of tracks used: 4693450
+old:
+number of events used: 201786
+number of tracks used: 4693450
+
+
+ MC16e
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/MC16e/*.root
+Entries in original tree of file 1: 275413
+Entries in original tree of file 2: 275413
+# of unique events in file 1: 275401
+# of unique events in file 2: 275401
+intersection of both: 275401
+Union of both: 275401
+Only in first: 0
+ only in second: 0
+ sum of both: 0
+
+ new:
+ number of events used: 275413
+number of tracks used: 404164
+old:
+number of intersect events so far: 275413
+number of tracks so far: 404164

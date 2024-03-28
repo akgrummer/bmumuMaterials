@@ -1,0 +1,70 @@
+
+B iso
+
+ACH (OOO) *_7_Chi2_5_LoosePt05
+BCI (POP) *_7_Chi2_5_noAbs_LooSiHi1Pt05
+BDI (PVP) *_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127
+BFJ (PVP) *_10_noChi2_LooSiHi1Pt05_T0004194304
+BEJ (PPP) *_10_noChi2_LooSiHi1Pt05_T0134217728
+BGJ (PPP) *_10_noChi2_LooSiHi1Pt05_T0008388608
+
+
+Close Track Variables
+ACK (OOO) 
+BCM (POV) *_T0000000035_LooSiHi1Pt05_corc2cnt
+BFM (PVV) *_T0004194304_LooSiHi1Pt05_corc2cnt
+BEL (PPP) *_T0134217728_LooSiHi1Pt05_f2dc2
+BGM (PPV) *_T0008388608_LooSiHi1Pt05_corc2cnt
+BGL (PPP) *_T0008388608_LooSiHi1Pt05_f2dc2
+
+
+
+
+
+
+
+Run 1
+As in 2015+2016
+Custom TVA Approx.
+Custom TVA Trk Perigee
+Loose TVA Approx
+Loose TVA
+
+            Run 1                   : hRun1                 closeTrkDOCA
+ACK (OOO)                                                   closeTrkDOCA
+BCM (POV)   As in 2015+2016         : h_1516                closeTrkDOCA_LooSiHi1Pt05_corc2cnt
+BFM (PVV)   Custom TVA Approx.      : h_customApprox        closeTrkDOCA_LooSiHi1Pt05_corc2cnt_custom
+BEL (PPP)   Custom TVA Trk Perigee  : h_customTrkPerigee    closeTrkDOCA_LooSiHi1Pt05_f2dc2_custom
+BGM (PPV)   Loose TVA Approx        : h_looseApprox         closeTrkDOCA_LooSiHi1Pt05_corc2cnt_loose
+BGL (PPP)   Loose TVA               : h_looseTrkPerigee     closeTrkDOCA_LooSiHi1Pt05_f2dc2_loose
+
+            Run 1                   : hRun1                 closeTrkNtrks_80
+ACK (OOO)                                                   closeTrkNtrks_80
+BCM (POV)   As in 2015+2016         : h_1516                closeTrkNtrksChi2_LooSiHi1Pt05_corc2cnt
+BFM (PVV)   Custom TVA Approx.      : h_customApprox        closeTrkNtrksChi2_LooSiHi1Pt05_corc2cnt_custom
+BEL (PPP)   Custom TVA Trk Perigee  : h_customTrkPerigee    closeTrkNtrksChi2_LooSiHi1Pt05_f2dc2_custom
+BGM (PPV)   Loose TVA Approx        : h_looseApprox         closeTrkNtrksChi2_LooSiHi1Pt05_corc2cnt_loose
+BGL (PPP)   Loose TVA               : h_looseTrkPerigee     closeTrkNtrksChi2_LooSiHi1Pt05_f2dc2_loose
+
+
+Run 1 Datasets
+As in 2015+2016
+As in Run 1
+Custom TVA Approx
+Custom TVA Trk Perigee
+Loose TVA
+
+           Run 1 Datasets          : hRun1              Run1iso
+ACH (OOO)  2015+2016 Default       : h2016data_Default  Bisolation
+BCI (POP)  As in 2015+2016         : h_1516             B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05
+BDI (PVP)  As in Run 1             : h_asRun1           B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127
+BFJ (PVP)  Custom TVA Approx       : h_custom_approx    B_iso_10_noChi2_LooSiHi1Pt05_T0004194304
+BEJ (PPP)  Custom TVA Trk Perigee  : h_customDerivation B_iso_10_noChi2_LooSiHi1Pt05_T0134217728
+BGJ (PPP)  Loose TVA               : h_looseDerivation  B_iso_10_noChi2_LooSiHi1Pt05_T0008388608
+
+
+
+
+
+
+

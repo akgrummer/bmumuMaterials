@@ -1,0 +1,75 @@
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/agrummer/139869284> on <b61ea1d5e7.cern.ch>
+
+Opening the cfg file /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/cfg/bdt2012final.cfg
+INFO: including variable: bpt
+INFO: including variable: blxy
+INFO: including variable: ctntrk
+INFO: including variable: d0mins
+INFO: including variable: d0maxs
+INFO: including variable: plng
+INFO: including variable: ch2pvsv
+INFO: including variable: pa
+INFO: including variable: dr
+INFO: including variable: iso
+INFO: including variable: dphi
+INFO: including variable: mdca
+INFO: including variable: bip
+INFO adding input variable: B_pT p_{T}^{B} MeV F
+INFO adding input variable: Lxy L_{xy} mm F
+INFO adding input variable: closeTrkNtrksChi2LoosePt05 N^{clos}_{trk}  I
+INFO adding input variable: TMath::Abs(d0Min_sig) |d_{0}|^{min} sig.  F
+INFO adding input variable: TMath::Abs(d0Max_sig) |d_{0}|^{max} sig.  F
+INFO adding input variable: PlngMin2D P^{min}_{L} MeV F
+INFO adding input variable: chi2_PVSV_log2D Log(#chi^{2}_{xy})  F
+INFO adding input variable: TMath::Abs(a_2D) |#alpha_{2D}| rad F
+INFO adding input variable: DR #DeltaR  F
+INFO adding input variable: B_iso_7_Chi2_5_LoosePt05 B Isolation (I^{B}_{0.7})  F
+INFO adding input variable: TMath::Abs(B_IDtrks_deltaPhi) |#Delta#phi_{#mu#mu}|  F
+INFO adding input variable: TMath::Abs(B_IDtrks_DCA) DOCA_{#mu#mu} mm F
+INFO adding input variable: Bvtx3DIP |IP_{B}^{3D}|  F
+
+SET FOLLOWING MVA TRAINING OPTIONS:  
+mymva.SIG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/mc15Bs.root
+mymva.BKG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskim.user.acampove.BPHY8_201709.NTUP.Data_Main_With_Delayed_Available_001_Bmumu_Blinded.root
+mymva.SIG_treeName: T_mv
+mymva.BKG_treeName: T_mv
+mymva.valSIG_inputFileName: 
+mymva.valBKG_inputFileName: 
+mymva.valSIG_treeName: 
+mymva.valBKG_treeName: 
+mymva.OUT_DIR: out
+mymva.OUT_FILE: bdt2016test_0.root
+mymva.factoryName: bdt2016test_0
+mymva.factory_prepareTrainingOpt: nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=EqualNumEvents:!V
+mymva.SIGweightexp: CombWeights
+mymva.BKGweightexp: CombWeights
+mymva.GradBDToptions: 
+mymva.AdaBDToptions: !H:!V:BoostType=AdaBoost:UseBaggedBoost:BaggedSampleFraction=0.6:SeparationType=GiniIndex:nCuts=100:DoBoostMonitor:MaxDepth=2:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500
+mymva.MLPoptions: 
+mymva.SVMoptions: 
+mymva.MyCutSignal: 
+mymva.MyCutBkgnd: 
+
+Retrieving tree branches ... 
+ * Initialise TMVA...
+DataSetInfo              : [out] : Added class "Signal"
+                         : Add Tree T_mv of type Signal with 166064 events
+DataSetInfo              : [out] : Added class "Background"
+                         : Add Tree T_mv of type Background with 1264864 events
+ * Prepare Training and Test Tree...
+ * Book AdaBDT Training Method...
+Factory                  : Booking method: [1mBDT[0m
+                         : 
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "closeTrkNtrksChi2LoosePt05"
+[37;41;1m<FATAL>                         : Expression closeTrkNtrksChi2LoosePt05 could not be resolved to a valid formula. [0m
+***> abort program execution
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  FATAL error
+/afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/job_0.sh: line 9:  8926 Aborted                 (core dumped) /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/bin/runMVA /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/cfg/bdt2012final.cfg :MaxDepth=2:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500 0
+
+Job finished at Wed Jan 31 12:47:05 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.9 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:05 KSI2K hours (5 KSI2K seconds)
+                 This process corresponds to     : 0:00:22 HS06  hours (22 HS06  seconds)

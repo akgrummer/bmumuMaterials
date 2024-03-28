@@ -1,0 +1,50 @@
+0%, time left: unknown
+6%, time left: 9 mins
+12%, time left: 8 mins
+19%, time left: 7 mins
+25%, time left: 7 mins
+31%, time left: 7 mins
+37%, time left: 6 mins
+44%, time left: 5 mins
+50%, time left: 5 mins
+56%, time left: 274 sec
+62%, time left: 249 sec
+69%, time left: 202 sec
+75%, time left: 159 sec
+81%, time left: 126 sec
+87%, time left: 82 sec
+94%, time left: 40 sec
+0%, time left: unknown
+7%, time left: 56 sec
+13%, time left: 51 sec
+19%, time left: 46 sec
+26%, time left: 42 sec
+32%, time left: 38 sec
+38%, time left: 35 sec
+44%, time left: 31 sec
+50%, time left: 27 sec
+56%, time left: 24 sec
+62%, time left: 20 sec
+68%, time left: 17 sec
+75%, time left: 13 sec
+81%, time left: 10 sec
+87%, time left: 6 sec
+93%, time left: 3 sec
+0%, time left: unknown
+6%, time left: 37 sec
+12%, time left: 35 sec
+18%, time left: 32 sec
+25%, time left: 30 sec
+31%, time left: 27 sec
+37%, time left: 25 sec
+43%, time left: 22 sec
+50%, time left: 20 sec
+56%, time left: 17 sec
+62%, time left: 15 sec
+68%, time left: 12 sec
+75%, time left: 9 sec
+81%, time left: 7 sec
+87%, time left: 4 sec
+93%, time left: 2 sec
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu/myMVA/out_MaxDepth4_MinNodeSize0.2_AdaBoostBeta0.5_NTrees500/KS.pdf has been created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu/myMVA/out_MaxDepth4_MinNodeSize0.2_AdaBoostBeta0.5_NTrees500/ROC.pdf has been created

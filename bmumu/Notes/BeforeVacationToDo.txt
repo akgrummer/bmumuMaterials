@@ -1,0 +1,7 @@
+Before vacation to-do list
+2018 Aug 15
+
+- I have not added a ratio plot to the log scale BDT variable plots.
+- I have not had a chance to look into the ROC log scale curves again to see what is happening under 18% sig. efficiency.
+- I should also check on the errors for the variable efficiency plots
+- I have kept the preliminary cut flow numbers in the note, but these will need to be looked into again.

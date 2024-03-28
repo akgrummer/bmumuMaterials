@@ -1,0 +1,18 @@
+Triggers:
+HLT_mu6_mu4_bBmumu_Lxy0_L1BPH-2M9-MU6MU4_BPH-0DR15-MU6MU4
+L1_BPH-2M9-MU6MU4_BPH-0DR15-MU6MU4
+
+A preliminary cut flow on the entiries for the 2018 run:
+
+Entries in original tree: 151111
+Entries in final tree: 25681
+
+Blind Cut:  53210
+
+Trigger Cut:  44361
+MuonTight Cut: 14701
+MuonKin Cuts:  1198
+BKin Cut:  0
+B_fitChi2NDF Cut:  4821
+Additional Cuts:  7139
+good run list Cut:  0

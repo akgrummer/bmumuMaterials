@@ -1,0 +1,15 @@
+Create Evaluation ROC curve.
+
+1. Apply xml weights to data - with addClassBDT_Run2.C (shared with group) or addClassBDT_2016.C (your original ie before sending to group) or addClassBDT.C run 1 version
+
+code is in /www/bmumu/Data
+
+2. Run KSTest_EvaluationStep.cpp on lxplus (set the Tag and vBDT for input and output file names - these match step 1 names). Don't need to set hyperparameters (could delete)
+in /www/bmumu/myMVA/Macros
+
+run with root -l -b -q
+
+could make a new folder in the bmumu/myMVAOut/EvalFolder/
+I have been using dates for folder names
+
+3. Run MultiROC_wRun1.C

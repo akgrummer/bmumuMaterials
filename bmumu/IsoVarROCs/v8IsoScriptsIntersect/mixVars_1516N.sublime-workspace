@@ -1,0 +1,2405 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dt_mc_",
+				"dt_mc_OnePeriod"
+			],
+			[
+				"TGrap",
+				"TGraphAsymmErrors"
+			],
+			[
+				"Int",
+				"Int_t"
+			],
+			[
+				"histP",
+				"histPred3"
+			],
+			[
+				"tree",
+				"treenames"
+			],
+			[
+				"i",
+				"i"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mixVars_1516N/Iso_MultiVar_TTVA_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 18098,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_1516N/OtherIso_MultiVar_TTVA_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 22007,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 8 files for \"closeTrkDOCA_comp\"\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_1516N/DOCA_MultiROCs_TTVA_v8_1516N.cpp:\n  136  ColorIndex = 1;\n  137  TGraph* grROC_DefaultNEW = Iso_ROCs(EvalTreeSig, EvalTreeBkg,\n  138:                               closeTrkDOCA_comp, CutAddSig_Default,\n  139:                               closeTrkDOCA_comp, CutAddBkg_Default,\n  140                                Weight_Default, ColorIndex);\n  141  \n  ...\n  152  ColorIndex = 3;\n  153  TGraph* grROC_DefaultOLD = Iso_ROCs(EvalTreeSig2, EvalTreeBkg2,\n  154:                               closeTrkDOCA_comp, CutAddSig_Default,\n  155:                               closeTrkDOCA_comp, CutAddBkg_Default,\n  156                                Weight_Default, ColorIndex);\n  157  \n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_1516N/DOCA_logAccept_ROCs_v8_1516N.cpp:\n  142  ColorIndex = 1;\n  143  TGraph* grROC_DefaultNEW = Iso_logAccept_ROCs(EvalTreeSig, EvalTreeBkg,\n  144:                               closeTrkDOCA_comp, CutAddSig_Default,\n  145:                               closeTrkDOCA_comp, CutAddBkg_Default,\n  146                                Weight_Default, ColorIndex);\n  147  \n  ...\n  158  ColorIndex = 3;\n  159  TGraph* grROC_DefaultOLD = Iso_logAccept_ROCs(EvalTreeSig2, EvalTreeBkg2,\n  160:                               closeTrkDOCA_comp, CutAddSig_Default,\n  161:                               closeTrkDOCA_comp, CutAddBkg_Default,\n  162                                Weight_Default, ColorIndex);\n  163  \n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_1516N/OtherIso_MultiVar_TTVA_v8_1516N.cpp:\n  226  h_1516 = RetrieveHist(DirName, theYear, DataType, closeTrkDOCA_LooSiHi1Pt05_corc2cnt, ColorIndex, FileDate, myPileup);\n  227  ColorIndex = 1;\n  228: h_DefaultNEW = RetrieveHist(DirName, theYear, DataType, closeTrkDOCA_comp, ColorIndex, FileDate, myPileup);\n  229  DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n  230  ColorIndex = 3;\n  231  h_DefaultOLD = RetrieveHist(DirName, theYear, DataType, \n  232:     closeTrkDOCA_comp, ColorIndex, \"2019Dec5\", myPileup);\n  233  }\n  234  //\n\n10 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 2221,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "mixVars_1516N/Iso_MultiROCs_TTVA_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 16980,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_1516N/Iso_MultiROCs_TTVA_logAccept_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 17101,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_1516N/DOCA_MultiROCs_TTVA_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 13674,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_1516N/DOCA_logAccept_ROCs_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 14172,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_1516N/NcloseTracks_MultiROCs_TTVA_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 14651,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_1516N/NcloseTracks_logAccept_ROCs_v8_1516N.cpp",
+			"settings":
+			{
+				"buffer_size": 14626,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"LuaLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Add Channel"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"PackageRe",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"PackageResource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package control ",
+				"Package Control: Install Package"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"clang form",
+				"Clang Format: Format Selection"
+			],
+			[
+				"instal pag",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Install Package Control"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/mixVars_1516N"
+	],
+	"file_history":
+	[
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/DOCA_logAccept_ROCs_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/Iso_MultiROCs_TTVA_logAccept_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/NcloseTracks_MultiROCs_TTVA_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/DOCA_MultiROCs_TTVA_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/Iso_MultiROCs_TTVA_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/Iso_MultiVar_TTVA_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/OtherIso_MultiVar_TTVA_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/NcloseTracks_logAccept_ROCs_v8_1516N.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/AnalysisTools/SkimmingMacros/download_v6ntuples.txt",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/DOCA_logAccept_ROCs_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/Iso_MultiROCs_TTVA_logAccept_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/NcloseTracks_MultiROCs_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/DOCA_MultiROCs_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/Iso_MultiROCs_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/Iso_MultiVar_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/OtherIso_MultiVar_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/NcloseTracks_logAccept_ROCs_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/OtherIso_MultiVar_TTVA_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/IsoVarROCs_v8_newVars.sublime-workspace",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Notes_v4_PU.txt",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v4_PU.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/OtherIso_MultiVar_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v3_PU.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_Tracks.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_ROCs.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/MultiROCcomp.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/KStest_ROCbdt.cpp",
+		"/Users/agrummer/Desktop/LeakageMaterial/LeakagePaper/LeakageCurrentPUBnote/LeakageCurrent.tex",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/atlasLabel.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_logAccept_ROCs.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_logAccept_ROCs_Reverse.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_ROCs_Module_Reverse.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_ROCs_Module.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_logAccept_ROCs_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_logAccept_ROCs_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_logAccept_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_MultiROCs_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_MultiROCs_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_v3.cpp",
+		"/Users/agrummer/Desktop/LeakageCurrent.sublime-workspace",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_logAccept_ROCs_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_logAccept_ROCs_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_logAccept_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_MultiROCs_TTVA_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_MultiROCs_TTVA_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_MultiROCs_TTVA.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/MultiROCcompAccept.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v3.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v4_Efficiencies.C",
+		"/Users/agrummer/Desktop/Bmumu/Meetings/UnblindingMeeting_2018Aug9.txt",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/KSTest_EvalMerged.cpp",
+		"/Users/agrummer/Desktop/LeakageMaterial/LeakagePaper/LeakageCurrentPUBnote/LeakageCurrent.bib",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v3_Efficiencies.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunInputVars_3bkgSamples.sh",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_3bkgSamples.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunInputVars_v3.sh",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/AtlasLabels.C",
+		"/Users/agrummer/Desktop/LeakageMaterial/LeakagePaper/LeakageCurrentPUBnote/LeakageCurrent-metadata.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RawHistogram.C",
+		"/Users/agrummer/cernbox/www/bmumu/B_MUCALC_mass.pdf",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v2_Efficiencies.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/PythonImportance/Variables_2.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunInputVars_v2.sh",
+		"/Users/agrummer/Desktop/Bmumu/Presentations/May25/Grummer_continuumMVABDTcutStudyEfficiencies.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/MultiROC_PileUpSepTrain.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/AtlasStyle.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/MultiROC.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/PythonImportance/ExtractImpAndSep.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunTMVAranking.sh",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/TMVARankingTable_v3.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunPythonImportance.sh",
+		"/Users/agrummer/Desktop/Macros.sublime-workspace",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RangeOfGridSearch.txt",
+		"/Users/agrummer/cernbox/www/bmumu/myMVAOut/MVApresentations/May2/Grummer_continuumMVA.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/appliedWeightsPlots.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/KSTestFeb7.C",
+		"/Users/agrummer/Desktop/Bmumu/Macros/TMVARankingTable.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/MultiROC.C",
+		"/Users/agrummer/Desktop/Bmumu/Macros/KSTestFeb7.C",
+		"/Users/agrummer/Desktop/Bmumu/Macros/PythonImportance/ExtractImpAndSep.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/PythonImportance/Variables_2.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/MVApresentations/Mar14/Grummer_continuumMVA.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/MVApresentations/Grummer_continuumMVA.tex",
+		"/Users/agrummer/Desktop/Bmumu/Macros/pyRootTest_v4.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/pyRootTest3.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/pyRootTest2.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/PythonImportance/OutputTable.tex",
+		"/Users/agrummer/Desktop/Bmumu/Macros/KStestaidn.png",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Mar1/Grummer_CoarseComparisonsNoWeights.pdf",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb26/Grummer_CoarseComparisons.tex",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/GainCalc/MakeATGraph.C",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb26/Test.tex",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/src/mvaInterface_LinkDef.h",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/inc/variables.h",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/inc/mvaInterface.h",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/README.md",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/bin/runMVA",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/addWeights.C",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/dmcbbmumuX.h",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/dmcbbmumuX.C",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/RunNumberCheck.py",
+		"/Users/agrummer/cernbox/www/bmumu/SkimmingFeb2018/cutBatchBsmumu.cxx",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisonsBeforeFeb2018/NotesComparisons/RunLastSkimming.txt",
+		"/Users/agrummer/cernbox/www/bmumu/MCDataComparisons/AnalysisCode/README.md",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb16/OutputToSlides.tex",
+		"/Users/agrummer/Desktop/Currents/LeakageCurrentFigures.tex",
+		"/Users/agrummer/Desktop/Test.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_Eta_v5.C",
+		"/Users/agrummer/Desktop/Currents/DamageFactors/FluenceDamageValues.C",
+		"/Users/agrummer/Desktop/Currents/LeakageMeasurements_v21.py",
+		"/Users/agrummer/Desktop/CodingNotes/CommandLineNotes.txt",
+		"/Users/agrummer/Desktop/Currents/ModuleLists.py",
+		"/Users/agrummer/Desktop/Currents/ModuleListsDisk.py",
+		"/Users/agrummer/Desktop/CodingNotes/SublimeText/SublimeMerge.txt",
+		"/Users/agrummer/Desktop/LeakageCurrent/GetCMBData/GetAllDisk.py",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/CombineTextFilesAll.py",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_v4_Eta_Profile.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v4.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v4_Disk.C",
+		"/Users/agrummer/Desktop/Currents/ModuleNamesLayerOne.py",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_v4_Eta.C"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 194.0,
+		"where_history":
+		[
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"closeTrkDOCA_comp",
+			"v2/",
+			"v1/",
+			"B_iso_7_Chi2_5_LooSiHi1Pt05",
+			"B_iso_7_Chi2_5_LooSiHi1Pt05_T0000000127",
+			"B_iso_7_Chi2_5_LooSiHi1Pt05",
+			"xmin",
+			"limit",
+			"range",
+			"set",
+			"setrange",
+			"xmax",
+			"B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127",
+			"B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000035",
+			"_201516",
+			"B_iso_7_Chi2_5_LooSiHi1Pt05",
+			"B_iso_7_Chi2_5_LooSiHi1Pt05_T0000000127",
+			"        hres->SetMaximum(1.1);   // along          \n        hres->SetMinimum(0.9);  //   Y \n",
+			"DirNameSig",
+			"        hres->SetMaximum(1.1);   // along          \n        hres->SetMinimum(0.9);  //   Y \n",
+			"    pad1 = new TPad(\"pad1\",\"pad1\",0,0.33,1,1); //xlow ylow xup yup\n    pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.3); //0.3\n    bool drawResiduals(true);\n    if (drawResiduals) {\n        pad1->SetMargin(0.16,0.05,0.028,0.09);//left, right, bottom, top\n        // pad1->SetMargin(0.12,0.05,0.028,0.09);\n        pad1->SetBorderMode(0);\n        pad1->SetLogy();\n        pad2->SetMargin(0.16,0.05,0.38,0.04);\n",
+			"pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.33);",
+			"        hres->SetMaximum(1.000001);   // along          \n        hres->SetMinimum(0.999999);  //   Y \n",
+			"h_DefaultNEW",
+			"leg2->Draw();\n\nTString OutdirName",
+			"TCanvas* c2 = new TCanvas(\"c2\", \"Var Comps\",0.,0., 800, 600);\n    TPad *pad1, *pad2;\n    pad1 = new TPad(\"pad1\",\"pad1\",0,0,1,1); //xlow ylow xup yup\n    // pad2 = new TPad(\"pad2\",\"pad2\",0,0,0,0); //0.3\n    pad1->SetLogy();\n    pad1->SetMargin(0.16,0.05,0.16,0.09);\n    pad1->Draw();\n    pad1->cd();",
+			"closeTrkDOCA",
+			", closeTrkDOCA,",
+			"closeTrkDOCA,",
+			"closeTrkDOCA",
+			"theRunNumber",
+			"header",
+			"closeTrkDOCA_3",
+			"closeTrkDOCA",
+			"SetMarkerSytle",
+			"stlye",
+			"\nfilenameSig = DirNameSig",
+			"\n filenameSig = DirNameSig",
+			"DirNameSig",
+			"draw",
+			"drww",
+			"leg2->Add",
+			"varTag = ",
+			"ots(\"2016main303846\"",
+			"(DataType.EqualTo(\"mc\"))",
+			"(theYear.Contains(\"MC\"))",
+			"makePlots",
+			"filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";",
+			"TString DirName(\"\"), DirName2(\"\"); \nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \nDirName2 = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n",
+			"TString DirName(\"\"); \nif (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nTString ",
+			"TString DirName(\"\"); \nif (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nTString",
+			"TString DirName(\"\"); \nif (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}",
+			"../Iso_",
+			"./Iso_",
+			"#include \"../Iso_MultiROCs.h\"\n#include \"../getHistoFromTree.C\"",
+			"DirName = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";\nColorIndex",
+			"DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}",
+			"TString DirName = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";",
+			"All/",
+			"ROC_2020Feb19_v8_mixVars_1516N",
+			"VarComps2020Feb19_VarBinned_v8_mixVars_1516N",
+			"grROC_DefaultOLD",
+			"Year.EqualTo(\"2016main303846\")",
+			"c7",
+			"old nTuple\"",
+			"new nTuple\"",
+			"new nTuple",
+			"nTuple",
+			"if (!myPileup.EqualTo(\"high\"))",
+			"grROC_all_c5OLD",
+			"As in 2015+2016 old nTuple, default",
+			"As in 2015+2016 new nTuple, default",
+			"h_1516",
+			"h_all_c5OLD",
+			"_mixVars_1516",
+			"_v8_1516"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"v3/",
+			"B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05",
+			"B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127",
+			"B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05",
+			"B_iso_7_Chi2_5_LooSiHi1Pt05_T0000000127",
+			"B_iso_7_Chi2_5_LooSiHi1Pt05",
+			"_corc2cnt",
+			"B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000035",
+			"B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127",
+			"        hres->SetMaximum(1.001);   // along          \n        hres->SetMinimum(0.999);  //   Y \n",
+			"        hres->SetMaximum(1.1);   // along          \n        hres->SetMinimum(0.9);  //   Y \n",
+			"    pad1 = new TPad(\"pad1\",\"pad1\",0,0.33,1,1); //xlow ylow xup yup\n    pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.32); //0.3\n    bool drawResiduals(true);\n    if (drawResiduals) {\n        pad1->SetMargin(0.16,0.05,0.032,0.09);//left, right, bottom, top\n        // pad1->SetMargin(0.12,0.05,0.028,0.09);\n        pad1->SetBorderMode(0);\n        pad1->SetLogy();\n        pad2->SetMargin(0.16,0.05,0.38,0.03);\n",
+			"pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.3);",
+			"        hres->SetMaximum(1.1);   // along          \n        hres->SetMinimum(0.9);  //   Y \n",
+			"leg2->Draw();\n\n    TH1F *hres(NULL);\n    if (drawResiduals) {\n        pad2->cd();\n        hres = (TH1F*)h_DefaultNEW->Clone(\"hres\");\n        hres->Sumw2();\n        hres->Divide(h_DefaultNEW,h_1516,1.0,1.0);\n        hres->GetXaxis()->SetRangeUser(xmin, xmax);\n        hres->SetMaximum(1.000001);   // along          \n        hres->SetMinimum(0.999999);  //   Y \n        hres->SetMarkerSize(0.7);\n        hres->GetXaxis()->SetTitleOffset(1.0); //0.95\n        hres->GetXaxis()->SetTitleSize(0.17);\n        hres->GetXaxis()->SetLabelSize(0.14); //0.17 0.1\n        hres->GetYaxis()->SetTitleSize(0.17);\n        hres->GetYaxis()->SetTitleOffset(0.47); //0.26\n        hres->GetYaxis()->SetLabelSize(0.1);//0.17 //0.08\n        hres->GetYaxis()->SetNdivisions(4,3,0); //4,5,0\n\n        hres->GetYaxis()->SetTitle(\"Ratio\");\n        // hres->GetXaxis()->SetTitle(Xtitle);\n        hres->SetMarkerColor(1);\n        hres->SetLineColor(1);\n        hres->Draw(\"e0p same\");\n    }\n\n\nTString OutdirName",
+			"TCanvas* c2 = new TCanvas(\"c2\", \"Var Comps\",0.,0., 800, 600);\n    TPad *pad1, *pad2;\n    pad1 = new TPad(\"pad1\",\"pad1\",0,0.33,1,1); //xlow ylow xup yup\n    pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.33); //0.3\n    bool drawResiduals(true);\n    if (drawResiduals) {\n        pad1->SetMargin(0.16,0.05,0.028,0.09);//left, right, bottom, top\n        // pad1->SetMargin(0.12,0.05,0.028,0.09);\n        pad1->SetBorderMode(0);\n        pad1->SetLogy();\n        pad2->SetMargin(0.16,0.05,0.38,0.04);\n        // pad2->SetMargin(0.12,0.05,0.38,0.06);\n        pad2->SetBorderMode(0);\n        pad1->Draw();\n        pad2->Draw();\n        pad1->cd();\n    }\n    h_DefaultNEW->GetYaxis()->SetNdivisions(4,5,0); //4,5,0\n    h_DefaultNEW->GetXaxis()->SetLabelOffset(0.028);\n    h_DefaultNEW->GetYaxis()->SetTitleSize(0.08);\n    h_DefaultNEW->GetYaxis()->SetTitleOffset(0.9);\n    h_DefaultNEW->GetYaxis()->SetLabelSize(0.08);\n",
+			"TCanvas* c2 = new TCanvas(\"c2\", \"Var Comps\",0.,0., 800, 600);\n    TPad *pad1, *pad2;\n    pad1 = new TPad(\"pad1\",\"pad1\",0,0.33,1,1); //xlow ylow xup yup\n    pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.33); //0.3\n    bool drawResiduals(true);\n    if (drawResiduals) {\n        pad1->SetMargin(0.16,0.05,0.028,0.09);//left, right, bottom, top\n        // pad1->SetMargin(0.12,0.05,0.028,0.09);\n        pad1->SetBorderMode(0);\n        pad1->SetLogy();\n        pad2->SetMargin(0.16,0.05,0.38,0.04);\n        // pad2->SetMargin(0.12,0.05,0.38,0.06);\n        pad2->SetBorderMode(0);\n        pad1->Draw();\n        pad2->Draw();\n        pad1->cd();\n    }\n",
+			"closeTrkDOCA",
+			"(DataType.EqualTo(\"mc\"))",
+			"filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";",
+			"TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \nDirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \nDirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \nDirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n",
+			"TString DirName(\"\"), DirName2(\"\"); \nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n",
+			"TString DirName(\"\"), DirName2(\"\"); \nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";",
+			"TString DirName(\"\"), DirName2(\"\"); \nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";\n",
+			"TString DirName(\"\"),TString DirName2(\"\"); \nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";\n",
+			"DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";",
+			"/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/Iso_",
+			"#include \"/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/v8IsoScripts/Iso_MultiROCs.h\"\n#include \"/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/v8IsoScripts/getHistoFromTree.C\"",
+			"if (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nColorIndex",
+			"DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}",
+			"TString DirName(\"\"); \nif (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}",
+			"Allcommon/",
+			"ROC_2020Mar6_v8_mixVars_1516Ni",
+			"VarComps2020Mar6_VarBinned_v8_mixVars_1516Ni",
+			"old nTuple, derivation\"",
+			"new nTuple, derivation\"",
+			"_mixVars_1516N",
+			"_v8_1516N"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/mixVars_1516N"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mixVars_1516N/Iso_MultiVar_TTVA_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12690,
+								12690
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6697,
+										6698
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										6674,
+										6675
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										12714,
+										12715
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										12686,
+										12687
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mixVars_1516N/OtherIso_MultiVar_TTVA_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8077,
+								8094
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										17748,
+										17749
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										17733,
+										17734
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										8126,
+										8127
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										8048,
+										8049
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2221,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										287,
+										304
+									],
+									[
+										362,
+										379
+									],
+									[
+										611,
+										628
+									],
+									[
+										686,
+										703
+									],
+									[
+										1053,
+										1070
+									],
+									[
+										1128,
+										1145
+									],
+									[
+										1387,
+										1404
+									],
+									[
+										1462,
+										1479
+									],
+									[
+										1905,
+										1922
+									],
+									[
+										2121,
+										2138
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										2182,
+										2183
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"default_dir": "/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_1516N",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 178.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "mixVars_1516N/Iso_MultiROCs_TTVA_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6293,
+								6319
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										16565,
+										16566
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										15378,
+										15379
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "mixVars_1516N/Iso_MultiROCs_TTVA_logAccept_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "mixVars_1516N/DOCA_MultiROCs_TTVA_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7768,
+								7768
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										9747,
+										9748
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										9710,
+										9711
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										7845,
+										7846
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										7624,
+										7625
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 147.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "mixVars_1516N/DOCA_logAccept_ROCs_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8213,
+								8225
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										8307,
+										8308
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										8086,
+										8087
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "mixVars_1516N/NcloseTracks_MultiROCs_TTVA_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1280,
+								1386
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										860,
+										861
+									]
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										860,
+										861
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "mixVars_1516N/NcloseTracks_logAccept_ROCs_v8_1516N.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1400,
+								1400
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										943,
+										944
+									]
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										943,
+										944
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.717539180079,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 41.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 113.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/root.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"kstestfe",
+				"Macros/KSTestFeb7.C"
+			],
+			[
+				"",
+				"AnalysisCode/MCvsData/bbmumuX/AtlasLabels.C"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$(DLLFILE):"
+			]
+		],
+		"width": 574.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

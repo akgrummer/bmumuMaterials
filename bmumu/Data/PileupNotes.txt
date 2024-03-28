@@ -1,0 +1,140 @@
+Pileup eval and training with QLC+DDW notes - and how many events are in each file
+
+Eval MC Set:
+"/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/SignalMC/LASTskim.MC16Bs_CombWeights_DOCAlt500_EvalSet.root"
+
+Processing SeparatePileUpSets.C("1")...
+Splitting Data on Pile Up
+Entries in input tree: 41933
+Entries in new tree: 13115
+Entries Cut: 28818
+
+Processing SeparatePileUpSets.C("2")...
+Splitting Data on Pile Up
+0 of 41933
+Entries in input tree: 41933
+Entries in new tree: 13887
+Entries Cut: 28046
+
+Processing SeparatePileUpSets.C("3")...
+Splitting Data on Pile Up
+30000 of 41933
+Entries in input tree: 41933
+Entries in new tree: 14931
+Entries Cut: 27002
+
+
+
+
+Training MC set:
+"/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/SignalMC/LASTskim.MC16Bs_CombWeights_DOCAlt500_TrainTestSet.root"
+
+Processing SeparatePileUpSets.C("1")...
+Splitting Data on Pile Up
+120000 of 126055
+Entries in input tree: 126055
+Entries in new tree: 39325
+Entries Cut: 86730
+
+
+Processing SeparatePileUpSets.C("2")...
+Splitting Data on Pile Up
+0 of 126055
+30000 of 126055
+90000 of 126055
+Entries in input tree: 126055
+Entries in new tree: 41968
+Entries Cut: 84087
+
+Processing SeparatePileUpSets.C("3")...
+Splitting Data on Pile Up
+60000 of 126055
+Entries in input tree: 126055
+Entries in new tree: 44762
+Entries Cut: 81293
+
+
+bbmumuX MC:
+"/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LastSkimGBR4_Mar26/LASTskim.bbmumuX2Bsmumu_combinatorial_GBRweight_DOCAlt500.root"
+
+
+Processing SeparatePileUpSets.C("1")...
+Splitting Data on Pile Up
+120000 of 1804160
+150000 of 1804160
+270000 of 1804160
+360000 of 1804160
+480000 of 1804160
+510000 of 1804160
+810000 of 1804160
+900000 of 1804160
+1140000 of 1804160
+1200000 of 1804160
+1230000 of 1804160
+1320000 of 1804160
+1410000 of 1804160
+1530000 of 1804160
+1560000 of 1804160
+1590000 of 1804160
+1740000 of 1804160
+1800000 of 1804160
+Entries in input tree: 1804160
+Entries in new tree: 564283
+Entries Cut: 1239877
+
+
+Processing SeparatePileUpSets.C("2")...
+Splitting Data on Pile Up
+60000 of 1804160
+90000 of 1804160
+180000 of 1804160
+300000 of 1804160
+330000 of 1804160
+390000 of 1804160
+450000 of 1804160
+570000 of 1804160
+690000 of 1804160
+720000 of 1804160
+750000 of 1804160
+780000 of 1804160
+990000 of 1804160
+1050000 of 1804160
+1080000 of 1804160
+1170000 of 1804160
+1290000 of 1804160
+1620000 of 1804160
+1650000 of 1804160
+1680000 of 1804160
+1770000 of 1804160
+Entries in input tree: 1804160
+Entries in new tree: 601502
+Entries Cut: 1202658
+
+
+Processing SeparatePileUpSets.C("3")...
+Splitting Data on Pile Up
+0 of 1804160
+30000 of 1804160
+210000 of 1804160
+240000 of 1804160
+420000 of 1804160
+540000 of 1804160
+600000 of 1804160
+630000 of 1804160
+660000 of 1804160
+840000 of 1804160
+870000 of 1804160
+930000 of 1804160
+960000 of 1804160
+1020000 of 1804160
+1110000 of 1804160
+1260000 of 1804160
+1350000 of 1804160
+1380000 of 1804160
+1440000 of 1804160
+1470000 of 1804160
+1500000 of 1804160
+1710000 of 1804160
+Entries in input tree: 1804160
+Entries in new tree: 638375
+Entries Cut: 1165785

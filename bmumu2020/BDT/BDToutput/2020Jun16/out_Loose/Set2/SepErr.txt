@@ -1,0 +1,20 @@
+Latexmk: This is Latexmk, John Collins, 26 Dec. 2019, version: 4.67.
+Rule 'lualatex': The following rules & subrules became out-of-date:
+      'lualatex'
+------------
+Run number 1 of rule 'lualatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Loose/Set2/Separation.tex"'
+------------
+Latexmk: Log file says output to 'Separation.pdf'
+Rule 'lualatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'Separation.aux'
+------------
+Run number 2 of rule 'lualatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Loose/Set2/Separation.tex"'
+------------
+Latexmk: Log file says output to 'Separation.pdf'

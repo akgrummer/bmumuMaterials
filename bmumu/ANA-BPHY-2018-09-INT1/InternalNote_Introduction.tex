@@ -1,0 +1,74 @@
+\section{Introduction}
+\label{sec:Introduction}
+
+This document is the supporting note for the \Bmumu\ analysis
+of the 2015+2016 part of the Run 2 dataset.
+The aim is to obtain a first intermediate Run 2 ATLAS result on the $B_{s} \to \mu \mu$ and $B \to \mu \mu$ final states.
+
+The strategy for this updated analysis is mostly following what adopted for the
+complete run 1 version, focusing on the possibility of a measurement
+of the $B_{s} \to \mu \mu$ branching fraction and taking advantage of the Run 2 statistics
+available in this first Run 2 iteration.
+Wherever possible the approach will be simplified in favor of a leaner analysis,
+leaving -- within reason -- the ultimate exploitation of the sample sensitivity to for the full Run 2 dataset study.
+The trigger and muon quality selections -- for instance -- are simplified with little loss in statistical power
+and background rejection, but with a much simpler analysis strategy.
+
+Theoretical prediction on the $\Bmumu$ branching ratios are
+$\BR(\Bsmumu) = (3.65 \pm 0.23) \times 10^{-9}$ and
+$\BR(\Bdmumu) = (1.06 \pm 0.09) \times 10^{-10}$~\cite{Bobeth:2013uxa}.
+CMS and LHCb have a combined Run 1 result \cite{Aaij:2017vad,CMS:2014xfa} showing a >5$\sigma$ effect for the $B_{s} \to \mu \mu$ final state giving
+an average branching ratio of $(2.8^{+0.7}_{-0.6}) \times 10^{-9}$,
+and >3$\sigma$ evidence for $\Bdmumu$ with a central BR value of $3.6^{+1.6}_{-1.4} \times 10^{-10}$.
+ATLAS has limited trigger efficiency and mass resolution, resulting
+in a degraded sensitivity to these decays.~\footnote{We performed
+  tests showing the detailed breakdown of the mass resolution and signal statistics contributions
+  to the analysis, reported later in section \ref{sec:BranchingRatio}.}
+The combined Run 1 ATLAS result shows a sensitivity comparable to expectations,
+with a measured $\Bsmumu$ BR of $0.9^{+1.1}_{-0.8} \times 10^{-9}$ and an upper bound
+on $\Bdmumu$ of $4.2 \times 10^{-10}$ at $95\%$ CL.
+In order to exploit at best ATLAS data, we updated the analysis re-optimising the background
+rejection and the BR extraction methodology.
+
+The main idea guiding this analysis is to increase the sensitivity
+to the signal by using a mass fit on the widest possible
+set of events, and improve the $\Bdmumu/\Bsmumu$ correlation with
+a better exploitation of the signal subsample with the smallest mass resolution.
+ A loose selection will be applied to retain
+a maximum of signal events, and the final fit will distinguish
+between signal and the various backgrounds, as well as different resolution components
+within the signal sample.
+Finally the peaking background will be a major contributor under
+the signal peaks, differing from dimuonic decays only through muon identification.
+The improved Run 2 muon reconstruction allows this iteration of the analysis to rely
+on standard MCP categories for the separation of $\Bhh$ from $\Bmumu$.
+
+In this note, we refer mainly to the internal documentation on the previous
+analysis on the full Run 1 dataset~\cite{Alpigiani:1756291,Aaboud:2016ire},
+on the full 2011 data set~\cite{bsmumuv2} and the studies carried out for the first ATLAS analysis
+in this mode~\cite{Aad:2012pn}. %and contained in the relative internal note \cite{bsmumuv1}.
+
+The reference formula for the branching ratio measurement is similar to the
+one previously used in~\cite{Aad:2012pn}:
+
+\begin{eqnarray}
+  \hbox{\hspace{-1cm}} \BR (\Bmumu)=&
+  \hbox{\hspace{-3mm}}\BR (\BpmKpmJpsi\! \to \mumu K^\pm)\times
+  \frac{f_{u}}{f_{s}}\times N_{\mumu}\times \left( N_{J/\psi K^\pm} \theInvRhok \right)^{-1}\, ,\label{eq:BRFormula}
+\end{eqnarray}
+
+and simplified with respect to the final Run 1 analysis thanks to the fact that we employ one single
+trigger category encompassing $\sim 80-85\%$ of the signal for the 2015+2016 Run 2 dataset.\\
+While the branching ratio $BR (\BpmKpmJpsi\! \to \mumu K^\pm)$ and the relative $B_u/B_d$ production
+fraction $\frac{f_{u}}{f_{s}}$ are derived from other experimental results, a good fraction of this
+document is devoted to the derivation of the remaining ingredients to this formula and their uncertainties.\\
+The measured $\BpKpJpsi$ yield $N_{J/\psi K^\pm}$ will be derived in section \ref{sec:BPlusYield}, while
+the relative efficiencies and acceptances of $\Bmumu$ and $\BpKpJpsi$ will be extracted in \ref{sec:EfficiencyAndAcceptance}.
+The $\Bmumu$ yield will be derived from invariant mass distribution fits in section \ref{sec:SignalFit}, implementing
+the selections optimized in sections \ref{sec:MuonFakes}, \ref{sec:ContinuumBDT} and \ref{sec:CutFlow}.\\
+Given these ingredients, the branching ratio to the left of the reference formula above will be derived in
+section \ref{sec:BranchingRatio}, where relevant systematic effects will be propagated as well.
+Dedicated sections will discuss the tuning of Montecarlo samples \ref{sec:MCTuning}, the data-driven \ref{sec:DataMCComparison} extrapolation of
+MC models to the signal region \ref{sec:BackgroundModeling}.
+
+\clearpage

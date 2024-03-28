@@ -1,0 +1,29 @@
+-bash-4.2$ root -l -q 'addClassBDT_2020_groupVersion.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/testfile/LASTskim.user.mghneima.21225124.Bmumu._000073.root")'
+
+Processing addClassBDT_2020_groupVersion.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/testfile/LASTskim.user.mghneima.21225124.Bmumu._000073.root")...
+Will apply BDT weights to file: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/testfile/LASTskim.user.mghneima.21225124.Bmumu._000073.root
+Use BDT weight files: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set1/weights/bdt2020_BDT.weights.xml with training method: bdt2020_BDT_eval1
+Use BDT weight files: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set2/weights/bdt2020_BDT.weights.xml with training method: bdt2020_BDT_eval2
+Use BDT weight files: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set3/weights/bdt2020_BDT.weights.xml with training method: bdt2020_BDT_eval3
+
+==> Start TMVAClassificationApplication
+--- Create the Reader object
+                         : Booking "bdt2020_BDT_eval1" of type "BDT" from /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set1/weights/bdt2020_BDT.weights.xml.
+                         : Reading weight file: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set1/weights/bdt2020_BDT.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT" of type: "BDT"
+                         : Booking "bdt2020_BDT_eval2" of type "BDT" from /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set2/weights/bdt2020_BDT.weights.xml.
+                         : Reading weight file: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set2/weights/bdt2020_BDT.weights.xml
+                         : Booked classifier "BDT" of type: "BDT"
+                         : Booking "bdt2020_BDT_eval3" of type "BDT" from /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set3/weights/bdt2020_BDT.weights.xml.
+                         : Reading weight file: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BDT2020/out_Custom/Set3/weights/bdt2020_BDT.weights.xml
+                         : Booked classifier "BDT" of type: "BDT"
+--- TMVAClassificationApp    : Using input file: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/testfile/LASTskim.user.mghneima.21225124.Bmumu._000073.root
+--- Select signal sample
+Error in <TTree::SetBranchStatus>: unknown branch -> closeTrkDOCA_T0134217728_LooSiHi1Pt05_f2dc2
+Error in <TTree::SetBranchAddress>: unknown branch -> closeTrkDOCA_T0134217728_LooSiHi1Pt05_f2dc2
+--- Processing: 3508 events
+--- ... Processing event: 0
+--- End of event loop: Real time 0:00:00, CP time 0.280
+==> TMVAClassificationApplication for the file /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/testfile/LASTskim.user.mghneima.21225124.Bmumu._000073.root is done!

@@ -1,0 +1,57 @@
+Notes_v5_PU.txt
+
+version 4 makes 4 plots (one for each pileup bin)
+4 plots for variable comparisons
+4 plots for ROC curves
+each plot has 5 variables
+
+new version (v5):
+for B Iso:
+5 plots (for each Var), each with 4 PU bins
+for DOCA:
+4 plots (for each Var, no <2 options), each with 4 PU bins
+for NcloseTracks:
+6 plots, each with 4 PU bins
+
+with subplot of ratios
+
+ROCs for the same 
+
+Efficiency versus variable plots
+-----------
+BDT efficiency plots - all, better axis limits
+BDT efficiency plots - linear scale, axis limits
+
+Efficiency (I > 0.8) versus pileup
+-----------
+
+Outstanding:
+efficiency versus variable
+ROCs pileup dependence
+Fix axis limits but for old variable comps and old ROC comps
+
+
+
+
+
+
+2019 Nov 21
+
+version 6 was copied from version 5 and is incomplete
+
+created version 7 based on version 4:
+makes 4 plots
+4 plots for variable comparisons
+4 plots for ROC curves
+each plot has 5 variables
+
+new comparisons include loose TVA and fewer variables (that were not selected during group approval)
+
+
+2019 Dec 5
+add a comparison with a z0 error update
+use 
+rsync -avz --exclude="*.pdf" ROC_2019Nov21_v7/ ROC_2019Dec5_v7 
+(for same color comparison)
+rsync -avz --exclude="*.pdf" ROC_2019Nov21_v7/ ROC_2019Nov21_v7_2
+changed dates, input data set version number, 

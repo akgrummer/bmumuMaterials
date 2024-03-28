@@ -1,0 +1,36 @@
+%CMD+l lift then press j - sync to pdf on skim
+%on skim CMD-Shift click - sync back to ST (sublime text)
+%build latex with CMD+b
+%CMD+l lift then press delete - remove aux files from folder!!
+%Installed LaTexTools and LaTex-clw for autocomplete
+
+\documentclass[12pt]{article} %[12pt]
+%compile using LuaLaTex from drop down menu
+% comment multiple lines using \iffalse *multiple lines of text*  \fi
+\usepackage{tikz}
+\usepackage{tikz-feynman}
+\tikzfeynmanset{compat=1.0.0}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+%\usepackage{atlasphysics}
+%Bibliography preamble
+\usepackage[numbers,sort&compress]{natbib}
+%geometry of margins
+\usepackage[left=1in,right=1in,top=1in,bottom=0.5in]{geometry}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+
+\newcommand*{\TitleFont}{%
+      %\usefont{\encodingdefault}{\rmdefault}{b}{n}%
+      \fontsize{16}{20}%
+      \selectfont}
+%\date{December 15, 2016}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}

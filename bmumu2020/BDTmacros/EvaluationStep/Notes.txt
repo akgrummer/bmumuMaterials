@@ -1,0 +1,124 @@
+Evaluation step Notes
+
+find the original files here:
+/Users/agrummer/cernbox/www/bmumu/Data/addClassBDT_Run2_v2.cpp
+
+and 
+/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/KSTest_EvaluationStepLog.C
+or 
+/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/KSTest_EvaluationStep.C
+
+
+rsync the weights back from pc01 to lxplus:
+rsync -avz --exclude "bdt2020.root" $USER@pcatlunm01.cern.ch:/home/agrummer/bmumu2020/BDT/BDToutput/2020Jun16 /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/
+
+setup:
+run from lxplus
+setupATLAS
+lsetup "root 6.14.04-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDTmacros/EvaluationStep
+output datsets:
+/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_Nom")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_Custom")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_Loose")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_Run1")'
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_Nom")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_Custom")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_Loose")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_Run1")'
+
+
+Notes for improvements;
+should add all versions of the variables to the output files
+should add the B Iso nTracks variants
+
+
+
+2020 June26:
+rsync -avz /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDTmacros/ $USER@pcatlunm01.cern.ch:/home/agrummer/bmumu2020/BDTmacros
+run from pcatlunm01
+setupATLAS
+lsetup "root 6.14.04-x86_64-slc6-gcc62-opt"
+cd /home/agrummer/bmumu2020/BDTmacros/EvaluationStep
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_Run1privxmu")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_BestSep")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_Run1Custom")'
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_Run1privxmu")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_BestSep")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_Run1Custom")'
+
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root", "out_Run1nPV")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root", "out_Run1nPV")'
+
+
+
+from lxplus
+setupATLAS
+lsetup "root 6.14.04-x86_64-slc6-gcc62-opt"
+cd www/bmumu2020/BDTmacros/EvaluationStep/
+root -l -b -q KSTest_EvaluationStep.cpp
+root -l -b -q PlotROCs_2020Jun26_PUtrained.cpp
+root -l -b -q PlotROCs_2020Jun26.cpp
+
+
+2020 July 16:
+out_Run1privxmu_round
+out_Run1nPV_npvweights
+
+rsync -avz ~cernbox/www/bmumu2020/BDTmacros/ $USER@pcatlunm01.cern.ch:/home/agrummer/bmumu2020/BDTmacros
+
+run from pcatlunm01
+setupATLAS
+lsetup "root 6.14.04-x86_64-slc6-gcc62-opt"
+cd /home/agrummer/bmumu2020/BDTmacros/EvaluationStep
+
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root", "out_Run1privxmu_round")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.root", "out_Run1privxmu_round")'
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root", "out_Run1nPV_npvweights")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.root", "out_Run1nPV_npvweights")'
+
+22 July 2020:
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root", "out_Run1_npvweights")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.root", "out_Run1_npvweights")'
+
+23 July 2020:
+repeat run 1 application to include privxmu variables in the output
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root", "out_Run1")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.root", "out_Run1")'
+
+
+2020 Aug6: 
+rsync see notes and syncs workspace
+run from pcatlunm01
+/home/agrummer/bmumu2020/BDTmacros/EvaluationStep
+
+Custom TVA with PU variables
+
+
+
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root", "Custom_privxmu")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.root", "Custom_privxmu")'
+
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root", "Custom_nPV")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.root", "Custom_nPV")'
+
+
+
+needs to be rerun to include the pileupvariables: PRIVX_mu_round
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root", "out_Custom")'
+root -l -q 'addClassBDT_2020.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.root", "out_Custom")'
+
+
+root -l -q 'addClassBDT_2020_groupVersion.cpp("/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.root")'
+
+

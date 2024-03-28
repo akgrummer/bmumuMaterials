@@ -1,0 +1,9 @@
+PVWeights PVWeights/D
+b_status b_status
+ev_processed ev_processed/O
+event_number event_number/l
+ncandidates ncandidates/I
+pv_sigma_z pv_sigma_z
+pv_type pv_type
+pv_z pv_z
+run_number run_number/i

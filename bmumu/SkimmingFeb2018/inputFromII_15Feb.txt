@@ -1,0 +1,31 @@
+
+two more variables to ntuple production code are added
+(to address also close track variable calculation, which 
+should be affected by the same issue as isolation):
+
+B_VTX_trksChi2 : B_VTX_trksChi2/F              // log(chi2) value to B-vertex for each track
+closeTrkDOCA_alltrks: closeTrkDOCA_alltrks/F   // close track DOCA for each track
+
+
+skimmed ntuples available for Bmumu channel for 2018 on eos
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu
+
+for the 2017 run and other channels skimming scripts are being prepared.
+Unskimmed ntuples are in GRID:
+http://bigpanda.cern.ch/task/17073931/ for 2018 run
+http://bigpanda.cern.ch/task/17073825/ for 2017 run
+
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/*
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/*
+ * = Bmumu, BJpsiK or BsJpsiPhi
+
+
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu 2018
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu 2017
+
+ ./cutBatchBpJpsiKp /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/BJpsiK 2018
+ ./cutBatchBpJpsiKp /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/BJpsiK 2017
+ 
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/BsJpsiPhi 2018
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/BsJpsiPhi 2017

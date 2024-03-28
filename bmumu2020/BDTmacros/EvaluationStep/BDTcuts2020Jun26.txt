@@ -1,0 +1,121 @@
+-bash-4.2$ root -l -b -q KSTest_EvaluationStep.cpp
+
+Processing KSTest_EvaluationStep.cpp...
+In file included from input_line_10:1:
+/eos/home-a/agrummer/www/bmumu2020/BDTmacros/EvaluationStep/KSTest_EvaluationStep.cpp:93:7: error: use of undeclared identifier 'config'
+  if (config.EqualTo("Run1privxmu")){
+      ^
+/eos/home-a/agrummer/www/bmumu2020/BDTmacros/EvaluationStep/KSTest_EvaluationStep.cpp:99:7: error: use of undeclared identifier 'config'
+  if (config.EqualTo("Run1nPV")){
+      ^
+/eos/home-a/agrummer/www/bmumu2020/BDTmacros/EvaluationStep/KSTest_EvaluationStep.cpp:105:7: error: use of undeclared identifier 'config'
+  if (config.EqualTo("BestSep")){
+      ^
+/eos/home-a/agrummer/www/bmumu2020/BDTmacros/EvaluationStep/KSTest_EvaluationStep.cpp:111:7: error: use of undeclared identifier 'config'
+  if (config.EqualTo("Run1Custom")){
+      ^
+-bash-4.2$ ll
+total 143K
+-rw-r--r--. 1 agrummer zp  29K Jul  6  2018 KSTest_EvaluationStepLog.C
+-rw-r--r--. 1 agrummer zp  15K Jun 16 15:42 addClassBDT_Run2_v2.cpp
+-rw-r--r--. 1 agrummer zp  12K Jun 19 12:21 MultiROC_wRun1_LogAccept.cpp
+-rw-r--r--. 1 agrummer zp  12K Jun 19 12:31 PlotROCs.cpp
+-rw-r--r--. 1 agrummer zp 3.8K Jun 26 11:22 Notes.txt
+-rw-r--r--. 1 agrummer zp  12K Jun 26 12:21 PlotROCs_2020Jun26_PUtrained.cpp
+-rw-r--r--. 1 agrummer zp  20K Jun 26 13:02 addClassBDT_2020.cpp
+-rw-r--r--. 1 agrummer zp  12K Jun 26 13:10 PlotROCs_2020Jun26.cpp
+-rw-r--r--. 1 agrummer zp  29K Jun 26 13:12 KSTest_EvaluationStep.cpp
+-bash-4.2$ root -l -b -q KSTest_EvaluationStep.cpp
+
+Processing KSTest_EvaluationStep.cpp...
+
+Applying ATLAS style settings...
+
+
+Applying ATLAS style settings...
+
+input vars: Run1privxmu
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1382958
+ vec size + 1 1382959
+Bkg Rej= 100 at a signal efficiency: 17.9564 BDT value: 0.326377 bkg: 0.326377
+Bkg Rej= 100 at a signal efficiency: 17.9845 BDT value: 0.32628 bkg: 0.32628
+Bkg Rej= 100 at a signal efficiency: 18.0287 BDT value: 0.326184 bkg: 0.326184
+Bkg Rej= 100 at a signal efficiency: 35.98 BDT value: 0.283009 bkg: 0.283009
+Bkg Rej= 100 at a signal efficiency: 36.0224 BDT value: 0.282912 bkg: 0.282912
+Bkg Rej= 99.9998 at a signal efficiency: 53.9812 BDT value: 0.235479 bkg: 0.235479
+Bkg Rej= 99.9998 at a signal efficiency: 54.0197 BDT value: 0.235382 bkg: 0.235382
+Bkg Rej= 99.9998 at a signal efficiency: 54.0467 BDT value: 0.235285 bkg: 0.235285
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1privxmu/BDTvariable.pdf has been created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1privxmu/ROC.pdf has been created
+
+Applying ATLAS style settings...
+
+input vars: Run1nPV
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 2432570
+sig vector size: 333504
+bkg+sig vector size: 2766074
+ vec size (sig+bkg)  2765964
+ vec size + 1 2765965
+Bkg Rej= 99.9999 at a signal efficiency: 17.9713 BDT value: 0.427698 bkg: 0.427698
+Bkg Rej= 99.9999 at a signal efficiency: 18.0105 BDT value: 0.427557 bkg: 0.427557
+Bkg Rej= 99.9999 at a signal efficiency: 18.0424 BDT value: 0.427417 bkg: 0.427417
+Bkg Rej= 99.9974 at a signal efficiency: 35.9829 BDT value: 0.354008 bkg: 0.354008
+Bkg Rej= 99.9974 at a signal efficiency: 36.02 BDT value: 0.353867 bkg: 0.353867
+Bkg Rej= 99.9974 at a signal efficiency: 36.0459 BDT value: 0.353726 bkg: 0.353726
+Bkg Rej= 99.9846 at a signal efficiency: 53.9515 BDT value: 0.273849 bkg: 0.273849
+Bkg Rej= 99.9846 at a signal efficiency: 53.9833 BDT value: 0.273708 bkg: 0.273708
+Bkg Rej= 99.9845 at a signal efficiency: 54.0129 BDT value: 0.273567 bkg: 0.273567
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1nPV/BDTvariable.pdf has been created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1nPV/ROC.pdf has been created
+
+Applying ATLAS style settings...
+
+input vars: BestSep
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 3648855
+sig vector size: 500256
+bkg+sig vector size: 4149111
+ vec size (sig+bkg)  4148961
+ vec size + 1 4148962
+Bkg Rej= 99.9996 at a signal efficiency: 17.9816 BDT value: 0.432263 bkg: 0.432263
+Bkg Rej= 99.9996 at a signal efficiency: 18.0225 BDT value: 0.432122 bkg: 0.432122
+Bkg Rej= 99.9973 at a signal efficiency: 35.961 BDT value: 0.356432 bkg: 0.356432
+Bkg Rej= 99.9973 at a signal efficiency: 35.9922 BDT value: 0.356291 bkg: 0.356291
+Bkg Rej= 99.9971 at a signal efficiency: 36.0241 BDT value: 0.356151 bkg: 0.356151
+Bkg Rej= 99.9837 at a signal efficiency: 53.9729 BDT value: 0.271315 bkg: 0.271315
+Bkg Rej= 99.9837 at a signal efficiency: 53.9952 BDT value: 0.271175 bkg: 0.271175
+Bkg Rej= 99.9837 at a signal efficiency: 54.0272 BDT value: 0.271034 bkg: 0.271034
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_BestSep/BDTvariable.pdf has been created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_BestSep/ROC.pdf has been created
+
+Applying ATLAS style settings...
+
+input vars: Run1Custom
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 4865140
+sig vector size: 667008
+bkg+sig vector size: 5532148
+ vec size (sig+bkg)  5531960
+ vec size + 1 5531961
+Bkg Rej= 100 at a signal efficiency: 17.9692 BDT value: 0.442175 bkg: 0.442175
+Bkg Rej= 100 at a signal efficiency: 18.0011 BDT value: 0.442031 bkg: 0.442031
+Bkg Rej= 100 at a signal efficiency: 18.0304 BDT value: 0.441888 bkg: 0.441888
+Bkg Rej= 99.9984 at a signal efficiency: 35.9597 BDT value: 0.363636 bkg: 0.363636
+Bkg Rej= 99.9984 at a signal efficiency: 35.9947 BDT value: 0.363493 bkg: 0.363493
+Bkg Rej= 99.9984 at a signal efficiency: 36.0207 BDT value: 0.363349 bkg: 0.363349
+Bkg Rej= 99.9984 at a signal efficiency: 36.0468 BDT value: 0.363205 bkg: 0.363205
+Bkg Rej= 99.9847 at a signal efficiency: 53.957 BDT value: 0.277042 bkg: 0.277042
+Bkg Rej= 99.9847 at a signal efficiency: 53.9928 BDT value: 0.276899 bkg: 0.276899
+Bkg Rej= 99.9847 at a signal efficiency: 54.0164 BDT value: 0.276755 bkg: 0.276755
+Bkg Rej= 99.9847 at a signal efficiency: 54.0414 BDT value: 0.276611 bkg: 0.276611
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1Custom/BDTvariable.pdf has been created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1Custom/ROC.pdf has been created

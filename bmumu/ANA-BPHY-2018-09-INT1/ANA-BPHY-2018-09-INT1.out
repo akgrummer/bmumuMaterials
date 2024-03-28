@@ -1,0 +1,42 @@
+\BOOKMARK [1][-]{section.1}{Note Changes}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.3}{AnalysisMethodology}{}% 3
+\BOOKMARK [1][-]{section.4}{Data and Monte Carlo Samples}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Data Samples}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Monte Carlo Samples}{section.4}% 6
+\BOOKMARK [1][-]{section.5}{MCTuning}{}% 7
+\BOOKMARK [2][-]{subsection.5.1}{Quark Level Corrections}{section.5}% 8
+\BOOKMARK [2][-]{subsection.5.2}{Data Driven Weights}{section.5}% 9
+\BOOKMARK [1][-]{section.6}{Candidate Preselection}{}% 10
+\BOOKMARK [2][-]{subsection.6.1}{Candidate building and preselection on derivation level}{section.6}% 11
+\BOOKMARK [2][-]{subsection.6.2}{Primary vertex determination}{section.6}% 12
+\BOOKMARK [1][-]{section.7}{Trigger}{}% 13
+\BOOKMARK [1][-]{section.8}{CutFlow}{}% 14
+\BOOKMARK [1][-]{section.9}{Studies on muon fake rates}{}% 15
+\BOOKMARK [1][-]{section.10}{Background Modeling}{}% 16
+\BOOKMARK [2][-]{subsection.10.1}{Non-resonant Background}{section.10}% 17
+\BOOKMARK [2][-]{subsection.10.2}{Background Classification}{section.10}% 18
+\BOOKMARK [3][-]{subsubsection.10.2.1}{Truth Matching}{subsection.10.2}% 19
+\BOOKMARK [3][-]{subsubsection.10.2.2}{Cumulative Decay Probability Distribution}{subsection.10.2}% 20
+\BOOKMARK [1][-]{section.11}{ContinuumBDT}{}% 21
+\BOOKMARK [1][-]{section.12}{DataMCComparison}{}% 22
+\BOOKMARK [2][-]{subsection.12.1}{Continuum events}{section.12}% 23
+\BOOKMARK [2][-]{subsection.12.2}{Reference channel as control sample for signal: B+ J/K+}{section.12}% 24
+\BOOKMARK [2][-]{subsection.12.3}{Alternate reference channel: Bs0 J/}{section.12}% 25
+\BOOKMARK [2][-]{subsection.12.4}{Yield stability during run}{section.12}% 26
+\BOOKMARK [1][-]{section.13}{BPlus Yield}{}% 27
+\BOOKMARK [2][-]{subsection.13.1}{Preselection}{section.13}% 28
+\BOOKMARK [2][-]{subsection.13.2}{Procedure}{section.13}% 29
+\BOOKMARK [2][-]{subsection.13.3}{Systematic Uncertainties in the Extraction of the Bpm Yields}{section.13}% 30
+\BOOKMARK [2][-]{subsection.13.4}{Bpm JKpm yield results}{section.13}% 31
+\BOOKMARK [2][-]{subsection.13.5}{J/pm / J/Kpm ratio measurement}{section.13}% 32
+\BOOKMARK [1][-]{section.14}{EfficiencyAndAcceptance}{}% 33
+\BOOKMARK [2][-]{subsection.14.1}{Systematic uncertainties on RA }{section.14}% 34
+\BOOKMARK [1][-]{section.15}{SignalFit}{}% 35
+\BOOKMARK [2][-]{subsection.15.1}{Signal and peaking background}{section.15}% 36
+\BOOKMARK [2][-]{subsection.15.2}{Parametrisation of background components}{section.15}% 37
+\BOOKMARK [2][-]{subsection.15.3}{Fit to background components from MC and to sideband data}{section.15}% 38
+\BOOKMARK [2][-]{subsection.15.4}{Summary of the fit configuration}{section.15}% 39
+\BOOKMARK [2][-]{subsection.15.5}{Systematic uncertainties on the fit in the simultaneous fit to Bs and Bd}{section.15}% 40
+\BOOKMARK [1][-]{section.16}{BranchingRatio}{}% 41
+\BOOKMARK [0][-]{part*.64}{Appendices}{}% 42

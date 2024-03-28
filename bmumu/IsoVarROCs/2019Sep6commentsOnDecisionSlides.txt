@@ -1,0 +1,47 @@
+*************************
+- p.1 wrong title, something with "summary of studies" is needed
+
+
+- p.3-4 - missing info which dataset is used for each PU bin.
+Ideally data and MC should be overlaid on a single plot, but fine.
+
+
+
+- p. 6. somewhat heavy to read -I'd suggest to move
+ID track selection to p5 end, where you could say that we made this decision to be compatible with Run 1, to free some space.
+
+
+
+then there is a chi2 to PV calculation (is there space for the formula), which is common to all options,
+only in 2015+16 it was combined with track-to-vertex link info, which also by mistake excluded non-associated tracks. So you could write for the "Default"
+"Cut on ln(chi2) for PV<5 excluding non-associated tracks"
+maybe use of "current default" would be better, since we actually don't want to have it, but OK.
+And for the "custom ttva .." I'd suggest to
+1. remove "Custom TTVA working point" (dont add additional info)
+2. expand then "select tracks assoc to PV based on the best(i.e. min) ln(chi2) match" [of track to vertex]
+
+p. 7 title. Acceptance -> Performance ?
+actually you show dependence of ROC on the PU in the most sensitive part of the curve,
+in short "ROC vs PU in the ROI"
+Criterium for the choice I'd say is "consistently best bkg rejection in all PU bins",
+same for pp 10,13.
+
+p.9
+  next to the title ("track to vertex" -> "track to B vertex" )
+  ID track selection you could shorten, by either saying on p 5 that you'll use it for other variables or on slide 9 (and 12) say "same as for isolation".
+    - you need to say somewhere that pT cut on tracks is at 500 MEV now (unlike 400MeV in Run 1)
+
+  here is actually chi2 for SV is common to all, so I'd suggest you to use
+consistently (since you are doing that already) two main bullet points:
+one for track selection and another for the cut on chi2 for SV.
+
+  N.B. OLD association is in principle fixed "default"
+
+
+p 12 could have exactly the same format as p9, only with different chi2 cuts.
+
+
+
+for Alex and Marcus it would be important to say that the issue last time was due to the bin shift, you may add the separate set of slides that you have on this issue.
+
+*************************

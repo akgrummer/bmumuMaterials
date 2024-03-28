@@ -1,0 +1,88 @@
+IsolationStudyRunCommands.txt
+
+
+Mar. 5, 2020:
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/
+need to compile with make
+
+kept the old dates to allow the codes to work easier down the line.
+
+bin/IsolationStudy_v19 MC16a
+bin/IsolationStudy_v16common MC16a
+
+bin/IsolationStudy_v19 MC16d
+bin/IsolationStudy_v16common MC16d
+
+bin/IsolationStudy_v19 MC16e
+bin/IsolationStudy_v16common MC16e
+
+bin/IsolationStudy_v18 MC16a
+bin/IsolationStudy_v18 MC16d
+bin/IsolationStudy_v18 MC16e
+
+
+bin/IsolationStudy_v16common 2016
+bin/IsolationStudy_v16common 2017
+bin/IsolationStudy_v16common 2018
+
+
+March 9, 2020:
+rerun the construction and set the new doca variables to 3 for DOCA>3
+insect condition:
+bin/IsolationStudy_v19 MC16a
+
+bin/IsolationStudy_v19 MC16d
+bin/IsolationStudy_v19 MC16e
+
+there is no v2 for data in new nTuples yet!!
+all candidates:
+bin/IsolationStudy_v18 2016
+bin/IsolationStudy_v18 2017
+
+bin/IsolationStudy_v18 2018
+bin/IsolationStudy_v18 MC16a
+
+bin/IsolationStudy_v18 MC16d
+bin/IsolationStudy_v18 MC16e
+
+
+March 11, 2020:
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/
+need to compile with make
+
+updated IsolationStudy_v18, IsolationStudy_v19, IsolationStudy_v16common and IsolationStudy_v16
+closeTrkDOCA is corrected in the skimming step !mistake!
+with the overflow bin at 3. 
+UPDATE! the issue with closeTrkDOCA occured at the skimming step:
+    - the commands used to be if DCA == 999, DOCA = -0.01
+This has new been removed, and re-skimming re-done
+
+IsolationStudy_v19 is for new nTuples (v1 for data, v2 for MC) 
+    and uses intersect events with old nTuples, v6
+IsolationStudy_v18 is for new nTuples (v1 for data, v2 for MC)
+IsolationStudy_v16common is for old nTuples (v6)
+    and uses intersect events with old nTuples, v6
+IsolationStudy_v16 is for old nTuples (v6)
+
+!mistake! in the skimming step the closeTrkDOCA branch was made with closeTrkDOCA/D but did not match the float initialization
+so  closeTrkDOCA_comp branch is made in all four codes: IsolationStudy_v18, IsolationStudy_v19, IsolationStudy_v16common and IsolationStudy_v16
+
+to run the commands:
+. run/run_v18.sh
+. run/run_v19.sh
+. run/run_v16.sh
+. run/run_v16common.sh
+
+
+!UPDATE! in v19 and v18, 
+closeTrkDOCA_LooSiHi1Pt05_201516 -> closeTrkDOCA_LooSiHi1Pt05_corc2cnt
+_T0000000035_LooSiHi1Pt05_201516 -> _T0000000035_LooSiHi1Pt05_corc2cnt
+
+
+
+
+

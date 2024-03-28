@@ -1,0 +1,5 @@
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/IsolationVariables/ /Users/agrummer/Documents/bmumu2020plots/IsolationVariables/
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/NewVarComps/ /Users/agrummer/Documents/bmumu2020plots/NewVarComps/2020May14/
+# rsync -avzC --exclude="*.pdf" $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/Figures/VarComps2020Mar19_VarBinned_v8_newVars/ /Users/agrummer/Documents/bmumu2020plots/NewVarComps/2020May14/
+# rsync -avzC --exclude="*.pdf" $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/Figures/VarComps2020Mar19_VarBinned_v8_newVars/ /Users/agrummer/cernbox/www/bmumu2020/SavePlots/NewVarComps/VarComps2020May14_VarBinned_v8_newVars/
+# rsync -avzC --exclude="*.pdf" $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/Figures/ROC_2020Mar19_v8_newVars/ /Users/agrummer/cernbox/www/bmumu2020/SavePlots/NewVarComps/ROC_2020May14_v8_newVars/

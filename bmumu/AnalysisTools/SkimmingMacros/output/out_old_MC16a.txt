@@ -1,0 +1,88 @@
+Filename: .
+Filename: ..
+Filename: user.ibragimo.19920238.Bmumu._000001.root
+processing file: user.ibragimo.19920238.Bmumu._000001.root
+# of candidates: 134308
+Now loop over original tree
+Processing event 0
+Processing event 100000
+Entries in final tree: 41813
+MassWindowCut: 436
+BlindCut: 0
+TriggerCut: 79101
+MuonTightCut: 10290
+MuonConditionsCut: 0
+MuonKinCuts: 1232
+B_fitChi2NDFCut: 582
+BKinCut: 0
+AddCuts: 854
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/FinalSkim/v6/MC16a/LASTskim_MC16a_1.root
+Filename: user.ibragimo.19920238.Bmumu._000002.root
+processing file: user.ibragimo.19920238.Bmumu._000002.root
+# of candidates: 133860
+Now loop over original tree
+Processing event 0
+Processing event 100000
+Entries in final tree: 41616
+MassWindowCut: 440
+BlindCut: 0
+TriggerCut: 78898
+MuonTightCut: 10189
+MuonConditionsCut: 0
+MuonKinCuts: 1223
+B_fitChi2NDFCut: 649
+BKinCut: 0
+AddCuts: 845
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/FinalSkim/v6/MC16a/LASTskim_MC16a_2.root
+Filename: user.ibragimo.19920238.Bmumu._000003.root
+processing file: user.ibragimo.19920238.Bmumu._000003.root
+# of candidates: 128551
+Now loop over original tree
+Processing event 0
+Processing event 100000
+Entries in final tree: 39993
+MassWindowCut: 409
+BlindCut: 0
+TriggerCut: 75775
+MuonTightCut: 9805
+MuonConditionsCut: 0
+MuonKinCuts: 1128
+B_fitChi2NDFCut: 640
+BKinCut: 0
+AddCuts: 801
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/FinalSkim/v6/MC16a/LASTskim_MC16a_3.root
+Filename: user.ibragimo.19920238.Bmumu._000004.root
+processing file: user.ibragimo.19920238.Bmumu._000004.root
+Processing event 100000
+Entries in final tree: 40131
+MassWindowCut: 408
+BlindCut: 0
+TriggerCut: 75580
+MuonTightCut: 9851
+MuonConditionsCut: 0
+MuonKinCuts: 1151
+B_fitChi2NDFCut: 589
+BKinCut: 0
+AddCuts: 800
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/FinalSkim/v6/MC16a/LASTskim_MC16a_4.root
+Filename: user.ibragimo.19920238.Bmumu._000005.root
+processing file: user.ibragimo.19920238.Bmumu._000005.root
+# of candidates: 10327
+Now loop over original tree
+Processing event 0
+Entries in final tree: 3165
+MassWindowCut: 28
+BlindCut: 0
+TriggerCut: 6070
+MuonTightCut: 843
+MuonConditionsCut: 0
+MuonKinCuts: 94
+B_fitChi2NDFCut: 58
+BKinCut: 0
+AddCuts: 69
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/FinalSkim/v6/MC16a/LASTskim_MC16a_5.root

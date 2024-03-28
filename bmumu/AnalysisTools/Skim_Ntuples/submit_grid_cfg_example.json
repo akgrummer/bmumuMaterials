@@ -1,0 +1,9 @@
+{
+  "exec": "python skim.py - %IN skimmednow.root BJpsiK",
+  "inDS": "user.ibragimo.data17_13TeV.00339849.physics_BphysLS.deriv.DAOD_BPHY8.r10258_p3399_p3737_NTUPisocalc2_BJpsiK/",
+  "outDS": "user.ibragimo.data17_13TeV.00339849.physics_BphysLS.deriv.DAOD_BPHY8.r10258_p3399_p3737_NTUPisocalc2_BJpsiK_skim",
+  "outputs": "skimmednow.root",
+  "nFilesPerJob": 1,
+  "rootVer": "6.12/06",
+  "cmtConfig": "x86_64-slc6-gcc62-opt"
+}

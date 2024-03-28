@@ -1,0 +1,101 @@
+Notes_v5_PU.txt
+
+version 4 makes 4 plots (one for each pileup bin)
+4 plots for variable comparisons
+4 plots for ROC curves
+each plot has 5 variables
+
+new version (v5):
+for B Iso:
+5 plots (for each Var), each with 4 PU bins
+for DOCA:
+4 plots (for each Var, no <2 options), each with 4 PU bins
+for NcloseTracks:
+6 plots, each with 4 PU bins
+
+with subplot of ratios
+
+ROCs for the same 
+
+Efficiency versus variable plots
+-----------
+BDT efficiency plots - all, better axis limits
+BDT efficiency plots - linear scale, axis limits
+
+Efficiency (I > 0.8) versus pileup
+-----------
+
+Outstanding:
+efficiency versus variable
+ROCs pileup dependence
+Fix axis limits but for old variable comps and old ROC comps
+
+
+
+
+
+
+2019 Nov 21
+
+version 6 was copied from version 5 and is incomplete
+
+created version 7 based on version 4:
+makes 4 plots
+4 plots for variable comparisons
+4 plots for ROC curves
+each plot has 5 variables
+
+new comparisons include loose TVA and fewer variables (that were not selected during group approval)
+
+
+2019 Dec 5
+add a comparison with a z0 error update
+use 
+rsync -avz --exclude="*.pdf" ROC_2019Nov21_v7/ ROC_2019Dec5_v7 
+(for same color comparison)
+rsync -avz --exclude="*.pdf" ROC_2019Nov21_v7/ ROC_2019Nov21_v7_2
+changed dates, input data set version number, 
+
+
+2020 Feb 18: 
+copy version 8 from version 7 
+need to add extra dataset comparison (maybe only for one file)
+rsync -avz --exclude "*pdf" ROC_2019Dec5_v7/ ROC_2020Feb19_v8/
+rsync -avz --exclude "*pdf" VarComps2019Dec5_VarBinned_v7/ VarComps2020Feb19_VarBinned_v8/
+
+v8 - added option for pileup = all, which is no pileup
+
+v8 - vars from tracks in Ntuples
+v8_newVars - pre Ntuple level ie Derivation level
+v8_mixVars_1
+v8_mixVars_2
+
+rsync -avz --exclude "*pdf" ROC_2020Feb19_v8/ ROC_2020Feb19_v8_newVars/
+rsync -avz --exclude "*pdf" VarComps2020Feb19_VarBinned_v8/ VarComps2020Feb19_VarBinned_v8_newVars/
+
+
+rsync -avz --exclude "*pdf" VarComps2020Feb19_VarBinned_v8_newVars/ VarComps2020Feb19_VarBinned_v8_mixVars_custom
+rsync -avz --exclude "*pdf" ROC_2020Feb19_v8/ ROC_2020Feb19_v8_mixVars_custom
+
+rsync -avz --exclude "*pdf" VarComps2020Feb19_VarBinned_v8_newVars/ VarComps2020Feb19_VarBinned_v8_mixVars_loose
+rsync -avz --exclude "*pdf" ROC_2020Feb19_v8/ ROC_2020Feb19_v8_mixVars_loose
+
+rsync -avz --exclude "*pdf" VarComps2020Feb19_VarBinned_v8_newVars/ VarComps2020Feb19_VarBinned_v8_mixVars_1516
+rsync -avz --exclude "*pdf" ROC_2020Feb19_v8/ ROC_2020Feb19_v8_mixVars_1516
+
+rsync -avz --exclude "*pdf" VarComps2020Feb19_VarBinned_v8_newVars/ VarComps2020Feb19_VarBinned_v8_mixVars_run1
+rsync -avz --exclude "*pdf" ROC_2020Feb19_v8/ ROC_2020Feb19_v8_mixVars_run1
+
+
+
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/ROC_2020Feb19_v8 /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/ROC_2020Feb19_v8_newVars /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/ROC_2020Feb19_v8_mixVars_custom /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/ROC_2020Feb19_v8_mixVars_loose /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/ROC_2020Feb19_v8_mixVars_1516 /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/VarComps2020Feb19_VarBinned_v8 /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/VarComps2020Feb19_VarBinned_v8_newVars /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/VarComps2020Feb19_VarBinned_v8_mixVars_custom /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/VarComps2020Feb19_VarBinned_v8_mixVars_loose Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/
+rsync -avz $USER@lxplus.cern.ch:~/www/bmumu/IsoVarROCs/Figures/VarComps2020Feb19_VarBinned_v8_mixVars_1516 /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/2020Feb21/

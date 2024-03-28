@@ -1,0 +1,124 @@
+2015:
+Entries in original tree: 
+30814 + 295629 + 197147 + 467059 + 155573 + 807810
+Vars Cut not passed:
+17608 + 171405 + 114235 + 271129 + 89800 + 461865
+Blind Cut not passed:
+2204 + 20697 + 13782 + 32905 + 10824 + 57614
+B_fitChi2NDFCut not passed:
+1295 + 12440 + 8425 + 19389 + 6609 + 34916
+TriggerCut not passed:
+3115 + 33708 + 22373 + 52555 + 16320 + 67978
+BCuts not passed:
+1 + 20 + 13 + 24 + 10 + 49
+MuonCombinedCut not passed:
+0 + 9 + 8 + 16 + 6 + 23
+MuonTightCut not passed:
+1677 + 14653 + 9689 + 23072 + 8147 + 46721
+MuonCuts not passed:
+0 + 0 + 0 + 0 + 0 + 0
+EventsNotCut:
+4914 + 42697 + 28622 + 67969 + 23857 + 138644
+Entries in final tree:
+4914 + 42697 + 28622 + 67969 + 23857 + 138644
+
+Entries in original tree: 248691 + 653210 + 1031757 + 303532 + 1622912 + 159549 + 581128 + 291462 + 1093545 + 319707 + 1175251 + 472359 + 2188938 + 197937 + 973089 + 471516+ 2415995
+Vars Cut not passed:
+138416 + 351298 + 558824 + 150650 + 862395 + 80182 + 312745 + 146076 + 577453 + 160285 + 622933 + 237028 + 1193839 + 99923 + 536411 + 237624 + 1309591
+Blind Cut not passed:
+18536 + 50947 + 79943 + 31029 + 128937 + 15957 + 45026 + 29133 + 87380 + 31744 + 93602 + 47038 + 167927 + 19617 + 73031 + 46606 + 187229
+B_fitChi2NDFCut not passed:
+11073 + 30197 + 46873 + 16025 + 78199 + 8435 + 27671 + 15669 + 53055 + 17077 + 56835 + 25320 + 102821 + 10291 + 44581 + 25009 + 114058
+TriggerCut not passed:
+8531 + 44463 + 55630 + 18407 + 80154 + 8375 + 21279 + 29818 + 74340 + 35848 + 95154 + 53440 + 250926 + 18772 + 111114 + 62669 + 322462
+BCuts not passed:
+25 + 70 + 103 + 30 + 157 + 22 + 52 + 30 + 104 + 39 + 105 + 46 + 126 + 25 + 70 + 62 + 173
+MuonCombinedCut not passed:
+4 + 15 + 32 + 14 + 42 + 6 + 22 + 11 + 38 + 14 + 39 + 21 + 60 + 11 + 39 + 11 + 45
+MuonTightCut not passed:
+18284 + 44784 + 73417 + 20636 + 120497 + 11090 + 43944 + 16447 + 76499 + 17529 + 77835 + 25367 + 119625 + 11509 + 52591 + 22508 + 121753
+MuonCuts not passed:
+0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0
+EventsNotCut:
+53822 + 131436 + 216935 + 66741 + 352531 + 35482 + 130389 + 54278 + 224676 + 57171 + 228748 + 84099 + 353614 + 37789 + 155252 + 77027 + 360684
+Entries in final tree:
+53822 + 131436 + 216935 + 66741 + 352531 + 35482 + 130389 + 54278 + 224676 + 57171 + 228748 + 84099 + 353614 + 37789 + 155252 + 77027 + 360684
+
+
+2015 Totals
+Entries in original tree:
+1954032
+Vars Cut not passed: 
+1126042
+Blind Cut not passed: 
+138026
+B_fitChi2NDFCut not passed:
+83074
+TriggerCut not passed:
+196049
+BCuts not passed:
+117
+MuonCombinedCut not passed:
+62
+MuonTightCut not passed:
+103959
+MuonCuts not passed:
+0
+EventsNotCut:
+306703
+Entries in final tree:
+306703
+
+2016 Totals
+Entries in original tree: 
+14200578
+Vars Cut not passed:
+7575673
+Blind Cut not passed:
+1153682
+B_fitChi2NDFCut not passed:
+683189
+TriggerCut not passed:
+1291382
+BCuts not passed:
+1239
+MuonCombinedCut not passed:
+424
+MuonTightCut not passed:
+874315
+MuonCuts not passed:
+0
+EventsNotCut:
+2620674
+Entries in final tree:
+2620674
+
+
+Totals:
+
+Entries in original tree:
+16154610
+Vars Cut not passed:
+8701715
+Blind Cut not passed:
+1291708
+B_fitChi2NDFCut not passed:
+766263
+TriggerCut not passed:
+1487431
+BCuts not passed:
+1356
+MuonCombinedCut not passed:
+486
+MuonTightCut not passed:
+978274
+MuonCuts not passed:
+0
+EventsNotCut:
+2927377
+Entries in final tree:
+2927377
+
+
+
+Excel was used to cross check - a better and more reliable method.

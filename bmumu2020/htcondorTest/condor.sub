@@ -1,0 +1,10 @@
+executable              = /afs/cern.ch/user/a/agrummer/htcondorTest/setupjob.sh
+arguments               = $(ClusterId) $(ProcId)
+output                  = hello.$(ClusterId).$(ProcId).out
+error                   = hello.$(ClusterId).$(ProcId).err
+log                     = hello.$(ClusterId).log
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files    = /afs/cern.ch/user/a/agrummer/htcondorTest/LASTskim.output_2685758.root
+transfer_output_remaps  = "out.root = /afs/cern.ch/user/a/agrummer/htcondorTest/out.root"
+queue

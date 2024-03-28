@@ -1,0 +1,116 @@
+
+Processing /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/runMVA_pc01.cxx("out_BIso", ":MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500")...
+look at outdir: out_BIso
+Opening the cfg file ./2020Apr7_IsoStudy.cfg
+INFO: including variable: BIsoACH
+INFO: including variable: BIsoBDI
+INFO: including variable: BIsoBEJ
+INFO: including variable: BIsoBGJ
+INFO adding input variable: B_iso_7_Chi2_5_LoosePt05 B Iso ACH (OOO)  F
+INFO adding input variable: B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 B Iso BDI (PVP)  As in Run 1  F
+INFO adding input variable: B_iso_10_noChi2_LooSiHi1Pt05_T0134217728 B Iso BEJ (PPP)  Custom TVA Trk Perigee  F
+INFO adding input variable: B_iso_10_noChi2_LooSiHi1Pt05_T0008388608 B Iso BGJ (PPP)  Loose TVA  F
+
+SET FOLLOWING MVA TRAINING OPTIONS:  
+mymva.SIG_inputFileName: /eos/home-a/agrummer/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root
+mymva.BKG_inputFileName: /eos/home-a/agrummer/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root
+mymva.SIGtrain_inputFileName: 
+mymva.BKGtrain_inputFileName: 
+mymva.SIGtest_inputFileName: 
+mymva.BKGtest_inputFileName: 
+mymva.SIG_treeName: T_mv
+mymva.BKG_treeName: T_mv
+mymva.valSIG_inputFileName: 
+mymva.valBKG_inputFileName: 
+mymva.valSIG_treeName: 
+mymva.valBKG_treeName: 
+mymva.OUT_DIR: out_BIso
+mymva.OUT_FILE: bdt2016.root
+mymva.factoryName: bdt2016
+mymva.factory_prepareTrainingOpt: nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=EqualNumEvents:!V
+mymva.SIGweightexp: (PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf)
+mymva.BKGweightexp: 
+mymva.GradBDToptions: 
+mymva.AdaBDToptions: !H:!V:BoostType=AdaBoost:UseBaggedBoost:BaggedSampleFraction=0.6:SeparationType=GiniIndex:nCuts=100:DoBoostMonitor:MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500
+mymva.MLPoptions: 
+mymva.SVMoptions: 
+mymva.MyCutSignal: 
+mymva.MyCutBkgnd: 
+
+Retrieving tree branches ... 
+ * Initialise TMVA...
+DataSetInfo              : [out_BIso] : Added class "Signal"
+                         : Add Tree T_mv of type Signal with 166752 events
+DataSetInfo              : [out_BIso] : Added class "Background"
+                         : Add Tree T_mv of type Background with 2455576 events
+ * Prepare Training and Test Tree...
+ * Book AdaBDT Training Method...
+Factory                  : Booking method: [1mBDT[0m
+                         : 
+DataSetFactory           : [out_BIso] : Number of events in input trees
+                         : 
+                         : 
+                         : Dataset[out_BIso] : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+                         : Dataset[out_BIso] :  such that the effective (weighted) number of events in each class is the same 
+                         : Dataset[out_BIso] :  (and equals the number of events (entries) given for class=0 )
+                         : Dataset[out_BIso] : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+                         : Dataset[out_BIso] : ... (note that N_j is the sum of TRAINING events
+                         : Dataset[out_BIso] :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 83376
+                         : Signal     -- testing events             : 83376
+                         : Signal     -- training and testing events: 166752
+                         : Background -- training events            : 1227788
+                         : Background -- testing events             : 1227788
+                         : Background -- training and testing events: 2455576
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                                B_iso_7_Chi2_5_LoosePt05 B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 B_iso_10_noChi2_LooSiHi1Pt05_T0134217728 B_iso_10_noChi2_LooSiHi1Pt05_T0008388608
+                         :                      B_iso_7_Chi2_5_LoosePt05:                   +1.000                                        +0.908                                   +0.791                                   +0.816
+                         : B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127:                   +0.908                                        +1.000                                   +0.764                                   +0.763
+                         :      B_iso_10_noChi2_LooSiHi1Pt05_T0134217728:                   +0.791                                        +0.764                                   +1.000                                   +0.943
+                         :      B_iso_10_noChi2_LooSiHi1Pt05_T0008388608:                   +0.816                                        +0.763                                   +0.943                                   +1.000
+                         : -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                                B_iso_7_Chi2_5_LoosePt05 B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 B_iso_10_noChi2_LooSiHi1Pt05_T0134217728 B_iso_10_noChi2_LooSiHi1Pt05_T0008388608
+                         :                      B_iso_7_Chi2_5_LoosePt05:                   +1.000                                        +0.948                                   +0.876                                   +0.884
+                         : B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127:                   +0.948                                        +1.000                                   +0.893                                   +0.887
+                         :      B_iso_10_noChi2_LooSiHi1Pt05_T0134217728:                   +0.876                                        +0.893                                   +1.000                                   +0.965
+                         :      B_iso_10_noChi2_LooSiHi1Pt05_T0008388608:                   +0.884                                        +0.887                                   +0.965                                   +1.000
+                         : -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetFactory           : [out_BIso] :  
+                         : 
+Factory                  : [1mTrain all methods[0m
+Factory                  : [out_BIso] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'B_iso_7_Chi2_5_LoosePt05' <---> Output : variable 'B_iso_7_Chi2_5_LoosePt05'
+                         : Input : variable 'B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127' <---> Output : variable 'B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127'
+                         : Input : variable 'B_iso_10_noChi2_LooSiHi1Pt05_T0134217728' <---> Output : variable 'B_iso_10_noChi2_LooSiHi1Pt05_T0134217728'
+                         : Input : variable 'B_iso_10_noChi2_LooSiHi1Pt05_T0008388608' <---> Output : variable 'B_iso_10_noChi2_LooSiHi1Pt05_T0008388608'
+TFHandler_Factory        :                                      Variable                                             Mean                                             RMS                                     [        Min                                             Max ]
+                         : ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                      B_iso_7_Chi2_5_LoosePt05:                                        0.79064                                        0.19126   [                                      0.0049442                                         1.0000 ]
+                         : B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127:                                        0.76057                                        0.19692   [                                      0.0010156                                         1.0000 ]
+                         :      B_iso_10_noChi2_LooSiHi1Pt05_T0134217728:                                        0.69718                                        0.20909   [                                     0.00012028                                         1.0000 ]
+                         :      B_iso_10_noChi2_LooSiHi1Pt05_T0008388608:                                        0.69742                                        0.21271   [                                     0.00028908                                         1.0000 ]
+                         : ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : ----------------------------------------------------------------
+                         : Rank : Variable                                : Separation
+                         : ----------------------------------------------------------------
+                         :    1 : B Iso BDI (PVP)  As in Run 1            : 3.906e-01
+                         :    2 : B Iso BGJ (PPP)  Loose TVA              : 3.891e-01
+                         :    3 : B Iso BEJ (PPP)  Custom TVA Trk Perigee : 3.839e-01
+                         :    4 : B Iso ACH (OOO)                         : 3.555e-01
+                         : ----------------------------------------------------------------
+Factory                  : Train method: BDT for Classification
+                         : 
+                         : Events with weight == 0 are going to be simply ignored 
+BDT                      : #events: (reweighted) sig: 655543 bkg: 655543
+                         : #events: (unweighted) sig: 83298 bkg: 1227788
+                         : Training 500 Decision Trees ... patience please

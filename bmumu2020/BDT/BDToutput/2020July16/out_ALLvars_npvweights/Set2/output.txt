@@ -1,0 +1,92 @@
+
+Processing /home/agrummer/bmumu2020/BDT/runMVA_pc01.cxx("BDToutput/2020July16/out_ALLvars_npvweights/Set2", ":MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500")...
+look at outdir: BDToutput/2020July16/out_ALLvars_npvweights/Set2
+Opening the cfg file ./2020Apr7_IsoStudy.cfg
+INFO: including variable: BIsoACH
+INFO: including variable: BIsoBDI
+INFO: including variable: BIsoBEJ
+INFO: including variable: BIsoBGJ
+INFO: including variable: docaACK
+INFO: including variable: docaBEL
+INFO: including variable: docaBGL
+INFO: including variable: nCloseTracksACK
+INFO: including variable: nCloseTracksBEL
+INFO: including variable: nCloseTracksBGL
+INFO: including variable: bpt
+INFO: including variable: blxy
+INFO: including variable: d0mins
+INFO: including variable: d0maxs
+INFO: including variable: plng
+INFO: including variable: ch2pvsv
+INFO: including variable: pa
+INFO: including variable: dr
+INFO: including variable: dphi
+INFO: including variable: mdca
+INFO: including variable: bip
+INFO: including variable: mchi2pv
+INFO: including variable: npv
+INFO: including variable: privxmuR
+INFO adding input variable: B_iso_7_Chi2_5_LoosePt05 B Iso ACH (OOO)  F
+INFO adding input variable: B_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 B Iso BDI (PVP)  As in Run 1  F
+INFO adding input variable: B_iso_10_noChi2_LooSiHi1Pt05_T0134217728 B Iso BEJ (PPP)  Custom TVA Trk Perigee  F
+INFO adding input variable: B_iso_10_noChi2_LooSiHi1Pt05_T0008388608 B Iso BGJ (PPP)  Loose TVA  F
+INFO adding input variable: closeTrkDOCA_3 DOCA ACK (OOO) mm F
+INFO adding input variable: closeTrkDOCA_T0134217728_LooSiHi1Pt05_f2dc2 DOCA BEL (PPP) Custom TVA Trk Perigee mm F
+INFO adding input variable: closeTrkDOCA_T0008388608_LooSiHi1Pt05_f2dc2 DOCA BGL (PPP) Loose TVA mm F
+INFO adding input variable: closeTrkNtrksChi2 nCloseTracks ACK (OOO)  I
+INFO adding input variable: closeTrkNtrksChi2_T0134217728_LooSiHi1Pt05_f2dc2 nCloseTracks BEL (PPP) Custom TVA Trk Perigee  I
+INFO adding input variable: closeTrkNtrksChi2_T0008388608_LooSiHi1Pt05_f2dc2 nCloseTracks BGL (PPP) Loose TVA  I
+INFO adding input variable: B_pT p_{T}^{B} MeV F
+INFO adding input variable: Lxy L_{xy} mm F
+INFO adding input variable: TMath::Abs(d0Min_sig) |d_{0}|^{min} sig.  F
+INFO adding input variable: TMath::Abs(d0Max_sig) |d_{0}|^{max} sig.  F
+INFO adding input variable: PlngMin2D P^{min}_{L} MeV F
+INFO adding input variable: chi2_PVSV_log2D Log(#chi^{2}_{xy})  F
+INFO adding input variable: TMath::Abs(a_2D) |#alpha_{2D}| rad F
+INFO adding input variable: DR #DeltaR  F
+INFO adding input variable: TMath::Abs(B_IDtrks_deltaPhi) |#Delta#phi_{#mu#mu}|  F
+INFO adding input variable: TMath::Abs(B_IDtrks_DCA) DOCA_{#mu#mu} mm F
+INFO adding input variable: Bvtx3DIP |IP_{B}^{3D}|  F
+INFO adding input variable: B_minChi2MuonsIPtoAnyPV Log(#chi^{2}_{#mu,xPV})  F
+INFO adding input variable: Npv PV multiplicity  I
+INFO adding input variable: PRIVX_mu_round #mu PRIVX  F
+
+SET FOLLOWING MVA TRAINING OPTIONS:  
+mymva.SIG_inputFileName: 
+mymva.BKG_inputFileName: 
+mymva.SIGtrain_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.SplitSet2.root
+mymva.BKGtrain_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.SplitSet2.root
+mymva.SIGtest_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.SplitSet3.root
+mymva.BKGtest_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.2.SplitSet3.root
+mymva.SIG_treeName: T_mv
+mymva.BKG_treeName: T_mv
+mymva.valSIG_inputFileName: 
+mymva.valBKG_inputFileName: 
+mymva.valSIG_treeName: 
+mymva.valBKG_treeName: 
+mymva.OUT_DIR: BDToutput/2020July16/out_ALLvars_npvweights/Set2
+mymva.OUT_FILE: bdt2020.root
+mymva.factoryName: bdt2020
+mymva.factory_prepareTrainingOpt: 
+mymva.SIGweightexp: (NPVweight*PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf*Muon1_trigger_sf*Muon2_trigger_sf*CombWeights)
+mymva.BKGweightexp: 
+mymva.GradBDToptions: 
+mymva.AdaBDToptions: !H:!V:BoostType=AdaBoost:UseBaggedBoost:BaggedSampleFraction=0.6:SeparationType=GiniIndex:nCuts=100:DoBoostMonitor:MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500
+mymva.MLPoptions: 
+mymva.SVMoptions: 
+mymva.MyCutSignal: 
+mymva.MyCutBkgnd: 
+
+SIGtrain_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.2.NPVweight.SplitSet2.root
+Retrieving tree branches ... 
+ * Initialise TMVA...
+DataSetInfo              : [BDToutput/2020July16/out_ALLvars_npvweights/Set2] : Added class "Signal"
+                         : Add Tree T_mv of type Signal with 55943 events
+DataSetInfo              : [BDToutput/2020July16/out_ALLvars_npvweights/Set2] : Added class "Background"
+                         : Add Tree T_mv of type Background with 818909 events
+                         : Add Tree T_mv of type Signal with 55453 events
+                         : Add Tree T_mv of type Background with 818772 events
+ * Prepare Training and Test Tree...
+ * Book AdaBDT Training Method...
+Factory                  : Booking method: [1mBDT[0m
+                         : 

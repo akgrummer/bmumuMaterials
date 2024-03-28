@@ -1,0 +1,2487 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dt_mc_",
+				"dt_mc_OnePeriod"
+			],
+			[
+				"TGrap",
+				"TGraphAsymmErrors"
+			],
+			[
+				"Int",
+				"Int_t"
+			],
+			[
+				"histP",
+				"histPred3"
+			],
+			[
+				"tree",
+				"treenames"
+			],
+			[
+				"i",
+				"i"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mixVars_looseN/Iso_MultiVar_TTVA_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 16751,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_looseN/OtherIso_MultiVar_TTVA_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 23169,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 8 files for \"\nfilenameSig = DirNameSig\"\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/Iso_MultiROCs_TTVA_logAccept_v8_looseN.cpp:\n  117   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun3.root\";\n  118   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  119:  }\n  120: filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  121  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  122   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n\n1 match in 1 file\n\n\nSearching 8 files for \"\n filenameSig = DirNameSig\"\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/DOCA_MultiROCs_TTVA_v8_looseN.cpp:\n  115   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n  116   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun3.root\";\n  117:  // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  118:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  119  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  120  TFile* ifilenameBkg = new TFile(filenameBkg);\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/DOCA_logAccept_ROCs_v8_looseN.cpp:\n  119   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun3.root\";\n  120   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  121:  }\n  122:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  123  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  124   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/Iso_MultiROCs_TTVA_v8_looseN.cpp:\n  121   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun5.root\";\n  122   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  123:  // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";//chi2<6 in TTVAs\n  124:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  125  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  126  TFile* ifilenameBkg = new TFile(filenameBkg);\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/NcloseTracks_MultiROCs_TTVA_v8_looseN.cpp:\n  114   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n  115   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun3.root\";\n  116:  // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";//chi2<2 instead of <1\n  117:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  118  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  119  TFile* ifilenameBkg = new TFile(filenameBkg);\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/NcloseTracks_logAccept_ROCs_v8_looseN.cpp:\n  120   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun3.root\";\n  121   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  122:  }\n  123:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  124  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  125   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n\n5 matches across 5 files\n\n\nSearching 8 files for \"DirNameSig\"\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/DOCA_MultiROCs_TTVA_v8_looseN.cpp:\n   19  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v5/\";\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21: TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22  DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23: DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   25  \n   ..\n  116   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun3.root\";\n  117   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  118:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  119  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  120  TFile* ifilenameBkg = new TFile(filenameBkg);\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/DOCA_logAccept_ROCs_v8_looseN.cpp:\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v5/\";\n   21  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   22: TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   23  DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   24: DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   25  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   26  \n   ..\n  120   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  121   }\n  122:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  123  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  124   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/Iso_MultiROCs_TTVA_logAccept_v8_looseN.cpp:\n   19  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v5/\";\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21: TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22  DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23: DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   25  \n   ..\n  118   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  119   }\n  120: filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  121  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  122   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/Iso_MultiROCs_TTVA_v8_looseN.cpp:\n   19  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v5/\";\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21: TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22  DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23: DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   25  \n   ..\n  122   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  123   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";//chi2<6 in TTVAs\n  124:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  125  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  126  TFile* ifilenameBkg = new TFile(filenameBkg);\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/NcloseTracks_MultiROCs_TTVA_v8_looseN.cpp:\n   19  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v5/\";\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21: TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22  DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23: DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   25  \n   ..\n  115   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun3.root\";\n  116   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";//chi2<2 instead of <1\n  117:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  118  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  119  TFile* ifilenameBkg = new TFile(filenameBkg);\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/NcloseTracks_logAccept_ROCs_v8_looseN.cpp:\n   21  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v5/\";\n   22  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   23: TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   24  DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   25: DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   26  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   27  \n   ..\n  121   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Jun6.root\";\n  122   }\n  123:  filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";\n  124  TString filenameSig2 = DirName2 + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019Dec5.root\";\n  125   // filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_2019May30.root\";\n\n18 matches across 6 files\n\n\nSearching 8 files for \"v1/\"\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/DOCA_MultiROCs_TTVA_v8_looseN.cpp:\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21  TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22: DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23  DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/DOCA_logAccept_ROCs_v8_looseN.cpp:\n   21  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   22  TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   23: DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   24  DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   25  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/Iso_MultiROCs_TTVA_logAccept_v8_looseN.cpp:\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21  TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22: DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23  DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/Iso_MultiROCs_TTVA_v8_looseN.cpp:\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21  TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22: DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23  DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/Iso_MultiVar_TTVA_v8_looseN.cpp:\n  189  if (DataType.EqualTo(\"mc\")){\n  190  DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\n  191: else{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\n  192  ColorIndex = 2;\n  193  TH1F* h_looseDerivation = RetrieveHist(DirName, theYear, DataType, B_iso_10_noChi2_LooSiHi1Pt05_T0008388608, ColorIndex, FileDate, myPileup);\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/NcloseTracks_MultiROCs_TTVA_v8_looseN.cpp:\n   20  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   21  TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   22: DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   23  DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   24  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/NcloseTracks_logAccept_ROCs_v8_looseN.cpp:\n   22  // TString DirName = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n   23  TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \n   24: DirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \n   25  DirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n   26  DirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n\n/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN/OtherIso_MultiVar_TTVA_v8_looseN.cpp:\n  203  if (DataType.EqualTo(\"mc\")){\n  204  DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\n  205: else{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\n  206  ColorIndex = 4;\n  207  h_looseApprox = RetrieveHist(DirName, theYear, DataType, closeTrkNtrksChi2_LooSiHi1Pt05_corc2cnt_loose, ColorIndex, FileDate, myPileup);\n  ...\n  224  if (DataType.EqualTo(\"mc\")){\n  225  DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\n  226: else{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\n  227  ColorIndex = 4;\n  228  h_looseApprox = RetrieveHist(DirName, theYear, DataType, closeTrkDOCA_LooSiHi1Pt05_corc2cnt_loose, ColorIndex, FileDate, myPileup);\n\n9 matches across 8 files\n",
+			"settings":
+			{
+				"buffer_size": 14377,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "mixVars_looseN/Iso_MultiROCs_TTVA_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 15792,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_looseN/Iso_MultiROCs_TTVA_logAccept_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 15500,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_looseN/DOCA_MultiROCs_TTVA_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 14948,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_looseN/DOCA_logAccept_ROCs_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 14437,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_looseN/NcloseTracks_MultiROCs_TTVA_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 16995,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixVars_looseN/NcloseTracks_logAccept_ROCs_v8_looseN.cpp",
+			"settings":
+			{
+				"buffer_size": 14934,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"LuaLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Add Channel"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"PackageRe",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"PackageResource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package control ",
+				"Package Control: Install Package"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"clang form",
+				"Clang Format: Format Selection"
+			],
+			[
+				"instal pag",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Install Package Control"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/mixVars_looseN"
+	],
+	"file_history":
+	[
+		"/Users/agrummer/cernbox/www/bmumu/AnalysisTools/SkimmingMacros/download_v6ntuples.txt",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/DOCA_logAccept_ROCs_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/Iso_MultiROCs_TTVA_logAccept_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/NcloseTracks_MultiROCs_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/DOCA_MultiROCs_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/Iso_MultiROCs_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/Iso_MultiVar_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/OtherIso_MultiVar_TTVA_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/mixVars_1516/NcloseTracks_logAccept_ROCs_v8_1516.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/OtherIso_MultiVar_TTVA_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/IsoVarROCs_v8_newVars.sublime-workspace",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Notes_v4_PU.txt",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v4_PU.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/OtherIso_MultiVar_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v3_PU.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_Tracks.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_ROCs.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/MultiROCcomp.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/KStest_ROCbdt.cpp",
+		"/Users/agrummer/Desktop/LeakageMaterial/LeakagePaper/LeakageCurrentPUBnote/LeakageCurrent.tex",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/atlasLabel.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_logAccept_ROCs.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_logAccept_ROCs_Reverse.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_ROCs_Module_Reverse.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_ROCs_Module.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiVar_TTVA_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_logAccept_ROCs_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_logAccept_ROCs_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_logAccept_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_MultiROCs_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_MultiROCs_TTVA_v3.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_v3.cpp",
+		"/Users/agrummer/Desktop/LeakageCurrent.sublime-workspace",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_logAccept_ROCs_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_logAccept_ROCs_v2.C",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_logAccept_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/NcloseTracks_MultiROCs_TTVA_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_MultiROCs_TTVA_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/DOCA_MultiROCs_TTVA.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/Iso_MultiROCs_TTVA.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/MultiROCcompAccept.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v3.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v4_Efficiencies.C",
+		"/Users/agrummer/Desktop/Bmumu/Meetings/UnblindingMeeting_2018Aug9.txt",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/KSTest_EvalMerged.cpp",
+		"/Users/agrummer/Desktop/LeakageMaterial/LeakagePaper/LeakageCurrentPUBnote/LeakageCurrent.bib",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v3_Efficiencies.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunInputVars_3bkgSamples.sh",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_3bkgSamples.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunInputVars_v3.sh",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/AtlasLabels.C",
+		"/Users/agrummer/Desktop/LeakageMaterial/LeakagePaper/LeakageCurrentPUBnote/LeakageCurrent-metadata.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RawHistogram.C",
+		"/Users/agrummer/cernbox/www/bmumu/B_MUCALC_mass.pdf",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v2.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars_v2_Efficiencies.cpp",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/PythonImportance/Variables_2.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunInputVars_v2.sh",
+		"/Users/agrummer/Desktop/Bmumu/Presentations/May25/Grummer_continuumMVABDTcutStudyEfficiencies.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/MultiROC_PileUpSepTrain.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/AtlasStyle.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/MultiROC.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/PythonImportance/ExtractImpAndSep.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunTMVAranking.sh",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/InputVars.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/TMVARankingTable_v3.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RunPythonImportance.sh",
+		"/Users/agrummer/Desktop/Macros.sublime-workspace",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/RangeOfGridSearch.txt",
+		"/Users/agrummer/cernbox/www/bmumu/myMVAOut/MVApresentations/May2/Grummer_continuumMVA.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/appliedWeightsPlots.C",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/Macros/KSTestFeb7.C",
+		"/Users/agrummer/Desktop/Bmumu/Macros/TMVARankingTable.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/MultiROC.C",
+		"/Users/agrummer/Desktop/Bmumu/Macros/KSTestFeb7.C",
+		"/Users/agrummer/Desktop/Bmumu/Macros/PythonImportance/ExtractImpAndSep.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/PythonImportance/Variables_2.py",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/MVApresentations/Mar14/Grummer_continuumMVA.tex",
+		"/Users/agrummer/cernbox/www/bmumu/myMVA/MVApresentations/Grummer_continuumMVA.tex",
+		"/Users/agrummer/Desktop/Bmumu/Macros/pyRootTest_v4.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/pyRootTest3.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/pyRootTest2.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/PythonImportance/OutputTable.tex",
+		"/Users/agrummer/Desktop/Bmumu/Macros/KStestaidn.png",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Mar1/Grummer_CoarseComparisonsNoWeights.pdf",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb26/Grummer_CoarseComparisons.tex",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/GainCalc/MakeATGraph.C",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb26/Test.tex",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/src/mvaInterface_LinkDef.h",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/inc/variables.h",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/inc/mvaInterface.h",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/README.md",
+		"/Users/agrummer/cernbox/www/bmumu/bsmumu-cbdt/bin/runMVA",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/addWeights.C",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/dmcbbmumuX.h",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/dmcbbmumuX.C",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/RunNumberCheck.py",
+		"/Users/agrummer/cernbox/www/bmumu/SkimmingFeb2018/cutBatchBsmumu.cxx",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisonsBeforeFeb2018/NotesComparisons/RunLastSkimming.txt",
+		"/Users/agrummer/cernbox/www/bmumu/MCDataComparisons/AnalysisCode/README.md",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb16/OutputToSlides.tex",
+		"/Users/agrummer/Desktop/Currents/LeakageCurrentFigures.tex",
+		"/Users/agrummer/Desktop/Test.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_Eta_v5.C",
+		"/Users/agrummer/Desktop/Currents/DamageFactors/FluenceDamageValues.C",
+		"/Users/agrummer/Desktop/Currents/LeakageMeasurements_v21.py",
+		"/Users/agrummer/Desktop/CodingNotes/CommandLineNotes.txt",
+		"/Users/agrummer/Desktop/Currents/ModuleLists.py",
+		"/Users/agrummer/Desktop/Currents/ModuleListsDisk.py",
+		"/Users/agrummer/Desktop/CodingNotes/SublimeText/SublimeMerge.txt",
+		"/Users/agrummer/Desktop/LeakageCurrent/GetCMBData/GetAllDisk.py",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/CombineTextFilesAll.py",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_v4_Eta_Profile.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v4.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v4_Disk.C",
+		"/Users/agrummer/Desktop/Currents/ModuleNamesLayerOne.py",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_v4_Eta.C",
+		"/Users/agrummer/Desktop/Currents/LZeroHVPP4CurrentOct2017/L0_B02_S1_C7_M5C_HVPP4_Imon_high/L0_B02_S1_C7_M5C_HVPP4_Imon_high_Combine.csv",
+		"/Users/agrummer/Desktop/Currents/LZeroHVPP4CurrentOct2017/L0_B03_S1_A6_M1A_HVPP4_Imon_high/L0_B03_S1_A6_M1A_HVPP4_Imon_high_Combine.csv",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll/DTwoHVNov2017/D2A_B02_S2_M35_HV_VMeas/D2A_B02_S2_M35_HV_VMeas_OnOff.csv",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll/DTwoHVNov2017/D2C_B03_S1_M41_HV_VMeas/D2C_B03_S1_M41_HV_VMeas_OnOff.csv",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll/DTwoHVNov2017/D2A_B02_S2_M2_HV_VMeas/D2A_B02_S2_M2_HV_VMeas_OnOff.csv",
+		"/Users/agrummer/Desktop/new.py",
+		"/Users/agrummer/Desktop/DelayedSubmission.txt",
+		"/Users/agrummer/Desktop/RootNotes.txt"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"v2/",
+			"v1/",
+			"xmin",
+			"        hres->SetMaximum(1.1);   // along          \n        hres->SetMinimum(0.9);  //   Y \n",
+			"DirNameSig",
+			"        hres->SetMaximum(1.1);   // along          \n        hres->SetMinimum(0.9);  //   Y \n",
+			"    pad1 = new TPad(\"pad1\",\"pad1\",0,0.33,1,1); //xlow ylow xup yup\n    pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.3); //0.3\n    bool drawResiduals(true);\n    if (drawResiduals) {\n        pad1->SetMargin(0.16,0.05,0.028,0.09);//left, right, bottom, top\n        // pad1->SetMargin(0.12,0.05,0.028,0.09);\n        pad1->SetBorderMode(0);\n        pad1->SetLogy();\n        pad2->SetMargin(0.16,0.05,0.38,0.04);\n",
+			"pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.33);",
+			"        hres->SetMaximum(1.000001);   // along          \n        hres->SetMinimum(0.999999);  //   Y \n",
+			"h_DefaultNEW",
+			"leg2->Draw();\n\nTString OutdirName",
+			"TCanvas* c2 = new TCanvas(\"c2\", \"Var Comps\",0.,0., 800, 600);\n    TPad *pad1, *pad2;\n    pad1 = new TPad(\"pad1\",\"pad1\",0,0,1,1); //xlow ylow xup yup\n    // pad2 = new TPad(\"pad2\",\"pad2\",0,0,0,0); //0.3\n    pad1->SetLogy();\n    pad1->SetMargin(0.16,0.05,0.16,0.09);\n    pad1->Draw();\n    pad1->cd();",
+			"\n filenameSig = DirNameSig",
+			"\nfilenameSig = DirNameSig",
+			"sytle",
+			"draw",
+			"leg2->AddEntry",
+			"ots(\"2016main303846\"",
+			"(theYear.Contains(\"MC\"))",
+			"filenameSig = DirName + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";",
+			"TString DirName(\"\"), DirName2(\"\"); \nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \nDirName2 = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n",
+			"TString DirName(\"\"); \nif (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nTString ",
+			"../Iso_",
+			"#include \"../Iso_MultiROCs.h\"\n#include \"../getHistoFromTree.C\"",
+			"DirName = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";\nColorIndex",
+			"DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}",
+			"TString DirName = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";",
+			"All/",
+			"ROC_2020Feb19_v8_mixVars_looseN",
+			"VarComps2020Feb19_VarBinned_v8_mixVars_looseN",
+			"RetrieveHist",
+			"grROC_DefaultOLD",
+			"\"eg2\"",
+			"eg2",
+			"ifilenameSig2->Close();",
+			"Year.EqualTo(\"2016main303846\")",
+			"grROC_TTVA_loose_c7NEW",
+			"grROC_TTVA_loose_c2NEW",
+			"grROC_TTVA_loose_c7NEW",
+			"draw",
+			"Loose TVA old nTuple, from Trks",
+			"Loose TVA new nTuple, from Trks",
+			"h_looseApprox",
+			"h_looseTrkPerigee",
+			"if (!myPileup.EqualTo(\"high\"))"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"v3/",
+			"        hres->SetMaximum(1.001);   // along          \n        hres->SetMinimum(0.999);  //   Y \n",
+			"    pad1 = new TPad(\"pad1\",\"pad1\",0,0.33,1,1); //xlow ylow xup yup\n    pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.32); //0.3\n    bool drawResiduals(true);\n    if (drawResiduals) {\n        pad1->SetMargin(0.16,0.05,0.032,0.09);//left, right, bottom, top\n        // pad1->SetMargin(0.12,0.05,0.028,0.09);\n        pad1->SetBorderMode(0);\n        pad1->SetLogy();\n        pad2->SetMargin(0.16,0.05,0.38,0.03);\n",
+			"pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.3);",
+			"        hres->SetMaximum(1.1);   // along          \n        hres->SetMinimum(0.9);  //   Y \n",
+			"leg2->Draw();\n\n    TH1F *hres(NULL);\n    if (drawResiduals) {\n        pad2->cd();\n        hres = (TH1F*)h_DefaultNEW->Clone(\"hres\");\n        hres->Sumw2();\n        hres->Divide(h_DefaultNEW,h_1516,1.0,1.0);\n        hres->GetXaxis()->SetRangeUser(xmin, xmax);\n        hres->SetMaximum(1.000001);   // along          \n        hres->SetMinimum(0.999999);  //   Y \n        hres->SetMarkerSize(0.7);\n        hres->GetXaxis()->SetTitleOffset(1.0); //0.95\n        hres->GetXaxis()->SetTitleSize(0.17);\n        hres->GetXaxis()->SetLabelSize(0.14); //0.17 0.1\n        hres->GetYaxis()->SetTitleSize(0.17);\n        hres->GetYaxis()->SetTitleOffset(0.47); //0.26\n        hres->GetYaxis()->SetLabelSize(0.1);//0.17 //0.08\n        hres->GetYaxis()->SetNdivisions(4,3,0); //4,5,0\n\n        hres->GetYaxis()->SetTitle(\"Ratio\");\n        // hres->GetXaxis()->SetTitle(Xtitle);\n        hres->SetMarkerColor(1);\n        hres->SetLineColor(1);\n        hres->Draw(\"e0p same\");\n    }\n\n\nTString OutdirName",
+			"TCanvas* c2 = new TCanvas(\"c2\", \"Var Comps\",0.,0., 800, 600);\n    TPad *pad1, *pad2;\n    pad1 = new TPad(\"pad1\",\"pad1\",0,0.33,1,1); //xlow ylow xup yup\n    pad2 = new TPad(\"pad2\",\"pad2\",0,0,1,0.33); //0.3\n    bool drawResiduals(true);\n    if (drawResiduals) {\n        pad1->SetMargin(0.16,0.05,0.028,0.09);//left, right, bottom, top\n        // pad1->SetMargin(0.12,0.05,0.028,0.09);\n        pad1->SetBorderMode(0);\n        pad1->SetLogy();\n        pad2->SetMargin(0.16,0.05,0.38,0.04);\n        // pad2->SetMargin(0.12,0.05,0.38,0.06);\n        pad2->SetBorderMode(0);\n        pad1->Draw();\n        pad2->Draw();\n        pad1->cd();\n    }\n    h_DefaultNEW->GetYaxis()->SetNdivisions(4,5,0); //4,5,0\n    h_DefaultNEW->GetXaxis()->SetLabelOffset(0.028);\n    h_DefaultNEW->GetYaxis()->SetTitleSize(0.08);\n    h_DefaultNEW->GetYaxis()->SetTitleOffset(0.9);\n    h_DefaultNEW->GetYaxis()->SetLabelSize(0.08);\n",
+			"(DataType.EqualTo(\"mc\"))",
+			"filenameSig = DirNameSig + mcName+\"Allcommon/LASTskim_\"+mcName+\"_All_\"+FileDate+\".root\";",
+			"TString DirName(\"\"), DirName2(\"\"), DirNameSig(\"\"); \nDirName    = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\"; \nDirNameSig = \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \nDirName2   = \"/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/\";\n",
+			"TString DirName(\"\"), DirName2(\"\"); \nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\"; \n",
+			"/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/Iso_",
+			"#include \"/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/v8IsoScripts/Iso_MultiROCs.h\"\n#include \"/afs/cern.ch/user/a/agrummer/www/bmumu/IsoVarROCs/v8IsoScripts/getHistoFromTree.C\"",
+			"if (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nColorIndex",
+			"DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}",
+			"TString DirName(\"\"); \nif (theYear.Contains(\"MC\")){\nDirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/\";}\nelse{DirName= \"/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/\";}",
+			"Allcommon/",
+			"ROC_2020Mar6_v8_mixVars_looseNi",
+			"VarComps2020Mar6_VarBinned_v8_mixVars_looseNi"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts/mixVars_looseN"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mixVars_looseN/Iso_MultiVar_TTVA_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								587
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3834,
+										3835
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										869,
+										870
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mixVars_looseN/OtherIso_MultiVar_TTVA_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8062,
+								8062
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										8786,
+										8787
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										7960,
+										7961
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										8781,
+										8782
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										7960,
+										7961
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14377,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										372,
+										404
+									],
+									[
+										1131,
+										1164
+									],
+									[
+										1694,
+										1727
+									],
+									[
+										2397,
+										2430
+									],
+									[
+										3074,
+										3107
+									],
+									[
+										3645,
+										3678
+									],
+									[
+										4313,
+										4323
+									],
+									[
+										4419,
+										4429
+									],
+									[
+										4785,
+										4795
+									],
+									[
+										5326,
+										5336
+									],
+									[
+										5432,
+										5442
+									],
+									[
+										5715,
+										5725
+									],
+									[
+										6306,
+										6316
+									],
+									[
+										6412,
+										6422
+									],
+									[
+										6694,
+										6704
+									],
+									[
+										7275,
+										7285
+									],
+									[
+										7381,
+										7391
+									],
+									[
+										7764,
+										7774
+									],
+									[
+										8313,
+										8323
+									],
+									[
+										8419,
+										8429
+									],
+									[
+										8807,
+										8817
+									],
+									[
+										9356,
+										9366
+									],
+									[
+										9462,
+										9472
+									],
+									[
+										9745,
+										9755
+									],
+									[
+										10399,
+										10402
+									],
+									[
+										10886,
+										10889
+									],
+									[
+										11382,
+										11385
+									],
+									[
+										11868,
+										11871
+									],
+									[
+										12332,
+										12335
+									],
+									[
+										12848,
+										12851
+									],
+									[
+										13343,
+										13346
+									],
+									[
+										13812,
+										13815
+									],
+									[
+										14182,
+										14185
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								14110,
+								14110
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"default_dir": "/Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScriptsIntersect/mixVars_looseN",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 4,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5280.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "mixVars_looseN/Iso_MultiROCs_TTVA_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12368,
+								12368
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										12398,
+										12399
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										12363,
+										12364
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "mixVars_looseN/Iso_MultiROCs_TTVA_logAccept_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12583,
+								12614
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										10146,
+										10147
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										10120,
+										10121
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										12615,
+										12616
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										12574,
+										12575
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "mixVars_looseN/DOCA_MultiROCs_TTVA_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14437,
+								14437
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										11247,
+										11248
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										11214,
+										11215
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										14946,
+										14947
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										13125,
+										13126
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "mixVars_looseN/DOCA_logAccept_ROCs_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								783,
+								783
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										12201,
+										12202
+									]
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "mixVars_looseN/NcloseTracks_MultiROCs_TTVA_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								391,
+								391
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										402,
+										403
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										349,
+										350
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										402,
+										403
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										349,
+										350
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "mixVars_looseN/NcloseTracks_logAccept_ROCs_v8_looseN.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1529,
+								1363
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1389,
+										1390
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1331,
+										1332
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1389,
+										1390
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1331,
+										1332
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 163.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.592056734459,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 41.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 113.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/root.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"kstestfe",
+				"Macros/KSTestFeb7.C"
+			],
+			[
+				"",
+				"AnalysisCode/MCvsData/bbmumuX/AtlasLabels.C"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$(DLLFILE):"
+			]
+		],
+		"width": 574.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 70.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

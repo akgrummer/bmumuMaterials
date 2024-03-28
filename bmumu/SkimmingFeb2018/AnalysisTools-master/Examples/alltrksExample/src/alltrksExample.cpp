@@ -1,0 +1,160 @@
+//
+// example how to read all track ntuples
+//
+// iskander(dot)ibragimov(at)cern(dot)ch
+// 
+// 
+//  
+
+#include "TCut.h"
+#include "TString.h"
+#include "TFile.h"
+#include "TTree.h"
+#include "TH1.h"
+#include "TBranch.h"
+#include "TCanvas.h"
+#include <iostream>
+#include <dirent.h>
+
+using namespace std;
+typedef std::vector<unsigned int>  v_uint;
+typedef std::vector<int>           v_int;
+typedef std::vector<float>         v_float;
+typedef std::vector<double>        v_double;
+
+void alltrksExample() {
+
+  // TString fsname("/tmp/ibragimo/user.ibragimo.isocalc.testall_Bmumu_skimmed/output_test.root");
+  // TString fsname("/afs/cern.ch/work/a/agrummer/BsmumuData/LastSkimOne2018Run/LASTskim_2018Bmumu.root");
+  TString fsname("/afs/cern.ch/work/a/agrummer/BsmumuData/LastSkimOne2018Run/LASTskim_2017Bmumu.root");
+  //TString fsname("/afs/cern.ch/user/i/ibragimo/AnalysisCode/build/x86_64-slc6-gcc62-opt/jobOptions/BsmumuNtupleMaker_skimmed/output_test.root");
+  TFile *fs  = new TFile(fsname);
+  TFile *fs2  = new TFile(fsname);
+  TTree *ts  = (TTree*)fs->Get("T_mv");
+  TTree *ts2  = (TTree*)fs->Get("T_mv");
+  // TTree *tev = (TTree*)fs->Get("EventInfo");
+  
+  v_uint   *pv_type     = 0;
+  v_float  *pv_z        = 0;
+  v_float  *pv_sigma_z  = 0;
+  v_int    *idtrk_pvidx = 0;  
+  // tev->SetBranchAddress("pv_z", &pv_z);
+  // tev->SetBranchAddress("pv_sigma_z", &pv_sigma_z);
+  // tev->SetBranchAddress("pv_type", &pv_type);
+  // tev->SetBranchAddress("idtrk_pvidx", &idtrk_pvidx);
+  
+  
+  auto nevents = ts->GetEntries();
+  cout<< "Entries in original tree: "<< nevents << endl;
+  
+  //float B_MUCALC_mass(0.);
+  int event_index(0);
+  int B_PV_idx(0);
+  int B_IDtrk1_trkidx(0);
+  int B_IDtrk2_trkidx(0);
+  v_float *B_PV_trksChi2 = 0;
+  v_float *B_VTX_trksChi2=0;
+  v_float *closeTrkDOCA_alltrks=0;
+  int closeTrkNtrksChi2(0);
+  float closeTrkDCA(0.);
+  float closeTrkZCA(0.);
+  float B_iso_7_Chi2_5_LoosePt05(0.);
+
+  //ts->SetBranchAddress("B_MUCALC_mass",&B_MUCALC_mass);
+  ts->SetBranchAddress("event_index",  &event_index);       // index to EventInfo tree
+  ts->SetBranchAddress("B_PV_idx",&B_PV_idx);               // index to associated PV  
+  ts->SetBranchAddress("B_PV_trksChi2",&B_PV_trksChi2);     // chi2 to associated PV, per track
+  ts->SetBranchAddress("B_IDtrk1_trkidx",&B_IDtrk1_trkidx); // indexes of muon tracks
+  ts->SetBranchAddress("B_IDtrk2_trkidx",&B_IDtrk2_trkidx);
+  ts->SetBranchAddress("B_VTX_trksChi2",&B_VTX_trksChi2);
+  ts->SetBranchAddress("closeTrkDOCA_alltrks",&closeTrkDOCA_alltrks);
+  ts->SetBranchAddress("B_iso_7_Chi2_5_LoosePt05",&B_iso_7_Chi2_5_LoosePt05);
+
+  ts->SetBranchAddress("closeTrkNtrksChi2",&closeTrkNtrksChi2);
+  ts->SetBranchAddress("closeTrkDCA",&closeTrkDCA);
+  ts->SetBranchAddress("closeTrkZCA",&closeTrkZCA);
+
+  TH1F* h_chi2 = new TH1F("h_chi2","chi2 to ass. PV",200,-5,15);
+  TH1F* h_iso = new TH1F("h_iso","iso",110,0,1.1);
+  //  TH1F* h_chi2 = new TH1F("h_chi2","chi2 to associated PV for non-associated tracks",200,-5,15);
+  TH1I* h_ntrks = new TH1I("h_ntrks","h_ntrks",100,0,100);  
+  h_ntrks->SetLineColor(kRed);
+  TH1I* h_ntrks_orig = new TH1I("h_ntrks_orig","h_ntrks_orig",100,0,100); 
+  h_ntrks_orig->SetLineColor(kBlack);
+  for (auto ievent=0; ievent<nevents; ievent++)
+    {
+      if (ievent%100000==0) cout << "Processing event "<< ievent << endl;
+      
+      ts->GetEntry(ievent);
+      // tev->GetEntry(event_index);
+
+      auto ntrks = B_PV_trksChi2->size();
+ //      if ((*idtrk_pvidx).size() != ntrks) {
+	// cout << "FATAL: ID trk info size unequal in event and candidate trees, exiting. " << (*idtrk_pvidx).size() << " <-ev|cand-> " << ntrks << endl;
+	// exit(0);
+ //      }
+      int nclosetrks(0);
+      float docamin(999.0);
+      float DOCA = sqrt( pow(closeTrkDCA, 2) + pow(closeTrkZCA, 2) );
+      for (unsigned int idx=0; idx<ntrks; idx++) {
+
+	// skip signal tracks (Bsmumu channel as an example, add other tracks for other signatures!)
+	//
+	if (idx == B_IDtrk1_trkidx || idx == B_IDtrk2_trkidx) continue; 
+
+	// select tracks by vertex association and fill chi2 histogram
+	// 
+	// if ( (*idtrk_pvidx).at(idx) == B_PV_idx 
+	//      || (*idtrk_pvidx).at(idx) == pv_type->size()-1 ) { // choose tracks ass to other real PV's (for non-ass tracks use '==' instead)
+	  h_chi2->Fill( (*B_PV_trksChi2).at(idx) );
+      // h_chi2->Fill( (*B_VTX_trksChi2).at(idx) );
+	  h_iso->Fill(B_iso_7_Chi2_5_LoosePt05);
+	  
+	  if ((*B_VTX_trksChi2).at(idx)<=1.0) nclosetrks++;
+	  
+	  if ( (*B_VTX_trksChi2).at(idx) <=7.0) {
+	    if ( (*closeTrkDOCA_alltrks).at(idx) < docamin) docamin = (*closeTrkDOCA_alltrks).at(idx);
+	  }
+	// }
+      }
+      // cout << DOCA << " <-AOD|ntup-> "<< docamin << endl; //" DCA: "<< closeTrkDCA << " ZCA: "<< closeTrkZCA << endl; 
+      h_ntrks->Fill(nclosetrks);
+      h_ntrks_orig->Fill(closeTrkNtrksChi2);	 
+    }
+
+    h_iso->Scale(1./(h_iso->Integral(0, 110+1)));
+  TCanvas* c = new TCanvas("trks chi2","trks chi2",800,600);
+   h_chi2->Draw();
+    // h_iso->Draw("hist");
+    // h_iso->SetLineColor(kRed);
+    // gPad->SetLogy();
+    // h_iso->SetMaximum(0.07);
+    // h_ntrks_orig->Draw();
+    // h_ntrks->Draw("same");
+    TLegend* leg;
+    // leg = new TLegend(0.7, 0.6, 0.8, 0.7,NULL,"brNDC");
+    leg = new TLegend(0.2, 0.6, 0.3, 0.7,NULL,"brNDC");
+    leg->SetTextSize(0.034468);
+    // leg->AddEntry(h_chi2, "2018 B_PV_trksChi2" ,"l");
+    leg->AddEntry(h_chi2, "2017 B_PV_trksChi2" ,"l");
+    // leg->AddEntry(h_iso, "2018 I_{0.7}" ,"l");
+    // leg->AddEntry(h_iso, "2017 I_{0.7}" ,"l");
+    // leg->AddEntry(h_ntrks_orig, "2018 h_ntrks_orig" ,"l");
+    // leg->AddEntry(h_ntrks, "2018 h_ntrks","l");
+    // leg->AddEntry(h_ntrks_orig, "2017 h_ntrks_orig" ,"l");
+    // leg->AddEntry(h_ntrks, "2017 h_ntrks","l");
+    leg->SetBorderSize(0);  // no border
+    leg->SetLineColor(0);
+    leg->SetFillColorAlpha(0, 0.4);
+    leg->Draw();
+
+  // c->SaveAs("ntrks_2018.png");
+  // c->SaveAs("ntrks_2017.png");
+  // c->SaveAs("iso_2018.png");
+  // c->SaveAs("iso_2017.png");
+  // c->SaveAs("chi2_2018.png");
+  c->SaveAs("chi2_2017.png");
+  
+  fs->Close();
+  delete fs;
+}

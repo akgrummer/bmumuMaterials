@@ -1,0 +1,12 @@
+These scrits are used for:
+
+1. atlas.py: Applies the ATLAS style in all the histograms.
+
+2. utils.py: Set of tools to get ratio plots, save histograms, beautify canvases, etc.
+
+These scripts have to be added at the top of your plotting script like:
+
+import atlas
+import utils
+
+

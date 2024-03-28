@@ -1,0 +1,155 @@
+RunCommandsPltFrom2files.txt
+
+the weights option weight the bins - not what I am looking for right now - I want to know what the weights look like! not how they apply to each other 
+    note: weights are applied to the y axis not, and do not show the weight distrubution in the x axis.
+bin/ExamplePlotFromTwoFiles varPVWeights Muon1_reco_eff_sf*Muon2_reco_eff_sf
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf* Muon2_reco_eff_sf
+
+bin/ExamplePlotFromTwoFiles varPVWeights v1 MC16e
+bin/ExamplePlotFromTwoFiles MCWeights v1 MC16e
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v1 MC16e
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v1 MC16e
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v1 MC16e
+
+bin/ExamplePlotFromTwoFiles varPVWeights v1 MC16d
+bin/ExamplePlotFromTwoFiles MCWeights v1 MC16d
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v1 MC16d
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v1 MC16d
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v1 MC16d
+
+bin/ExamplePlotFromTwoFiles varPVWeights v1 MC16a
+bin/ExamplePlotFromTwoFiles MCWeights v1 MC16a
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v1 MC16a
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v1 MC16a
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v1 MC16a
+
+
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+
+
+
+
+
+bin/ExamplePlotFromTwoFiles varPVWeights v1 MC16e
+bin/ExamplePlotFromTwoFiles MCWeights v1 MC16e
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v1 MC16e
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v1 MC16e
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v1 MC16e
+
+bin/ExamplePlotFromTwoFiles varPVWeights v1 MC16d
+bin/ExamplePlotFromTwoFiles MCWeights v1 MC16d
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v1 MC16d
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v1 MC16d
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v1 MC16d
+
+bin/ExamplePlotFromTwoFiles varPVWeights v1 MC16a
+bin/ExamplePlotFromTwoFiles MCWeights v1 MC16a
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v1 MC16a
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v1 MC16a
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v1 MC16a
+
+bin/ExamplePlotFromTwoFiles varPVWeights v2 MC16e
+bin/ExamplePlotFromTwoFiles MCWeights v2 MC16e
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v2 MC16e
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v2 MC16e
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v2 MC16e
+
+bin/ExamplePlotFromTwoFiles varPVWeights v2 MC16d
+bin/ExamplePlotFromTwoFiles MCWeights v2 MC16d
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v2 MC16d
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v2 MC16d
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v2 MC16d
+
+bin/ExamplePlotFromTwoFiles varPVWeights v2 MC16a
+bin/ExamplePlotFromTwoFiles MCWeights v2 MC16a
+bin/ExamplePlotFromTwoFiles varMuon1_reco_eff_sf v2 MC16a
+bin/ExamplePlotFromTwoFiles varMuon2_reco_eff_sf v2 MC16a
+bin/ExamplePlotFromTwoFiles MuonRecoWeights v2 MC16a
+
+bin/ExamplePlotFromTwoFiles PRIVX_mu v2 MC16a
+bin/PlottingScript PRIVX_mu v1 2017
+
+
+bin/PlottingScript PRIVX_mu v3 all
+bin/PlottingScript PRIVX_mu v2 all
+
+bin/PlottingScript varPVWeights v3 mc16e
+bin/PlottingScript MCWeights v3 mc16e
+bin/PlottingScript varMuon1_reco_eff_sf v3 mc16e
+bin/PlottingScript varMuon2_reco_eff_sf v3 mc16e
+bin/PlottingScript MuonRecoWeights v3 mc16e
+
+bin/PlottingScript varPVWeights v3 mc16d
+bin/PlottingScript MCWeights v3 mc16d
+bin/PlottingScript varMuon1_reco_eff_sf v3 mc16d
+bin/PlottingScript varMuon2_reco_eff_sf v3 mc16d
+bin/PlottingScript MuonRecoWeights v3 mc16d
+
+bin/PlottingScript varPVWeights v3 mc16a
+bin/PlottingScript MCWeights v3 mc16a
+bin/PlottingScript varMuon1_reco_eff_sf v3 mc16a
+bin/PlottingScript varMuon2_reco_eff_sf v3 mc16a
+bin/PlottingScript MuonRecoWeights v3 mc16a
+
+
+
+bin/PlottingScript varPVWeights v2 mc16e
+bin/PlottingScript MCWeights v2 mc16e
+bin/PlottingScript varMuon1_reco_eff_sf v2 mc16e
+bin/PlottingScript varMuon2_reco_eff_sf v2 mc16e
+bin/PlottingScript MuonRecoWeights v2 mc16e
+
+bin/PlottingScript varPVWeights v2 mc16d
+bin/PlottingScript MCWeights v2 mc16d
+bin/PlottingScript varMuon1_reco_eff_sf v2 mc16d
+bin/PlottingScript varMuon2_reco_eff_sf v2 mc16d
+bin/PlottingScript MuonRecoWeights v2 mc16d
+
+
+
+
+
+
+March 17, 2020:
+
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/
+
+
+bin/PlottingScript PRIVX_mu v3 MC
+bin/PlottingScript PRIVX_mu v2 MC
+bin/PlottingScript PRIVX_mu v3 data
+bin/PlottingScript PRIVX_mu v1 data
+
+
+bin/PlottingScript varPVWeights v3 weights
+bin/PlottingScript MCWeights v3 weights
+bin/PlottingScript varMuon1_reco_eff_sf v3 weights
+bin/PlottingScript varMuon2_reco_eff_sf v3 weights
+bin/PlottingScript MuonRecoWeights v3 weights
+
+bin/PlottingScript varPVWeights v2 weights
+bin/PlottingScript MCWeights v2 weights
+bin/PlottingScript varMuon1_reco_eff_sf v2 weights
+bin/PlottingScript varMuon2_reco_eff_sf v2 weights
+bin/PlottingScript MuonRecoWeights v2 weights
+
+
+bin/PlottingScript_single PRIVX_mu v3 MC
+bin/PlottingScript_single PRIVX_mu v3 data
+
+bin/PlottingScript_single_finalVal varPVWeights v weights
+bin/PlottingScript_single_finalVal MCWeights v weights
+bin/PlottingScript_single_finalVal varMuon1_reco_eff_sf v weights
+bin/PlottingScript_single_finalVal varMuon2_reco_eff_sf v weights
+bin/PlottingScript_single_finalVal MuonRecoWeights v weights
+
+bin/PlottingScript_single_finalVal BIsoACH v weights
+bin/PlottingScript_single_finalVal BIsoBEJ v weights
+bin/PlottingScript_single_finalVal BIsoBGJ v weights
+bin/PlottingScript_single_finalVal ct v weights
+

@@ -1,0 +1,147 @@
+#include "mvaInterface.h"
+
+#if !defined(__CINT__)
+ClassImp(mvaInterface);
+#endif
+
+mvaInterface::mvaInterface()
+{
+  SIG_inputFileName="";
+  BKG_inputFileName="";
+  SIG_treeName="";
+  BKG_treeName="";
+  valSIG_inputFileName="";
+  valBKG_inputFileName="";
+  valSIG_treeName="";
+  valBKG_treeName="";
+  OUT_DIR="";
+  OUT_FILE="";
+  factoryName = "";
+  factory_options              = "";
+  factory_prepareTrainingOpt   = "";
+  GradBDToptions              = "";
+  AdaBDToptions              = "";
+  MLPoptions              = "";
+  SVMoptions              = "";
+  MyCutSignal = "";
+  MyCutBkgnd ="";
+  SIGweightexp  = "";
+  BKGweightexp  ="";
+  varVec.clear();
+  varVecTitle.clear();
+  varVecUnits.clear();
+  varVecType.clear();
+  spectVec.clear();
+  spectVecTitle.clear();
+  spectVecUnits.clear();
+  spectVecType.clear();
+}
+
+void mvaInterface::reset()
+{
+  varVec.clear();
+  varVecTitle.clear();
+  varVecUnits.clear();
+  varVecType.clear();
+  spectVec.clear();
+  spectVecTitle.clear();
+  spectVecUnits.clear();
+  spectVecType.clear();
+}
+
+void mvaInterface::runMVAtraining() {
+  TFile* SIG_file = new TFile(SIG_inputFileName);
+  TFile* BKG_file = new TFile(BKG_inputFileName);
+
+  TFile* valSIG_file(NULL); if (!valSIG_inputFileName.EqualTo("")) valSIG_file = new TFile(valSIG_inputFileName);
+  TFile* valBKG_file(NULL); if (!valBKG_inputFileName.EqualTo("")) valBKG_file = new TFile(valBKG_inputFileName);
+
+  cout << "Retrieving tree branches ... " << endl;
+  TTree* SIG_tree = (TTree*)SIG_file->Get(SIG_treeName);
+  TTree* BKG_tree = (TTree*)BKG_file->Get(BKG_treeName);
+
+  TTree* valSIG_tree(NULL); if (!valSIG_treeName.EqualTo("") && valSIG_file!=NULL) valSIG_tree = (TTree*)valSIG_file->Get(valSIG_treeName);
+  TTree* valBKG_tree(NULL); if (!valBKG_treeName.EqualTo("") && valBKG_file!=NULL) valBKG_tree = (TTree*)valBKG_file->Get(valBKG_treeName);
+  
+  //create factory
+  cout << " * Initialise TMVA..." << endl;
+  TFile* outputFile      = TFile::Open(OUT_DIR+"/"+OUT_FILE, "RECREATE" );
+  TMVA::Factory* factory = new TMVA::Factory(factoryName, outputFile, factory_options);
+  (TMVA::gConfig().GetIONames()).fWeightFileDir = OUT_DIR+"/weights/";
+  (TMVA::gConfig().GetVariablePlotting()).fMaxNumOfAllowedVariablesForScatterPlots = 25;
+
+  //add trees
+  if (valSIG_tree!=NULL && valBKG_tree!=NULL) {
+    factory->AddSignalTree(SIG_tree, 1.0, TMVA::Types::kTraining);
+    factory->AddBackgroundTree(BKG_tree, 1.0, TMVA::Types::kTraining);
+    factory->AddSignalTree(valSIG_tree, 1.0, TMVA::Types::kTesting);
+    factory->AddBackgroundTree(valBKG_tree, 1.0, TMVA::Types::kTesting);
+  } else {
+    factory->AddSignalTree(SIG_tree, 1.0);
+    factory->AddBackgroundTree(BKG_tree, 1.0);
+  }
+
+  //add weights
+  if (!SIGweightexp.EqualTo("")) factory->SetSignalWeightExpression(SIGweightexp);
+  if (!BKGweightexp.EqualTo("")) factory->SetBackgroundWeightExpression(BKGweightexp);
+  
+  //add variables
+  for (unsigned int ii=0;ii<varVec.size();ii++) {
+    factory->AddVariable(varVec[ii],varVecTitle[ii],varVecUnits[ii],varVecType[ii]);
+  }
+  //add spectators
+  for (unsigned int ii=0;ii<spectVec.size();ii++) {
+    factory->AddSpectator(spectVec[ii],spectVecTitle[ii],spectVecUnits[ii],spectVecType[ii]);
+  }
+ 
+  // prepare and test tree
+  cout << " * Prepare Training and Test Tree..." << endl;
+  factory->PrepareTrainingAndTestTree(MyCutSignal,MyCutBkgnd,factory_prepareTrainingOpt);
+  
+  //book methods
+  if (!AdaBDToptions.EqualTo("")) {
+    cout << " * Book AdaBDT Training Method..." << endl;
+    factory->BookMethod( TMVA::Types::kBDT, "ABDT", AdaBDToptions);
+  }
+
+  if (!GradBDToptions.EqualTo("")) {
+    cout << " * Book GradBDT Training Method..." << endl;
+    factory->BookMethod( TMVA::Types::kBDT, "GBDT", GradBDToptions);
+  } 
+  
+  if (!MLPoptions.EqualTo("")) {
+    cout << " * Book MLP Training Method..." << endl;
+    factory->BookMethod( TMVA::Types::kMLP, "MLP", MLPoptions);
+  } 
+
+  if (!SVMoptions.EqualTo("")) {
+    cout << " * Book SVM Training Method..." << endl;
+    factory->BookMethod( TMVA::Types::kSVM, "SVM", SVMoptions);
+  }
+  
+  if (GradBDToptions.EqualTo("") && AdaBDToptions.EqualTo("") && MLPoptions.EqualTo("") && SVMoptions.EqualTo("")){
+    cout << " * Neither BDT nor MLP nor SVM Training Method defined, only correlations of the input variables will be provided..." << endl;
+  } 
+  // ---- optimize the setting (configuration) of the MVAs using the set of training events
+  // ==== EXPERIMENTAL !!!!
+  // 
+  //factory->OptimizeAllMethods("ROCIntegral","Scan");
+
+  // ---- Train MVAs using the set of training events
+  factory->TrainAllMethodsForClassification();
+  
+  // ---- Evaluate all MVAs using the set of test events
+  factory->TestAllMethods();	
+ 
+  // ----- Evaluate and compare performance of all configured MVAs
+  if (!(factory_prepareTrainingOpt.Contains("nTest_Signal=1") || factory_prepareTrainingOpt.Contains("nTest_Background=1")))
+  factory->EvaluateAllMethods();    
+   
+  //close file	
+  outputFile->Close();
+  
+  // Clean up
+  delete factory;		
+
+}
+

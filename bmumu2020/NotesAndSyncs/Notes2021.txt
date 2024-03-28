@@ -1,0 +1,5 @@
+Data 2021 eos locations:
+
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuProd0121/
+
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuProd0121/Nominal_NTUP_data/data17_BphysLS/v1/merged_Bmumu

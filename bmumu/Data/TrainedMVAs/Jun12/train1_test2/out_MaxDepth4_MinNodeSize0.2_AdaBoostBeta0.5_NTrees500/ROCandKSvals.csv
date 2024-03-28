@@ -1,0 +1,2 @@
+MaxDepth,MinNodeSize,AdaBoostBeta,NTrees,ROC18,ROC36,ROC54,KSvalSig,KSvalBkg
+4,0.2,0.5,500,99.9981,99.9888,99.9579,0.264107,0.775033

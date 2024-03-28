@@ -1,0 +1,19 @@
+-bash-4.2$ ./MergeNominalnTuples.exe
+data15main D: 4799
+data15main E: 41620
+data15main F: 27893
+data15main G: 66281
+data15main H: 23187
+data15main J: 135123
+data16main A: 52663
+data16main B: 130136
+data16main C: 211752
+data16main D: 343879
+data16main E: 126915
+data16main F: 219151
+data16main G: 223655
+data16main I: 345202
+data16main K*: 151681
+data16main L: 351639
+
+*Error in <TChain::LoadTree>: Cannot find tree with name T_mv in file /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/Nominal_NTUP_data/data16_Main/v4/user.mghneima.data16_13TeV.periodK.physics_Main.BPHY8.NTUP.grp16_v01_p4144_Bmumu/LASTskim.user.mghneima.21225448.Bmumu._000014.root

@@ -1,0 +1,149 @@
+-bash-4.2$ root -l -b -q 'InputVars_v5_Efficiencies.C("Sig183654")'
+
+Processing InputVars_v5_Efficiencies.C("Sig183654")...
+
+Applying ATLAS style settings...
+
+TreeMC Entries: 166752
+TreeData Entries: 1216285
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 28032
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 166516
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/npv2/SigBDT18/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 57111
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 166516
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/npv2/SigBDT36/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 87410
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 166516
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/npv2/SigBDT54/Npv.pdf has been created
+Time taken in secs: 0.66
+
+
+-bash-4.2$ root -l -b -q 'InputVars_v5_Efficiencies.C("Bkg183654")'
+
+Processing InputVars_v5_Efficiencies.C("Bkg183654")...
+
+Applying ATLAS style settings...
+
+TreeMC Entries: 166752
+TreeData Entries: 1216285
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 0
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/npv2/BkgBDT18/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 29
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/npv2/BkgBDT36/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 177
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/npv2/BkgBDT54/Npv.pdf has been created
+Time taken in secs: 1.73
+
+
+
+
+
+
+
+
+-bash-4.2$ root -l -b -q 'InputVars_v5_Efficiencies.C("Bkg183654")'
+
+Processing InputVars_v5_Efficiencies.C("Bkg183654")...
+
+Applying ATLAS style settings...
+
+TreeMC Entries: 166752
+TreeData Entries: 1216285
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_round(45,0,45) event survived the cut(s): 1
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDT(45,0,45) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/mu2/BkgBDT18/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_round(45,0,45) event survived the cut(s): 30
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDT(45,0,45) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/mu2/BkgBDT36/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_round(45,0,45) event survived the cut(s): 188
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDT(45,0,45) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/mu2/BkgBDT54/PRIVX_mu_round.pdf has been created
+Time taken in secs: 1.53
+
+-bash-4.2$ root -l -b -q 'InputVars_v5_Efficiencies.C("Sig183654")'
+
+Processing InputVars_v5_Efficiencies.C("Sig183654")...
+
+Applying ATLAS style settings...
+
+TreeMC Entries: 166752
+TreeData Entries: 1216285
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_round(45,0,45) event survived the cut(s): 28932
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDT(45,0,45) event survived the cut(s): 166596
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/mu2/SigBDT18/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_round(45,0,45) event survived the cut(s): 57996
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDT(45,0,45) event survived the cut(s): 166596
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/mu2/SigBDT36/PRIVX_mu_round.pdf has been created
+PRIVX_mu_round
+creating histo:PRIVX_mu_round>>PRIVX_mu_round(45,0,45) event survived the cut(s): 88285
+creating histo:PRIVX_mu_round>>PRIVX_mu_roundFullBDT(45,0,45) event survived the cut(s): 166596
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/mu2/SigBDT54/PRIVX_mu_round.pdf has been created
+Time taken in secs: 0.62
+
+
+
+
+
+
+Run 1:
+TreeMC Entries: 166752
+TreeData Entries: 1216285
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 27906
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 166596
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/run1/SigBDT18/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 56730
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 166596
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/run1/SigBDT36/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 86767
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 166596
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/run1/SigBDT54/Npv.pdf has been created
+Time taken in secs: 0.61
+
+
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 1
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/run1/BkgBDT18/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 23
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/run1/BkgBDT36/Npv.pdf has been created
+Npv
+creating histo:Npv>>Npv(30,0,30) event survived the cut(s): 184
+creating histo:Npv>>NpvFullBDT(30,0,30) event survived the cut(s): 1216285
+Warning in <TH1F::Sumw2>: Sum of squares of weights structure already created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/VarEfficiencies/2020July17/run1/BkgBDT54/Npv.pdf has been created
+Time taken in secs: 1.61

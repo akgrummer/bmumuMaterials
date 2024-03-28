@@ -1,0 +1,9 @@
+Notes.txt
+
+root -l -b -q muP_Iso_MultiVar_TTVA_v8_newVars.cpp
+root -l -b -q muP_Iso_MultiROCs_TTVA_v8_newVars.cpp
+root -l -b -q muP_Iso_MultiROCs_TTVA_logAccept_v8_newVars.cpp
+
+root -l -b -q muM_Iso_MultiVar_TTVA_v8_newVars.cpp
+root -l -b -q muM_Iso_MultiROCs_TTVA_v8_newVars.cpp
+root -l -b -q muM_Iso_MultiROCs_TTVA_logAccept_v8_newVars.cpp

@@ -1,0 +1,114 @@
+#!/bin/bash
+
+#----------------------------------------
+#Setup slurm job
+#----------------------------------------
+#SBATCH --reservation=campoverde_59
+#SBATCH --qos=32in1
+#SBATCH --nodelist=cs10
+#SBATCH --mem=120000
+#SBATCH --partition=medium
+#BATCH  --job-name=BplusYield_single
+#SBATCH --output=/nfs/monet_3/home/campoverde/Data/Trees/Bplus_Fit/toy_test/output.log
+#SBATCH --error=/nfs/monet_3/home/campoverde/Data/Trees/Bplus_Fit/toy_test/output.err
+#----------------------------------------
+#Get variables from outside
+#----------------------------------------
+#Set variables for job
+#----------------------------------------
+HOST=$(hostname)
+SUBMDIR=$(pwd)
+SCRATCHDIR="/nfs/${HOST}/scratch/${USER}"
+JOBDIR="${SCRATCHDIR}/$JOBNAME/${SLURM_JOB_ID}"
+BUILDDIR="/nfs/monet_3/home/campoverde/AnalysisCode/build/"
+
+#For homemade pulls
+NFITS=1
+OPTFILE=output_${SLURM_JOB_ID}.root
+EXECUTABLE="/nfs/monet_3/home/campoverde/AnalysisCode/build/x86_64-debian8-gcc62-opt/python/BplusYield/RealDataFit.py"
+OUTPUTDIR="/nfs/moroni_7/data/atlasb7/local/AC/Trees/Bplus_Fit/Data/"
+
+#For MCSTUDY pulls
+#NFITS=200
+#OPTFILE="mc_study.root"
+#EXECUTABLE="/nfs/monet_3/home/campoverde/AnalysisCode/build/x86_64-debian8-gcc62-opt/python/BplusYield/test_models.py"
+#OUTPUTDIR="/nfs/monet_3/home/campoverde/Data/AC/Outputs/Bplus_MCS/signal_minos/"
+#----------------------------------------
+#Pring variables used
+#----------------------------------------
+echo "INFO::ARGUMENTS USED:"
+echo " $*"
+
+echo "INFO::RUNNING ON: $HOST"
+echo "  SUBMDIR    = $SUBMDIR"
+echo "  SCRATCHDIR = $SCRATCHDIR"
+echo "  JOBDIR     = $JOBDIR"
+echo "  BUILDDIR   = $BUILDDIR"
+echo "  EXECUTABE  = $EXECUTABLE"
+echo "  OPTFILE    = $OPTFILE"
+echo "  OUTPUTDIR  = $OUTPUTDIR"
+echo "  NFITS      = $NFITS"
+#----------------------------------------
+#Make directories, setup RELEASE, etc
+#----------------------------------------
+if [ -d $SCRATCHDIR ]; then
+  mkdir -p $JOBDIR
+  cd $JOBDIR
+else
+  echo "ERROR::No SCRATCHDIR=$SCRATCHDIR present"
+  kill -INT $$
+fi
+
+if [ ! -d $OUTPUTDIR ];then
+    mkdir -p $OUTPUTDIR
+fi
+
+echo "INFO::CURRENT JOB DIRECTORY:"
+pwd
+
+cd $BUILDDIR
+source /products/atlas/rc/localSetup/setupRootCoreSi
+
+if [[ $? != 0 ]];then
+    echo "Cannot setup ATLAS software."
+    kill -INT $$
+fi
+
+asetup --restore
+source x86_64-*/setup.sh
+#----------------------------------------
+#Compile and/or run
+#----------------------------------------
+cd $JOBDIR
+
+if [[ ! -f $EXECUTABLE ]];then
+    echo "Cannot find $EXECUTABLE."
+    kill -INT $$
+fi
+
+cp $EXECUTABLE .
+PYDIR=$(dirname $EXECUTABLE)
+cp $PYDIR/*.py . 
+
+echo "------------------Running---------------------"
+python $EXECUTABLE $NFITS $OPTFILE
+echo "-----------------Finished---------------------"
+if [ $? != 0 ];then
+    echo "Execution of $EXECUTABLE failed."
+    kill -INT $$
+fi
+#----------------------------------------
+#Retrieve output and clean
+#----------------------------------------
+echo "INFO::AFTER RUNNING:"
+
+ls -ltr
+
+cp *.root $OUTPUTDIR
+echo "$OPTFILE ---> $OUTPUTDIR"
+
+cd ${SCRATCHDIR}
+rm -rf $JOBDIR
+#----------------------------------------
+#----------------------------------------
+

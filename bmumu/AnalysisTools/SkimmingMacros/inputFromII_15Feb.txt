@@ -1,0 +1,243 @@
+
+two more variables to ntuple production code are added
+(to address also close track variable calculation, which 
+should be affected by the same issue as isolation):
+
+B_VTX_trksChi2 : B_VTX_trksChi2/F              // log(chi2) value to B-vertex for each track
+closeTrkDOCA_alltrks: closeTrkDOCA_alltrks/F   // close track DOCA for each track
+
+
+skimmed ntuples available for Bmumu channel for 2018 on eos
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu
+
+for the 2017 run and other channels skimming scripts are being prepared.
+Unskimmed ntuples are in GRID:
+http://bigpanda.cern.ch/task/17073931/ for 2018 run
+http://bigpanda.cern.ch/task/17073825/ for 2017 run
+
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/*
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/*
+ * = Bmumu, BJpsiK or BsJpsiPhi
+
+
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu 2018
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu 2017
+
+ ./cutBatchBpJpsiKp /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/BJpsiK 2018
+ ./cutBatchBpJpsiKp /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/BJpsiK 2017
+ 
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/BsJpsiPhi 2018
+ ./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/BsJpsiPhi 2017
+
+
+./fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/ 2017
+./fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/ 2018
+
+March 27, 2019:
+setupATLAS 
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/v2/ 2017
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/v2/ 2018
+
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits/v2/ MC16a
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16d_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_atrkwhits/v2/ MC16d
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits/v2/ MC16e
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data16/Bmumu/v3/ 2016
+
+30May2019:
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/v3/ 2017
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/v3/ 2018
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits/v3/ MC16a
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16d_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_atrkwhits/v3/ MC16d
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits/v3/ MC16e
+
+
+// June 5, 2019
+// Reset cutBatchBsmumu_fileloop for 2016 trigger
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data16/Bmumu/v3/ 2016
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits/v3/ MC16a
+
+July17, 2019:
+
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data16/Bmumu/v4/ 2016
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/v4/ 2017
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/v4/ 2018
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits/v4/ MC16a
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16d_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_atrkwhits/v4/ MC16d
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits/v4/ MC16e
+
+
+Nov 21, 2019:
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+run from /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/SkimmingMacros
+!compile first! use make
+
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data16/Bmumu/v5/ 2016
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/v5/ 2017
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/v5/ 2018
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits/v5/ MC16a
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16d_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_atrkwhits/v5/ MC16d
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits/v5/ MC16e
+
+Dec 5, 2019:
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/SkimmingMacros
+!compile first! use make
+
+Copy directories (and exclude root files)
+rsync -avz --exclude="*.root" v5/ v6/
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data16/Bmumu/v6/ 2016
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/v6/ 2017
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/v6/ 2018
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits/v6/ MC16a
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16d_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_atrkwhits/v6/ MC16d
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits/v6/ MC16e
+
+Feb 11, 2020:
+
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/SkimmingMacros
+!compile first! use make
+
+MC16d, Bsmumu, 
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_MC/Bsmumu/v1/
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v1/
+
+Data, 
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_ntup/*/Bmumu/v1/
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/*/Bmumu/v1/
+where * corresponds to specific runs: data16_delayed_00303846/,  data16_main_00302393/,  data17_00339849/,  data18_00358096
+
+
+MC16d:
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_MC/Bsmumu/v1/ MC16d
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_ntup/data16_delayed_00303846/Bmumu/v1/ 2016delayed
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_ntup/data16_main_00302393/Bmumu/v1/ 2016main
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_ntup/data17_00339849/Bmumu/v1/ 2017
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_ntup/data18_00358096/Bmumu/v1/ 2018
+
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v1/ MC16d
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data17_00339849/Bmumu/v1/ 2017
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data16_main_00302393/Bmumu/v1/ 2016main
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data18_00358096/Bmumu/v1/ 2018
+
+
+Feb 18, 2020:
+
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/SkimmingMacros
+!compile first! use make
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v1/mc16d/ MC16d
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v1/mc16a/ MC16a
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v1/mc16e/ MC16e
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data17_00339849/Bmumu/v1/ 2017
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data16_main_00302393/Bmumu/v1/ 2016main
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data_main_00303846/Bmumu/v1/ 2016main303846
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data18_00358096/Bmumu/v1/ 2018
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/old_data18/ 2018v5
+
+Feb 24, 2020:
+repetition of version 6 with all files:
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/v6_2/ 2017
+
+Mar. 5, 2020:
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16a/ MC16a
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16d/ MC16d
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16e/ MC16e
+
+March 11, 2020:
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/SkimmingMacros
+!compile first! use make
+
+need to reskim with correct DOCA computation:
+      closeTrkDOCA = sqrt(pow(closeTrkDCA,2)+pow(closeTrkZCA,2));
+      if (closeTrkDOCA > 3.) closeTrkDOCA = 3.;
+used to check on the condition DCA == 999., and set closeTrkDOCA=-0.01
+
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data16_main_00302393/Bmumu/v1/ 2016main >> output/out_new_2016main.txt 2>> output/err_new_2016main.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data_main_00303846/Bmumu/v1/ 2016main303846 >> output/out_new_2016main303846.txt 2>> output/err_new_2016main303846.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data17_00339849/Bmumu/v1/ 2017 >> output/out_new_2017.txt 2>> output/err_new_2017.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data18_00358096/Bmumu/v1/ 2018 >> output/out_new_2018.txt 2>> output/err_new_2018.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16a/ MC16a >> output/out_new_MC16a.txt 2>> output/err_new_MC16a.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16d/ MC16d >> output/out_new_MC16d.txt 2>> output/err_new_MC16d.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16e/ MC16e >> output/out_new_MC16e.txt 2>> output/err_new_MC16e.txt
+
+
+./cutBatchBsmumu_fileloop_oldnTuples /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data16/Bmumu/v6/ 2016 >> output/out_old_2016.txt 2>> output/err_old_2016main.txt
+*
+./cutBatchBsmumu_fileloop_oldnTuples /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data17/Bmumu/v6_2/ 2017 >> output/out_old_2017.txt 2>> output/err_old_2017.txt
+*
+./cutBatchBsmumu_fileloop_oldnTuples /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/v6/ 2018 >> output/out_old_2018.txt 2>> output/err_old_2018.txt
+
+./cutBatchBsmumu_fileloop_oldnTuples /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits/v6/ MC16a >> output/out_old_MC16a.txt 2>> output/err_old_MC16a.txt
+
+./cutBatchBsmumu_fileloop_oldnTuples /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16d_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_atrkwhits/v6/ MC16d >> output/out_old_MC16d.txt 2>> output/err_old_MC16d.txt
+
+./cutBatchBsmumu_fileloop_oldnTuples /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits/v6/ MC16e >> output/out_old_MC16e.txt 2>> output/err_old_MC16e.txt
+
+
+
+March 16, 2020:
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/SkimmingMacros
+!compile first! use make
+cd /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim
+rsync -avz --exclude="*.root" v2/ v3/
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data16_main_00302393/Bmumu/v3/ 2016main >> output_2020Mar16/out_new_2016main.txt 2>> output_2020Mar16/err_new_2016main.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data_main_00303846/Bmumu/v3/ 2016main303846 >> output_2020Mar16/out_new_2016main303846.txt 2>> output_2020Mar16/err_new_2016main303846.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data17_00339849/Bmumu/v3/ 2017 >> output_2020Mar16/out_new_2017.txt 2>> output_2020Mar16/err_new_2017.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data18_00358096/Bmumu/v3/ 2018 >> output_2020Mar16/out_new_2018.txt 2>> output_2020Mar16/err_new_2018.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v3/mc16a/ MC16a >> output_2020Mar16/out_new_MC16a.txt 2>> output_2020Mar16/err_new_MC16a.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v3/mc16d/ MC16d >> output_2020Mar16/out_new_MC16d.txt 2>> output_2020Mar16/err_new_MC16d.txt
+
+./cutBatchBsmumu_fileloop /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v3/mc16e/ MC16e >> output_2020Mar16/out_new_MC16e.txt 2>> output_2020Mar16/err_new_MC16e.txt
+
+
+

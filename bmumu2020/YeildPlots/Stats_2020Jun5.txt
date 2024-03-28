@@ -1,0 +1,41 @@
+partial run 2 MC signal:
+
+root -l /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/AnalysisNtuples/Bsmumu/mc16a/v3/LASTskim.mc16Bs_BDT2016_v2.root
+
+166210
+
+ partial run 2 Data sidebands:
+!!! but these don't have a sideband cut
+root -l /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/AnalysisNtuples/Bsmumu/data15a16/v3/data1516Bs_BDT2016_v2.root
+
+3493428
+
+ partial run 2 bbmumuX:
+
+     /eos/home-a/agrummer/BsmumuData/partialRun2/LastSkimGBR4_Mar26/LASTskim.bbmumuX2Bsmumu_combinatorial_GBRweight.root
+    or:
+root -l /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/AnalysisNtuples/bbmumuXBs/v2/LASTskim.bbmumuX2Bsmumu_combinatorial_testweight.root
+
+5561379
+
+ new run 2 MC signal:
+
+root -l /eos/home-a/agrummer/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root
+
+166752
+
+ partial run 2 Data sidebands:
+
+root -l /eos/home-a/agrummer/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root
+
+2455576
+
+ partial run 2 bbmumuX:
+
+root -l /eos/home-a/agrummer/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.bbmumuX.merged.root
+
+5727449
+
+T_mv->Draw("Lxy", "", "egoff")
+
+T_mv->Draw("Lxy", "PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf", "egoff")

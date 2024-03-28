@@ -1,0 +1,31 @@
+Create Evaluation ROC curve.
+
+1. Apply xml weights to data - with addClassBDT_Run2.C (shared with group) or addClassBDT_2016.C (your original ie before sending to group) or addClassBDT.C run 1 version
+
+code is in /www/bmumu/Data
+
+//root -l addClassBDT_Run2.C"(\"/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/SignalMC/LASTskim.MC16Bs_CombWeights_DOCAlt500_EvalSet.root\")"
+//root -l addClassBDT_Run2.C"(\"/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskimRightSideband/LASTskim.Data_2015HLTand2016HLTLxy_RightSideband_DOCAlt500.root\")"
+
+root -l -q addClassBDT_Run2.C"(\"/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/SidebandTrained/data1516Bs_SplitSet_3.root\")"
+
+2. Run KSTest_EvaluationStep.cpp on lxplus (set the Tag and vBDT for input and output file names - these match step 1 names). Don't need to set hyperparameters (could delete)
+in /www/bmumu/myMVA/Macros
+
+run with root -l -b -q
+
+could make a new folder in the bmumu/myMVAOut/EvalFolder/
+I have been using dates for folder names
+
+3. Run MultiROC_wRun1.C
+
+
+
+For step 1:
+
+FOR sideband training: applied weights to each of the three split sets separately. used hadd command to merge them back together:
+
+hadd LASTskim.mc16Bs_EVALcombo.root LASTskim.mc16Bs_SplitSet_1_BDT2016_Jun11_train2_test3.root LASTskim.mc16Bs_SplitSet_2_BDT2016_Jun11_train3_test1.root LASTskim.mc16Bs_SplitSet_3_BDT2016_Jun11_train1_test2.root
+
+hadd data1516Bs_EVALcombo.root data1516Bs_SplitSet_1_BDT2016_Jun11_train2_test3.root data1516Bs_SplitSet_2_BDT2016_Jun11_train3_test1.root data1516Bs_SplitSet_3_BDT2016_Jun11_train1_test2.root
+hadd Target file: data1516Bs_EVALcombo.root

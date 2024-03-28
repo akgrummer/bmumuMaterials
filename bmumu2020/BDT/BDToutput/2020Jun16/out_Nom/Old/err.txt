@@ -1,0 +1,37 @@
+#0  0x00000036f50ac8dd in waitpid () from /lib64/libc.so.6
+#1  0x00000036f503e4e9 in do_system () from /lib64/libc.so.6
+#2  0x00000036f503e820 in system () from /lib64/libc.so.6
+#3  0x00007fa8d9d78ebd in TUnixSystem::StackTrace() () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.14.04-0d8dc/x86_64-slc6-gcc62-opt/lib/libCore.so
+#4  0x00007fa8d5a901e5 in cling::MultiplexInterpreterCallbacks::PrintStackTrace() () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.14.04-0d8dc/x86_64-slc6-gcc62-opt/lib/libCling.so
+#5  0x00007fa8d5a8fc9b in cling_runtime_internal_throwIfInvalidPointer () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.14.04-0d8dc/x86_64-slc6-gcc62-opt/lib/libCling.so
+#6  0x00007fa8c2baa071 in ?? ()
+#7  0x00007fffbf537418 in ?? ()
+#8  0x00007fffbf5373a8 in ?? ()
+#9  0x00007fffbf537428 in ?? ()
+#10 0x0000000000000000 in ?? ()
+Error in <HandleInterpreterException>: Trying to dereference null pointer or trying to call routine taking non-null arguments.
+Execution of your code was aborted.
+In file included from input_line_10:1:
+In file included from /home/agrummer/bmumu2020/BDT/runMVA_pc01.cxx:4:
+/home/agrummer/bmumu2020/BDT/mvaInterface.cxx:76:86: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+  TTree* SIGtrain_tree(NULL); if (!SIG_treeName.EqualTo("")) SIGtrain_tree = (TTree*)SIGtrain_file->Get(SIG_treeName);
+                                                                                     ^~~~~~~~~~~~~
+#0  0x00000036f50ac8dd in waitpid () from /lib64/libc.so.6
+#1  0x00000036f503e4e9 in do_system () from /lib64/libc.so.6
+#2  0x00000036f503e820 in system () from /lib64/libc.so.6
+#3  0x00007f5ad8528ebd in TUnixSystem::StackTrace() () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.14.04-0d8dc/x86_64-slc6-gcc62-opt/lib/libCore.so
+#4  0x00007f5ad42401e5 in cling::MultiplexInterpreterCallbacks::PrintStackTrace() () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.14.04-0d8dc/x86_64-slc6-gcc62-opt/lib/libCling.so
+#5  0x00007f5ad423fc9b in cling_runtime_internal_throwIfInvalidPointer () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.14.04-0d8dc/x86_64-slc6-gcc62-opt/lib/libCling.so
+#6  0x00007f5ac13aa071 in ?? ()
+#7  0x00007ffe648c0a48 in ?? ()
+#8  0x00007ffe648c09d8 in ?? ()
+#9  0x00007ffe648c0a58 in ?? ()
+#10 0x0000000000000000 in ?? ()
+Error in <HandleInterpreterException>: Trying to dereference null pointer or trying to call routine taking non-null arguments.
+Execution of your code was aborted.
+In file included from input_line_10:1:
+In file included from /home/agrummer/bmumu2020/BDT/runMVA_pc01.cxx:4:
+/home/agrummer/bmumu2020/BDT/mvaInterface.cxx:76:86: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+  TTree* SIGtrain_tree(NULL); if (!SIG_treeName.EqualTo("")) SIGtrain_tree = (TTree*)SIGtrain_file->Get(SIG_treeName);
+                                                                                     ^~~~~~~~~~~~~
+0%, time left: unknown

@@ -1,0 +1,56 @@
+
+MC16d:
+
+root [22] myCut = "PRIVX_mu >= 21.0 && PRIVX_mu <= 32.0";
+root [23] T_mv->Draw("Lxy", "PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf"*myCut, "egoff")
+(long long) 449
+root [24] myCut = "PRIVX_mu >= 34.0 && PRIVX_mu <= 43.0";
+root [25] T_mv->Draw("Lxy", "PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf"*myCut, "egoff")
+(long long) 450
+root [26] myCut = "PRIVX_mu >= 44.0 && PRIVX_mu <= 55.0";
+root [27] T_mv->Draw("Lxy", "PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf"*myCut, "egoff")
+(long long) 454
+
+
+MC16e:
+
+root [32] myCut = "PRIVX_mu >= 22.0 && PRIVX_mu <= 32.0";
+root [33] T_mv->Draw("PRIVX_mu", "PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf"*myCut, "egoff")
+(long long) 456
+
+root [48] myCut = "PRIVX_mu >= 12.0 && PRIVX_mu <= 22.0";
+root [49] T_mv->Draw("PRIVX_mu", "PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf"*myCut, "egoff")
+(long long) 434
+
+2017All:
+myCut = "PRIVX_mu >= 22.493 && PRIVX_mu <= 29.0";
+T_mv->Draw("PRIVX_mu", myCut, "egoff")
+(long long) 6512
+myCut = "PRIVX_mu >= 36.352 && PRIVX_mu <= 43.0";
+T_mv->Draw("PRIVX_mu", myCut, "egoff")
+(long long) 6512
+myCut = "PRIVX_mu >= 45.0 && PRIVX_mu <= 55.0";
+T_mv->Draw("PRIVX_mu", myCut, "egoff")
+(long long) 6512
+
+2018All:
+root [110] myCut = "PRIVX_mu >= 22.56 && PRIVX_mu <= 29.06";
+root [111] T_mv->Draw("PRIVX_mu", myCut, "egoff")
+(long long) 6525
+
+2017All:
+root [79] myCut = "PRIVX_mu >= 22.56 && PRIVX_mu <= 29.06";
+root [80] T_mv->Draw("PRIVX_mu", myCut, "egoff")
+(long long) 6514
+
+auto trk_d0sign = xAOD::TrackingHelpers::d0significance(
+track, 
+m_eventInfo->beamPosSigmaX(), m_eventInfo->beamPosSigmaY(), m_eventInfo->beamPosSigmaXY()
+);
+
+
+auto trk_z0sign = z0toPV / 
+sqrt( 
+track->definingParametersCovMatrixVec()[2] + pv->covariancePosition()(2,2) 
+);
+

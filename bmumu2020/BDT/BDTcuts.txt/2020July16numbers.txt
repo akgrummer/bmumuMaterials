@@ -1,0 +1,82 @@
+input vars: Run1privxmu_round
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1382994
+ vec size + 1 1382995
+Bkg Rej= 99.9999 at a signal efficiency: 17.9797 BDT value: 0.417783 bkg: 0.417783
+Bkg Rej= 99.9999 at a signal efficiency: 18.0195 BDT value: 0.417643 bkg: 0.417643
+Bkg Rej= 99.9975 at a signal efficiency: 35.9736 BDT value: 0.346215 bkg: 0.346215
+Bkg Rej= 99.9975 at a signal efficiency: 36.0073 BDT value: 0.346076 bkg: 0.346076
+Bkg Rej= 99.9975 at a signal efficiency: 36.044 BDT value: 0.345936 bkg: 0.345936
+Bkg Rej= 99.9846 at a signal efficiency: 53.9582 BDT value: 0.267546 bkg: 0.267546
+Bkg Rej= 99.9845 at a signal efficiency: 53.9856 BDT value: 0.267407 bkg: 0.267407
+Bkg Rej= 99.9845 at a signal efficiency: 54.0162 BDT value: 0.267268 bkg: 0.267268
+Bkg Rej= 99.9845 at a signal efficiency: 54.0477 BDT value: 0.267128 bkg: 0.267128
+
+
+
+input vars: Run1nPV_npvweights
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1383003
+ vec size + 1 1383004
+Bkg Rej= 100 at a signal efficiency: 17.9798 BDT value: 0.420641 bkg: 0.420641
+Bkg Rej= 100 at a signal efficiency: 18.0067 BDT value: 0.420502 bkg: 0.420502
+Bkg Rej= 100 at a signal efficiency: 18.0344 BDT value: 0.420364 bkg: 0.420364
+Bkg Rej= 99.9976 at a signal efficiency: 35.9645 BDT value: 0.348364 bkg: 0.348364
+Bkg Rej= 99.9976 at a signal efficiency: 36.0029 BDT value: 0.348225 bkg: 0.348225
+Bkg Rej= 99.9976 at a signal efficiency: 36.0387 BDT value: 0.348087 bkg: 0.348087
+Bkg Rej= 99.9855 at a signal efficiency: 53.9809 BDT value: 0.268748 bkg: 0.268748
+Bkg Rej= 99.9854 at a signal efficiency: 54.0094 BDT value: 0.26861 bkg: 0.26861
+Bkg Rej= 99.9854 at a signal efficiency: 54.0369 BDT value: 0.268471 bkg: 0.268471
+
+
+input vars: Run1
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1382996
+ vec size + 1 1382997
+Bkg Rej= 99.9999 at a signal efficiency: 17.9535 BDT value: 0.429778 bkg: 0.429778
+Bkg Rej= 99.9999 at a signal efficiency: 17.9858 BDT value: 0.42964 bkg: 0.42964
+Bkg Rej= 99.9999 at a signal efficiency: 18.0247 BDT value: 0.429503 bkg: 0.429503
+Bkg Rej= 99.9981 at a signal efficiency: 35.9827 BDT value: 0.353866 bkg: 0.353866
+Bkg Rej= 99.9981 at a signal efficiency: 36.0131 BDT value: 0.353729 bkg: 0.353729
+Bkg Rej= 99.9981 at a signal efficiency: 36.0471 BDT value: 0.353591 bkg: 0.353591
+Bkg Rej= 99.985 at a signal efficiency: 53.9594 BDT value: 0.272317 bkg: 0.272317
+Bkg Rej= 99.9849 at a signal efficiency: 53.9878 BDT value: 0.272179 bkg: 0.272179
+Bkg Rej= 99.9848 at a signal efficiency: 54.0203 BDT value: 0.272042 bkg: 0.272042
+Bkg Rej= 99.9847 at a signal efficiency: 54.0432 BDT value: 0.271904 bkg: 0.271904
+
+
+
+
+
+input vars: Run1_npvweights
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1382997
+ vec size + 1 1382998
+Bkg Rej= 100 at a signal efficiency: 17.9633 BDT value: 0.429078 bkg: 0.429078
+Bkg Rej= 100 at a signal efficiency: 17.9994 BDT value: 0.428936 bkg: 0.428936
+Bkg Rej= 100 at a signal efficiency: 18.0316 BDT value: 0.428795 bkg: 0.428795
+Bkg Rej= 99.9975 at a signal efficiency: 35.9639 BDT value: 0.355316 bkg: 0.355316
+Bkg Rej= 99.9975 at a signal efficiency: 35.9984 BDT value: 0.355175 bkg: 0.355175
+Bkg Rej= 99.9975 at a signal efficiency: 36.0229 BDT value: 0.355033 bkg: 0.355033
+Bkg Rej= 99.985 at a signal efficiency: 53.9609 BDT value: 0.273641 bkg: 0.273641
+Bkg Rej= 99.985 at a signal efficiency: 53.9883 BDT value: 0.2735 bkg: 0.2735
+Bkg Rej= 99.9849 at a signal efficiency: 54.0068 BDT value: 0.273359 bkg: 0.273359
+Bkg Rej= 99.9849 at a signal efficiency: 54.031 BDT value: 0.273217 bkg: 0.273217
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July22/out_Run1_npvweights/BDTvariable.pdf has been created
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July22/out_Run1_npvweights/ROC.pdf has been created

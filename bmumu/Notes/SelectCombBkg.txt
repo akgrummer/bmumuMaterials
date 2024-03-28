@@ -1,0 +1,11 @@
+SelectCombBkg.C
+removes PRDs (partially reconstructed decays) from MC file 
+55328 events were removed
+
+interesting point, when access the branch of strings, needed to set the address to a pointer
+
+string *MyDecay;
+inputtree->SetBranchAddress("decay",&MyDecay);
+
+so later in the code - to access the "value" that the pointer points to use
+*MyDecay

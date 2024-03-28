@@ -1,0 +1,177 @@
+
+
+cat mixVars_1516N/err.txt | grep "error"
+cat mixVars_1516AD/err.txt | grep "error"
+cat mixVars_1516D/err.txt | grep "error"
+cat mixVars_1516AN/err.txt | grep "error"
+cat mixVars_customD/err.txt | grep "error"
+cat mixVars_customN/err.txt | grep "error"
+cat mixVars_looseD/err.txt | grep "error"
+cat mixVars_looseN/err.txt | grep "error"
+
+
+Mar 3, 2020:
+
+root -l -b -q mixVars_customD/Iso_MultiROCs_TTVA_logAccept_v8_customD.cpp
+root -l -b -q mixVars_customD/Iso_MultiROCs_TTVA_v8_customD.cpp
+root -l -b -q mixVars_customD/Iso_MultiVar_TTVA_v8_customD.cpp
+root -l -b -q mixVars_looseD/Iso_MultiROCs_TTVA_logAccept_v8_looseD.cpp
+root -l -b -q mixVars_looseD/Iso_MultiROCs_TTVA_v8_looseD.cpp
+root -l -b -q mixVars_looseD/Iso_MultiVar_TTVA_v8_looseD.cpp
+root -l -b -q mixVars_looseN/Iso_MultiROCs_TTVA_logAccept_v8_looseN.cpp
+root -l -b -q mixVars_looseN/Iso_MultiROCs_TTVA_v8_looseN.cpp
+root -l -b -q mixVars_looseN/Iso_MultiVar_TTVA_v8_looseN.cpp
+
+
+Mar, 6 2020:
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/WorkSpace/IsoVarROCs/
+
+
+in folder v8IsoSriptIntersect
+run the N versions from the intersect folder
+
+Run from v8IsoScripts directory on Workspace
+
+
+1516D: (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScripts/mixVars_1516D
+rm out.txt err.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v8_1516D.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_logAccept_ROCs_v8_1516D.cpp  >>out.txt 2>>err.txt
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v8_1516D.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_MultiROCs_TTVA_v8_1516D.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_1516D.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_1516D.cpp  >>out.txt 2>>err.txt
+
+root -l -b -q Iso_MultiVar_TTVA_v8_1516D.cpp  >>out.txt 2>>err.txt
+root -l -b -q OtherIso_MultiVar_TTVA_v8_1516D.cpp  >>out.txt 2>>err.txt
+cd ../..
+
+1516AD (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScripts/mixVars_1516AD
+rm out.txt err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_1516AD.cpp >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_1516AD.cpp>>out.txt 2>>err.txt
+root -l -b -q Iso_MultiVar_TTVA_v8_1516AD.cpp>>out.txt 2>>err.txt
+cd ../..
+
+customD (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScripts/mixVars_customD
+rm out.txt err.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v8_customD.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_logAccept_ROCs_v8_customD.cpp  >>out.txt 2>>err.txt
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v8_customD.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_MultiROCs_TTVA_v8_customD.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_customD.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_customD.cpp  >>out.txt 2>>err.txt
+
+root -l -b -q Iso_MultiVar_TTVA_v8_customD.cpp  >>out.txt 2>>err.txt
+root -l -b -q OtherIso_MultiVar_TTVA_v8_customD.cpp  >>out.txt 2>>err.txt
+cd ../..
+
+looseD (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScripts/mixVars_looseD
+rm out.txt err.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v8_looseD.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_logAccept_ROCs_v8_looseD.cpp  >>out.txt 2>>err.txt
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v8_looseD.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_MultiROCs_TTVA_v8_looseD.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_looseD.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_looseD.cpp  >>out.txt 2>>err.txt
+
+root -l -b -q Iso_MultiVar_TTVA_v8_looseD.cpp  >>out.txt 2>>err.txt
+root -l -b -q OtherIso_MultiVar_TTVA_v8_looseD.cpp  >>out.txt 2>>err.txt
+cd ../..
+
+
+
+Run from v8IsoScriptsIntersect directory on Workspace
+
+
+1516N (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScriptsIntersect/mixVars_1516N
+rm out.txt err.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v8_1516N.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_logAccept_ROCs_v8_1516N.cpp  >>out.txt 2>>err.txt
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v8_1516N.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_MultiROCs_TTVA_v8_1516N.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_1516N.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_1516N.cpp  >>out.txt 2>>err.txt
+
+root -l -b -q Iso_MultiVar_TTVA_v8_1516N.cpp  >>out.txt 2>>err.txt
+root -l -b -q OtherIso_MultiVar_TTVA_v8_1516N.cpp  >>out.txt 2>>err.txt
+cd ../..
+
+1516AN (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScriptsIntersect/mixVars_1516AN
+rm out.txt err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_1516AN.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_1516AN.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiVar_TTVA_v8_1516AN.cpp  >>out.txt 2>>err.txt
+cd ../..
+
+customN (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScriptsIntersect/mixVars_customN
+rm out.txt err.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v8_customN.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_logAccept_ROCs_v8_customN.cpp  >>out.txt 2>>err.txt
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v8_customN.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_MultiROCs_TTVA_v8_customN.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_customN.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_customN.cpp  >>out.txt 2>>err.txt
+
+root -l -b -q Iso_MultiVar_TTVA_v8_customN.cpp  >>out.txt 2>>err.txt
+root -l -b -q OtherIso_MultiVar_TTVA_v8_customN.cpp  >>out.txt 2>>err.txt
+cd ../..
+
+looseN (really the all tracks with chi2<5, ie it includes run 1)
+cd v8IsoScriptsIntersect/mixVars_looseN
+rm out.txt err.txt
+root -l -b -q NcloseTracks_logAccept_ROCs_v8_looseN.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_logAccept_ROCs_v8_looseN.cpp  >>out.txt 2>>err.txt
+root -l -b -q NcloseTracks_MultiROCs_TTVA_v8_looseN.cpp  >>out.txt 2>>err.txt
+root -l -b -q DOCA_MultiROCs_TTVA_v8_looseN.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_v8_looseN.cpp  >>out.txt 2>>err.txt
+root -l -b -q Iso_MultiROCs_TTVA_logAccept_v8_looseN.cpp  >>out.txt 2>>err.txt
+
+root -l -b -q Iso_MultiVar_TTVA_v8_looseN.cpp  >>out.txt 2>>err.txt
+root -l -b -q OtherIso_MultiVar_TTVA_v8_looseN.cpp  >>out.txt 2>>err.txt
+cd ../..
+
+
+
+Mar 10, 2020:
+split customD and loose for DOCA into CustomD1 and customD2, looseD1 and looseD1:
+
+
+
+from /afs/cern.ch/user/a/agrummer/WorkSpace/IsoVarROCs
+
+. 1516AD.sh
+. 1516AN.sh
+
+. looseN.sh
+. looseD.sh
+
+. customN.sh
+. customD.sh
+
+. 1516N.sh
+. 1516D.sh
+
+
+Mar 12, 2020:
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/WorkSpace/IsoVarROCs/
+ 
+. newVars.sh
+. oldVars.sh
+
+. newVarsMuM.sh
+. newVarsMuP.sh
+

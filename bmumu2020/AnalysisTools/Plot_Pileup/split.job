@@ -1,0 +1,112 @@
+#!/bin/bash
+
+#####################################
+#Setup slurm job
+#####################################
+#SBATCH --output=out/output_%j.out
+#SBATCH --error=err/output_%j.err
+#SBATCH --account=staff
+#SBATCH --partition=medium
+#SBATCH --time=15:00
+#SBATCH --constraint="computeserver|clusternode"
+#####################################
+#Check if files exist, etc.
+#####################################
+check()
+{
+    if [[ -z $JOB_NAME ]];then
+        echo "Job name not specified"
+         kill -INT $$
+     fi
+     
+     if [[ $MAXEVNT_ONE -le $MINEVNT_ONE ]];then
+         echo "Max event one: $MAXEVNT_ONE"
+         echo "Min event one: $MINEVNT_ONE"
+         echo ""
+         echo "These numbers do not make sense, fix them."
+         kill -INT $$
+     fi
+ 
+     if [[ $MAXEVNT_TWO -le $MINEVNT_TWO ]];then
+         echo "Max event two: $MAXEVNT_TWO"
+         echo "Min event two: $MINEVNT_TWO"
+         echo ""
+         echo "These numbers do not make sense, fix them."
+         kill -INT $$
+     fi
+}
+#####################################
+#Get variables from outside
+#####################################
+OUTDIR=$(pwd)/Output
+MINEVNT_ONE=$1
+MAXEVNT_ONE=$2
+
+MINEVNT_TWO=$3
+MAXEVNT_TWO=$4
+
+IPTCODE=$5
+#####################################
+#Set variables for job
+#####################################
+HOST=$(hostname)
+SUBMDIR=$(pwd)
+SCRATCHDIR="/nfs/${HOST}/scratch/${USER}"
+JOBDIR="${SCRATCHDIR}/$JOBNAME/${SLURM_JOB_ID}"
+OPTFILE=output_${SLURM_JOB_ID}.root
+#####################################
+#Pring variables used
+#####################################
+echo "INFO::ARGUMENTS USED:"
+echo " $*"
+
+echo "INFO::RUNNING ON: $HOST"
+echo "  SUBMDIR    = $SUBMDIR"
+echo "  SCRATCHDIR = $SCRATCHDIR"
+echo "  JOBDIR     = $JOBDIR"
+echo ""
+echo "  FIRST ENTRY ONE= $MINEVNT_ONE"
+echo "  LAST ENTRY ONE = $MAXEVNT_ONE"
+echo "  FIRST ENTRY TWO= $MINEVNT_TWO"
+echo "  LAST ENTRY TWO = $MAXEVNT_TWO"
+echo "  EXECUTABLE = $IPTCODE"
+#####################################
+#Make directories, setup ROOT, etc
+#####################################
+if [ -d $SCRATCHDIR ]; then
+  mkdir -p $JOBDIR
+  cd $JOBDIR
+else
+  echo "ERROR::No SCRATCHDIR=$SCRATCHDIR present"
+  kill -INT $$
+fi
+
+echo "INFO::CURRENT JOB DIRECTORY:"
+pwd
+
+source /products/atlas/rc/localSetup/setupRootCoreSi
+lsetup python
+lsetup root
+#####################################
+#Compile and/or run
+#####################################
+cp -r $SUBMDIR/* .
+echo "INFO::BEFORE RUNNING:"
+ls -ltr
+
+python "$IPTCODE" "$MINEVNT_ONE" "$MAXEVNT_ONE" "$MINEVNT_TWO" "$MAXEVNT_TWO" "$OPTFILE"
+#####################################
+#Retrieve output and clean
+#####################################
+echo "INFO::AFTER RUNNING:"
+
+ls -ltr
+mkdir -p $OUTDIR 
+
+cp $OPTFILE $OUTDIR
+chmod 660 $OUTDIR/$OPTFILE
+
+cd ${SCRATCHDIR}
+rm -rf $JOBDIR
+#####################################
+#####################################

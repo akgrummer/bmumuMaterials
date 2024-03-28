@@ -1,0 +1,11 @@
+2020May29 
+ps:
+
+12322 pts/0    00:00:00 root
+12323 pts/0    00:00:00 root
+12324 pts/0    00:00:00 root
+12325 pts/0    00:00:00 root
+12334 pts/0    00:02:33 root.exe
+12335 pts/0    00:04:56 root.exe
+12337 pts/0    00:04:43 root.exe
+12339 pts/0    00:04:48 root.exe

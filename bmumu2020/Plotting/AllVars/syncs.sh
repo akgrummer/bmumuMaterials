@@ -1,0 +1,1 @@
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/SavePlots/AllVars/2020July31/NPVweights/ /Users/agrummer/Documents/bmumu2020plots/npvWeights/

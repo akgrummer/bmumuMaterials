@@ -1,0 +1,168 @@
+//
+// example how to read all track ntuples
+//
+// iskander(dot)ibragimov(at)cern(dot)ch
+// 
+// 
+//  
+
+#include "TCut.h"
+#include "TString.h"
+#include "TFile.h"
+#include "TTree.h"
+#include "TH1.h"
+#include "TBranch.h"
+#include "TCanvas.h"
+#include <iostream>
+#include <dirent.h>
+
+using namespace std;
+typedef std::vector<unsigned int>  v_uint;
+typedef std::vector<int>           v_int;
+typedef std::vector<float>         v_float;
+typedef std::vector<double>        v_double;
+
+int main(int argc, char* argv[]) {
+  // TString fsname("/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup/data18/Bmumu/user.ibragimo.17073931.Bmumu._000001_skimmed.root");
+  // TString fsname("/afs/cern.ch/work/a/agrummer/BsmumuData/LastSkimOne2018Run/LASTskim_2017Bmumu.root");
+  TString fsname("/afs/cern.ch/work/a/agrummer/BsmumuData/LastSkimOne2018Run/LASTskim_2018_1.root");
+
+  const bool doIsoStudy = true; 
+
+  TFile *fs  = new TFile(fsname);
+  TTree *ts  = (TTree*)fs->Get("T_mv");
+  TTree *tev = (TTree*)fs->Get("EventInfo");
+  
+  v_uint   *pv_type     = 0;
+  v_float  *pv_z        = 0;
+  v_float  *pv_sigma_z  = 0;
+  v_int    *idtrk_pvidx = 0;  
+  tev->SetBranchAddress("pv_z", &pv_z);
+  tev->SetBranchAddress("pv_sigma_z", &pv_sigma_z);
+  tev->SetBranchAddress("pv_type", &pv_type);
+  tev->SetBranchAddress("idtrk_pvidx", &idtrk_pvidx);
+  
+  
+  auto nevents = ts->GetEntries();
+  cout<< "Entries in original tree: "<< nevents << endl;
+  
+  //float B_MUCALC_mass(0.);
+  int event_index(0);
+  int B_PV_idx(0);
+  int B_IDtrk1_trkidx(0);
+  int B_IDtrk2_trkidx(0);
+  v_float *B_PV_trksChi2 = 0;
+  v_float *B_VTX_trksChi2=0;
+  v_float *closeTrkDOCA_alltrks=0;
+  int closeTrkNtrksChi2(0);
+  float closeTrkDCA(0.);
+  float closeTrkZCA(0.);
+  float B_iso_7_Chi2_5_LoosePt05(0.);
+
+  //ts->SetBranchAddress("B_MUCALC_mass",&B_MUCALC_mass);
+  ts->SetBranchAddress("event_index",  &event_index);                           // index to EventInfo tree
+
+  // variables for the isolation studies
+  //
+  ts->SetBranchAddress("B_PV_idx",&B_PV_idx);                                  // index to associated PV  
+  ts->SetBranchAddress("B_PV_trksChi2",&B_PV_trksChi2);                        // chi2 to associated PV, per track
+  ts->SetBranchAddress("B_iso_7_Chi2_5_LoosePt05",&B_iso_7_Chi2_5_LoosePt05);  // DxAOD isoaltion variable
+
+  // variables for the close track studies
+  //
+  ts->SetBranchAddress("B_VTX_trksChi2",&B_VTX_trksChi2);                // chi2 of each track to the B vertex
+  ts->SetBranchAddress("closeTrkDOCA_alltrks",&closeTrkDOCA_alltrks);    // DOCA of each track to B vertex
+  ts->SetBranchAddress("closeTrkNtrksChi2",&closeTrkNtrksChi2);          // DxAOD closeTrkNtrksChi2 variable
+  ts->SetBranchAddress("closeTrkDCA",&closeTrkDCA);                      // DxAOD closeTrkDCA variable 
+  ts->SetBranchAddress("closeTrkZCA",&closeTrkZCA);                      // DxAOD closeTrkZCA variable
+
+  // variables to identify signal tracks
+  //
+  ts->SetBranchAddress("B_IDtrk1_trkidx",&B_IDtrk1_trkidx); // indexes of muon tracks
+  ts->SetBranchAddress("B_IDtrk2_trkidx",&B_IDtrk2_trkidx);
+
+
+  TH1F* h_chi2_all(NULL); TH1F* h_chi2(NULL); TH1I* h_ntrks(NULL); TH1I* h_ntrks_orig(NULL); TH1F* h_iso(NULL);
+  if (doIsoStudy) {
+    h_chi2_all = new TH1F("h_chi2_all","chi2 to ass. PV for all tracks",200,-5,15);
+    h_chi2     = new TH1F("h_chi2","chi2 to associated PV for selected tracks",200,-5,15);
+    h_iso      = new TH1F("h_iso","B isolation",100,0.005,1.005);
+  } else {
+    h_chi2_all   = new TH1F("h_chi2_all","chi2 to ass. B vertex for all tracks",200,-5,15);
+    h_chi2       = new TH1F("h_chi2","chi2 to B vertex for selected tracks",200,-5,15);
+    h_ntrks      = new TH1I("h_ntrks","h_ntrks",100,0,100);  
+    h_ntrks->SetLineColor(kRed);
+    h_ntrks_orig = new TH1I("h_ntrks_orig","h_ntrks_orig",100,0,100); 
+    h_ntrks_orig->SetLineColor(kBlack);
+  }
+  if (h_chi2_all) h_chi2_all->SetLineColor(kBlack);
+  if (h_chi2) h_chi2->SetLineColor(kRed);
+
+    for (auto ievent=0; ievent<nevents; ievent++)
+    {
+      if (ievent%100000==0) cout << "Processing event "<< ievent << endl;
+      
+      ts->GetEntry(ievent);
+      tev->GetEntry(event_index);
+
+    auto ntrks = B_PV_trksChi2->size();
+    if ((*idtrk_pvidx).size() != ntrks) {
+	cout << "FATAL: ID trk info size unequal in event and candidate trees, exiting. " << (*idtrk_pvidx).size() << " <-ev|cand-> " << ntrks << endl;
+	exit(0);
+      }
+      int nclosetrks(0);
+      float docamin(999.0);
+      float DOCA = sqrt( pow(closeTrkDCA, 2) + pow(closeTrkZCA, 2) );
+    for (unsigned int idx=0; idx<ntrks; idx++) {
+
+	// skip signal tracks (Bsmumu channel as an example, add other tracks for other signatures!)
+	//
+	if (idx == B_IDtrk1_trkidx || idx == B_IDtrk2_trkidx) continue; 
+
+	// select tracks by vertex association and fill chi2 histogram
+	// 
+	if ( (*idtrk_pvidx).at(idx) == B_PV_idx                 // choose tracks ass. to associated PV 
+	     || (*idtrk_pvidx).at(idx) != pv_type->size()-1 ) { // or choose tracks ass. to other real PV's (for non-ass. tracks use '==' instead)
+	 
+	  if (doIsoStudy) {
+	    h_chi2->Fill( (*B_PV_trksChi2).at(idx) );
+	  } else {
+	    h_chi2->Fill( (*B_VTX_trksChi2).at(idx) );
+	  
+	    if ((*B_VTX_trksChi2).at(idx)<=1.0) nclosetrks++;
+	  
+	    if ( (*B_VTX_trksChi2).at(idx) <=7.0) {
+	      if ( (*closeTrkDOCA_alltrks).at(idx) < docamin) docamin = (*closeTrkDOCA_alltrks).at(idx);
+	    }
+	  }
+	}
+	if (doIsoStudy) {
+	  h_chi2_all->Fill( (*B_PV_trksChi2).at(idx) );
+	} else {
+	  h_chi2_all->Fill( (*B_VTX_trksChi2).at(idx) );
+	}
+      }
+
+      if (doIsoStudy) {
+	if (h_iso) h_iso->Fill(B_iso_7_Chi2_5_LoosePt05);
+      } else {
+	cout << DOCA << " <-AOD|ntup-> "<< docamin << endl; //" DCA: "<< closeTrkDCA << " ZCA: "<< closeTrkZCA << endl; 
+	if (h_ntrks) h_ntrks->Fill(nclosetrks);
+	if (h_ntrks_orig) h_ntrks_orig->Fill(closeTrkNtrksChi2);	 
+      }
+    }
+
+  TCanvas* c = new TCanvas("trks chi2","trks chi2",900,600);
+  if (doIsoStudy)  {
+    if (h_chi2_all) h_chi2_all->Draw();
+    if (h_chi2) h_chi2->Draw("same");
+  } else {
+    if (h_ntrks_orig) h_ntrks_orig->Draw();
+    if (h_ntrks) h_ntrks->Draw("same");
+  }
+
+  c->SaveAs("chi2.root");
+  
+  fs->Close();
+  delete fs;
+}

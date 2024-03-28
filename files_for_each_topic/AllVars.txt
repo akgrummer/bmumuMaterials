@@ -1,0 +1,10 @@
+bmumu2020/Plotting/AllVars/VariableComps.cpp
+bmumu2020/Plotting/AllVars/VarComps_NewOldnTuples.cpp
+bmumu2020/Plotting/AllVars/PU_DataMC.cpp
+bmumu2020/Plotting/AllVars/syncs.sh
+bmumu2020/Plotting/AllVars/RunVarComps.txt
+bmumu2020/Plotting/AllVars/AllVars.h
+bmumu2020/NotesAndSyncs/Notes.md
+bmumu2020/NotesAndSyncs/Notes2021.txt
+bmumu/MCvsDataCode/dmcbbmumuX_v2.h
+bmumu2020/NotesAndSyncs/IsolationPlotsSetupNotes.txt

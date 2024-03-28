@@ -1,0 +1,35 @@
+closeTrkDCA
+closeTrkDCAErr
+closeTrkZCA
+closeTrkZCAErr
+closeTrkNtrksChi2
+
+tracks (from table * correct)
+*_T0000000035_LooSiHi1Pt05_corc2cnt
+*_T0004194304_LooSiHi1Pt05_corc2cnt
+*_T0134217728_LooSiHi1Pt05_f2dc2
+*_T0008388608_LooSiHi1Pt05_corc2cnt
+*_T0008388608_LooSiHi1Pt05_f2dc2
+
+BIso  (from table * correct)
+*_7_Chi2_5_LoosePt05
+*_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000035
+*_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127
+*_10_noChi2_LooSiHi1Pt05_T0004194304
+*_10_noChi2_LooSiHi1Pt05_T0134217728
+*_10_noChi2_LooSiHi1Pt05_T0008388608
+
+B iso (from email)
+1)_7_Chi2_5_noAbs_LooSiHi1Pt05                          
+1)_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127  
+1)_10_noChi2_LooSiHi1Pt05_T0004194304       
+1)_10_noChi2_LooSiHi1Pt05_T0134217728           
+1)_10_noChi2_LooSiHi1Pt05_T0008388608            
+
+Tracks (from email)
+2)_T0000000035_LooSiHi1Pt05_201516        
+2)_T0004194304_LooSiHi1Pt05_corc2cnt      
+2)_T0134217728_LooSiHi1Pt05_f2dc2           
+2)_T0008388608_LooSiHi1Pt05_corc2cnt      
+2)_T0008388608_LooSiHi1Pt05_f2dc2          
+

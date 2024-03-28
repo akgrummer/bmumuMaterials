@@ -1,0 +1,10 @@
+bmumu2020/AnalysisTools/SkimmingMacros/MergeNominalnTuples.cxx
+bmumu2020/AnalysisTools/SkimmingMacros/MergeNominalnTuples_v2.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/ReProcessPartialRun2nTuples.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/RoundFloats.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/AddPRIVXmuRound.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/addWeightsNPV.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/Makefile
+bmumu2020/AnalysisTools/SkimmingMacros/cutBatchBsmumu.cxx
+bmumu/cutBatchBsmumu_copy2020May13.cxx
+bmumu/SkimmingFeb2018/cutBatchBsmumuFINALiskander2018Aug15.cxx

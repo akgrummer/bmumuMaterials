@@ -1,0 +1,6 @@
+root -l -b -q OtherIso_MultiVar_TTVA_v5_PU.cpp
+root -l -b -q Iso_MultiVar_TTVA_v5_PU.cpp
+root -l -b -q OtherIso_MultiVar_TTVA_v5_PU_eff_2.cpp
+root -l -b -q Iso_MultiVar_TTVA_v5_PU_eff.cpp
+root -l -b -q OtherIso_MultiVar_TTVA_v4_PU.cpp
+root -l -b -q Iso_MultiVar_TTVA_v4_PU.cpp

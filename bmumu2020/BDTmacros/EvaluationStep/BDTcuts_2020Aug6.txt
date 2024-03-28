@@ -1,0 +1,130 @@
+-bash-4.2$ root -l -b -q EvalStep_errors.cpp
+
+Processing EvalStep_errors.cpp...
+
+Applying ATLAS style settings...
+
+
+Applying ATLAS style settings...
+
+input vars: Custom
+Error in <TTree::SetBranchAddress>: unknown branch -> NPVweight
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1383007
+ vec size + 1 1383008
+Bkg Rej= 0.999998 at a signal efficiency: 0.17995 BDT value: 0.441844
+Bkg Rej= 0.999998 at a signal efficiency: 0.180011 BDT value: 0.441815
+Bkg Rej= 0.999982 at a signal efficiency: 0.360015 BDT value: 0.366242
+Bkg Rej= 0.999864 at a signal efficiency: 0.539962 BDT value: 0.277467
+Bkg Rej= 0.999864 at a signal efficiency: 0.540031 BDT value: 0.277438
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Custom/ROC_accept_error.pdf has been created
+
+Applying ATLAS style settings...
+
+input vars: Run1
+Error in <TTree::SetBranchAddress>: unknown branch -> NPVweight
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 2432570
+sig vector size: 333504
+bkg+sig vector size: 2766074
+ vec size (sig+bkg)  2766003
+ vec size + 1 2766004
+Bkg Rej= 0.999999 at a signal efficiency: 0.179993 BDT value: 0.429537
+Bkg Rej= 0.999999 at a signal efficiency: 0.180028 BDT value: 0.429508
+Bkg Rej= 0.999981 at a signal efficiency: 0.359968 BDT value: 0.353732
+Bkg Rej= 0.999981 at a signal efficiency: 0.36005 BDT value: 0.353704
+Bkg Rej= 0.999849 at a signal efficiency: 0.540012 BDT value: 0.272077
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Run1/ROC_accept_error.pdf has been created
+
+
+
+
+
+-bash-4.2$ root -l -b -q EvalStep_errors.cpp
+
+Processing EvalStep_errors.cpp...
+
+Applying ATLAS style settings...
+
+
+Applying ATLAS style settings...
+
+input vars: Run1privxmu_round
+Error in <TTree::SetBranchAddress>: unknown branch -> NPVweight
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1382994
+ vec size + 1 1382995
+Bkg Rej= 0.999999 at a signal efficiency: 0.18001 BDT value: 0.417671
+Bkg Rej= 0.999975 at a signal efficiency: 0.359957 BDT value: 0.346076
+Bkg Rej= 0.999975 at a signal efficiency: 0.360009 BDT value: 0.346048
+Bkg Rej= 0.999845 at a signal efficiency: 0.540004 BDT value: 0.267268
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July16/out_Run1privxmu_round/ROC_accept_error.pdf has been created
+
+Applying ATLAS style settings...
+
+input vars: Run1nPV_npvweights
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 2432570
+sig vector size: 333504
+bkg+sig vector size: 2766074
+ vec size (sig+bkg)  2765997
+ vec size + 1 2765998
+Bkg Rej= 1 at a signal efficiency: 0.179961 BDT value: 0.42051
+Bkg Rej= 1 at a signal efficiency: 0.180007 BDT value: 0.420482
+Bkg Rej= 0.999976 at a signal efficiency: 0.359998 BDT value: 0.348189
+Bkg Rej= 0.999854 at a signal efficiency: 0.539985 BDT value: 0.268605
+Bkg Rej= 0.999854 at a signal efficiency: 0.540022 BDT value: 0.268577
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July16/out_Run1nPV_npvweights/ROC_accept_error.pdf has been created
+
+
+
+
+
+-bash-4.2$ root -l -b -q EvalStep_errors.cpp
+
+Processing EvalStep_errors.cpp...
+
+Applying ATLAS style settings...
+
+
+Applying ATLAS style settings...
+
+input vars: Custom_privxmu
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 1216285
+sig vector size: 166752
+bkg+sig vector size: 1383037
+ vec size (sig+bkg)  1382990
+ vec size + 1 1382991
+Bkg Rej= 0.999998 at a signal efficiency: 0.179981 BDT value: 0.429726
+Bkg Rej= 0.999998 at a signal efficiency: 0.180041 BDT value: 0.429699
+Bkg Rej= 0.999982 at a signal efficiency: 0.359994 BDT value: 0.356257
+Bkg Rej= 0.999982 at a signal efficiency: 0.360023 BDT value: 0.35623
+Bkg Rej= 0.999863 at a signal efficiency: 0.539984 BDT value: 0.270512
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Aug6/Custom_privxmu/ROC_accept_error.pdf has been created
+
+Applying ATLAS style settings...
+
+input vars: Custom_nPV
+EvalTreeBkg Entries: 1216285
+EvalTreeSig Entries: 166752
+bkg vector size: 2432570
+sig vector size: 333504
+bkg+sig vector size: 2766074
+ vec size (sig+bkg)  2765977
+ vec size + 1 2765978
+Bkg Rej= 0.999998 at a signal efficiency: 0.180014 BDT value: 0.428751
+Bkg Rej= 0.99998 at a signal efficiency: 0.359991 BDT value: 0.355362
+Bkg Rej= 0.999864 at a signal efficiency: 0.540009 BDT value: 0.268851
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Aug6/Custom_nPV/ROC_accept_error.pdf has been created

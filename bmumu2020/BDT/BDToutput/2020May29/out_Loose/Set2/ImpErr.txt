@@ -1,0 +1,44 @@
+Latexmk: This is Latexmk, John Collins, 22 April 2016, version: 4.45.
+Rule 'pdflatex': Rules & subrules not known to be previously run:
+   pdflatex
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020May29/out_Loose/Set2/Importance.tex"'
+------------
+Latexmk: Log file says output to 'Importance.pdf'
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'Importance.aux'
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020May29/out_Loose/Set2/Importance.tex"'
+------------
+Latexmk: Log file says output to 'Importance.pdf'
+Latexmk: This is Latexmk, John Collins, 22 April 2016, version: 4.45.
+Rule 'pdflatex': Rules & subrules not known to be previously run:
+   pdflatex
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020May29/out_Loose/Set2/Importance.tex"'
+------------
+Latexmk: Log file says output to 'Importance.pdf'
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'Importance.aux'
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020May29/out_Loose/Set2/Importance.tex"'
+------------
+Latexmk: Log file says output to 'Importance.pdf'

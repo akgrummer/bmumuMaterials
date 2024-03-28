@@ -1,0 +1,292 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{Bobeth:2013uxa}{article}{}
+      \true{moreauthor}
+      \name{author}{5}{}{%
+        {{hash=2ef016b2c2603184fc73884071dc1a4a}{Bobeth}{B\bibinitperiod}{Christoph}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=467401b0306ceae1c26bcccd47ffd57f}{Gorbahn}{G\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=79155237002af2f8304b79df34c26010}{Hermann}{H\bibinitperiod}{Thomas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=a262f149421cce4ce5dfaf80a779fe90}{Misiak}{M\bibinitperiod}{Mikolaj}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=c892f07e57c2bb08922a4d745740d346}{Stamou}{S\bibinitperiod}{Emmanuel}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b345c1b10877718113a92f8071cf065d}
+      \strng{fullhash}{9bdcaeeddb9bc0448fb5f5740000bcb0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys.Rev.Lett.}
+      \field{title}{{$B_{s,d} \to l^+ l^-$ in the Standard Model with Reduced Theoretical Uncertainty}}
+      \field{volume}{112}
+      \field{year}{2014}
+      \field{pages}{101801}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.112.101801
+      \endverb
+      \verb{eprint}
+      \verb 1311.0903
+      \endverb
+    \endentry
+    \entry{Aaij:2017vad}{article}{}
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=8ca3e82f9358ba6fd01f7c11e88a3b2c}{Aaij}{A\bibinitperiod}{Roel}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{37166355a0326aa05fdf7eca8f9ad8f3}
+      \strng{fullhash}{37166355a0326aa05fdf7eca8f9ad8f3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{number}{19}
+      \field{title}{{Measurement of the $B^0_s\to\mu^+\mu^-$ branching fraction and effective lifetime and search for $B^0\to\mu^+\mu^-$ decays}}
+      \field{volume}{118}
+      \field{year}{2017}
+      \field{pages}{191801}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.118.191801
+      \endverb
+      \verb{eprint}
+      \verb 1703.05747
+      \endverb
+    \endentry
+    \entry{CMS:2014xfa}{article}{}
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=578ca237a5fdd23189740e45f3cf5212}{Khachatryan}{K\bibinitperiod}{Vardan}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e25bf948b4c59a974ca557f738f43e23}
+      \strng{fullhash}{e25bf948b4c59a974ca557f738f43e23}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nature}
+      \field{title}{{Observation of the rare $B^0_s\to\mu^+\mu^-$ decay from the combined analysis of CMS and LHCb data}}
+      \field{volume}{522}
+      \field{year}{2015}
+      \field{pages}{68\bibrangedash 72}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nature14474
+      \endverb
+      \verb{eprint}
+      \verb 1411.4413
+      \endverb
+    \endentry
+    \entry{Alpigiani:1756291}{report}{}
+      \name{author}{20}{}{%
+        {{hash=58b9c0c112bf310d408cca620779454c}{Alpigiani}{A\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=0ad5658c6cf50c1cb282852f6567ce5d}{Bevan}{B\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=7945d4c2f8acac05784fc02cb7460022}{Bona}{B\bibinitperiod}{M}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=af591e888f51bdf37d1f6c5ff41e909a}{Buchholz}{B\bibinitperiod}{P}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=36fa905bec248f250f6e5bd30c45c812}{Catmore}{C\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d8826f08d9356bb3ef19640e15d805d7}{Cerri}{C\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=6fc2b6531161966f542812abc4f7e52d}{De\bibnamedelima Sanctis}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{U}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=a34eba9f24e18c81295e80335076e294}{Gaur}{G\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=8a84146f26c43c93f29b54c2609d094f}{Guenther}{G\bibinitperiod}{J}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=914d4ccf1b64df9e3339a96727ff1f5b}{Ibragimov}{I\bibinitperiod}{I}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=50434ac13793a1baf2d7f1c8151d0c59}{Karakostas}{K\bibinitperiod}{K}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=7043296b1df9c349fddd74bea56098d1}{Leontsinis}{L\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=74dfec5428cf9547781fc615ccb22c38}{Lewis}{L\bibinitperiod}{D}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=0aef9138eb3e5f2a141a6e4b07970ee0}{Marzin}{M\bibinitperiod}{A}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=18b9943926ae82c45b4319741b653543}{Palestini}{P\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=9b0b78a11bc724a22f2bd3b6ab072cbd}{Sivoklokov}{S\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=3693b03bded91661d2078c49dcf80c3a}{Smirnova}{S\bibinitperiod}{L}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=1a99e138fa2db31e6b8c1309e610ae35}{Turchikhin}{T\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=89d25bd916ecc3a35ac0c644bc711f00}{Walkowiak}{W\bibinitperiod}{W}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=7d076e9736081d011cb18b714f06881d}{Yao}{Y\bibinitperiod}{W}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{88e4224fdd1bfffe87dafcd216527cbd}
+      \strng{fullhash}{afdb3f673df8e815f060d73acd1cb1d1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{09}
+      \field{number}{ATL-COM-PHYS-2014-1179}
+      \field{title}{{$B \to \mu\mu$ analysis on the complete RUN1 dataset}}
+      \field{type}{techreport}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://cds.cern.ch/record/1756291
+      \endverb
+    \endentry
+    \entry{Aaboud:2016ire}{article}{}
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=a4f573dac388f6a04cb89dde8c311bd3}{Aaboud}{A\bibinitperiod}{Morad}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{50a697332ec8ff7cfd64a3c7cb8c47eb}
+      \strng{fullhash}{50a697332ec8ff7cfd64a3c7cb8c47eb}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J.}
+      \field{number}{9}
+      \field{title}{{Study of the rare decays of $B^0_s$ and $B^0$ into muon pairs from data collected during the LHC Run 1 with the ATLAS detector}}
+      \field{volume}{C76}
+      \field{year}{2016}
+      \field{pages}{513}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-016-4338-8
+      \endverb
+      \verb{eprint}
+      \verb 1604.04263
+      \endverb
+    \endentry
+    \entry{bsmumuv2}{report}{}
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{number}{ATL-COM-PHYS-2013-053}
+      \field{title}{Limit on $B_s\to \mu\mu$ branching ratio based on 4.9 fb$^{-1}$ of integrated luminosity}
+      \field{type}{techreport}
+      \field{year}{2013}
+    \endentry
+    \entry{Aad:2012pn}{article}{}
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=ec1463e7fbfc553eca7d18cd31454ab6}{Aad}{A\bibinitperiod}{Georges}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f0806a61a21762c45bb17c53a0517ffd}
+      \strng{fullhash}{f0806a61a21762c45bb17c53a0517ffd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys.Lett.}
+      \field{title}{{Search for the decay $B^0_s \to \mu \mu$ with the ATLAS detector}}
+      \field{volume}{B713}
+      \field{year}{2012}
+      \field{pages}{387\bibrangedash 407}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.physletb.2012.06.013
+      \endverb
+      \verb{eprint}
+      \verb 1204.0735
+      \endverb
+    \endentry
+    \entry{PythiaB}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=30720887230debbefc9a20ec0dc6427e}{Smizanska}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{30720887230debbefc9a20ec0dc6427e}
+      \strng{fullhash}{30720887230debbefc9a20ec0dc6427e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{ATL-COM-PHYS-2003-038}
+      \field{title}{{PythiaB: an interface to Pythia 6 dedicated to simulation of beauty events}}
+      \field{year}{2003}
+    \endentry
+    \entry{Hoecker:TMVA}{article}{}
+      \name{author}{6}{}{%
+        {{hash=70d9af97fd9a167fa24a2223e78dbf82}{Hoecker}{H\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=585bfb3a76f8a3399316a283d040d9c2}{Speckmayer}{S\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=4318d315abbe4883cda53c09443cf47b}{Stelzer}{S\bibinitperiod}{Joerg}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=65fcfa9d82338285d2c3e2a601475fc3}{Therhaag}{T\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0af1b60b24da8758297747248258d65e}{Toerne}{T\bibinitperiod}{Eckhard}{E\bibinitperiod}{von}{v\bibinitperiod}{}{}}%
+        {{hash=a5412b2a81c100e6eead6a59ae6e40bb}{Voss}{V\bibinitperiod}{Helge}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7bc91eb3ef21f97c67fef231eb584b7f}
+      \strng{fullhash}{d2f112849e896cf92483bd177444d384}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{PoS}
+      \field{title}{{TMVA: Toolkit for Multivariate Data Analysis}}
+      \field{volume}{ACAT}
+      \field{year}{2007}
+      \field{pages}{040}
+      \range{pages}{1}
+      \verb{eprint}
+      \verb physics/0703039
+      \endverb
+    \endentry
+    \entry{Rogozhnikov:2016bdp}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3ffaf3a4bd3355b2f7b824adc85a02e8}{Rogozhnikov}{R\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3ffaf3a4bd3355b2f7b824adc85a02e8}
+      \strng{fullhash}{3ffaf3a4bd3355b2f7b824adc85a02e8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings, 17th International Workshop on Advanced Computing and Analysis Techniques in Physics Research (ACAT 2016): Valparaiso, Chile, January 18-22, 2016}}
+      \field{eprintclass}{physics.data-an}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{J. Phys. Conf. Ser.}
+      \field{number}{1}
+      \field{title}{{Reweighting with Boosted Decision Trees}}
+      \field{volume}{762}
+      \field{year}{2016}
+      \field{pages}{012036}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/762/1/012036
+      \endverb
+      \verb{eprint}
+      \verb 1608.05806
+      \endverb
+    \endentry
+  \endsortlist
+  \missing{PDG2014}
+  \missing{Neyman}
+  \missing{Johnson}
+  \missing{lhcbfsfu14}
+\endrefsection
+\endinput
+

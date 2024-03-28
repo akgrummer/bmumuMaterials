@@ -1,0 +1,182 @@
+\section{ContinuumBDT}
+\label{sec:ContinuumBDT}
+% \newcommand{\Bsmumu}{\ensuremath{B_s^0 \to \mu^+\mu^-}\xspace}
+
+In order to discriminate against the continuum background we
+employ a Multi-Variate Analysis (MVA) strategy, based on a boosted decision tree (BDT)
+algorithm, as implemented in the TMVA~\cite{Hoecker:TMVA} package of ROOT. We use
+$15$ physical input variables to obtain the signal-to-background discriminator. These  $15$ input 
+variables are summarised in Table~\ref{tab:15vars} along with a short description of each variable.
+The BDT ranking of input variable importance is given in Table ~\ref{tab:VarImportance} and compared to 
+the separation power of the signal and background.
+  
+The following summarises the input variables which were considered for use in the
+BDT. After discussing the individual variables, details of training and validation
+of the classifier are given.
+  
+The variables can be subdivided into two groups, one related to isolation properties
+of the $B$ candidates or the final state particles, and another describing topological
+and kinematic properties of the \Bsmumu decay.
+  
+To check the isolation of the signal decay we look at non-signal tracks in the vicinity
+of reconstructed B vertices, excluding the tracks associated to the pile-up vertices.
+The procedure of computation of the variable, outlined in section~\ref{ssec:CandidateBuildingByDerivation} 
+requires information from all tracks in an event and therefore performed on the derivation level.
+
+\yel[t.b.c.]{Since individual muons in the signal decay are fairly well separated, isolation variables
+of individual muon candidates have also been considered. However, they were rejected
+in the final training, since the $B$ isolation variable $I_{0.7}$, highly correlated
+to the single-muon isolation variables, contains nearly all the separation power of this
+type of variables by itself.}
+  
+% In the computation of the $I_{0.7}$ variable we employ our own track-to-PV association
+% algorithm, similar to the $B$ vertex association described above. In this way, the
+% $I_{0.7}$ variable results to be robust against pile-up events. The corresponding
+% requirement on the track-to-PV association was re-optimised due to the larger pile-up
+% in 2012 data. We have tightened the cut on the $\ln\chi^2$ value to be less than $5$
+% (instead of $6$ used in the analysis of 2011 data), which gave the best performance
+% in signal/background separation.
+  
+The other $12$ variables in Table~\ref{tab:15vars} are related to B-decay topology and
+kinematics. They were chosen from the larger pool of variables as the ones ensuring
+the best BDT performance.
+The variables that have been considered but dismissed are listed below for future
+reference: they do not contribute significantly to the signal/background separation,
+either by nature or due to the presence of other strongly correlated but more powerful
+variables.
+   
+\begin{itemize}
+\setlength{\itemsep}{0pt}%
+\setlength{\parskip}{0pt}%
+\item $L_{xy}$ significance
+\item flight length significance in 2D and 3D
+\item $d_0^{Max}$, $d_0^{Min}$
+\item the significance of the closest track DOCA
+\item $\chi^2$ between PV and B vertex in $z$ 
+\item $p_{T}^{B}$ significance
+%$B$ transverse momentum significance
+% 1 BvtxPointingAngle3D a_3D pointing angle in 3D 
+\item   pointing angle $|\alpha_{3D}|$
+%       Absolute value of the angle between $\Delta\overrightarrow{x}$ and $\overrightarrow{p}^{B}$ & new \\ \\
+% 15 BvtxChi2byNDF B_fitChi2NDF chi2/NDF of B vertex 
+\item B vertex fit $\chi^2_B$/NDF
+%$\chi^2$/NDF of the $B$ vertex & new \\
+\item coplanarity of \Bsmumu' decays
+\item coplanarity of \Bsmumu' decays with $Z$-axis
+\item minimum signed $d_0$ significance of the signal candidate
+\end{itemize}
+Lastly in order to arrive at the BDT to
+use for this analysis, a number of configurations have been studied, and
+the best (with respect to background rejection and algorithm behavior)
+has been selected for use in the final result.
+ 
+\begin{table}[!htb]
+\begin{center}
+\input{tables/InternalNote_ContinuumBDT/VariableDescription.tex}
+\caption{Description of the $15$ discriminating variables used in the
+discrimination between signal and continuum background.}
+\label{tab:15vars}
+\end{center}
+\end{table}
+
+\begin{table}[!htb]
+\begin{center}
+\input{tables/InternalNote_ContinuumBDT/Importance.tex}
+\caption{The BDT ranking of input variable importance and compared with the signal and background 
+separation power of each variable as calculated by TMVA before training.}
+\label{tab:VarImportance}
+\end{center}
+\end{table}
+ 
+Appendix~\ref{app:contBDT} summarises the correlation matrices calculated
+for signal and background events for the $15$ discriminating variables used
+in this analysis.
+The BDT training is done using the \bbmumuX background MC (described in
+%used to be sec:4corners
+Sec.~\ref{sec:BackgroundModeling}) and signal MC events. All selection cuts are applied to both the combinatorial events and the signal MC events. 
+ 
+The training is done using the TMVA tool, splitting the two input samples into
+equal halves. The first half is used for training the BDT and the second for
+validation.
+The $1/4$th of the signal MC was kept off the training and validation samples and
+it has been used for evaluation, together with the data candidates from the right
+mass sideband.\footnote{To clarify, the signal MC sample events are used:
+$37.5\%$ for training, $37.5\%$ for validation, and $25\%$ for evaluation.}
+The left plot in Figure~\ref{fig:contBDT} shows the test for over-training,
+where the BDT outputs for training and validation samples are shown, confirming that
+the BDT is not over-trained as the training and validation samples are in good
+agreement with each other. \yel[t.b.d.]{The right plot contains the training result via
+the Receiver Operating Characteristic (ROC) curve and the comparison with the BDT
+used in 2012 analysis: the new training results to be significantly more efficient.}
+ 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Parameter & Value \\
+\hline
+\hline
+\textit{NTrees} & 500 \\
+\hline
+\textit{MinNodeSize} & 1.0[\%]\\
+\hline
+\textit{MaxDepth} & 3 \\
+\hline
+\textit{BoostType} & AdaBoost \\
+\hline
+\textit{AdaBoostBeta} & 0.5 \\
+\hline
+\textit{UseBaggedBoost} & True\\
+\hline
+\textit{BaggedSampleFraction} & 0.6\\
+\hline
+\textit{SeparationType} & GiniIndex \\
+\hline
+\textit{nCuts} & 100\\
+\hline
+\textit{NormMode} & EqualNumEvents\\
+\hline
+\hline
+\end{tabular}
+\end{center}
+\caption{\label{tab:cBDTPars} Configuration parameters of the \textit{continuum}-BDT.}
+\end{table}
+ 
+The final choice of the configuration parameters of the \textit{continuum}-BDT,
+as used by TMVA, is shown in Table \ref{tab:cBDTPars}.
+The optimal values for the configuration parameters \textit{MinNodeSize} 
+and \textit{AdaBoostBeta} were found with the help of a grid scan using background rejection at 36\% signal efficiency on the ROC-curve as a figure of merit of classifier performance. The \textit{MaxDepth} parameter
+has also been studied in the similar way. For this parameter, it has been found
+that the performance of classifier improves with increasing
+of \textit{MaxDepth}, whereas the discrepancy between its performance on the training
+and testing sample, accessed by the Kolmogorov-Smirnov test, becomes larger,
+leading to the over-training. In order to not compromise the generality of the classifier,
+the value \textit{MaxDepth=3} has been chosen.
+The value of \textit{NTrees} has been chosen large enough to allow the training to converge.
+The choice of other parameters does not have any significant impact on the training result.
+ 
+We have tested the chosen BDT configuration against different training samples including
+various sample re-weighting, previous selection cuts and increase of statistics.
+We found no real impact on the performance of the BDT proving that the chosen
+configuration is very robust.
+ 
+\yel[t.b.c.]{In addition we tested a BDT variable built without the use of the isolation variable
+as input: the study is described in Appendix}~\ref{app:BDT-noISO}. As expected, the
+separation power is reduced thus the BDT configuration described in this section is
+the one used in the analysis.
+ 
+\begin{figure}[!htb]
+\begin{center}
+\hspace{-0.5cm}
+\includegraphics[width=0.52\textwidth]{figures/InternalNote_ContinuumBDT/KS.pdf}
+\hspace{-0.5cm}
+\includegraphics[width=0.52\textwidth]{figures/InternalNote_ContinuumBDT/ROC.pdf}
+\caption{{\itshape Left}: cross-checks for over-training for the continuum BDT variable.
+{\itshape{Right}}: \textbf{Only ROC curve at the moment!} comparison of ROC curves trained on the combinatorial background MC and the signal MC. The ROCs are evaluated on the high-mass data sideband.}
+\label{fig:contBDT}
+\end{center}
+\end{figure}
+
+
+
+\clearpage

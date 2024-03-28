@@ -1,0 +1,620 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dt_mc_",
+				"dt_mc_OnePeriod"
+			],
+			[
+				"TGrap",
+				"TGraphAsymmErrors"
+			],
+			[
+				"Int",
+				"Int_t"
+			],
+			[
+				"histP",
+				"histPred3"
+			],
+			[
+				"tree",
+				"treenames"
+			],
+			[
+				"i",
+				"i"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "cutFlowValues_v3_Events.C",
+			"settings":
+			{
+				"buffer_size": 16185,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cutBatchBsmumuFINALiskander2018Aug15.cxx",
+			"settings":
+			{
+				"buffer_size": 10663,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/agrummer/cernbox/www/bmumu/Notes/SkimmingCommandLine.txt",
+			"settings":
+			{
+				"buffer_size": 35296,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/InternalNote_Appendix_contBDT.tex",
+			"settings":
+			{
+				"buffer_size": 15199,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"LuaLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package",
+		"selected_items":
+		[
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"PackageRe",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"PackageResource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package control ",
+				"Package Control: Install Package"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"clang form",
+				"Clang Format: Format Selection"
+			],
+			[
+				"instal pag",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Install Package Control"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/agrummer/cernbox/www/bmumu/SkimmingFeb2018"
+	],
+	"file_history":
+	[
+		"/Users/agrummer/Desktop/Questions for Iskander:",
+		"/Users/agrummer/cernbox/www/bmumu/SkimmingFeb2018/cutFlowValues_v2.cxx",
+		"/Users/agrummer/cernbox/www/bmumu/SkimmingFeb2018/cutFlowValues.cxx",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/tables/InternalNote_ContinuumBDT/ImportanceBDT3.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/tables/InternalNote_ContinuumBDT/ImportanceBDT2.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/ANA-BPHY-2018-09-INT1.bib",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/InternalNote_Samples.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/InternalNote_NoteEvolution.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/InternalNote_BackgroundModeling.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/ANA-BPHY-2018-09-INT1-defs.sty",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/ANA-BPHY-2018-09-INT1.out",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/InternalNote_Preselection.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/BMuMuCOMM_BDTtable.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/BMuMuCOMM_defs.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/ANA-BPHY-2018-09-INT1_2.tex",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/bib/ATLAS.bib",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/AddedLinesApr5.txt",
+		"/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/InternalNote_ContinuumBDT.tex",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/AtlasLabels.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/AtlasStyle.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_Eta_v7.C",
+		"/Users/agrummer/Desktop/LeakagePaper/Leakage Paper.tex",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v4.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v5.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_Eta_v6.C",
+		"/Users/agrummer/Desktop/Bmumu/Meetings/We confirm our previous results and we do not cont",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_v4_Eta_Profile.C",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisonsBeforeFeb2018/NotesComparisons/SkimmingCommandLine.txt",
+		"/Users/agrummer/Desktop/Bmumu/LumiCalc/MakeATGraph.C",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/GainCalcs_v2.py",
+		"/Users/agrummer/Desktop/Bmumu/LumiCalc/GainCalcs_v2.py",
+		"/Users/agrummer/Desktop/Bmumu/LumiCalc/GainCalcs.py",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisonsBeforeFeb2018/NotesComparisons/SeparatePeriods.txt",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/SeparatePeriods_v3.C",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb16/OutputToSlides.tex",
+		"/Users/agrummer/Desktop/Bmumu/DataMCPresentations/Feb19/OutputToSlides.tex",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/addWeights.C",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/dmcbbmumuX.h",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/dmcbbmumuX.C",
+		"/Users/agrummer/cernbox/www/bmumu/MCvsDataCode/RunNumberCheck.py",
+		"/Users/agrummer/cernbox/www/bmumu/SkimmingFeb2018/cutBatchBsmumu.cxx",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisonsBeforeFeb2018/NotesComparisons/RunLastSkimming.txt",
+		"/Users/agrummer/cernbox/www/bmumu/MCDataComparisons/AnalysisCode/README.md",
+		"/Users/agrummer/Desktop/Currents/LeakageCurrentFigures.tex",
+		"/Users/agrummer/Desktop/Test.C",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_Eta_v5.C",
+		"/Users/agrummer/Desktop/Currents/DamageFactors/FluenceDamageValues.C",
+		"/Users/agrummer/Desktop/Currents/LeakageMeasurements_v21.py",
+		"/Users/agrummer/Desktop/Bmumu/Macros/pyRootTest3.py",
+		"/Users/agrummer/Desktop/CodingNotes/CommandLineNotes.txt",
+		"/Users/agrummer/Desktop/Currents/ModuleLists.py",
+		"/Users/agrummer/Desktop/Currents/ModuleListsDisk.py",
+		"/Users/agrummer/Desktop/CodingNotes/SublimeText/SublimeMerge.txt",
+		"/Users/agrummer/Desktop/LeakageCurrent/GetCMBData/GetAllDisk.py",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/CombineTextFilesAll.py",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v4_Disk.C",
+		"/Users/agrummer/Desktop/Currents/ModuleNamesLayerOne.py",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_v4_Eta.C",
+		"/Users/agrummer/Desktop/Currents/LZeroHVPP4CurrentOct2017/L0_B02_S1_C7_M5C_HVPP4_Imon_high/L0_B02_S1_C7_M5C_HVPP4_Imon_high_Combine.csv",
+		"/Users/agrummer/Desktop/Currents/LZeroHVPP4CurrentOct2017/L0_B03_S1_A6_M1A_HVPP4_Imon_high/L0_B03_S1_A6_M1A_HVPP4_Imon_high_Combine.csv",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll/DTwoHVNov2017/D2A_B02_S2_M35_HV_VMeas/D2A_B02_S2_M35_HV_VMeas_OnOff.csv",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll/DTwoHVNov2017/D2C_B03_S1_M41_HV_VMeas/D2C_B03_S1_M41_HV_VMeas_OnOff.csv",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll/DTwoHVNov2017/D2A_B02_S2_M2_HV_VMeas/D2A_B02_S2_M2_HV_VMeas_OnOff.csv",
+		"/Users/agrummer/Desktop/new.py",
+		"/Users/agrummer/Desktop/DelayedSubmission.txt",
+		"/Users/agrummer/Desktop/RootNotes.txt",
+		"/Users/agrummer/Desktop/CommandLineNotes.txt",
+		"/Users/agrummer/Desktop/Currents/LeakageMeasurements_v20.py",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll/GetAllDisk.py",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/NewGetDiskAll.zip",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/scriptTemps.py",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/D2list.txt",
+		"/Users/agrummer/Desktop/Currents/DiskLayers/D1list.txt",
+		"/Users/agrummer/.bash_aliases",
+		"/Users/agrummer/.bashrc",
+		"/Users/agrummer/Desktop/ParticleResearchGroup/CV/CVnotes.txt",
+		"/Users/agrummer/Desktop/LeakageCurrent/GetCMBData/Current/LayerZ/GetLZeroCurrent.py",
+		"/Users/agrummer/Desktop/CodingNotes/Powerpoint/untitled",
+		"/Users/agrummer/Desktop/PythonTesting/ScikitNotebooks/NotesDec21.py",
+		"/Users/agrummer/Desktop/Currents/ModuleNameList35fb.py",
+		"/Users/agrummer/Desktop/Currents/TwoScalesTest.C",
+		"/Users/agrummer/Desktop/Currents/tempAndHvpp4names.txt",
+		"/Users/agrummer/Desktop/LeakageCurrent/GetCMBData/GetAll.py",
+		"/Users/agrummer/Desktop/PythonTesting/dbaderNotes.py",
+		"/Users/agrummer/Desktop/Currents/FigureNamesOut120fb.py",
+		"/Users/agrummer/Desktop/Currents/ModuleNameTest.py",
+		"/Users/agrummer/Desktop/Currents/HVPP4CurrentNames.txt",
+		"/Users/agrummer/Desktop/Currents/ListNames19Dec2017.py",
+		"/Users/agrummer/Desktop/Currents/__init__.py",
+		"/Users/agrummer/Library/Application Support/Sublime Text 3/Packages/Anaconda/Default (OSX).sublime-keymap",
+		"/Users/agrummer/Desktop/PythonTesting/Sudoku4by4.py",
+		"/Users/agrummer/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/Default (OSX).sublime-keymap",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisons/AnalysisCode/MCvsData/bbmumuX/Slides/8Dec2017/MCvsDataComparisons_Main_v2.tex",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_v3_Eta.C",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisons/AnalysisCode/MCvsData/bbmumuX/addWeights.C",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisons/AnalysisCode/MCvsData/bbmumuX/OutputPlotsCombWeights/table_fitres_D.tex",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisons/AnalysisCode/MCvsData/bbmumuX/OutputPlotsCombWeights/table_fitres_SepP.tex",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisons/AnalysisCode/MCvsData/bbmumuX/OutputPlots/out.txt",
+		"/Users/agrummer/Desktop/Bmumu/dataMCcomparisons/AnalysisCode/MCvsData/bbmumuX/dmcbbmumuX.h",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/EarlyMeasPredRatio.txt",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/EarlyMeasPredRatio.csv",
+		"/Users/agrummer/Desktop/Currents/Plotting/LayersSep2017/LeakageCurrent_AllLayers_Lumi_v3.C",
+		"/Users/agrummer/Desktop/HighVoltage/STBformattedDec17.csv",
+		"/Users/agrummer/Desktop/HighVoltage/STBformattedsept17.csv",
+		"/Users/agrummer/anaconda/lib/python3.5/site-packages/pandas/core/api.py",
+		"/Users/agrummer/Desktop/Currents/CurrentText_v18beta.py",
+		"/Users/agrummer/Desktop/LumiFeb2017/ReadMe.txt",
+		"/Users/agrummer/Desktop/LumiFeb2017/runData_Nov2017.txt",
+		"/Users/agrummer/Desktop/CodingNotes/SubimeText/CursorSelection",
+		"/Users/agrummer/Desktop/LumiFeb2017/LuminosityPerLumiBlock_v4beta.py",
+		"/Users/agrummer/Desktop/LumiFeb2017/LuminosityPerLumiBlock_v4.py",
+		"/Users/agrummer/Desktop/LumiFeb2017/unpickle_Nov2017.py",
+		"/Users/agrummer/Desktop/HighVoltage/NewGet/LZeroHVFullJuly2017/L0_B01_S1_A6_M21_HV_VMeas/L0_B01_S1_A6_M21_HV_VMeas_OnOff.csv",
+		"/Users/agrummer/Desktop/HighVoltage/NewGet/LZeroHVFullJuly2017/L0_B01_S1_A6_M21_HV_VMeas/L0_B01_S1_A6_M21_HV_VMeas_Combine.csv",
+		"/Users/agrummer/Desktop/HighVoltage/LOneHV/L1_B01_S1_A6_M12_HV_VMeas/L1_B01_S1_A6_M12_HV_VMeas_Combine.csv",
+		"/Users/agrummer/Desktop/HighVoltage/README.txt",
+		"/Users/agrummer/Desktop/Currents/CombineTextFilesLTwo.py",
+		"/Users/agrummer/Desktop/Currents/CombineTextFilesAll.py",
+		"/Users/agrummer/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/agrummer/Desktop/HighVoltage/CombineTextFilesLTwo.py",
+		"/Users/agrummer/Desktop/HighVoltage/CombineTextFilesLOne.py",
+		"/Users/agrummer/Desktop/HighVoltage/CombineTextFilesLZ.py",
+		"/Users/agrummer/Desktop/Currents/CombineTextFilesLZ.py",
+		"/Users/agrummer/Desktop/Currents/CombineTextFilesLOne.py",
+		"/Users/agrummer/Library/Application Support/Sublime Text 3/Packages/Python PEP8 Autoformat/Default (OSX).sublime-keymap",
+		"/Users/agrummer/Library/Application Support/Sublime Text 3/Packages/User/Python27.sublime-build",
+		"/Users/agrummer/Desktop/CodingNotes/SubimeText/Snippets/NotesSnippets.txt",
+		"/Users/agrummer/Library/Application Support/Sublime Text 3/Packages/User/latex-fr.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 132.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"TriggerCut",
+			"BCuts",
+			"physics_BphysDelayed",
+			"MuonCuts",
+			"VarCuts",
+			"std::bad_alloc",
+			"myfile"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/agrummer/cernbox/www/bmumu/SkimmingFeb2018"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "cutFlowValues_v3_Events.C",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15462,
+								15468
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "cutBatchBsmumuFINALiskander2018Aug15.cxx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/agrummer/cernbox/www/bmumu/Notes/SkimmingCommandLine.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32963,
+								32963
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/agrummer/Desktop/Bmumu/ANA-BPHY-2018-09-INT1/InternalNote_Appendix_contBDT.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 216.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 252.0
+	},
+	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"AnalysisCode/MCvsData/bbmumuX/AtlasLabels.C"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$(DLLFILE):"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

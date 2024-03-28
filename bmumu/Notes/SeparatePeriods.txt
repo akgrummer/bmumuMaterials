@@ -1,0 +1,178 @@
+Feb. 17 - finally adding notes on SeparatePeriods*.C codes:::
+
+
+ SeparatePeriods_v2.C in 
+/Users/agrummer/Desktop/Bmumu/dataMCcomparisonsBeforeFeb2018/SeparatePeriods/ directory
+
+It works and has this configuration:
+
+The code has four initial input configurations.
+Main or MainWithDelayed, and 2015 or 2016.
+
+The files were saved in the same directory as the code.
+
+
+trees in the output file are labeled as T_mv_A, T_mv_B, T_mv_C etc.
+
+
+Today I create SuparatePeriods_v3.C 
+in cernbox/www/bmumu/MCvsDataCode/
+
+Takes one input file
+Creates a new inputfile with the extra tag "_SepPeriods.root"
+
+Two options: 
+Coarse: larger separations based on technical stops (TS)
+or not coarse - which separates by data period. A, B, C etc.
+
+to run Separate Periods on lxplus:
+for Coarse separation
+root -l -b -q SeparatePeriods_v3.C"(\"Coarse\")"
+for data period separation:
+root -l -b -q SeparatePeriods_v3.C
+
+creates file with the tag "_SepCoarse.root"
+or "_SepPeriod.root" added to end of input (in its directory) 
+Change input directory in the code
+
+
+
+
+////////////////////////////////////////////////////
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+////////////////////////////////////////////////////
+Further notes/ commented line that were in the code:
+
+for Coarse runs:
+// last run before technical stop 1: 300908 (June 6, 2016)
+// first fun after TS: 301912 (June 11, 2016)
+// last run before Machine Developement 1:  304494 (July, 25, 2016)
+// first run afer MD1: 305291 (Aug. 1st, 2016)
+
+//files skimmed over in eos:
+// /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1
+// user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root
+// user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root
+// user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root
+// user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root
+// user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root
+// user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root
+// user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root
+// user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root
+
+//The data periods:
+// 15D, 15E, 15F, 15G, 15H, 15J, 
+// 16A, 16B, 16C, 16D, 16E, 16F, 16G, 16I, 16K, 16L
+
+    
+2015 unused periods:
+
+// newtree2015A = inputtree->CloneTree(0); newtree2015A->SetName("T_mv_2015A");
+// newtree2015B = inputtree->CloneTree(0); newtree2015B->SetName("T_mv_2015B");
+// newtree2015C = inputtree->CloneTree(0); newtree2015C->SetName("T_mv_2015C");
+// newtree2015I = inputtree->CloneTree(0); newtree2015I->SetName("T_mv_2015I");
+// newtree2015K = inputtree->CloneTree(0); newtree2015K->SetName("T_mv_2015K");
+// newtree2015L = inputtree->CloneTree(0); newtree2015L->SetName("T_mv_2015L");
+
+2016 unused periods:
+// newtree2016H = inputtree->CloneTree(0); newtree2016H->SetName("T_mv_2016H");
+// newtree2016J = inputtree->CloneTree(0); newtree2016J->SetName("T_mv_2016J");
+
+// 296939 300287
+// if (run_number == 281411) newtree->Fill();
+!!!A10 was left out: 300279
+// if (run_number >= 266904 && run_number <= 267639) newtree2015A->Fill(); //A //not needed
+// if (run_number >= 267358 && run_number <= 267599) newtree2015B->Fill(); //B //first run_number not 
+// greater than last run_number of previous period //not needed
+// if (run_number >= 270441 && run_number <= 272531) newtree2015C->Fill(); //C //not needed
+// if (run_number >= 281662 && run_number <= 282482) newtree2015I->Fill(); //I //not needed
+// if (run_number >= 305359 && run_number <= 310216) newtree2016H->Fill(); // H //first run_number not 
+// greater than last run_number of previous period //not needed
+// greater than last run_number of previous period
+// if (run_number >= 308979 && run_number <= 309166) newtree2016J->Fill(); // J //not needed
+// if (run_number >= 299390 && run_number <= 310216) newtreeB->Fill(); // Z //not needed
+// cout << run_number << endl;
+// newtreeA->SetName("T_mv_A");
+// newtreeB->SetName("T_mv_B");
+
+//    newtree->Print();
+// if(newtree2015A->GetEntries()!=0) newtree2015A->AutoSave();
+// if(newtree2015B->GetEntries()!=0) newtree2015B->AutoSave();
+// if(newtree2015C->GetEntries()!=0) newtree2015C->AutoSave();
+// if(newtree2015I->GetEntries()!=0) newtree2015I->AutoSave();
+// if(newtree2015K->GetEntries()!=0) newtree2015K->AutoSave();
+// if(newtree2015L->GetEntries()!=0) newtree2015L->AutoSave();
+// if(newtree2016H->GetEntries()!=0) newtree2016H->AutoSave();
+// if(newtree2016J->GetEntries()!=0) newtree2016J->AutoSave();
+
+
+////////////////////////////////////////////////////
+----------------------------------------------------
+////////////////////////////////////////////////////
+
+
+Feb. 18, 2018:
+
+Missed some run numbers on period 2016L and 2016 
+missing run numbers: 
+A10:
+299584
+300279
+
+L10:
+ 311473
+ 311481
+
+Corrected the ranges of Sep Periods and Coarse.
+
+To investigate run numbers I have written the file called GetRunNumbers.C in same www/bmumu/MCvsDataCode directory.
+
+written for Coarse option. Reads trees and their run numbers.
+
+investigate number of entries in root after completing separation with:
+
+root -l 
+myfile = TFile("name.root")
+.ls
+T_mv->GetEntries()
+
+
+number of entries in the original file: 2496228
+(WorkSpace/BsmumuData/LASTskimFeb13/LASTskim.Data_2015HLTand2016HLTLxy_Main_15Feb.root)
+
+number of entries in Coarse file:
+(LASTskim.Data_2015HLTand2016HLTLxy_Main_15Feb_SepCoarse.root)
+T_mv_2015->GetEntries() = 304456
+T_mv_2016preTS1->GetEntries() = 183898
+T_mv_2016TS1toMD1->GetEntries() = 917698
+T_mv_2016postMD1->GetEntries() = 1090176
+total = 2496228 (check mark)
+
+number of entries in Period Sep file:
+(LASTskim.Data_2015HLTand2016HLTLxy_Main_15Feb_SepPeriods.root)
+T_mv_2015D->GetEntries() = 4870
+T_mv_2015E->GetEntries() = 42368
+T_mv_2015F->GetEntries() = 28414
+T_mv_2015G->GetEntries() = 67497
+T_mv_2015H->GetEntries() = 23678
+T_mv_2015J->GetEntries() = 137629
+T_mv_2016A->GetEntries() = 53427
+T_mv_2016B->GetEntries() = 130471
+T_mv_2016C->GetEntries() = 215359
+T_mv_2016D->GetEntries() = 349917
+T_mv_2016E->GetEntries() = 129429
+T_mv_2016F->GetEntries() = 222993
+T_mv_2016G->GetEntries() = 227043
+T_mv_2016I->GetEntries() = 351102
+T_mv_2016K->GetEntries() = 154110
+T_mv_2016L->GetEntries() = 357921
+total = 2496228
+

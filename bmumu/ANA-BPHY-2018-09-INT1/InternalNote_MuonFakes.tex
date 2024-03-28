@@ -1,0 +1,126 @@
+\section{Studies on muon fake rates}
+\label{sec:MuonFakes}
+%\newcommand{\quote}[1]{``#1''}
+%quick introduction (mostly from Run1 int note)
+One of the most problematic backgrounds in this study is represented
+by the charmless two-body $B$ decays referred to as $B \to hh^\prime$,
+$h$ being a charged $K$ or $\pi$. This background is topologically
+identical to, and peaks under, the signal. 
+The only handle we can exploit is the muon identification
+capability of the ATLAS detector. For these decays to feed into
+our events, the charged $K$ or $\pi$ has to be misidentified as a
+muon. \\
+In the previous analysis~\cite{Alpigiani:1756291} a dedicated analysis was carried out in order to reduce the fake rate thus reducing the contamination
+from these background events. The misidentification fraction was found to be respectively 0.00076 
+and 0.00101 for negative and positive $K$, and 0.00044 and 0.00042 for
+ negative and positive $\pi$. The average misidentification fraction was $0.00067 \pm 0.00001$, for a muon efficiency of $95\%$.\\
+Some of the variables used in the BDT of the previous analysis are now used in the muon quality definition, 
+therefore we decide to check the misidentification fraction for the different muon qualities.\\
+
+
+The study of fake muons has been performed on two MC samples of signal
+(\Bsmumu) and charmless two-body decays ($B \to hh^\prime$). %, with $h$, $h^\prime$=$K$ or $\pi$).
+These samples have been produced with full GEANT simulation in order
+to accurately describe the hadrons after they leave the Inner Detector. % the calorimeter response.
+The preselection described in Section~\ref{sec:CandidatesPreselection}
+is applied to the events entering this study (except for the muon quality requirement). A di-muon trigger request
+ (mu6mu4) is applied to the \Bsmumu sample, while events containing preselected hadrons 
+from $B\to hh^\prime$ that are misidentified as muons
+are required to satisfy a single muon trigger ({\it{mu4}}). Once an event has 
+passed the preselction, the two final state particles are considered separetely.\\
+Table~\ref{table:misidentfraction} show the misidentification fraction and the muon efficiency for the different muon qualities available and for the previous analysis.
+\begin{table}[h]
+  \begin{center}
+    \begin{tabular}{| c | c | c | c | c | c |}
+      \hline
+      &run1 presel + trigger match&run1 fake-BDT&loose muons&medium muons&tight muons\\ \hline
+      total&0.00181&0.00067&0.00221&0.00221&0.00109\\ \hline
+      total +&&&0.00229&0.00228&0.00114\\ \hline
+      total -&&&0.00214&0.00213&0.00105\\ \hline
+      total $\pi$&&0.0004&0.0018&0.0018&0.00101\\ \hline
+      total K&&0.0009&0.00264&0.00263&0.00118\\ \hline
+      $\pi^+$&0.00121&0.00042&0.00177&0.00177&0.00101\\ \hline
+      $\pi^-$&0.00116&0.00044&0.00183&0.00182&0.00101\\ \hline
+      $K^+$&0.00263&0.00101&0.00281&0.00281&0.00127\\ \hline
+      $K^-$&0.00207&0.00076&0.00246&0.00245&0.00109\\ \hline
+      &&&&&\\ \hline
+      $\mu$ eff&&0.95&0.997&0.996&0.935\\ \hline
+      $\mu^+$ eff&&&0.997&0.996&0.935\\ \hline
+      $\mu^-$ eff&&&0.997&0.997&0.935\\ \hline
+    \end{tabular}
+    \caption{misidentification fraction and muon efficiency for the three 
+      available muon qualities (loose, medium and tight) and, for comparison, 
+      from the previous analysis~\cite{Alpigiani:1756291}, for different edmixtures of positive and negative $\pi$ and $K$.
+      Misidentification fraction is calculated as the ratio of the number 
+      of hadrons after all selections and the quality requirements divided 
+      by the total number of hadrons that pass all selections. Muons 
+      efficiency is defined as the number of muons that pass all selections and the quality requirements divided
+      by the total number of muons that pass all selections.}
+    \label{table:misidentfraction}  
+  \end{center}
+\end{table}
+Tight muons have a comparable misidentification fraction and muon efficiency to the Run1 BDT; their usage would 
+imply an increase of about $\sim \times 1.6$ in the number of fakes than using a Run1-like BDT, 
+for about the same muon efficiency.\\
+In order to understand the effect of the tight muons usage, we compared the effect of a Run1-like BDT and the tight muons in the analysis.\\
+Knowing the available statistics before and after the fake-BDT application in previous 
+analysis~\cite{Alpigiani:1756291} and the muon efficiency and fake-rate, we computed the 
+Run1 background composition in terms of fake and real muons; applying the properties of tight muons we can estimate the effect 
+tight muons would have had on the Run1 analysis.
+Tables~\ref{table:bkgInRun1_BDTandTightMu} and ~\ref{table:sigInRun1_BDTandTightMu} show the amount 
+of statistics for the different components of the likelihood used in the fit for the signal yield extraction 
+and the estimation of the statistics using tight muons. The combinatorial background doesn't increase significantly, 
+the SS-SV (ans semileptonic) background increases of a factor $\sim \times 1.1$ and the paking background increases 
+of a factor $\sim \times 2.6$. Signal reduction due to lower muon efficiency is almost negligibe.\\
+\begin{table}[h]
+  \begin{center}
+    \begin{tabular}{| c | c | c | c | c |}
+      \hline
+       & comb bkg run1 & comb bkg tight mu & SS-SV bkg run 1 & SS-SV bkg tight mu\\  \hline
+      bin 1 & 1455.3 & 1460.7 & 205.5 & 229.0\\  \hline
+      bin 2 & 110.5 & 110.9 & 105.6 & 117.7\\  \hline
+      bin 3 & 11.6 & 11.6 & 51.2 & 57.1\\  \hline
+   \end{tabular}
+    \caption{breakdown of the background contributions in the Run1 likelihood after the BDT application. 
+    Columns labelled tight mu show the estimated statistcs we would have gotten using tight muons instead of the BDT.}
+    \label{table:bkgInRun1_BDTandTightMu}
+  \end{center}
+\end{table}
+\begin{table}[h]
+  \begin{center}
+    \begin{tabular}{| c | c | c |}
+      \hline
+       & run 1 & run 1 with tight mu  \\ \hline
+      nBs (SM expected) & 41 & 39.7 \\ \hline
+      nBd (SM expected) & 5 & 4.8 \\ \hline
+      peaking bkg & 1 & 2.6 \\ \hline
+    \end{tabular}
+    \caption{Breakdown of the expected signal and peaking background contributions in the Run1 likelaihood after the BDT application. 
+    Columns labelled tight mu show the estimated statistcs we would have gotten using tight muons instead of the BDT.}
+    \label{table:sigInRun1_BDTandTightMu}
+  \end{center}
+\end{table}
+In order to asses the impact of tight muons usage on the analysis performance a set of toy-MC 
+based on the Run1 analysis likelihood with the available statistics modified according 
+to the estimation of the available stastics in this analysis performed in section~\ref{sec:Trigger} 
+has been run, varying the number of events associated to the different background and signal models according to the usage of tight muons 
+or a Run1-like BDT. Table~\ref{table:tightMuAndBDTRMS} shows the root mean square of the distribution 
+of the fitted number of $B_s$ and $B_d$ events. No significant effect on analysis sensitivity is 
+visible for $B_s$, while a $\sim 1\%$ broader RMS is visible on $B_d$ count.\\
+Given the negligible difference due to the usage of tight muons instead of a Run1-like BDT for fake 
+muons reduction, we decide to use tight muons instead of developing and ad-hoc BDT for this analysis.
+\begin{table}[h]
+  \begin{center}
+    \begin{tabular}{| c | c | c || c | c |}
+      \hline
+      &Run1 fake-BDT&Run1 tight muons&Run2 fake-BDT&Run2 tight muons\\ \hline
+      RMS nBs&15.20 $\pm$ 0.01&15.16 $\pm$ 0.01&21.260 $\pm$ 0.015&21.260 $\pm$ 0.015\\ \hline
+      RMS nBd&13.88 $\pm$ 0.01&13.96 $\pm$ 0.01&18.850 $\pm$ 0.015&19.130 $\pm$ 0.015\\ \hline
+    \end{tabular}
+    \caption{RMS of distributions of number of fitted $B_s$ and $B_d$ events in toy-MC study. The columns labelled Run1 
+      refer to the statistcs available in the previous analysis, modified for the usage of tight muons in case of the 
+    second column. Columns labelled Run2 refer to the estimation of the statistics available for this analysis performed in section~\ref{sec:Trigger}.}
+    \label{table:tightMuAndBDTRMS}
+  \end{center}
+\end{table}
+\clearpage

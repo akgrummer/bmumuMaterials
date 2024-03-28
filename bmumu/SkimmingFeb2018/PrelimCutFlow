@@ -1,0 +1,14 @@
+HLT_mu6_mu4_bBmumu_Lxy0_L1BPH-2M9-MU6MU4_BPH-0DR15-MU6MU4
+L1_BPH-2M9-MU6MU4_BPH-0DR15-MU6MU4
+
+A preliminary cut flow on the entiries for the 2018 run:
+Entries in original tree: 151111
+Entries in final tree: 25681
+BlindCut:  53210
+TriggerCut:  44361
+MuonTightCut: 14701
+MuonKinCuts:  1198
+BKinCut:  0
+B_fitChi2NDFCut:  4821
+AddCuts:  7139
+grlCut:  0

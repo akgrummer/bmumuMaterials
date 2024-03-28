@@ -1,0 +1,12 @@
+New (2019 Jun 2019):
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod2/skimmed_MC
+user.ibragimo.mc16_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_Bmumu
+user.ibragimo.mc16_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_Bmumu
+user.ibragimo.mc16_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_Bmumu
+
+
+Old(2019 April): 
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/skimmed_ntup
+user.ibragimo.mc16a_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r9364_p3793_NTUP_atrkwhits
+user.ibragimo.mc16d_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10201_p3793_NTUP_atrkwhits
+user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits

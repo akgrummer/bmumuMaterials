@@ -1,0 +1,4 @@
+Notes on this folder:
+These var comps are for 
+Pixel hit requirements (PIX>=1, SCT>=2)
+on the Iso variable

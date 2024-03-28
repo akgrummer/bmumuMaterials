@@ -1,0 +1,59 @@
+data: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromData2018_bsmumu_skimmed
+MC: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromBsmumu_300426_skimmed_MC
+
+the output of the skimming code:
+data: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromData2018_bsmumu_final
+MC: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromBsmumu_300426_final_MC
+
+compile with 
+g++ BranchNamesMacro.cpp -o BranchNamesMacro `root-config --glibs --cflags`
+
+
+Validation files
+run with 
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromBsmumu_300426_skimmed_MC bsmumu.root
+T_mv->GetEntries()
+(long long) 5369
+mc final
+T_mv->GetEntries()
+(long long) 1667
+
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromData2018_bsmumu_skimmed bsmumu.root
+T_mv->GetEntries()
+(long long) 251
+data final
+T_mv->GetEntries()
+(long long) 40
+
+last 2018 and MC16e files from ROC variable computations validation:
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data18_00358096/Bmumu/v3 user.mghneima.20791592.Bmumu._000014.root
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v3/mc16e user.mghneima.20791643.Bmumu._000011.root
+
+
+
+no eventinfo tree in these files (my skimmed files):
+./BranchNamesMacro /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/MC16eAll LASTskim_MC16e_All_2020Feb11.root
+./BranchNamesMacro /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2018All LASTskim_2018_All_2020Feb11.root
+
+
+2015+2016 analysis
+analysis nTUples:
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/AnalysisNtuples/Bsmumu/mc16a/v3
+LASTskim.mc16Bs_BDT2016_v2.root
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/AnalysisNtuples/Bsmumu/data15a16/v3
+data1516Bs_BDT2016_v2.root
+
+
+skimmed nTuples;
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodE.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root output_1891717.root
+
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/bbmumuX/v3/user.acampove.300307.BPHY8_FNTUP.e6179_e5984_a875_r9364_r9315_p3582_Bmumu.root output_1892790.root
+
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/Bsmumu/v3/user.acampove.300426.BPHY8_FNTUP.e4889_e5984_a875_r9364_r9315_p3582_Bmumu.root output_1892712.root
+
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromBsmumu_ct_300426_skimmed_MC bsmumu.root
+
+./BranchNamesMacro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromData2018_ct_bsmumu_skimmed bsmumu.root
+
+./BranchNamesMacro_withType /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromData2018_ct_bsmumu_skimmed bsmumu.root
+

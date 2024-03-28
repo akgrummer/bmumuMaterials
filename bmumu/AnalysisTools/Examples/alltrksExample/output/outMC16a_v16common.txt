@@ -1,0 +1,214 @@
+
+Applying ATLAS style settings...
+
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/MC16a/*.root
+Entries in original tree of file 1: 166718
+Entries in original tree of file 2: 166718
+# of unique events in file 1: 166713
+# of unique events in file 2: 166713
+intersection of both: 166713
+Union of both: 166713
+Only in first: 0
+ only in second: 0
+ sum of both: 0
+Filename: .
+Filename: ..
+Filename: LASTskim_MC16a_1.root
+processing file: LASTskim_MC16a_1.root
+# of candidates: 41813
+Entries in original tree: 41813
+Processing event 0 -- total events: 1
+Processing event 1000 -- total events: 1001
+Processing event 2000 -- total events: 2001
+Processing event 3000 -- total events: 3001
+Processing event 4000 -- total events: 4001
+Processing event 5000 -- total events: 5001
+Processing event 6000 -- total events: 6001
+Processing event 7000 -- total events: 7001
+Processing event 8000 -- total events: 8001
+Processing event 9000 -- total events: 9001
+Processing event 10000 -- total events: 10001
+Processing event 11000 -- total events: 11001
+Processing event 12000 -- total events: 12001
+Processing event 13000 -- total events: 13001
+Processing event 14000 -- total events: 14001
+Processing event 15000 -- total events: 15001
+Processing event 16000 -- total events: 16001
+Processing event 17000 -- total events: 17001
+Processing event 18000 -- total events: 18001
+Processing event 19000 -- total events: 19001
+Processing event 20000 -- total events: 20001
+Processing event 21000 -- total events: 21001
+Processing event 22000 -- total events: 22001
+Processing event 23000 -- total events: 23001
+Processing event 24000 -- total events: 24001
+Processing event 25000 -- total events: 25001
+Processing event 26000 -- total events: 26001
+Processing event 27000 -- total events: 27001
+Processing event 28000 -- total events: 28001
+Processing event 29000 -- total events: 29001
+Processing event 30000 -- total events: 30001
+Processing event 31000 -- total events: 31001
+Processing event 32000 -- total events: 32001
+Processing event 33000 -- total events: 33001
+Processing event 34000 -- total events: 34001
+Processing event 35000 -- total events: 35001
+Processing event 36000 -- total events: 36001
+Processing event 37000 -- total events: 37001
+Processing event 38000 -- total events: 38001
+Processing event 39000 -- total events: 39001
+Processing event 40000 -- total events: 40001
+Processing event 41000 -- total events: 41001
+number of intersect events so far: 41813
+number of tracks so far: 138193
+Filename: LASTskim_MC16a_2.root
+processing file: LASTskim_MC16a_2.root
+# of candidates: 41616
+Entries in original tree: 41616
+Processing event 0 -- total events: 41814
+Processing event 1000 -- total events: 42814
+Processing event 2000 -- total events: 43814
+Processing event 3000 -- total events: 44814
+Processing event 4000 -- total events: 45814
+Processing event 5000 -- total events: 46814
+Processing event 6000 -- total events: 47814
+Processing event 7000 -- total events: 48814
+Processing event 8000 -- total events: 49814
+Processing event 9000 -- total events: 50814
+Processing event 10000 -- total events: 51814
+Processing event 11000 -- total events: 52814
+Processing event 12000 -- total events: 53814
+Processing event 13000 -- total events: 54814
+Processing event 14000 -- total events: 55814
+Processing event 15000 -- total events: 56814
+Processing event 16000 -- total events: 57814
+Processing event 17000 -- total events: 58814
+Processing event 18000 -- total events: 59814
+Processing event 19000 -- total events: 60814
+Processing event 20000 -- total events: 61814
+Processing event 21000 -- total events: 62814
+Processing event 22000 -- total events: 63814
+Processing event 23000 -- total events: 64814
+Processing event 24000 -- total events: 65814
+Processing event 25000 -- total events: 66814
+Processing event 26000 -- total events: 67814
+Processing event 27000 -- total events: 68814
+Processing event 28000 -- total events: 69814
+Processing event 29000 -- total events: 70814
+Processing event 30000 -- total events: 71814
+Processing event 31000 -- total events: 72814
+Processing event 32000 -- total events: 73814
+Processing event 33000 -- total events: 74814
+Processing event 34000 -- total events: 75814
+Processing event 35000 -- total events: 76814
+Processing event 36000 -- total events: 77814
+Processing event 37000 -- total events: 78814
+Processing event 38000 -- total events: 79814
+Processing event 39000 -- total events: 80814
+Processing event 40000 -- total events: 81814
+Processing event 41000 -- total events: 82814
+number of intersect events so far: 83429
+number of tracks so far: 269907
+Filename: LASTskim_MC16a_3.root
+processing file: LASTskim_MC16a_3.root
+# of candidates: 39993
+Entries in original tree: 39993
+Processing event 0 -- total events: 83430
+Processing event 1000 -- total events: 84430
+Processing event 2000 -- total events: 85430
+Processing event 3000 -- total events: 86430
+Processing event 4000 -- total events: 87430
+Processing event 5000 -- total events: 88430
+Processing event 6000 -- total events: 89430
+Processing event 7000 -- total events: 90430
+Processing event 8000 -- total events: 91430
+Processing event 9000 -- total events: 92430
+Processing event 10000 -- total events: 93430
+Processing event 11000 -- total events: 94430
+Processing event 12000 -- total events: 95430
+Processing event 13000 -- total events: 96430
+Processing event 14000 -- total events: 97430
+Processing event 15000 -- total events: 98430
+Processing event 16000 -- total events: 99430
+Processing event 17000 -- total events: 100430
+Processing event 18000 -- total events: 101430
+Processing event 19000 -- total events: 102430
+Processing event 20000 -- total events: 103430
+Processing event 21000 -- total events: 104430
+Processing event 22000 -- total events: 105430
+Processing event 23000 -- total events: 106430
+Processing event 24000 -- total events: 107430
+Processing event 25000 -- total events: 108430
+Processing event 26000 -- total events: 109430
+Processing event 27000 -- total events: 110430
+Processing event 28000 -- total events: 111430
+Processing event 29000 -- total events: 112430
+Processing event 30000 -- total events: 113430
+Processing event 31000 -- total events: 114430
+Processing event 32000 -- total events: 115430
+Processing event 33000 -- total events: 116430
+Processing event 34000 -- total events: 117430
+Processing event 35000 -- total events: 118430
+Processing event 36000 -- total events: 119430
+Processing event 37000 -- total events: 120430
+Processing event 38000 -- total events: 121430
+Processing event 39000 -- total events: 122430
+number of intersect events so far: 123422
+number of tracks so far: 397311
+Filename: LASTskim_MC16a_4.root
+processing file: LASTskim_MC16a_4.root
+# of candidates: 40131
+Entries in original tree: 40131
+Processing event 0 -- total events: 123423
+Processing event 1000 -- total events: 124423
+Processing event 2000 -- total events: 125423
+Processing event 3000 -- total events: 126423
+Processing event 4000 -- total events: 127423
+Processing event 5000 -- total events: 128423
+Processing event 6000 -- total events: 129423
+Processing event 7000 -- total events: 130423
+Processing event 8000 -- total events: 131423
+Processing event 9000 -- total events: 132423
+Processing event 10000 -- total events: 133423
+Processing event 11000 -- total events: 134423
+Processing event 12000 -- total events: 135423
+Processing event 13000 -- total events: 136423
+Processing event 14000 -- total events: 137423
+Processing event 15000 -- total events: 138423
+Processing event 16000 -- total events: 139423
+Processing event 17000 -- total events: 140423
+Processing event 18000 -- total events: 141423
+Processing event 19000 -- total events: 142423
+Processing event 20000 -- total events: 143423
+Processing event 21000 -- total events: 144423
+Processing event 22000 -- total events: 145423
+Processing event 23000 -- total events: 146423
+Processing event 24000 -- total events: 147423
+Processing event 25000 -- total events: 148423
+Processing event 26000 -- total events: 149423
+Processing event 27000 -- total events: 150423
+Processing event 28000 -- total events: 151423
+Processing event 29000 -- total events: 152423
+Processing event 30000 -- total events: 153423
+Processing event 31000 -- total events: 154423
+Processing event 32000 -- total events: 155423
+Processing event 33000 -- total events: 156423
+Processing event 34000 -- total events: 157423
+Processing event 35000 -- total events: 158423
+Processing event 36000 -- total events: 159423
+Processing event 37000 -- total events: 160423
+Processing event 38000 -- total events: 161423
+Processing event 39000 -- total events: 162423
+Processing event 40000 -- total events: 163423
+number of intersect events so far: 163553
+number of tracks so far: 518480
+Filename: LASTskim_MC16a_5.root
+processing file: LASTskim_MC16a_5.root
+# of candidates: 3165
+Entries in original tree: 3165
+Processing event 0 -- total events: 163554
+Processing event 1000 -- total events: 164554
+Processing event 2000 -- total events: 165554
+Processing event 3000 -- total events: 166554
+number of intersect events so far: 166718
+number of tracks so far: 528933

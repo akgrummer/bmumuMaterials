@@ -1,0 +1,12 @@
+Entries in original tree: 71243638
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/bbmumuX/v2/user.acampove.300307.BPHY8_FNTUP.e6179_e5984_a875_r9364_r9315_p3371_Bmumu.root/output*.root
+Vars Cut not passed: 0
+Blind Cut not passed: 25161553
+B_fitChi2NDFCut not passed: 0
+TriggerCut not passed: 46082085
+BCuts not passed: 0
+MuonCombinedCut not passed: 0
+MuonTightCut not passed: 0
+MuonKinCuts not passed: 0
+EventsNotCut: 0
+Entries in final tree: 0

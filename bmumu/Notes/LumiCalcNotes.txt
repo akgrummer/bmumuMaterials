@@ -1,0 +1,271 @@
+Calculate luminosity online through ATLAS luminosity calculator (https://atlas-lumicalc.cern.ch/)
+
+inputs:
+
+XML file (All_Good links for 2015 and 2016 loaded from https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/GoodRunListsForAnalysisRun2 - half way through page)
+
+(careful entering the option in the designated fields - spaces before text break the input)
+
+for 2015:
+
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+Warning: No LAr EventVeto tag specified, uncorrected luminosity will be reported!
+GRL file: data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/288ab5
+Other options: -r 282625-284484
+
+for 2016:
+
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+Warning: No LAr EventVeto tag specified, uncorrected luminosity will be reported!
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/285fb9
+Other options: -r 305291-306714
+
+
+run the periods with the options:
+
+Year2016:
+-r 296939-300287  ;//A
+-r 300345-300908  ;//B
+-r 301912-302393  ; // C
+-r 302737-303560  ; // D
+-r 303638-303892  ; // E
+-r 303943-304494  ; // F
+-r 305291-306714  ; // G
+-r 305359-310216  ; // H
+-r 307124-308084  ; // I
+// -r 308979-309166  ; // J
+-r 309311-309759  ; // K
+-r 310015-311402  ; // L
+
+Year2015:
+//-r 266904-267639   //A
+//-r 267358-267599   //B
+//-r 270441-272531   //C
+-r 276073-276954   //D
+-r 278727-279928   //E
+-r 279932-280422   //F
+-r 280423-281075   //G
+-r 281130-281411   //H
+//-r 281662-282482   //I
+-r 282625-284484   //J 
+
+
+
+Data Period D 2015 Main
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/9b1720
+Other options: -r 276073-276954
+
+Data Period E 2015 Main
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/8c9cc0
+Other options: -r 278727-279928
+
+Data Period F 2015 Main
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/5b079a
+Other options: -r 279932-280422
+
+Data Period G 2015 Main
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/292a92
+Other options: -r 280423-281075
+
+Data Period H 2015 Main
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/6d050c
+Other options: -r 281130-281411
+
+Data Period J 2015 
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data15_13TeV.periodAllYear_DetStatus-v79-repro20-02_DQDefects-00-02-02_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/584006
+Other options: -r 282625-284484
+
+Data Period A 2016 Main/2015 trigger
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/4c66f9
+Other options: -r 296939-300287
+
+Warnings/Errors
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[650] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[651] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[652] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[653] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[654] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[655] has a disabled or incorrectly specified trigger.! [0m
+
+Data Period B 2016 Main/2015 trigger
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/5066e1
+Other options: -r 300345-300908
+
+
+Data Period C 2016 Main/2015 trigger
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/61dbb3
+Other options: -r 301912-302393
+
+Warnings/Errors
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 301932[233] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 301932[234] has a disabled or incorrectly specified trigger.! [0m
+
+
+Data Period D 2016 Main/2015 trigger
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/29d1a5
+Other options: -r 302737-303560
+
+
+Data Period A 2016 MWD/other 
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/523e92
+Other options: -r 296939-300287
+Warnings/Errors
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[650] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[651] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[652] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[653] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[654] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 299055[655] has a disabled or incorrectly specified trigger.! [0m
+
+
+Data Period B 2016 MWD/other trigger
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/f10535
+Other options: -r 300345-300908
+
+Data Period C 2016 MWD/other trigger
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/e5ffaf
+Other options: -r 301912-302393
+
+Warnings/Errors
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 301932[233] has a disabled or incorrectly specified trigger.! [0m
+[1;31m--- ‹WARNING› LumiCalculator      : Lumiblock 301932[234] has a disabled or incorrectly specified trigger.! [0m
+
+Data Period D 2016 MWD/other trigger
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/b15661
+Other options: -r 302737-303560
+
+
+Data Period E 2016 MWD
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/ad04d0
+Other options: -r 303638-303892
+
+
+Data Period F 2016 MWD
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/ac69a2
+Other options: -r 303943-304494
+
+
+Data Period G 2016 MWD
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/d028bc
+Other options: -r 305291-306714
+
+Data Period H 2016 MWD
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/696537
+Other options: -r 305359-310216
+
+Data Period I 2016 MWD
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/50b3bd
+Other options: -r 307124-308084
+
+
+Data Period K 2016 MWD
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/2a4a8
+Other options: -r 309311-309759
+
+Data Period L 2016 MWD
+Luminosity DB tag: OflLumi-13TeV-009
+Live fraction trigger: L1_EM12
+Physics trigger: HLT_mu6_mu4_bBmumu_Lxy0
+LAr EventVeto Tag: LARBadChannelsOflEventVeto-RUN2-UPD4-04
+GRL file: data16_13TeV.periodAllYear_DetStatus-v88-pro20-21_DQDefects-00-02-04_PHYS_StandardGRL_All_Good_25ns.xml was uploaded successfully to /tmp/lumifiles/74e6ca
+Other options: -r 310015-311402
+
+Feb 19, 2018:
+Repeat 2016 periods A, B, C with HLT_mu6_mu4_bBmumu_Lyx0 trigger
+and Period L with the correct run number range
+Year2016:
+-r 296939-300287  ;//A
+-r 300345-300908  ;//B
+-r 301912-302393  ; // C
+-r 310015-311481  ; // L
+
+Ok new names do not partition Main and MWD. The period L is also new.
+
+Period 2015 D is saved in nb, All others in pb
+
+
+

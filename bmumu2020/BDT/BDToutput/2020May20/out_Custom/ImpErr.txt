@@ -1,0 +1,38 @@
+Latexmk: This is Latexmk, John Collins, 22 April 2016, version: 4.45.
+Rule 'pdflatex': Rules & subrules not known to be previously run:
+   pdflatex
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020May20/out_Custom/Importance.tex"'
+------------
+Latexmk: Log file says output to 'Importance.pdf'
+Collected error summary (may duplicate other messages):
+  pdflatex: Command for 'pdflatex' gave return code 256
+Latexmk: Use the -f option to force complete processing,
+ unless error was exceeding maximum runs of latex/pdflatex.
+Latexmk: This is Latexmk, John Collins, 22 April 2016, version: 4.45.
+Rule 'pdflatex': Rules & subrules not known to be previously run:
+   pdflatex
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020May20/out_Custom/Importance.tex"'
+------------
+Latexmk: Log file says output to 'Importance.pdf'
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'Importance.aux'
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'lualatex  -recorder  "/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020May20/out_Custom/Importance.tex"'
+------------
+Latexmk: Log file says output to 'Importance.pdf'

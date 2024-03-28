@@ -1,0 +1,338 @@
+HaddCommands
+hadd LASTskim_2016_All_2019Apr29.root LASTskim_2016_{1..23}_2019Apr29.root
+hadd LASTskim_2017_All_2019Apr29.root LASTskim_2017_{1..20}_2019Apr29.root
+hadd LASTskim_2018_All_2019Apr29.root LASTskim_2018_{1..5}_2019Apr29.root
+hadd LASTskim_MC16a_All_2019Apr29.root LASTskim_MC16a_{1..5}_2019Apr29.root
+hadd LASTskim_MC16d_All_2019Apr29.root LASTskim_MC16d_{1..10}_2019Apr29.root
+hadd LASTskim_MC16e_All_2019Apr29.root LASTskim_MC16e_{1..12}_2019Apr29.root
+
+2019 May 30
+hadd LASTskim_2016_All_2019May30.root LASTskim_2016_{1..23}_2019May30.root
+hadd LASTskim_2017_All_2019May30.root LASTskim_2017_{1..20}_2019May30.root
+hadd LASTskim_2018_All_2019May30.root LASTskim_2018_{1..16}_2019May30.root
+hadd LASTskim_MC16a_All_2019May30.root LASTskim_MC16a_{1..5}_2019May30.root
+hadd LASTskim_MC16d_All_2019May30.root LASTskim_MC16d_{1..10}_2019May30.root
+hadd LASTskim_MC16e_All_2019May30.root LASTskim_MC16e_{1..12}_2019May30.root
+
+2019 June 3
+hadd LASTskim_2016_All_2019Jun3.root LASTskim_2016_{1..23}_2019Jun3.root
+hadd LASTskim_2017_All_2019Jun3.root LASTskim_2017_{1..20}_2019Jun3.root
+hadd LASTskim_2018_All_2019Jun3.root LASTskim_2018_{1..16}_2019Jun3.root
+hadd LASTskim_MC16a_All_2019Jun3.root LASTskim_MC16a_{1..5}_2019Jun3.root
+hadd LASTskim_MC16d_All_2019Jun3.root LASTskim_MC16d_{1..10}_2019Jun3.root
+hadd LASTskim_MC16e_All_2019Jun3.root LASTskim_MC16e_{1..12}_2019Jun3.root
+
+2019 June 5
+hadd LASTskim_2016_All_2019Jun5.root LASTskim_2016_{1..23}_2019Jun5.root
+hadd LASTskim_MC16a_All_2019Jun5.root LASTskim_MC16a_{1..5}_2019Jun5.root
+
+2019 June 6 (B iso v8)
+hadd LASTskim_2016_All_2019Jun6.root LASTskim_2016_{1..23}_2019Jun6.root
+hadd LASTskim_2017_All_2019Jun6.root LASTskim_2017_{1..20}_2019Jun6.root
+hadd LASTskim_2018_All_2019Jun6.root LASTskim_2018_{1..16}_2019Jun6.root
+hadd LASTskim_MC16a_All_2019Jun6.root LASTskim_MC16a_{1..5}_2019Jun6.root
+hadd LASTskim_MC16d_All_2019Jun6.root LASTskim_MC16d_{1..10}_2019Jun6.root
+hadd LASTskim_MC16e_All_2019Jun6.root LASTskim_MC16e_{1..12}_2019Jun6.root
+
+2019 June 12 (chi2<6 for isolation. Doca and Nclose tracks not good (include the chi2<6 cut ))
+hadd LASTskim_2016_All_2019Jun12.root LASTskim_2016_{1..23}_2019Jun12.root
+hadd LASTskim_2017_All_2019Jun12.root LASTskim_2017_{1..20}_2019Jun12.root
+hadd LASTskim_2018_All_2019Jun12.root LASTskim_2018_{1..16}_2019Jun12.root
+hadd LASTskim_MC16a_All_2019Jun12.root LASTskim_MC16a_{1..5}_2019Jun12.root
+hadd LASTskim_MC16d_All_2019Jun12.root LASTskim_MC16d_{1..10}_2019Jun12.root
+hadd LASTskim_MC16e_All_2019Jun12.root LASTskim_MC16e_{1..12}_2019Jun12.root
+
+
+2019 June 17 (made with iso v10 code. isTightPrimary for isolation. Nclose tracks include the chi2(SV)<2 cut) *also now include MC run cuts here and all Trigger_Matched
+hadd LASTskim_2016_All_2019Jun17.root LASTskim_2016_{1..23}_2019Jun17.root
+hadd LASTskim_2017_All_2019Jun17.root LASTskim_2017_{1..20}_2019Jun17.root
+hadd LASTskim_2018_All_2019Jun17.root LASTskim_2018_{1..16}_2019Jun17.root
+hadd LASTskim_MC16a_All_2019Jun17.root LASTskim_MC16a_{1..5}_2019Jun17.root
+hadd LASTskim_MC16d_All_2019Jun17.root LASTskim_MC16d_{1..10}_2019Jun17.root
+hadd LASTskim_MC16e_All_2019Jun17.root LASTskim_MC16e_{1..12}_2019Jun17.root
+
+2019 June 17_2 (made with iso v11 code. isTightPrimary and chi2<6 for isolation. Nclose tracks include the chi2(SV)<4 cut)*also now include MC run cuts here and all Trigger_Matched
+hadd LASTskim_2016_All_2019Jun17_2.root LASTskim_2016_{1..23}_2019Jun17_2.root
+hadd LASTskim_2017_All_2019Jun17_2.root LASTskim_2017_{1..20}_2019Jun17_2.root
+hadd LASTskim_2018_All_2019Jun17_2.root LASTskim_2018_{1..16}_2019Jun17_2.root
+hadd LASTskim_MC16a_All_2019Jun17_2.root LASTskim_MC16a_{1..5}_2019Jun17_2.root
+hadd LASTskim_MC16d_All_2019Jun17_2.root LASTskim_MC16d_{1..10}_2019Jun17_2.root
+hadd LASTskim_MC16e_All_2019Jun17_2.root LASTskim_MC16e_{1..12}_2019Jun17_2.root
+
+
+2019 June 27 (made with iso v12 code. 
+Run 2 a la Run 1
+* all tracks and ID hits+chi2 PV at 5 
+  - Run 2 with tight TTVA + the chi2 SV cut
+NcloseTracks
+chi2: 1 and 2
+DOCA 
+chi2: 7 and 2)
+
+hadd -f LASTskim_2016_All_2019Jun27.root LASTskim_2016_{1..23}_2019Jun27.root
+hadd -f LASTskim_2017_All_2019Jun27.root LASTskim_2017_{1..20}_2019Jun27.root
+hadd -f LASTskim_2018_All_2019Jun27.root LASTskim_2018_{1..16}_2019Jun27.root
+hadd -f LASTskim_MC16a_All_2019Jun27.root LASTskim_MC16a_{1..5}_2019Jun27.root
+hadd -f LASTskim_MC16d_All_2019Jun27.root LASTskim_MC16d_{1..10}_2019Jun27.root
+hadd -f LASTskim_MC16e_All_2019Jun27.root LASTskim_MC16e_{1..12}_2019Jun27.root
+
+
+
+2019 July1 (made with iso v14 code. 
+Run 2 a la Run 1
+* all tracks and ID hits+chi2 PV at 5 
+  - Run 2 with tight TTVA + the chi2 SV cut
+  -chi2 cut on non-associated tracks only
+NcloseTracks
+chi2: 1 and 2
+DOCA 
+chi2: 7 and 2)
+a la run1 - old association technique
+hadd LASTskim_2016_All_2019July1.root LASTskim_2016_{1..23}_2019July1.root
+hadd LASTskim_2017_All_2019July1.root LASTskim_2017_{1..20}_2019July1.root
+hadd LASTskim_2018_All_2019July1.root LASTskim_2018_{1..16}_2019July1.root
+hadd LASTskim_MC16a_All_2019July1.root LASTskim_MC16a_{1..5}_2019July1.root
+hadd LASTskim_MC16d_All_2019July1.root LASTskim_MC16d_{1..10}_2019July1.root
+hadd LASTskim_MC16e_All_2019July1.root LASTskim_MC16e_{1..12}_2019July1.root
+
+2019July2 like july1 but with DR<1.0
+hadd LASTskim_2016_All_2019July2.root LASTskim_2016_{1..23}_2019July2.root
+hadd LASTskim_2017_All_2019July2.root LASTskim_2017_{1..20}_2019July2.root
+hadd LASTskim_2018_All_2019July2.root LASTskim_2018_{1..16}_2019July2.root
+hadd LASTskim_MC16a_All_2019July2.root LASTskim_MC16a_{1..5}_2019July2.root
+hadd LASTskim_MC16d_All_2019July2.root LASTskim_MC16d_{1..10}_2019July2.root
+hadd LASTskim_MC16e_All_2019July2.root LASTskim_MC16e_{1..12}_2019July2.root
+
+removing the separated files from storage in:
+/eos/home-a/agrummer/BsmumuData/LastSkim_2019Apr/
+rename this folder to:
+/eos/home-a/agrummer/BsmumuData/FinalSkim/v4
+
+rm LASTskim_2016_{1..23}*.root
+echo rm LASTskim_2016_{1..23}*.root
+
+mkdir 2019July2
+mkdir 2019July1
+
+mv LASTskim_2017_{1..20}_2019July2.root 2019July2
+mv LASTskim_2017_{1..20}_2019July1.root 2019July1
+rm LASTskim_2017_{1..20}*.root
+
+mv LASTskim_2018_{1..16}_2019July2.root 2019July2
+mv LASTskim_2018_{1..16}_2019July1.root 2019July1
+rm LASTskim_2018_{1..9}*.root
+
+mv LASTskim_MC16a_{1..5}_2019July2.root 2019July2
+mv LASTskim_MC16a_{1..5}_2019July1.root 2019July1
+rm LASTskim_MC16a_{1..5}*.root
+
+mv LASTskim_MC16d_{1..10}_2019July2.root 2019July2
+mv LASTskim_MC16d_{1..10}_2019July1.root 2019July1
+rm LASTskim_MC16d_{1..9}*.root
+
+mv LASTskim_MC16e_{1..12}_2019July2.root 2019July2
+mv LASTskim_MC16e_{1..12}_2019July1.root 2019July1
+
+move to directory 
+/eos/home-a/agrummer/BsmumuData/FinalSkim/v4
+mkdir 2016
+mkdir 2016All
+mkdir 2017
+mkdir 2017All
+mkdir 2018
+mkdir 2018All
+mkdir MC16a
+mkdir MC16aAll
+mkdir MC16d
+mkdir MC16dAll
+mkdir MC16e
+mkdir MC16eAll
+
+
+2019July18 use version 15
+
+hadd LASTskim_2016_All_2019July17.root LASTskim_2016_{1..23}_2019July17.root
+hadd LASTskim_2017_All_2019July17.root LASTskim_2017_{1..20}_2019July17.root
+hadd LASTskim_2018_All_2019July17.root LASTskim_2018_{1..17}_2019July17.root
+hadd LASTskim_MC16a_All_2019July17.root LASTskim_MC16a_{1..5}_2019July17.root
+hadd LASTskim_MC16d_All_2019July17.root LASTskim_MC16d_{1..10}_2019July17.root
+hadd LASTskim_MC16e_All_2019July17.root LASTskim_MC16e_{1..12}_2019July17.root
+
+
+2019July30 use version 15
+edited version 15 to include an iso var with dr<1.0
+and put all DOCA >3 equal to 3
+
+hadd LASTskim_2016_All_2019July30.root LASTskim_2016_{1..23}_2019July30.root
+hadd LASTskim_2017_All_2019July30.root LASTskim_2017_{1..20}_2019July30.root
+hadd LASTskim_2018_All_2019July30.root LASTskim_2018_{1..17}_2019July30.root
+hadd LASTskim_MC16a_All_2019July30.root LASTskim_MC16a_{1..5}_2019July30.root
+hadd LASTskim_MC16d_All_2019July30.root LASTskim_MC16d_{1..10}_2019July30.root
+hadd LASTskim_MC16e_All_2019July30.root LASTskim_MC16e_{1..12}_2019July30.root
+
+2019Nov21 use version 16
+add nDeadPix, nDeadScT, and is Loose
+add TVA loose comparison and remove others that were not selected during group approval
+
+hadd LASTskim_2016_All_2019Nov21.root LASTskim_2016_{1..23}_2019Nov21.root
+hadd LASTskim_2017_All_2019Nov21.root LASTskim_2017_{1..20}_2019Nov21.root
+hadd LASTskim_2018_All_2019Nov21.root LASTskim_2018_{1..17}_2019Nov21.root
+hadd LASTskim_MC16a_All_2019Nov21.root LASTskim_MC16a_{1..5}_2019Nov21.root
+hadd LASTskim_MC16d_All_2019Nov21.root LASTskim_MC16d_{1..10}_2019Nov21.root
+hadd LASTskim_MC16e_All_2019Nov21.root LASTskim_MC16e_{1..12}_2019Nov21.root
+
+2019Nov22 use version 16 (slightly edited)
+include cut eta<2.5 (explicitly instead of just in isLoose)
+
+hadd LASTskim_2016_All_2019Dec5.root LASTskim_2016_{1..23}_2019Dec5.root
+****only had 18 of 20 files for 2017 complete at time of study
+hadd LASTskim_2017_All_2019Dec5.root LASTskim_2017_{1..18}_2019Dec5.root
+****
+hadd LASTskim_2018_All_2019Dec5.root LASTskim_2018_{1..17}_2019Dec5.root
+hadd LASTskim_MC16a_All_2019Dec5.root LASTskim_MC16a_{1..5}_2019Dec5.root
+hadd LASTskim_MC16d_All_2019Dec5.root LASTskim_MC16d_{1..10}_2019Dec5.root
+hadd LASTskim_MC16e_All_2019Dec5.root LASTskim_MC16e_{1..12}_2019Dec5.root
+
+entry studies: 
+ Used T_mv->GetEntries() after hadd to get totals
+ For Pileup bins Used:
+T_mv->Draw("Lxy","(12.<PRIVX_mu) && (PRIVX_mu<22.)", "egoff")
+T_mv->Draw("Lxy","(23.<PRIVX_mu) && (PRIVX_mu<33.)", "egoff")
+T_mv->Draw("Lxy","(34.<PRIVX_mu) && (PRIVX_mu<44.)", "egoff")
+T_mv->Draw("Lxy","(45.<PRIVX_mu) && (PRIVX_mu<55.)", "egoff")
+
+Feb 11, 2020:
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/ 
+in the All folder
+
+hadd LASTskim_MC16d_All_2020Feb11.root LASTskim_MC16d_{1..10}_2020Feb11.root
+hadd LASTskim_2017_All_2020Feb11.root LASTskim_2017_{1..24}_2020Feb11.root
+
+
+Feb 19, 2020:
+
+hadd LASTskim_2016main_All_2020Feb11.root LASTskim_2016main_{1..30}_2020Feb11.root
+hadd LASTskim_2016main303846_All_2020Feb11.root LASTskim_2016main303846_{1..10}_2020Feb11.root
+hadd LASTskim_2017_All_2020Feb11.root LASTskim_2017_{1..24}_2020Feb11.root
+hadd LASTskim_2018_All_2020Feb11.root LASTskim_2018_{1..18}_2020Feb11.root
+
+hadd LASTskim_MC16a_All_2020Feb11.root LASTskim_MC16a_{1..6}_2020Feb11.root
+hadd LASTskim_MC16d_All_2020Feb11.root LASTskim_MC16d_{1..10}_2020Feb11.root
+hadd LASTskim_MC16e_All_2020Feb11.root LASTskim_MC16e_{1..16}_2020Feb11.root
+
+hadd LASTskim_2017_All_2019Dec5.root LASTskim_2017_{1..20}_2019Dec5.root
+hadd LASTskim_MC16a303846_All_2020Feb11.root LASTskim_MC16a_{1..5}_2020Feb11.root
+
+
+Mar 6, 2020:
+used the commands from feb 19 again - this time on the "common" files in 
+(the common files have only the candidate event numbers that are included in both the new and old ntuples (v6 and new nTuples))
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/
+and
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/
+and
+/eos/home-a/agrummer/BsmumuData/FinalSkim/v6/
+
+hadd LASTskim_2016_All_2019Dec5.root LASTskim_2016_{1..23}_2019Dec5.root
+hadd LASTskim_2017_All_2019Dec5.root LASTskim_2017_{1..20}_2019Dec5.root
+hadd LASTskim_2018_All_2019Dec5.root LASTskim_2018_{1..17}_2019Dec5.root
+hadd LASTskim_MC16a_All_2019Dec5.root LASTskim_MC16a_{1..5}_2019Dec5.root
+hadd LASTskim_MC16d_All_2019Dec5.root LASTskim_MC16d_{1..10}_2019Dec5.root
+hadd LASTskim_MC16e_All_2019Dec5.root LASTskim_MC16e_{1..12}_2019Dec5.root
+
+March 9,10 2020:
+rerun the variable constructions to include an overflow bin on DOCA at 3
+
+cd /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/
+cd v1/2016mainAll
+ll
+cd /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/
+cd ../2016mainAllcommon
+ll
+hadd LASTskim_2016main_All_2020Feb11.root LASTskim_2016main_{1..30}_2020Feb11.root
+cd ../2017All
+ll
+hadd LASTskim_2016main_All_2020Feb11.root LASTskim_2016main_{1..30}_2020Feb11.root
+cd ../2017Allcommon
+ll
+hadd LASTskim_2017_All_2020Feb11.root LASTskim_2017_{1..24}_2020Feb11.root
+cd ../2018All
+ll
+hadd LASTskim_2017_All_2020Feb11.root LASTskim_2017_{1..24}_2020Feb11.root
+cd ../2018Allcommon
+ll
+hadd LASTskim_2018_All_2020Feb11.root LASTskim_2018_{1..18}_2020Feb11.root
+cd ../../v2/MC16aAll
+ll
+hadd LASTskim_MC16a_All_2020Feb11.root LASTskim_MC16a_{1..6}_2020Feb11.root
+cd ../MC16aAllcommon
+ll
+hadd LASTskim_MC16a_All_2020Feb11.root LASTskim_MC16a_{1..6}_2020Feb11.root
+*
+cd ../MC16dAll
+ll
+hadd LASTskim_MC16d_All_2020Feb11.root LASTskim_MC16d_{1..10}_2020Feb11.root
+
+cd ../MC16dAllcommon
+ll
+hadd LASTskim_MC16d_All_2020Feb11.root LASTskim_MC16d_{1..10}_2020Feb11.root
+*
+cd ../MC16eAll
+ll
+hadd LASTskim_MC16e_All_2020Feb11.root LASTskim_MC16e_{1..16}_2020Feb11.root
+
+cd ../MC16eAllcommon
+ll
+hadd LASTskim_MC16e_All_2020Feb11.root LASTskim_MC16e_{1..16}_2020Feb11.root
+
+
+
+March 17, 2020:
+
+
+cd /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/
+cd v3/2016mainAll
+ll
+hadd LASTskim_2016main_All_2020Feb11.root LASTskim_2016main_{1..30}_2020Feb11.root
+cd ../2016mainAllcommon
+ll
+hadd LASTskim_2016main_All_2020Feb11.root LASTskim_2016main_{1..30}_2020Feb11.root
+cd ../2017All
+ll
+hadd LASTskim_2017_All_2020Feb11.root LASTskim_2017_{1..24}_2020Feb11.root
+cd ../2017Allcommon
+ll
+hadd LASTskim_2017_All_2020Feb11.root LASTskim_2017_{1..24}_2020Feb11.root
+cd ../2018All
+ll
+hadd LASTskim_2018_All_2020Feb11.root LASTskim_2018_{1..18}_2020Feb11.root
+cd ../2018Allcommon
+ll
+hadd LASTskim_2018_All_2020Feb11.root LASTskim_2018_{1..18}_2020Feb11.root
+
+cd ../MC16dAll
+ll
+hadd LASTskim_MC16d_All_2020Feb11.root LASTskim_MC16d_{1..10}_2020Feb11.root
+cd ../MC16dAllcommon
+ll
+hadd LASTskim_MC16d_All_2020Feb11.root LASTskim_MC16d_{1..10}_2020Feb11.root
+cd ../MC16eAll
+ll
+hadd LASTskim_MC16e_All_2020Feb11.root LASTskim_MC16e_{1..16}_2020Feb11.root
+cd ../MC16eAllcommon
+ll
+hadd LASTskim_MC16e_All_2020Feb11.root LASTskim_MC16e_{1..16}_2020Feb11.root
+
+
+
+
+
+cd ../MC16aAll
+ll
+hadd LASTskim_MC16a_All_2020Feb11.root LASTskim_MC16a_{1..6}_2020Feb11.root
+cd ../MC16aAllcommon
+ll
+hadd LASTskim_MC16a_All_2020Feb11.root LASTskim_MC16a_{1..6}_2020Feb11.root

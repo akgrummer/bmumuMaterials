@@ -1,0 +1,89 @@
+2018v2_cutflow.txt
+
+Filename: user.ibragimo.17501205.Bmumu._000001.root
+processing file: user.ibragimo.17501205.Bmumu._000001.root
+Warning in <TClass::Init>: no dictionary for class ROOT::TIOFeatures is available
+# of candidates: 30952
+Now loop over original tree
+Processing event 0
+Entries in final tree: 5302
+MassWindowCut: 7272
+BlindCut: 3544
+sigPreCut: 0
+TriggerCut: 8865
+MuonTightCut: 3215
+MuonKinCuts: 261
+BKinCut: 0
+B_fitChi2NDFCut: 1004
+AddCuts: 1489
+grlCut: 0
+
+Wrote file: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LastSkim_2019Mar27/2018/LASTskim_2018_1.root
+Filename: user.ibragimo.17501205.Bmumu._000002.root
+processing file: user.ibragimo.17501205.Bmumu._000002.root
+# of candidates: 44346
+Now loop over original tree
+Processing event 0
+Entries in final tree: 7611
+MassWindowCut: 10572
+BlindCut: 5010
+sigPreCut: 0
+TriggerCut: 13104
+MuonTightCut: 4258
+MuonKinCuts: 347
+BKinCut: 0
+B_fitChi2NDFCut: 1385
+AddCuts: 2059
+grlCut: 0
+Wrote file: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LastSkim_2019Mar27/2018/LASTskim_2018_2.root
+Filename: user.ibragimo.17501205.Bmumu._000003.root
+processing file: user.ibragimo.17501205.Bmumu._000003.root
+# of candidates: 53008
+Now loop over original tree
+Processing event 0
+Entries in final tree: 8949
+MassWindowCut: 12733
+BlindCut: 5999
+sigPreCut: 0
+TriggerCut: 15607
+MuonTightCut: 5044
+MuonKinCuts: 429
+BKinCut: 0
+B_fitChi2NDFCut: 1696
+AddCuts: 2551
+grlCut: 0
+Wrote file: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LastSkim_2019Mar27/2018/LASTskim_2018_3.root
+Filename: user.ibragimo.17501205.Bmumu._000004.root
+processing file: user.ibragimo.17501205.Bmumu._000004.root
+# of candidates: 8864
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1496
+MassWindowCut: 2161
+BlindCut: 984
+sigPreCut: 0
+TriggerCut: 2615
+MuonTightCut: 847
+MuonKinCuts: 62
+BKinCut: 0
+B_fitChi2NDFCut: 290
+AddCuts: 409
+grlCut: 0
+Wrote file: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LastSkim_2019Mar27/2018/LASTskim_2018_4.root
+Filename: user.ibragimo.17501205.Bmumu._000005.root
+processing file: user.ibragimo.17501205.Bmumu._000005.root
+# of candidates: 13941
+Now loop over original tree
+Processing event 0
+Entries in final tree: 2323
+MassWindowCut: 3298
+BlindCut: 1637
+sigPreCut: 0
+TriggerCut: 4170
+MuonTightCut: 1337
+MuonKinCuts: 99
+BKinCut: 0
+B_fitChi2NDFCut: 446
+AddCuts: 631
+grlCut: 0
+Wrote file: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LastSkim_2019Mar27/2018/LASTskim_2018_5.root

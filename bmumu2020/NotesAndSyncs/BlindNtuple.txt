@@ -1,0 +1,21 @@
+
+New data nTuples is truly blinded - ie nothing below 0 and nothing in the signal region.
+
+-bash-4.2$ root -l /eos/home-a/agrummer/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root
+root [0]
+Attaching file /eos/home-a/agrummer/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root as _file0...
+(TFile *) 0x2ffa420
+root [1] T_mv->Draw("Lxy", "", "egoff")
+(long long) 2455576
+root [2]
+root [2]
+root [2]
+root [2] T_mv->Draw("Lxy", "B_MUCALC_mass<=0", "egoff")
+Warning in <TTreePlayer::DrawSelect>: The selected TTree subset is empty.
+(long long) 0
+root [3]
+root [3]
+root [3] T_mv->Draw("Lxy", "B_MUCALC_mass>=5166.0&&B_MUCALC_mass<=5526.0", "egoff")
+Warning in <TTreePlayer::DrawSelect>: The selected TTree subset is empty.
+(long long) 0
+root [4]

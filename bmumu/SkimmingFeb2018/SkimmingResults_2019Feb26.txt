@@ -1,0 +1,97 @@
+Bmumu 2018
+
+Entries in original tree: 151111
+Now loop over original tree
+Processing event 0
+Processing event 100000
+Entries in final tree: 25681
+MassWindowCut: 36036
+BlindCut: 17174
+sigPreCut: 0
+TriggerCut: 44361
+MuonTightCut: 14701
+MuonKinCuts: 1198
+BKinCut: 0
+B_fitChi2NDFCut: 4821
+AddCuts: 7139
+grlCut: 0
+
+Bmumu 2017
+Entries in original tree: 133627
+Now loop over original tree
+Processing event 0
+Processing event 100000
+Entries in final tree: 30041
+MassWindowCut: 33573
+BlindCut: 13592
+sigPreCut: 0
+TriggerCut: 23467
+MuonTightCut: 17373
+MuonKinCuts: 1485
+BKinCut: 0
+B_fitChi2NDFCut: 5543
+AddCuts: 8553
+grlCut: 0
+
+BJpsiK 2017
+Entries in original tree: 599417
+Now loop over original tree
+Entries in final tree: 215
+MassWindowCut: 50286
+BlindCut: 168115
+sigPreCut: 0
+TriggerCut: 380401
+MuonTightCut: 194
+MuonKinCuts: 31
+BKinCut: 0
+B_fitChi2NDFCut: 84
+AddCuts: 91
+grlCut: 0
+
+BJpsiK 2018
+Entries in original tree: 1529811
+Now loop over original tree
+Entries in final tree: 421
+MassWindowCut: 127006
+BlindCut: 430267
+sigPreCut: 0
+TriggerCut: 971150
+MuonTightCut: 498
+MuonKinCuts: 125
+BKinCut: 0
+B_fitChi2NDFCut: 128
+AddCuts: 216
+grlCut: 0
+
+
+BsJpsiPhi 2017
+Entries in original tree: 200478
+Now loop over original tree
+Processing event 0
+Processing event 100000
+Processing event 200000
+Entries in final tree: 117
+MassWindowCut: 19379
+BlindCut: 56631
+sigPreCut: 0
+TriggerCut: 124156
+MuonTightCut: 101
+MuonKinCuts: 10
+BKinCut: 0
+B_fitChi2NDFCut: 36
+AddCuts: 48
+grlCut: 0
+
+BsJpsiPhi 2018
+Entries in original tree: 191072
+Entries in final tree: 78
+MassWindowCut: 19142
+BlindCut: 53159
+sigPreCut: 0
+TriggerCut: 118557
+MuonTightCut: 53
+MuonKinCuts: 15
+BKinCut: 0
+B_fitChi2NDFCut: 34
+AddCuts: 34
+grlCut: 0

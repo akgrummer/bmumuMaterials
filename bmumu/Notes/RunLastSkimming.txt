@@ -1,0 +1,98 @@
+Notes for Bmumu MC versus Data comparisons:
+Latest version of Skimming code is located on Git lab from Iskander(https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisTools/tree/master/SkimmingMacros ) - I have copied the bmumu skimming code into MCcsDataSkimming2/ directory on lxplus Workspace (afs/.../a/agrummer/Workspace/). (the original git is also copied to workspace in the MCvsData folder there - the "make" did not work there for some reason)
+
+to make the "Last" skimming code work, need the cutBatch...cxx file, the header file, and the Makefile (I've used the one from the tar file provided by iskander in email, location on lxplus is home/MCvsDataSkimming/) and I replace the cutBatch file with the one form Git 
+
+after the make command... the command to run is over a set of data files in a folder:
+
+./cutBatchBsmumu Datafolder
+
+the data folder I have used is user.acampove.BPHY8_201709.NTUP.Data_Main_001_Bmumu copied from eos folder:
+https://twiki.cern.ch/twiki/bin/view/AtlasProtected/BPhysRareDecaysData1516MC15DxAODNTUPSep2017#Table_of_skimmed_ntuple_datasets 
+see Iskander's talk: RareB03112017 in Meetings folder
+
+
+to unpack a tar file:
+tar xopf file.tar
+
+Dec 5,
+Not really sure what make and make clean do fully. Adding the blinded region cut this time.
+
+To make work this time I made a new directory (MCcsDataSkimming2/ on the afs.../Workspace) copied the tar file and the data files to it. I removed (rm) the cutBatchBsmumu.cxx code (that was unpacked from the tar file). Copied/edited the new cutBatchBsmumu.cxx from the MCcsDataSkimming2/ (if you are doing it again it would now be in MCcsDataSkimming3/) and place it in MCcsDataSkimming3/
+
+then in Workspace I ran
+
+setupATLAS
+lsetup root
+
+went back to the directory and ran make
+
+run the code with 
+./cutBatchBsmumu Datafolder
+
+RUN WITHOUT ENDING SLASH ('/') on datafolder
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+Feb. 11, 2018: (also see command line input in SkimmingCommandLine.txt)
+
+Angel put the data and MC on eos (lxplus access) here:
+
+data folder on eos: (data folders separated by period in this folder- need to run over all of them separately (there were folders that ended with ".root" with the .root files inside))
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/
+
+MC on eos:
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu
+
+Performing the skimming on the outer folder includes all root files inside in the skim 
+
+then to merge root files together use:
+hadd test_merge.root test1.root test2.root
+
+output directory of final skimmed files is:
+/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskimFeb13/
+
+although the initial 2015 files are in:
+/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskimFeb11/
+
+MC should be skimmed with the "2016" trigger HLT_mu6_mu4_bBmumu_Lxy0 (although did an MC_MC comparison with an 2015 trigger)
+Data 2016 with trigger HLT_mu6_mu4_bBmumu_Lxy0
+Data 2015 with trigger HLT_mu6_mu4_bBmumu
+Data includes all 2015 and 2016 (not just A,B,C,D) periods Angel provides
+
+MC should not be blinded
+Data should be
+
+
+remake the skimming code by creating folder and copy tar file to folder, unpack tar file, delete cutBatch...cxx code. edit a cutBatch code from www/bmumu/MCvsDataCode/ and copy it into the new folder 
+
+Skimming code is in lxplus WorkSpace/ in these folders:
+
+SkimNotBlinded  -- for MC
+MCvsDataSkimming2 --old
+SkimNotBlinded2015trigger -- MC 2015 trigger
+MCvsDataSkimming3 -- old
+MCvsDataSkimmingFeb11 -- for data 2015?
+SkimBlindedFeb13 -- for 2016 data
+SkimBlindedFeb13_HLT_mu6_mu4_2016 -- I misunderstood, dont use this one
+
+SkimBlindedB_VTX_mass -- used B_VTX_mass variable instead of B_MUCLAC_mass variable this one is with 2016 trigger
+SkimNotBlindedB_VTX_mass -- used B_VTX_mass variable instead of B_MUCLAC_mass variable 
+SkimBlindedB_VTX_mass2015  -- used B_VTX_mass variable instead of B_MUCLAC_mass variable this one is with 2016 trigger
+
+
+Next steps:
+add the test weight files with addWeights.C
+SeparatePeriods_v3 coarse (technical stops) and fine (data periods)
+
+
+comparison steps
+create folder called 
+OutputPlots
+(move existing one to new name)
+see RunComparison Code.txt
+
+latex slides now in Desktop/Bmumu/DataMCPresentations
+

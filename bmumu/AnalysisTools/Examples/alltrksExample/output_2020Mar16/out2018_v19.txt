@@ -1,0 +1,158 @@
+
+Applying ATLAS style settings...
+
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2018/*.root
+Entries in original tree of file 1: 25629
+Entries in original tree of file 2: 25666
+# of unique events in file 1: 25628
+# of unique events in file 2: 25665
+intersection of both: 25269
+Union of both: 26024
+Only in first: 359
+ only in second: 396
+ sum of both: 755
+Filename: .
+Filename: ..
+Filename: LASTskim_2018_1.root
+processing file: LASTskim_2018_1.root
+# of candidates: 1218
+Entries in original tree: 1218
+Processing event 0 -- total events: 1
+Processing event 1000 -- total events: 1001
+number of intersect events so far: 1197
+number of tracks so far: 620067
+Filename: LASTskim_2018_10.root
+processing file: LASTskim_2018_10.root
+# of candidates: 1750
+Entries in original tree: 1750
+Processing event 0 -- total events: 1219
+Processing event 1000 -- total events: 2219
+number of intersect events so far: 2915
+number of tracks so far: 1048710
+Filename: LASTskim_2018_11.root
+processing file: LASTskim_2018_11.root
+# of candidates: 2002
+Entries in original tree: 2002
+Processing event 0 -- total events: 2969
+Processing event 1000 -- total events: 3969
+Processing event 2000 -- total events: 4969
+number of intersect events so far: 4889
+number of tracks so far: 1543383
+Filename: LASTskim_2018_12.root
+processing file: LASTskim_2018_12.root
+# of candidates: 1813
+Entries in original tree: 1813
+Processing event 0 -- total events: 4971
+Processing event 1000 -- total events: 5971
+number of intersect events so far: 6676
+number of tracks so far: 1976300
+Filename: LASTskim_2018_13.root
+processing file: LASTskim_2018_13.root
+# of candidates: 1114
+Entries in original tree: 1114
+Processing event 0 -- total events: 6784
+Processing event 1000 -- total events: 7784
+number of intersect events so far: 7775
+number of tracks so far: 2499418
+Filename: LASTskim_2018_14.root
+processing file: LASTskim_2018_14.root
+# of candidates: 1109
+Entries in original tree: 1109
+Processing event 0 -- total events: 7898
+Processing event 1000 -- total events: 8898
+number of intersect events so far: 8866
+number of tracks so far: 2988870
+Filename: LASTskim_2018_15.root
+processing file: LASTskim_2018_15.root
+# of candidates: 1492
+Entries in original tree: 1492
+Processing event 0 -- total events: 9007
+Processing event 1000 -- total events: 10007
+number of intersect events so far: 10339
+number of tracks so far: 3619264
+Filename: LASTskim_2018_16.root
+processing file: LASTskim_2018_16.root
+# of candidates: 1401
+Entries in original tree: 1401
+Processing event 0 -- total events: 10499
+Processing event 1000 -- total events: 11499
+number of intersect events so far: 11723
+number of tracks so far: 4173802
+Filename: LASTskim_2018_17.root
+processing file: LASTskim_2018_17.root
+# of candidates: 1519
+Entries in original tree: 1519
+Processing event 0 -- total events: 11900
+Processing event 1000 -- total events: 12900
+number of intersect events so far: 13216
+number of tracks so far: 4729987
+Filename: LASTskim_2018_18.root
+processing file: LASTskim_2018_18.root
+# of candidates: 466
+Entries in original tree: 466
+Processing event 0 -- total events: 13419
+number of intersect events so far: 13677
+number of tracks so far: 4903731
+Filename: LASTskim_2018_2.root
+processing file: LASTskim_2018_2.root
+# of candidates: 995
+Entries in original tree: 995
+Processing event 0 -- total events: 13885
+number of intersect events so far: 14661
+number of tracks so far: 5393127
+Filename: LASTskim_2018_3.root
+processing file: LASTskim_2018_3.root
+# of candidates: 1516
+Entries in original tree: 1516
+Processing event 0 -- total events: 14880
+Processing event 1000 -- total events: 15880
+number of intersect events so far: 16164
+number of tracks so far: 5913370
+Filename: LASTskim_2018_4.root
+processing file: LASTskim_2018_4.root
+# of candidates: 1486
+Entries in original tree: 1486
+Processing event 0 -- total events: 16396
+Processing event 1000 -- total events: 17396
+number of intersect events so far: 17630
+number of tracks so far: 6411211
+Filename: LASTskim_2018_5.root
+processing file: LASTskim_2018_5.root
+# of candidates: 1466
+Entries in original tree: 1466
+Processing event 0 -- total events: 17882
+Processing event 1000 -- total events: 18882
+number of intersect events so far: 19074
+number of tracks so far: 6875134
+Filename: LASTskim_2018_6.root
+processing file: LASTskim_2018_6.root
+# of candidates: 1373
+Entries in original tree: 1373
+Processing event 0 -- total events: 19348
+Processing event 1000 -- total events: 20348
+number of intersect events so far: 20426
+number of tracks so far: 7302985
+Filename: LASTskim_2018_7.root
+processing file: LASTskim_2018_7.root
+# of candidates: 1433
+Entries in original tree: 1433
+Processing event 0 -- total events: 20721
+Processing event 1000 -- total events: 21721
+number of intersect events so far: 21836
+number of tracks so far: 7728237
+Filename: LASTskim_2018_8.root
+processing file: LASTskim_2018_8.root
+# of candidates: 1732
+Entries in original tree: 1732
+Processing event 0 -- total events: 22154
+Processing event 1000 -- total events: 23154
+number of intersect events so far: 23548
+number of tracks so far: 8217783
+Filename: LASTskim_2018_9.root
+processing file: LASTskim_2018_9.root
+# of candidates: 1744
+Entries in original tree: 1744
+Processing event 0 -- total events: 23886
+Processing event 1000 -- total events: 24886
+number of intersect events so far: 25270
+number of tracks so far: 8685085

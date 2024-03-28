@@ -1,0 +1,5 @@
+bmumu2020/Plotting/IsolationVariables/IsolationPlots.cpp
+bmumu2020/NotesAndSyncs/IsolationPlotsSetupNotes.txt
+bmumu2020/Plotting/IsolationVariables/IsolationPlots_wPartialRun2.cpp
+bmumu2020/Plotting/IsolationVariables/IsolationPlots.h
+bmumu2020/Plotting/IsolationVariables/Notes.txt

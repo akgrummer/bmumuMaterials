@@ -1,0 +1,106 @@
+TChain* ch = new TChain("T_mv")
+ch->Add("/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_MC/Bmumu/v1/mc16e/*.root")
+ch->SetLineColor(kRed)
+ch->Draw("PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf")
+
+TChain* ch0 = new TChain("T_mv")
+ch0->Add("/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/final_ntup/user.ibragimo.mc16e_13TeV.300426.Bs_mu3p5mu3p5.DAOD_BPHY8.e4889_s3126_r10724_p3793_NTUP_atrkwhits/v6/*.root")
+
+//TString ifile = "/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/MC16e/*.root"
+// TString ifile = "/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_MC/Bmumu/v2/mc16e/*.root"
+
+#include "/afs/cern.ch/user/a/agrummer/AtlasStyle/AtlasLabels.C"
+#include "/afs/cern.ch/user/a/agrummer/AtlasStyle/AtlasLabels.h"
+#include "/afs/cern.ch/user/a/agrummer/AtlasStyle/AtlasUtils.C"
+#include "/afs/cern.ch/user/a/agrummer/AtlasStyle/AtlasUtils.h"
+#include "/afs/cern.ch/user/a/agrummer/AtlasStyle/AtlasStyle.C"
+#include "/afs/cern.ch/user/a/agrummer/AtlasStyle/AtlasStyle.h"
+SetAtlasStyle();
+
+TString ifile = "/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v2/MC16a/*root"
+TChain* ch0 = new TChain("T_mv");
+ch0->Add(ifile);
+ch0->SetLineColor(kBlue)
+ch0->Draw("PVWeights", "Muon1_reco_eff_sf*Muon2_reco_eff_sf", "hist")
+
+TChain* ch1 = new TChain("T_mv");
+ch1->Add(ifile);
+ch1->SetLineColor(kGreen)
+ch1->SetLineStyle(1)
+ch1->Draw("PVWeights","", "same hist")
+
+TChain* ch = new TChain("T_mv");
+ch->Add(ifile);
+ch->SetLineColor(kRed)
+ch->Draw("PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf", "", "same hist")
+
+TChain* ch3 = new TChain("T_mv");
+ch3->Add(ifile);
+ch3->SetLineColor(kBlack)
+ch3->Draw("Muon1_reco_eff_sf*Muon2_reco_eff_sf", "PVWeights", "same hist")
+
+
+
+T_mv->Draw("closeTrkDOCA_comp>>doca1", "", "egoff")
+T_mv->Draw("closeTrkDOCA_LooSiHi1Pt05_201516>>doca2", "", "egoff")
+T_mv->Draw("closeTrkDOCA_LooSiHi1Pt05_f2dc2_custom>>doca3", "", "egoff")
+doca1->SetLineColor(2)
+doca1->SetLineStyle(2)
+doca2->GetXaxis()->SetTitle("DOCA")
+doca2->Draw("hist")
+doca1->Draw("same hist")
+doca3->SetLineColor(3)
+doca3->SetLineStyle(4)
+doca3->Draw("same hist")
+
+T_mv->Draw("closeTrkNtrksChi2>>ntrk1", "", "egoff")
+T_mv->Draw("closeTrkNtrksChi2_T0000000035_LooSiHi1Pt05_201516>>ntrk2", "", "egoff")
+ntrk1->SetLineColor(2)
+ntrk1->SetLineStyle(2)
+ntrk2->GetXaxis()->SetTitle("NcloseTracks")
+ntrk2->Draw("hist")
+ntrk1->Draw("same hist")
+
+T_mv->Draw("closeTrkNtrksChi2_T0134217728_LooSiHi1Pt05_f2dc2>>ntrk3", "", "egoff")
+ntrk3->SetLineColor(3)
+ntrk3->SetLineStyle(4)
+ntrk3->Draw("same hist")
+
+
+ifile2016 = "/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data16_main_00302393/Bmumu/v1/*.root"
+
+ifileMC16e = "/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16e/*.root"
+
+TChain* ch1 = new TChain("T_mv");
+
+ch1->Add(ifileMC16e);
+ch1->Draw("closeTrkNtrksChi2>>ntrk1", "", "egoff")
+ch1->Draw("closeTrkNtrksChi2_T0000000035_LooSiHi1Pt05_201516>>ntrk2", "", "egoff")
+ch1->Draw("closeTrkNtrksChi2_T0134217728_LooSiHi1Pt05_f2dc2>>ntrk3", "", "egoff")
+ntrk1->SetLineColor(2)
+ntrk1->SetLineStyle(2)
+ntrk2->GetXaxis()->SetTitle("NcloseTracks")
+ntrk2->Draw("hist")
+ntrk1->Draw("same hist")
+ntrk3->SetLineColor(3)
+ntrk3->SetLineStyle(4)
+ntrk3->Draw("same hist")
+
+ch1->Draw("B_iso_7_Chi2_5_LooSiHi1Pt05_T0000000035", "", "egoff")
+ch1->Draw("B_iso_7_Chi2_5_LooSiHi1Pt05_T0000000127", "", "egoff")
+
+
+
+
+
+TChain* ch2 = new TChain("T_mv");
+TChain* ch3 = new TChain("T_mv");
+ch1->Add(ifile2016);
+ch2->Add(ifile2016);
+ch3->Add(ifile2016);
+
+ch1->SetLineColor(1)
+ch2->SetLineColor(2)
+ch2->SetLineStyle(2)
+ch3->SetLineColor(3)
+ch3->SetLineStyle(4)

@@ -1,0 +1,90 @@
+#!/bin/bash
+
+#####################################
+#Setup slurm job
+#####################################
+#SBATCH --account=staff
+#SBATCH --partition=medium
+#SBATCH --time=120:00
+#SBATCH --mem=2000
+#SBATCH --constraint="computeserver|clusternode"
+#####################################
+#Get variables from outside
+#####################################
+OUTDIR=$1
+IJOB=$2
+IPTCODE=$3
+JOBNAME=$4
+#####################################
+#Set variables for job
+#####################################
+HOST=$(hostname)
+SUBMDIR=$(pwd)
+SCRATCHDIR="/nfs/${HOST}/scratch/${USER}"
+JOBDIR="${SCRATCHDIR}/$JOBNAME/${SLURM_JOB_ID}"
+OPTDIR_ROOT=Root
+OPTDIR_JSON=Json
+OPTFILE=$OPTDIR_ROOT/output_${SLURM_JOB_ID}.root
+#####################################
+#Pring variables used
+#####################################
+echo "INFO::ARGUMENTS USED:"
+echo " $*"
+
+echo "INFO::RUNNING ON: $HOST"
+echo "  SUBMDIR    = $SUBMDIR"
+echo "  SCRATCHDIR = $SCRATCHDIR"
+echo "  JOBDIR     = $JOBDIR"
+echo ""
+echo "  JOB INDEX  = $IJOB"
+echo "  EXECUTABLE = $IPTCODE"
+#####################################
+#Make directories, setup ROOT, etc
+#####################################
+if [ -d $SCRATCHDIR ]; then
+  mkdir -p $JOBDIR
+  cd $JOBDIR
+else
+  echo "ERROR::No SCRATCHDIR=$SCRATCHDIR present"
+  kill -INT $$
+fi
+
+echo "INFO::CURRENT JOB DIRECTORY:"
+pwd
+
+source /products/atlas/rc/localSetup/setupRootCoreSi
+lsetup "lcgenv -p LCG_92 x86_64-slc6-gcc62-opt HepPDT"
+lsetup "gcc gcc620_x86_64_slc6"
+lsetup "python 2.7.13-x86_64-slc6-gcc62"
+
+export CPLUS_INCLUDE_PATH=:/cvmfs/sft.cern.ch/lcg/releases/LCG_92/HepPDT/2.06.01/x86_64-slc6-gcc62-opt/include/
+#####################################
+#Compile and/or run
+#####################################
+cp -r $SUBMDIR/* .
+mkdir -p $OPTDIR_ROOT
+mkdir -p $OPTDIR_JSON
+echo "INFO::BEFORE RUNNING:"
+ls -ltr
+
+PYTHON_PATH="/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.13-x86_64-slc6-gcc62/2.7.13-597a5/x86_64-slc6-gcc62-opt/bin/python"
+
+$PYTHON_PATH "$IPTCODE" "$IJOB" "$OPTFILE" "$JOBNAME"
+
+$PYTHON_PATH --version
+#####################################
+#Retrieve output and clean
+#####################################
+echo "INFO::AFTER RUNNING:"
+
+ls -ltr
+mkdir -p $OUTDIR
+
+cp $OPTDIR_ROOT/* $OUTDIR
+cp $OPTDIR_JSON/* $OUTDIR
+
+cd ${SCRATCHDIR}
+rm -rf $JOBDIR
+#####################################
+#####################################
+

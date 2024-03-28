@@ -1,0 +1,103 @@
+
+
+T_mv->Draw("Lxy", "","egoff")
+T_mv->Draw("Lxy", "(PRIVX_mu >= 12.) && (PRIVX_mu <= 22.)","egoff")
+T_mv->Draw("Lxy", "(PRIVX_mu >= 23.) && (PRIVX_mu <= 33.)","egoff")
+T_mv->Draw("Lxy", "(PRIVX_mu >= 34.) && (PRIVX_mu <= 44.)","egoff")
+T_mv->Draw("Lxy", "(PRIVX_mu >= 45.) && (PRIVX_mu <= 55.)","egoff")
+
+cd ../MC16dAll
+root -l LASTskim_MC16d_All_2020Feb11.root
+cd ../MC16eAll
+root -l LASTskim_MC16e_All_2020Feb11.root
+cd ../2017All
+root -l LASTskim_2017_All_2020Feb11.root
+cd ../2018All
+root -l LASTskim_2018_All_2020Feb11.root
+
+
+MC16d:
+root [1] T_mv->Draw("Lxy", "","egoff")
+(long long) 4400
+root [2] T_mv->Draw("Lxy", "(PRIVX_mu >= 12.) && (PRIVX_mu <= 22.)","egoff")
+(long long) 28
+root [3] T_mv->Draw("Lxy", "(PRIVX_mu >= 23.) && (PRIVX_mu <= 33.)","egoff")
+(long long) 425
+root [4] T_mv->Draw("Lxy", "(PRIVX_mu >= 34.) && (PRIVX_mu <= 44.)","egoff")
+(long long) 492
+root [5] T_mv->Draw("Lxy", "(PRIVX_mu >= 45.) && (PRIVX_mu <= 55.)","egoff")
+(long long) 402
+
+MC16e:
+root [1] T_mv->Draw("Lxy", "","egoff")
+(long long) 1188
+root [2] T_mv->Draw("Lxy", "(PRIVX_mu >= 12.) && (PRIVX_mu <= 22.)","egoff")
+(long long) 445
+root [3] T_mv->Draw("Lxy", "(PRIVX_mu >= 23.) && (PRIVX_mu <= 33.)","egoff")
+(long long) 441
+root [4] T_mv->Draw("Lxy", "(PRIVX_mu >= 34.) && (PRIVX_mu <= 44.)","egoff")
+(long long) 142
+root [5] T_mv->Draw("Lxy", "(PRIVX_mu >= 45.) && (PRIVX_mu <= 55.)","egoff")
+(long long) 24
+
+2017:
+root [1] T_mv->Draw("Lxy", "","egoff")
+(long long) 30031
+root [2] T_mv->Draw("Lxy", "(PRIVX_mu >= 12.) && (PRIVX_mu <= 22.)","egoff")
+(long long) 365
+root [3] T_mv->Draw("Lxy", "(PRIVX_mu >= 23.) && (PRIVX_mu <= 33.)","egoff")
+(long long) 9720
+root [4] T_mv->Draw("Lxy", "(PRIVX_mu >= 34.) && (PRIVX_mu <= 44.)","egoff")
+(long long) 9975
+root [5] T_mv->Draw("Lxy", "(PRIVX_mu >= 45.) && (PRIVX_mu <= 55.)","egoff")
+(long long) 6517
+
+2018:
+root [1] T_mv->Draw("Lxy", "","egoff")
+(long long) 25629
+root [2] T_mv->Draw("Lxy", "(PRIVX_mu >= 12.) && (PRIVX_mu <= 22.)","egoff")
+(long long) 10692
+root [3] T_mv->Draw("Lxy", "(PRIVX_mu >= 23.) && (PRIVX_mu <= 33.)","egoff")
+(long long) 8580
+root [4] T_mv->Draw("Lxy", "(PRIVX_mu >= 34.) && (PRIVX_mu <= 44.)","egoff")
+(long long) 2784
+root [5] T_mv->Draw("Lxy", "(PRIVX_mu >= 45.) && (PRIVX_mu <= 55.)","egoff")
+(long long) 390
+
+
+Run 1 datasets:
+Run 1 data:
+/eos/home-a/agrummer/BsmumuData/Run1/Data
+
+root [0]
+Attaching file data12_8TeVBsAllPeriodsUnblinded_doca3.root as _file0...
+(TFile *) 0x1bd5a50
+root [1] T_mv->Draw("Lxy", "","egoff")
+(long long) 6507278
+root [2] T_mv->Draw("Lxy", "(PRIVX_mu >= 12.) && (PRIVX_mu <= 22.)","egoff")
+(long long) 3315540
+root [3] T_mv->Draw("Lxy", "(PRIVX_mu >= 23.) && (PRIVX_mu <= 33.)","egoff")
+(long long) 2044976
+root [4] T_mv->Draw("Lxy", "(PRIVX_mu >= 34.) && (PRIVX_mu <= 44.)","egoff")
+(long long) 72218
+root [5] T_mv->Draw("Lxy", "(PRIVX_mu >= 45.) && (PRIVX_mu <= 55.)","egoff")
+(long long) 25
+
+Run 1 MC:
+/eos/home-a/agrummer/BsmumuData/Run1/MC
+
+root [2] T_mv->Draw("Lxy", "","egoff")
+(long long) 227720
+root [3] T_mv->Draw("Lxy", "(PRIVX_mu >= 12.) && (PRIVX_mu <= 22.)","egoff")
+(long long) 95594
+root [4] T_mv->Draw("Lxy", "(PRIVX_mu >= 23.) && (PRIVX_mu <= 33.)","egoff")
+(long long) 97354
+root [5] T_mv->Draw("Lxy", "(PRIVX_mu >= 34.) && (PRIVX_mu <= 44.)","egoff")
+(long long) 14794
+root [6] T_mv->Draw("Lxy", "(PRIVX_mu >= 45.) && (PRIVX_mu <= 55.)","egoff")
+Warning in <TTreePlayer::DrawSelect>: The selected TTree subset is empty.
+(long long) 0
+
+
+
+

@@ -1,0 +1,713 @@
+\section{EfficiencyAndAcceptance}
+\label{sec:EfficiencyAndAcceptance}
+
+Acceptances and efficiencies for both reference and signal channels enter in
+Eq.~\ref{eq:BRFormula} through their ratio \theRho.
+\theRho\ is evaluated using \Bsmumu\ and \BpKpJpsi\ signal MC samples, 
+after applying to both MC samples the GLC and data driven corrections (see Section~\ref{sec:MontecarloTuning}). 
+
+For the sake of clarity, we decided to split each component of \theRho\ into two separate
+terms defined as the product of a pure acceptance term $A$ and a pure efficiency term
+$\epsilon$, as stated in Eq.~\ref{eq:BRFormula}. \theRho\ is then defined as:
+
+\begin{equation}
+\theRho = \frac{A_{\BpKpJpsi} \times \epsilon_{\BpKpJpsi}}{A_{\Bsmumu} \times \epsilon_{\Bsmumu}}
+\label{eq:eff_ratio}
+\end{equation}
+
+More precisely, the definition of the $A$ and $\epsilon$ terms can be summarised as follows:
+\begin{itemize}
+\item $A$ takes into account the loss in acceptance, with respect
+to the chosen phase-space fiducial volume, due to the MC generator
+cuts applied on the final state particles (the two muons for both
+channels and the kaon for the reference channel only) in order
+to produce the MC samples used in the analysis. 
+The fiducial volume is defined as $\pt^B>8.0$ GeV and $\left| \eta_B\right|<2.5$,
+while the final state particle cuts are: $\pt^{\mu}>4.0$ GeV and
+$\left| \eta_{\mu}\right|<2.5$ for muons and  $\pt^{K}>1.0$ GeV and
+$\left| \eta_{K}\right|<2.5$ for the kaon. The $A$ term is defined
+as the ratio between the number of events passing the final state
+particle cuts and the number of events in the fiducial volume.
+This term has been evaluated using a specific "un-biased" MC sample
+where only the phase-space fiducial volume cuts on the $B$ meson
+were applied and it is different between the reference and the
+signal channels. 
+Data driven corrections to the $\pt^B$, $\left| \eta_B\right|$ distribution are applied to the MC sample, both in the numeration and the denominator, in order to reproduce the spectrum observed in data.
+in The kinematic cuts are applied to the various
+particles only at the truth level. %The terms have been computed
+%separately for both 2011 and 2012 MC productions. 
+The values of the $A$ term are reported in Table~\ref{tab:Aterm}.\textbf{They refer to Run1 analysis and are here just to give an idea of the order of magnitude of values and uncertainties}.
+\item $\epsilon$ takes into account all the reconstruction effects
+(selection cuts, trigger efficiency, reconstruction efficiency)
+affecting the two channels. It is defined as the ratio between the
+number of events passing the final selection cuts listed in
+Section~\ref{sec:Preselection} including the cut on the continuum BDT once fixed(listed in Section~\ref{sec:ContinuumBDT} ) %and the $B^+$ isolation reweighting
+%procedure described in Section~\ref{subsec:eff} 
+and the number of events
+passing the final state particle kinematic cuts applied to the appropriate
+truth level quantities. Both terms are evaluated using the simulated MC
+samples available. %and they have been computed separately for the three
+%trigger categories considered in 2012 analysis and for 2011 MC production. 
+Since this term involves reconstructed quantities, QLC (see Section~\ref{subsec:QLC}) and data driven
+corrections (see Section~\ref{sec:ddw}) have been applied to both the numerator (to reconstructed
+quantities) and the denominator (to truth quantities) in order to
+properly take into account the effects of a modified $p_T$ and
+$\left| \eta \right|$ spectra of the $B$-meson. Trigger efficiency
+corrections, that will be taken from data and will appear as Scale Factors to be applied to MC, will be added as well once available (see Section~\ref{sec:Trigger}). 
+They will be applied to the numerator only. 
+%In addition, the relative luminosity of the three trigger categories
+%in 2012 MC simulated samples has been rescaled to match those measured in data.
+\end{itemize}
+
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+$A_{\BpKpJpsi}^{2012}$ & 0.0865 $\pm$ 0.0002 \\
+\hline
+$A_{\Bsmumu}^{2012}$ & 0.2902$\pm$ 0.0005 \\
+\hline
+$A_{\BpKpJpsi}^{2011}$ & 0.0819 $\pm$ 0.0003 \\
+\hline
+$A_{\Bsmumu}^{2011}$ & 0.3035 $\pm$ 0.0005 \\
+\hline
+\end{tabular}
+\caption{\label{tab:Aterm}$A$-terms for $B^+$ and $B^0_s$ channels for 2012
+and 2011 MC samples. The statistical uncertainty due to the finite size
+of the simulated samples is also reported.} 
+\end{center}
+\end{table}
+
+The values for the $A \times \epsilon$ and \theRho\ terms are summarised in
+Table~\ref{tab:effsyst}, together with the statistical and systematic
+uncertainties described in the next section. The statistical uncertainties
+come from the finite statistic available for the simulated samples used
+in the analysis. \textbf{They refer to Run1 analysis and are here just to give an idea of the order of magnitude of values and uncertainties}.
+The sources of systematic uncertainties affecting the values reported in
+Table~\ref{tab:effsyst} are described in Section~\ref{subsec:eff}.
+%In the evaluation of $A \times \epsilon$ for both signal and
+%reference-channel the events passing the baseline and additional
+%selection criteria are normalised to the events generated in a
+%fiducial phase-space volume with $\pt^B>8.0$ GeV and $\left| \eta_B\right|<2.5$.
+%As the master formula~\ref{eq:BRFormula} has been modified to
+%take into account possible differences in the three trigger
+%categories, the $A \times \epsilon$ values for signal and
+%reference channels and their ratios are now calculated separately
+%in each trigger category and are summarised in Table~\ref{tab:effsyst}.
+
+%\input{BMuMuCOMM_effandacc_table}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+channel & $\epsilon$ & $A \times \epsilon$ & \theRho \\
+\hline
+\hline
+%\multirow{2}{24mm}{N1} & $B^+$ & 0.0040 & 0.00035$\pm$1.26\%$\pm$ 12.9\% & \multirow{2}{55mm}{0.189 $\pm$2.5\%~(stat)$\pm$11.5\%~(syst)}\\ 
+%\cline{2-3} & \Bs\ & 0.0063 & 0.00183$\pm$ 2.18\% $\pm$ 12.1\% & \\
+%\hline
+%\hline
+%\multirow{2}{24mm}{N2} & $B^+$ & 0.0104 & 0.00090$\pm$0.82\%$\pm$7.3\% & \multirow{2}{55mm}{0.226$\pm$1.78\%~(stat)$\pm$6.4\%~(syst)}\\ 
+%\cline{2-3}  & \Bs\  & 0.0137 & 0.00398$\pm$1.78\% $\pm$5.4\% & \\
+%\hline
+\hline
+$B^+$ & 0.0928 & 0.0080$\pm$0.28\% $\pm$14.2\% & \multirow{2}{55mm}{0.180$\pm$0.56\%~(stat)$\pm$5.2\%~(syst)}\\ 
+$B^0_s$ & 0.1522 & 0.0441$\pm$0.49\% $\pm$10.3\% & \\
+\hline
+%\hline
+%\multirow{2}{24mm}{Inclusive} & $B^+$ & 0.1072 & 0.0090$\pm$0.26\%$\pm$12.8\% & \multirow{2}{55mm}{0.1790$\pm$0.53\%~(stat)$\pm$6.7\%~(syst)}\\ 
+%\cline{2-3}  & \Bs\  & 0.1721 & 0.0507$\pm$0.47\% $\pm$ 9.0\% & \\
+%\hline
+%\hline
+%\multirow{2}{24mm}{2011} & $B^+$ & 0.1108 & 0.0091$\pm$0.25\%$\pm$6.4\% & \multirow{2}{55mm}{0.156$\pm$1.02\%~(stat)$\pm$5.5\%~(syst)}\\ 
+%\cline{2-3}  & \Bs\  & 0.1968 & 0.0598$\pm$0.97\% $\pm$ 6.6\% & \\
+%\hline
+\end{tabular}
+\caption{\label{tab:effsyst}$\epsilon$, $A \times \epsilon $ and \theRho\ values for $B^+$
+and  $B^0_s$ channels for 2012 (split into the three trigger categories) and 2011 samples.
+Where present, the first uncertainty is statistical and second one is systematic.} 
+\end{center}
+\end{table} 
+
+\subsection{Systematic uncertainties on \theRho\ }
+\label{subsec:eff}
+The systematic uncertainty affecting \theRho\ comes mainly from two sources:
+the uncertainty related to the corrections (GLC, data driven and trigger
+efficiencies) and the residual discrepancy between data and MC samples
+after the application of these corrections. The total systematic uncertainty
+quoted in Table~\ref{tab:effsyst} is the sum in quadrature of these two components.
+
+%The input numbers used for calculation of the $A \times \epsilon$
+%values and their ratios are detailed in appendix~\ref{app:effsyst}
+%in Table~\ref{app:tab:effsyst}. 
+
+The first source of systematic uncertainty considered originates
+from the uncertainty of the GLC, DDW and trigger efficiency corrections.
+For evaluation of the effect a toy study has been performed by varying
+the corrections within their statistical uncertainties and recomputing
+each term of the \theRho\ ratio after each toy. The RMS of the values
+obtained in each toy has been quoted as the systematic uncertainty for
+the various quantities. %The uncertainties on \theRho\ range from 1\% to 5\% depending on the trigger category considered. For the inclusive 2012 category it has been found to be 1.5\%, while for 2011 samples it has been found to be 2.2\%.
+%The results of this study are summarised
+%in~\ref{app:systweight}.
+
+Another source of systematic uncertainty arises from the discrepancies
+between data and MC. The systematic uncertainty on \theRho\ was assessed
+by observing the variation in the efficiency of the final selection when
+re-weighting both the MC samples to the observed data for each of the 15
+variables used in the continuum BDT.
+Data are extracted from $B^{+}$ events after the subtraction of the
+background as shown in section~\ref{sec:DataMCComparison}.  \theRho\ is recomputed after the reweighting of each variable
+one at a time. The discrepancy between the values obtained with this
+procedure and the central values has been considered as the systematic
+uncertainty due to the specific variable mis-modelling.\\
+
+
+%Only the isolation variable
+%has been treated differently between reference and signal channels, due to
+%the different electric charge of the two mesons. In this particular case,
+%isolation weights have been extracted from \BsJpsiPhi\ data (as explained
+%in Section~\ref{sec:jpsiphi}) and then applied to \Bsmumu\ simulated
+%sample. \theRho\ has been recomputed after the reweighting of each variable
+%one at a time. The discrepancy between the values obtained with this
+%procedure and the central values has been considered as the systematic
+%uncertainty due to the specific variable mis-modelling.\\
+%The main uncertainties for the reference channel in 2012 came from 
+%the isolation $I_{0,7}$ (-8.9\%, determined with an uncertainty of
+%$\pm$~3.2\% from statistical fluctuation in the samples and in the
+%background subtraction)%, the number of tracks close to the reconstructed $B$-vertex
+%%$N^{close}_{trks}$ (-5.2\%) and the distance of closest approach of the closest
+%%track to the $B$ candidate $DOCA_{xtrk}$ (-4.5\%). 
+%For the signal, the main components were:
+%$\chi^2_{\mu,xPV}$ (-4.8\%) and the isolation $I_{0,7}$ extracted
+%from the \BsJpsiPhi channel (-3.8\%). 
+%Given the significant impact of the isolation reweighting on the efficiency of
+%the reference channel, sign of an important mis-modelling of MC sample with
+%respect to data, we decided to reweight the $B^+$ MC 2012 sample to match the
+%isolation distribution of the $B^+$ meson to that in data. Coherently, we have reweighted
+%also the isolation in the signal MC using the weights extracted from the \BsJpsiPhi channel.
+%The full list of the systematic uncertainties, after the isolation
+%reweighting, for all triggers categories split into the 15 variables
+%individually can be found in the Appendix~\ref{app:effsyst}.\\
+%The vast majority of the systematic uncertainties obtained from this
+%procedure have an impact lower than 2\% on \theRho\. However, we preferred to quote
+%as a total systematic uncertainty on \theRho\ the sum in quadrature of the single
+%discrepancies before the isolation reweighting.
+%In Table~\ref{tab:effsystapp} we reported the impact of each systematic uncertainty
+%before and after the isolation reweighting.
+
+%For 2011 MC production, the overall agreement between data and MC was better.
+%The main uncertainty on the reference channel came from the distance of
+%closest approach of the closest track to the $B$ candidate
+%$DOCA_{xtrk}$ (+4.8\%). For the signal, the main components were:
+%the isolation $I_{0.7}$ extracted from the \BsJpsiPhi channel (-4.3\%)
+%and the distance of closest approach $DOCA_{xtrk}$ (+3.8\%).
+%All the systematic uncertainties obtained with this procedure have an
+%impact lower than 2\% on \theRho except for the isolation $I_{0.7}$ that has an impact of 3.2\%.
+
+%As a cross-check, the same reweighting procedure has been applied directly
+%to the continuum-BDT distribution of the reference channel. The impact on
+%$A \times \epsilon$ has been found to be -13.2\%. This value is in agreement
+%with the 12.8\% obtained with the reweighting procedure described above on
+%2012 $B^+$ MC (see Table~\ref{tab:effsyst}).
+%The effect of the continuum-BDT reweighting on the signal channel efficiency
+%has also been evaluated. If the continuum-BDT weights extracted from $B^+$
+%data are applied, the variation on \Bs\ efficiency is found to be -14.9\%
+%(leading to a variation on \theRho\ of 2.1\%), while if those extracted from
+%\BsJpsiPhi\ data are applied, the effect is -5.9\% (-7.8\% on \theRho).
+%Since the isolation is different between the two channels, the use of the
+%same continuum-BDT weights (those extracted from $B^+$ data) would
+%underestimate the total systematic uncertainty on \theRho\.
+%Therefore the procedure described above (i.e. the sum in quadrature of the
+%single effects on the efficiencies of the 15 variables entering in the
+%continuum BDT) is found more appropriate to quote a reliable systematic
+%uncertainty on \theRho\ due to data/MC discrepancies.
+
+%The same c-BDT reweighting procedure applied to 2011 samples showed a
+%discrepancy of 7.0\% in \theRho\. This number has to be compared with the sum
+%in quadrature of the single effects on \theRho\ of the 15
+%variables entering in the c-BDT, that gives a discrepancy of 3.4\%. In order
+%to be conservative, we preferred to quote 7.0\% as systematic uncertainty on
+%\theRho\ rather than the sum in quadrature of the single effects as for 2012 case.
+
+
+The total systematic uncertainty on $A \times \epsilon$ and \theRho\ due
+to the reweighting procedure is the sum in quadrature of the single
+systematic uncertainties and it is quoted in Table~\ref{tab:effsyst}. 
+
+%In order to perform this systematic evaluation, the variables are classified according to their relative correlations. Four main groups of variables are identified:
+%\begin{itemize}
+%    \setlength{\itemsep}{0pt}%
+%    \setlength{\parskip}{0pt}%
+%\item $1^\circ$ block: Isolation variables ($5$ variables)
+%\item $2^\circ$ block: Vertex and IP related variables ($12$ variables)
+%\item $3^\circ$ block: χ2(B) and DCA (2 variables)
+%\item $4^\circ$ block: Kinematic variables (3 variables)
+%\end{itemize}
+
+%Each variable in one block is highly ($50\%$ or more) correlated with the others of the same block but almost uncorrelated with those belonging to another block. Considering the ranking of the variables from the continuum-BDT training, in each block the variable with higher ranking is selected:
+%\begin{itemize}
+%    \setlength{\itemsep}{0pt}%
+%    \setlength{\parskip}{0pt}%
+%\item $1^\circ$ variable: $\alpha_{2D}$ ($1^\circ$ place in the ranking)
+%\item $2^\circ$ variable: $\pt^B$ ($4^\circ$ place)
+%\item $3^\circ$ variable: $B$ isolation ($6^\circ$ place)
+%\item $4^\circ$ variable: $\chi^2(B)$ ($9^\circ$ place)
+%\end{itemize}
+
+%In order to perform this systematic evaluation, we consider the data-MC discrepancies in each of the $4$ variables selected above and we extract independently for each of them a set of weights correcting for the discrepancies (with a similar technique used for the DDW).
+%The difference in the \theRho\ found by applying these sets of weights are taken as systematics due to the residual discrepancies. The four contributions are then added in quadrature.
+
+
+%For evaluation of the systematic uncertainty a toy study, a variation
+%of the data-MC weights within their statistical uncertainties and
+%a re-evaluation of the ratio of $A \times \epsilon$, is performed.
+%This study is summarised in appendix~\ref{app:systratios}.
+%Because of the significance discrepancies observed between sideband-subtracted
+%data and signal MC of the reference channel, especially for vertexing variables,
+%we study the effect of each variable separately. First, since the vertexing
+%variables are strongly correlated, we use data-MC weights of the most prominent
+%one, $L_{xy}$, for re-weighting the MC sample, factorising its effect on the ratio
+%of $A \times \epsilon$, estimated to be 2\%.
+%After the application of the $L_{xy}$ corrections the impact of all other variables
+%but isolation on the ratio becomes small and sums up to 2.3\% (quadratic addition).
+%The effect of the isolation variable, which is not affected by the $L_{xy}$
+%corrections, has been studied separately. It has been observed that its behaviour
+%differs for the \Bsmumu\ and \BpKpJpsi\ channels even after 
+%matching the kinematic acceptance of B-mesons in both channels. 
+%Presumably this is due to difference in multiplicities of charged
+%tracks in the corresponding underlying event.  By comparing the
+%sideband-subtracted data and the MC of the \BsJpsiPhi\ sample it has
+%been observed that the isolation distributions of \Bs\ candidates agree
+%within the statistics of the available sample.
+%%(Figure~\ref{fig:jpsiphi} right). 
+%Therefore we conservatively propagate the 6.1\% difference in BDT
+%selection efficiency of $B^+$ candidates as the contribution of the
+%isolation variable to systematic uncertainty of the $A \times
+%\epsilon$ ratio.
+%Combining the contributions in quadrature, the resulting uncertainty on
+%%% $\rho=\frac{\epsilon_{J/\psi K^+} A_{J/\psi K^+}}{\epsilon_{\mu\mu}
+% %% A_{\mu\mu}}$
+%$\rho = \theRho$ 
+%is $\Delta\rho/\rho = \pm 6.9\%$(syst), while the statistical
+%uncertainty on $\rho$ due to the finite MC sample is 
+%$\Delta\rho/\rho = \pm 1.8\%$. 
+%
+%Application of data-MC weights to the MC data changes the shape of BDT
+%output distribution 
+%as shown in Figure~\ref{fig:qResponseVariation} for the
+%\Bsmumu\ and \BpKpJpsi\ events using data-MC weights of only
+%$L_{xy}$ variable, taken as an example.
+%The same plot shows the classifier
+%response for \Bsmumu\ background, 
+%drawn from the data sidebands, for the reference. Despite of the
+%significant changes in the efficiency of the optimised cuts, 
+%which one can infer from the plot, 
+%these changes are highly correlated between the signal and the
+%reference channel, keeping the impact on the ratio of $A \times
+%\epsilon$ relatively small.  
+%
+%We verify on \BpmKpmJpsi\ candidates that the observed efficiency of
+%the optimised selection criteria relative to the signal preselection
+%is $(25.9 \pm 0.8)\%$~(stat) in the data, which 
+%is compatible with ($27.0 \pm 0.1$~(stat)~$\pm 3.6$~(syst))\% estimated
+%from MC.
+%%3.6 = sqrt (11.3^2+6.1^2+4.1^2)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\begin{figure}[h!] 
+%\center
+%\includegraphics[scale=0.75]{eps/bdt/bdt-bkg_sig_sigwei.eps}
+%\caption{\label{fig:qResponseVariation} Distribution of the response of the
+%MVA classifier for odd-numbered sidebands (leftmost black histogram),
+%$B\to\mu\mu$ signal (red and blue) and \BpKpJpsi\ (magenta and green).
+%The blue and green histograms are computed using the standard MC
+%modelization, while the red and magenta ones are re-weighted
+%using data-MC weights of $L_{xy}$ variable, taken as an example.} 
+%\end{figure}
+
+
+
+%%
+%% WW, 2013-04-09: old numbers for B flow -- commented here
+%% identical table moved to appendix/flow comparison.tex
+%% as it was used in that particular study.
+%%
+%\begin{table}[htbp]
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%category & channel & $A \times \epsilon$ [\%] & \theRho\ \\
+%\hline
+%\hline
+%\multirow{2}{24mm}{1 bin} & $B^+$ & 1.092$\pm$0.005 & \multirow{2}{55mm}{0.262$\pm$1.9~\%(stat)$\pm$1.8~\%(syst)}\\
+%\cline{2-3}
+% & \Bs\ & 4.168$\pm$0.076 & \\
+%\hline
+%\hline
+%\multirow{2}{24mm}{BB} & $B^+$ & 1.506$\pm$0.010 & \multirow{2}{55mm}{0.287$\pm$2.7~\%(stat)$\pm$2.6~\%(syst)}\\
+%\cline{2-3}
+% & \Bs\  & 5.253$\pm$0.138 & \\
+%\hline
+%\hline
+%\multirow{2}{24mm}{BT} & $B^+$ & 1.057$\pm$0.011 & \multirow{2}{55mm}{0.215$\pm$3.6~\%(stat)$\pm$5.8~\%(syst)}\\
+%\cline{2-3}
+% & \Bs\ & 4.912$\pm$0.170 & \\
+%\hline
+%\hline
+%\multirow{2}{24mm}{AE} & $B^+$ & 0.597$\pm$0.007 & \multirow{2}{55mm}{0.195$\pm$3.5~\%(stat)$\pm$1.5~\%(syst)}\\
+%\cline{2-3}
+% & \Bs\ & 3.052$\pm$0.102 & \\
+%\hline
+%\end{tabular}
+%\caption{\label{tab:effsystB}$A \times \epsilon$ for $B^+$ and \Bs\ channels and their ratios per resolution zone for the $B$ flow.}
+%\end{center}
+%\end{table}
+
+
+%\input{effacc_syst_table}
+
+% DETAILED TABLE FOR SYSTEMATICS
+
+
+%\clearpage
+%\newpage
+%\section{Studies of systematic uncertainties on the relative
+%Efficiency$\times$Acceptance ratio}
+%\subsection{Complete table for the Efficiency$\times$Acceptance
+%ratio evaluation}
+%\label{app:effsyst}
+%\begin{table}[htbp]
+%\scriptsize
+%%\footnotesize
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|c|c|c|}
+%\hline
+%Variable & Efficiencies & N1 & N2 & N3 & Inclusive 2012 & 2011\\
+%\hline
+%$|\alpha_{2D}|$  & $A \times \epsilon_{\Bsmumu}$ & 0.4 (0.4)& 1.7 (1.8)& -1.2 (-1.2)& -0.9 (-0.9)& 1.5\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 0.5 (0.6)& 2.5 (2.5)& -1.4 (-1.4)& -0.9 (-0.9) & 2.1\\
+ %& \theRho & 0.1 (0.2)& 0.8 (0.8)& -0.2 (-0.2)& 0.1 (0.1) & 0.6\\
+%\hline
+%$\chi^2_{\mu,xPV}$   & $A \times \epsilon_{\Bsmumu}$ & 4.4 (4.6)& -0.8 (-0.8)& -5.5 (-5.6)& -4.8 (-4.9)& 0.3\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 3.5 (3.5)& -1.3 (-1.3)& -3.4 (-3.8)& -2.9 (-3.3)& 0.9\\
+ %& \theRho & -0.9 (-1.0)& -0.5 (-0.5)& 2.2 (1.9) & 1.9 (1.7)& 0.6\\
+%\hline
+%$I_{0.7}$   & $A \times \epsilon_{\Bsmumu}$ & -2.9 & -4.5 & -3.8 & -3.8 & -4.3\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & -4.0 & -5.7 & -9.4 & -8.9 & -1.3\\
+ %& \theRho & -1.1 & -1.2 & -5.8 & -5.3 & 3.2\\
+%\hline
+%IP$_B^{3D}$   & $A \times \epsilon_{\Bsmumu}$ & 0.5 (0.6)& 0.3 (0.3)& 0.1 (0.1) & 0.1 (0.1) & -0.1\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & -0.1 (-0.2)& 0.4 (0.4)& -0.3 (-0.4)& -0.3 (-0.3)& +0.4\\
+ %& \theRho & -0.6 (-0.8)& 0.1 (0.1)& -0.4 (-0.5)& -0.4 (-0.4) & 0.5\\
+%\hline
+%DOCA$_{\mu\mu}$   & $A \times \epsilon_{\Bsmumu}$ & -1.1 (-1.5)& -0.4 (-0.3)& -0.5 (-0.5) & -0.5 (-0.5)& -0.3\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & -1.7 (-1.8)& -1.0 (-1.1)& -0.5 (-0.6)& -0.6 (-0.7)& 0.1\\
+ %& \theRho & -0.6 (-0.4)& -0.7 (-0.8)& 0.1 (-0.1)& -0.1 (-0.2)& 0.4\\
+%\hline
+%$L_{xy}$   & $A \times \epsilon_{\Bsmumu}$ &2.4 (2.5)& -0.2 (-0.1)& -1.3 (-1.4)& -1.0 (-1.1)& 1.1\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 6.2 (6.5)& 1.9 (2.0)& -3.2 (-3.4)& -2.4 (-2.5)& 1.2\\
+ %& \theRho & 3.6 (3.9)& 2.1 (2.2)& -2.0 (-2.1)& -1.4 (-1.4)& 0.1\\
+%\hline
+%DOCA$_{xtrk}$   & $A \times \epsilon_{\Bsmumu}$ & -0.4 (-0.1) & 0.1 (0.1)& -3.5 (-3.4)& -3.1 (-3.0)& 3.8\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & -0.8 (-0.7)& -1.3 (-1.2)& -5.0 (-4.9)& -4.5 (-4.4)& 4.8\\
+ %& \theRho & -0.4 (-0.6)& -1.3 (-1.4)& -1.6 (-1.5)& -1.5 (-1.4)& 1.0\\
+%\hline
+%$N^{close}_{trks}$   & $A \times \epsilon_{\Bsmumu}$ & -1.9 (-1.9) & -1.1 (-1.2)& -3.6 (-3.6)& -3.3 (-3.3)& 2.0\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & -2.5 (-2.5)& -2.2 (-2.2) & -5.6 (-5.8)& -5.2 (-5.3)& 2.1\\
+ %& \theRho & -0.6 (-0.6)& -1.1 (-1.1) & -2.1 (-2.3)& -1.9 (-2.1)& 0.1\\
+%\hline
+%$|d_{0}|^{min}$ sign.   & $A \times \epsilon_{\Bsmumu}$ & 7.3 (7.0)& 1.3 (1.3)& -4.4 (-4.5) & -3.5 (-3.6)& 1.0\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 2.7 (2.9)& -0.3 (-0.2)& -2.1 (-2.4)& -1.8 (-2.0)& 1.0\\
+ %& \theRho & -4.3 (-3.9)& -1.6 (-1.5)& 2.4 (2.2)& 1.8 (1.7)& -0.1\\
+%\hline
+%$|d_{0}|^{max}$ sign.   & $A \times \epsilon_{\Bsmumu}$ & 4.9 (5.0)& 0.1 (0.2)& -1.6 (-1.7)& -1.3 (-1.3) & 0.8\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 5.7 (5.9)& 0.8 (0.9)& -2.0 (-2.3)& -1.5 (-1.7)& 1.3\\
+ %& \theRho & 0.8 (0.9)& 0.8 (0.8) & -0.4 (-0.6) & -0.2 (-0.4)& 0.5\\
+%\hline
+%$P_{L}^{min}$   & $A \times \epsilon_{\Bsmumu}$ & -1.4 (-1.6)& 1.1 (1.0)& -0.4 (-0.4)& -0.3 (-0.3)& 0.4\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 2.8 (2.8)& 0.3 (0.4)& 0.4 (0.3)& 0.5 (0.4)& 0.9\\
+ %& \theRho & 4.3 (4.5) & -0.8 (-0.6)& 0.8 (0.8)& 0.8 (0.8)& 0.5\\
+%\hline
+%$\Delta R$   & $A \times \epsilon_{\Bsmumu}$ & 3.6 (3.5)& -0.5 (-0.5)& -1.9 (-2.0)& -1.6 (-1.7)& 0.7\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 3.5 (3.6)& -0.6 (-0.6)& -2.5 (-2.6)& -2.1 (-2.2)& 0.7\\
+ %& \theRho & 0.1 (0.1)& -0.1 (-0.1)& -0.6 (-0.6)& -0.5 (-0.5)& 0.1\\
+%\hline
+%$\chi^{2}_{xy}$   & $A \times \epsilon_{\Bsmumu}$ & 3.9 (4.0)& 0.3 (0.3)& -2.8 (-3.0)& -2.3 (-2.4)& 0.9\\
+ %& $A \times \epsilon_{\BpKpJpsi}$ & 5.5 (5.9)& 0.9 (0.9)& -4.1 (-4.5)& -3.3 (-3.6)& 1.1\\
+ %& \theRho & 1.6 (1.8)& 0.5 (0.6)& -1.3 (-1.6)& -1.0 (-1.1)& 0.1\\
+%\hline
+
+%\hline
+%\end{tabular}
+%\caption{\label{tab:effsystapp}Systematic uncertainties (in \%) on $A \times \epsilon $ and \theRho\ values for $B^+$ and  \Bs\ channels for 2012 (split into the N1, N2 and N3 trigger categories and inclusive) and
+%2011. In parethesis the same systematic uncertainties after the isolation reweighting described in Section~\ref{subsec:eff} is applied.} 
+%\end{center}
+%\end{table}
+
+% OLD STUFF
+
+
+%\subsection{Consistency check with unbiased MC}
+%\label{sec:unbiasedMC}
+
+%As discussed in detail in section~\ref{sec:glc}, in order to reduce the need
+%of computing resources, the main MC samples used in this analysis have been
+%generated with: (a) a selection placed on the $B$ meson decay products kinematics
+%(looser than the requirements placed at reconstruction and final selection),
+%and (b) a reduced phase-space for the scattering of the fundamental constituents,
+%causing an appreciable distortion in the low range of the \pt\ spectrum of the
+%simulated $B$ decays. 
+
+%These procedures were correct by:
+%(a) computing the $A$ terms of the acceptance, equation~\ref{eq:eff_ratio} in
+%this section, through a dedicated {\it unbiased} MC sample used at generation
+%({\it truth}) level; and (b) applying the GLC correction
+%%quark-level correction $W_\mathrm {QL}$ 
+%on the (\pt ,\eta )  distribution of the $B$ meson,
+%%equation~\ref{for:qlc} in section~\ref{sec:glc}, 
+%with the weight obtained also through the unbiased MC samples.
+
+%As a cross checks of these procedures, a fraction of the events from the unbiased
+%generation have been processed through full simulation. The final samples of events
+%produced in this way (i.e., accepted, reconstructed and satisfying the selection
+%requirements)  are much smaller than the samples generally used  throughout this
+%analysis  (namely, by factors of 13 and 15 respectively in the \Bs\ and \Bp\ modes),
+%but despite the statistical limitation, they could be used for a direct check
+%of the $A$ terms and of the GLC %$W_\mathrm {QL}$ 
+%weights with good accuracy.
+%In turn, good consistency have been found in the distributions of the $B$ meson
+%kinematic variables and of the discriminating variables used in the continuum-BDT selection
+%for $\mu^+\mu^-$ background. Finally, the efficiency terms  $\epsilon$ for the the
+%final selection have been confirmed with an accuracy of about 10\%.
+%The \pt\ and \eta\ distributions from the biased and unbiased MC samples
+%are compared in figure~\ref{fig:BiasedUnBiased}. In this figure,
+%the %$W_\mathrm {QL}$ 
+%GLC weights %(table~\ref{tab:qlc} in section~\ref{sec:glc})
+%are not applied to the biased sample, causing the deviations in the low range
+%of the \pt\ spectrum. 
+
+%\begin{figure} [htb]
+  %\begin{center}
+ %\hspace{-1cm}
+   %\includegraphics[width=0.5\textwidth]{eps/comp/pT_MC12_Bs_BiasedUnBiased.eps}
+  %\includegraphics[width=0.5\textwidth]{eps/comp/BDT_MC12_Bs_BiasedUnBiased.eps}\\
+  %\hspace{-1cm}
+ %\includegraphics[width=0.5\textwidth]{eps/comp/pT_MC12_Bp_BiasedUnBiased.eps}
+ %\includegraphics[width=0.5\textwidth]{eps/comp/BDT_MC12_Bp_BiasedUnBiased.eps}
+ %\caption { \label{fig:BiasedUnBiased} Comparisons between the biased (black points)
+   %and unbiased (red points) MC samples, after reconstruction and selection,
+   %before applying the continuum-BDT selection.
+   %{\it Top-left}: \pt\ distributions for \Bsmumu; the region below 13~GeV shows the
+   %bias due to the reduced phase-space at quark level, present and not corrected in
+   %the biased sample. 
+   %{\it Top-right}: comparison of the continuum-BDT distributions for \Bsmumu. 
+   %{\it Bottom-left} and {\it -right}: the as same above for \BpKpJpsi .
+ %} 
+ %\end{center}
+ %\end{figure}
+
+%\subsection{Study of Efficiency versus continuum-BDT Bins}
+%\label{sec:BDTbineff}
+
+%As explained in Sec.~\ref{sec:sigfits}, the extraction of the \Bs\ signal is done
+%with a fit performed in three contiguous intervals of the continuum BDT.
+%The low edge of bin-1 is equal to the BDT threshold used for the final selection
+%of candidates in the \Bsmumu\ channel and in the reference \BpKpJpsi\ and \BsJpsiPhi\ 
+%channels.
+%The separation values defining bin-2 and bin-3 are chosen so that for \Bsmumu\
+%the nominal efficiencies of the three bins are equal. 
+%The uncertainty in the actual efficiency of each bin can be estimated with the
+%same method used for the efficiency of the final selection: for each discriminating
+%variable, and for events passing the final selection, the distribution observed is
+%\BpKpJpsi\ data is compared to the corresponding one from the MC, and the ratio
+%is used to reweight the \Bsmumu\ MC distribution and compute the corresponding change
+%in efficiency. 
+%The deviations associated to the different discriminating variables are combined.
+%Alternatively, the reweighting can be performed using the distributions of the
+%continuum-BDT output, rather than those of each discriminating variables.
+%Finally, the procedure is repeated using as reference the \BsJpsiPhi\ channel.
+
+
+%% using the study can be performed using the BDT distribution.  
+%%and the ratios used to weight the distribution for 
+%%the distributions of the discriminating values in data an MC is compared for \BpKpJpsi candidates.  
+%%The analysis technique to extract the signal yield is based on the knowledge
+%%of the efficiency values in three different continuum-BDT bins
+%%Using a similar technique to that used in the systematic studies on the
+%%efficiency determination for the we can also study the uncertainty on the efficiency of the \Bs\ 
+%%signal in each f the three bins 
+%%as a function of continuum BDT values. As explained in Sec.~\ref{sec:sigfits},
+%%the analysis technique to extract the signal yield is based on the knowledge
+%%of the efficiency values in three different continuum-BDT bins.
+%%Thus we need to estimate the uncertainty associated to this assumption.
+
+%Tables~\ref{tab:systBDTbin-Bp} and \ref{tab:systBDTbin-BsJpsiphi} show the result of this study. 
+%The $J/\psi K+$ and $J/\psi \phi$ channels provide comparable results in the absolute values
+%of the efficiency variations, and in their quadratic combination, while the $J/\psi K+$ provides a 
+%larger effect than $J/\psi \phi$ if the deviations are summed linearly. 
+
+%Figure~\ref{fig:systBDTbins} shows the continuum-BDT distributions observed in the two channels, superimposed to 
+%those for the corresponding MC. In both cases, the ratio of data to MC is described by a linear fit,
+%with appreciable negative slopes of similar magnitude. 
+
+%Table~\ref{tab:systBDTbin-BDTclassifier} shows the effect of reweighting the \Bsmumu MC according
+%to the continuum-BDT distribution, following the pattern observed for \BpKpJpsi and \BsJpsiPhi.  
+%The two reference channels provide a similar pattern, with about -10\% variation in bin-3,  
+%a negligible change in bin-2, and a compensating variation of +10\% in bin-1. 
+%Through the use of toy experiments, we estimate that such variation of bin efficiencies  would produce 
+%a deviation of about -7\% in the fit result. 
+
+%This last method, based of the continuum-BDT distributions in the reference channels, is chosen to assign an
+%uncertainty to the values of the efficiencies in the three bins.
+%In the likelihood fit described in Sec.~\ref{sec:sigfits}, the uncertainties are described with 
+%Gaussian constraints corresponding to $\pm$10\% (relative) in bin-3, $\pm$1\% in bin-2,
+%and with the efficiency of bin-1 constrained to balance the others.
+%Coherent uncertainties in the total efficiency are described separately, and follow the 
+%estimate described above in section~\ref{subsec:eff}.
+
+%%Using the weights from B+\\
+%%classify the variables reweighting as a function of their impact in the last c-BDT bin\\
+%%\\
+%%we can take this into account in the fit with Gaussian constraints on the fraction of signal
+%%events in each bin (nominal value at 33.3\%\\
+
+%\renewcommand\arraystretch{1.1}
+%\begin{table}[ht!]
+  %\centering
+  %\begin{tabular}{l|c|c|c}
+    %\hline
+    %& \multicolumn{3}{c}{ absolute (relative) variation w.r.t. 33.3\% [\%] }\\
+    %variable & bin 1 & bin 2 & bin 3 \\
+    %\hline
+    %B isolation $I_{0.7}$ & +1.5 (+4.5) & +1.2 (+3.6) & -2.6 (-7.8) \\
+    %$|d_{0}|^{max}$ sig. & +1.7 (+5.1) & +0.2 (+0.6) & -1.9 (-5.7) \\
+    %$|d_{0}|^{min}$ sig. & +1.9 (+5.7) & +0.2 (+0.6) & -1.9 (-5.7) \\
+    %$\chi^2_{\mu,xPV}$ & +1.8 (+5.4) & 0.0 (0.0) & -1.8 (-5.4) \\
+    %$\log[\chi^{2}_{\mathrm{PV,SV}}]_{xy}$ & +1.0 (+3.0) & +0.4 (+1.2) & -1.3 (-3.9) \\
+    %DOCA$_{xtrk}$ & -0.5 (-1.5) & +0.1 (+0.3) & +0.5 (+1.5) \\
+    %$N^{close}_{trks}$ &  -0.3 (-0.9) & -0.1 (-0.3) & +0.5 (+1.5) \\
+    %$\Delta\phi(\mu\mu)$ & +0.6 (+1.8) & 0.0 (0.0) & -0.5 (-1.5) \\
+    %$L_{xy}$ &  -1.0 (-3.0) & +0.7 (+2.1) & +0.4 (+1.2) \\
+    %$\Delta{R}$ & -0.4 (-1.2) & +0.2 (+0.6) & +0.3 (+0.9) \\
+    %$P_{L}^{min}$ & +0.3 (+0.9) & -0.1 (-0.3) & -0.1 (-0.3) \\
+    %$|\alpha_{2D}|$ & -0.1 (-0.3) & +0.1 (+0.3) & +0.1 (+0.3) \\
+    %IP$_B^{3D}$ & +0.1 (+0.3) & -0.1 (-0.3) & +0.1 (+0.3) \\
+    %DOCA$_{\mu\mu}$ & +0.2  (+0.6) & -0.1 (-0.3) & 0.0 (0.0) \\
+    %\hline
+    %quadratic sum   & 3.9 (11.6)  & 1.5 (4.5)  & 4.5 (13.5) \\
+    %\hline
+    %linear sum   & +6.8 (+20.4)  & +2.8 (+8.4)  & -8.2 (-24.6) \\
+    %\hline
+  %\end{tabular}
+  %\caption{Variation of the continuum-BDT efficiency in the three bins used
+    %for extracting the \Bs\ signal. For each discriminating variable,
+    %the ratio of the distribution for \BpKpJpsi\ in data and simulation
+    %is used to reweight the MC distribution for \Bsmumu. 
+    %The table shows absolute and relative variation in the nominal efficiency
+    %of each BDT bin.}
+%\label{tab:systBDTbin-Bp}
+  %\end{table}
+
+
+%%weight = -0.930733*BDT+1.34205\\
+%%signal efficiency in each BDT bin:\\   this is J.psi K+ , latest BDT
+%%bin 1 = 37.0% \\
+%%bin 2 = 33.2% \\
+%%bin 3 = 29.7%\\
+
+%\renewcommand\arraystretch{1.1}
+%\begin{table}[ht!]
+  %\centering
+  %\begin{tabular}{l|c|c|c}
+    %\hline
+    %& \multicolumn{3}{c}{ absolute (relative) variation w.r.t. 33.3\% [\%] }\\
+    %variable & bin 1 & bin 2 & bin 3 \\
+    %\hline
+    %B \pt\ & -2.4 (-7.3)  & +0.5 (+1.4) & +2.1 (+6.2) \\
+    %$N^{close}_{trks}$ &  +2.8 (+8.4) & -0.7 (-2.0) & -2.0 (-6.1) \\
+    %DOCA$_{xtrk}$ & -1.1 (-3.2) & +0.1 (+0.2) & +1.1 (+3.3) \\
+    %B isolation $I_{0.7}$ & +1.2 (+3.5) & -0.0 (-0.1) & -1.0 (-3.0) \\
+    %$|d_{0}|^{min}$ sig. & -0.8 (-2.3) & -0.1 (-0.4) & +1.0 (+2.9) \\
+    %$\chi^2_{\mu,xPV}$ & +1.0 (+2.9) & +0.0 (+0.1) & -0.9 (-2.7) \\
+    %DOCA$_{\mu\mu}$ & +0.7  (+2.1) & +0.1 (+0.3) & -0.7 (-2.1) \\
+    %$|d_{0}|^{max}$ sig. & +0.9 (+2.6) & -0.2 (-0.7) & -0.5 (-1.6) \\
+    %$\Delta{R}$ & -0.3 (-0.8) & -0.2 (-0.5) & +0.5 (+1.6) \\
+    %$|\alpha_{2D}|$ & -0.3 (-0.9) & -0.1 (-0.4) & +0.5 (+1.5) \\
+    %$L_{xy}$ &  +0.2 (+0.6) & -0.5 (-1.4) & +0.4 (+1.1) \\
+    %$P_{L}^{min}$ & +0.2 (+0.7) & +0.2 (+0.7) & -0.4 (-1.1) \\
+    %IP$_B^{3D}$ & +0.5 (+1.5) & -0.1 (-0.2) & -0.3 (-1.0) \\
+    %$\log[\chi^{2}_{\mathrm{PV,SV}}]_{xy}$ & +0.6 (+1.8) & -0.2 (-0.6) & -0.3 (-0.9) \\
+    %$\Delta\phi(\mu\mu)$ & -0.4 (-1.1) & -0.1 (-0.4) & -0.1 (-0.3) \\
+    %\hline
+    %quadratic sum & 4.0 (12.0) & 2.3 (6.9) & 4.5 (13.4) \\
+    %\hline
+    %linear sum   & +2.8 (+8.4)  & -1.3 (-3.9)  & -0.6 (-1.8) \\
+    %\hline
+  %\end{tabular}
+    %\caption{Variation of the continuum-BDT efficiency in the three bins used
+      %for extracting the \Bs\ signal. For each discriminating variable,
+      %the ratio of the distribution in  \BsJpsiPhi\ data and simulation
+      %is used to reweight the MC distribution for \Bs.
+      %The table shows absolute and relative variation in the nominal efficiency of each BDT bin.}
+%\label{tab:systBDTbin-BsJpsiphi}
+%\end{table}
+
+%\begin{figure}[!htb]
+%\begin{center}
+  %\hspace{-0.5cm}
+  %\includegraphics[width=0.52\textwidth]{eps/contBDT/Bplus_contBDT-reweighed_jpsiK.eps}
+  %\hspace{-0.5cm}
+  %\includegraphics[width=0.52\textwidth]{eps/contBDT/Bplus_contBDT-reweighed_jpsiphi.eps}
+%\caption{Continuum-BDT distributions observed for \BpKpJpsi\ and \BsJpsiPhi\ candidates,
+  %compared to the corresponding ones from MC. 
+  %In both cases, a linear fit is drawn to describe the ratio of data over MC. }
+%\label{fig:systBDTbins}
+%\end{center}
+%\end{figure}
+
+
+%\renewcommand\arraystretch{1.1}
+%\begin{table}[!htb]
+  %\centering
+  %\begin{tabular}{l|c|c|c}
+    %\hline
+    %& \multicolumn{3}{c}{ absolute (relative) variation w.r.t. 33.3\% [\%] }\\
+    %channel & bin 1 & bin 2 & bin 3 \\
+    %\hline
+    %\BpKpJpsi & +3.7 (+11.0)  & -0.1 (-0.3) & -3.6 (-10.9) \\
+    %\BsJpsiPhi &  +3.0 (+9.1) & -0.1 (-0.3) & -2.9 (-8.7) \\
+    %\hline
+  %\end{tabular}
+    %\caption{Variation of the continuum-BDT efficiency in the three bins
+      %after reweighting the BDT distribution according to the data-to-MC
+      %ratio observed in the \BpKpJpsi\ and \BsJpsiPhi\ channels.} 
+%\label{tab:systBDTbin-BDTclassifier}
+%\end{table}
+
+
+%%Weights from JpsiPhi\\
+%%classify the variables reweighting as a function of their impact in the last c-BDT bin
+%%we can take this into account in the fit with Gaussian constraints on the fraction of signal
+%%events in each bin (nominal value at 33.3\%
+
+
+
+%%signal efficiency in each BDT bin:\\     This is J/psi phi with late BDT
+%%bin 1 = 0.3635\\
+%%bin 2 = 0.3323\\
+%%bin 3 = 0.3042\\
+
+
+
+%%Configuration of toy experiments:\\
+%%generate toys with these fractions in each bin\\
+%%fit assuming 1/3 of signal events in each bin
+
+
+%\clearpage
+
+\clearpage

@@ -1,0 +1,45 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {UKenglish}
+\contentsline {section}{\numberline {1}Note Changes}{4}{section.1}
+\contentsline {section}{\numberline {2}Introduction}{5}{section.2}
+\contentsline {section}{\numberline {3}AnalysisMethodology}{7}{section.3}
+\contentsline {section}{\numberline {4}Data and Monte Carlo Samples}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Data Samples}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Monte Carlo Samples}{8}{subsection.4.2}
+\contentsline {section}{\numberline {5}MCTuning}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Quark Level Corrections}{12}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Data Driven Weights}{13}{subsection.5.2}
+\contentsline {section}{\numberline {6}Candidate Preselection}{15}{section.6}
+\contentsline {subsection}{\numberline {6.1}Candidate building and preselection on derivation level}{15}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Primary vertex determination}{17}{subsection.6.2}
+\contentsline {section}{\numberline {7}Trigger}{22}{section.7}
+\contentsline {section}{\numberline {8}CutFlow}{24}{section.8}
+\contentsline {section}{\numberline {9}Studies on muon fake rates}{25}{section.9}
+\contentsline {section}{\numberline {10}Background Modeling}{28}{section.10}
+\contentsline {subsection}{\numberline {10.1}Non-resonant Background}{28}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Background Classification}{29}{subsection.10.2}
+\contentsline {subsubsection}{\numberline {10.2.1}Truth Matching}{29}{subsubsection.10.2.1}
+\contentsline {subsubsection}{\numberline {10.2.2}Cumulative Decay Probability Distribution}{30}{subsubsection.10.2.2}
+\contentsline {section}{\numberline {11}ContinuumBDT}{34}{section.11}
+\contentsline {section}{\numberline {12}DataMCComparison}{38}{section.12}
+\contentsline {subsection}{\numberline {12.1}Continuum events}{38}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Reference channel as control sample for signal: \ensuremath {B^+ \to J/\psi K^+}\xspace }{39}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Alternate reference channel: \ensuremath {B_s^0 \to J/\psi \phi }\xspace }{41}{subsection.12.3}
+\contentsline {subsection}{\numberline {12.4}Yield stability during run}{42}{subsection.12.4}
+\contentsline {section}{\numberline {13}BPlus Yield}{45}{section.13}
+\contentsline {subsection}{\numberline {13.1}Preselection}{45}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Procedure}{46}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}Systematic Uncertainties in the Extraction of the $B^\pm $ Yields}{54}{subsection.13.3}
+\contentsline {subsection}{\numberline {13.4}$B^{\pm } \rightarrow J\psi K^{\pm }$ yield results}{55}{subsection.13.4}
+\contentsline {subsection}{\numberline {13.5}$J/\psi \pi ^{\pm } / J/\psi K^{\pm }$ ratio measurement}{55}{subsection.13.5}
+\contentsline {section}{\numberline {14}EfficiencyAndAcceptance}{58}{section.14}
+\contentsline {subsection}{\numberline {14.1}Systematic uncertainties on \ensuremath {R_{A\epsilon }}\xspace \ }{59}{subsection.14.1}
+\contentsline {section}{\numberline {15}SignalFit}{60}{section.15}
+\contentsline {subsection}{\numberline {15.1}Signal and peaking background}{60}{subsection.15.1}
+\contentsline {subsection}{\numberline {15.2}Parametrisation of background components}{60}{subsection.15.2}
+\contentsline {subsection}{\numberline {15.3}Fit to background components from MC and to sideband data}{61}{subsection.15.3}
+\contentsline {subsection}{\numberline {15.4}Summary of the fit configuration}{61}{subsection.15.4}
+\contentsline {subsection}{\numberline {15.5}Systematic uncertainties on the fit in the simultaneous fit to $B_s$ and $B_d$}{61}{subsection.15.5}
+\contentsline {section}{\numberline {16}BranchingRatio}{62}{section.16}
+\contentsline {part}{Appendices}{65}{part*.64}

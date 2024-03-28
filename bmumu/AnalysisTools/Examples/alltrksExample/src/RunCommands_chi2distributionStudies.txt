@@ -1,0 +1,572 @@
+
+./bin/IsolationStudy_vChi2hist_v3 2016 loose
+./bin/IsolationStudy_vChi2hist_v3 2016 nominal
+./bin/IsolationStudy_vChi2hist_v3 2016 tight
+
+./bin/IsolationStudy_vChi2hist_v3 2017 loose
+./bin/IsolationStudy_vChi2hist_v3 2017 nominal
+./bin/IsolationStudy_vChi2hist_v3 2017 tight
+
+./bin/IsolationStudy_vChi2hist_v3 2018 loose
+./bin/IsolationStudy_vChi2hist_v3 2018 nominal
+./bin/IsolationStudy_vChi2hist_v3 2018 tight
+
+./bin/IsolationStudy_vChi2hist_v3 MC16a loose
+./bin/IsolationStudy_vChi2hist_v3 MC16a nominal
+./bin/IsolationStudy_vChi2hist_v3 MC16a tight
+
+./bin/IsolationStudy_vChi2hist_v3 MC16d loose
+./bin/IsolationStudy_vChi2hist_v3 MC16d nominal
+./bin/IsolationStudy_vChi2hist_v3 MC16d tight
+
+./bin/IsolationStudy_vChi2hist_v3 MC16e loose
+./bin/IsolationStudy_vChi2hist_v3 MC16e nominal
+./bin/IsolationStudy_vChi2hist_v3 MC16e tight
+
+./bin/IsolationStudy_vChi2hist_v3 2016 assPV
+./bin/IsolationStudy_vChi2hist_v3 2016 nonAss
+./bin/IsolationStudy_vChi2hist_v3 2016 otherPV
+./bin/IsolationStudy_vChi2hist_v3 2017 assPV
+./bin/IsolationStudy_vChi2hist_v3 2017 nonAss
+./bin/IsolationStudy_vChi2hist_v3 2017 otherPV
+./bin/IsolationStudy_vChi2hist_v3 2018 assPV
+./bin/IsolationStudy_vChi2hist_v3 2018 nonAss
+./bin/IsolationStudy_vChi2hist_v3 2018 otherPV
+./bin/IsolationStudy_vChi2hist_v3 MC16a assPV
+./bin/IsolationStudy_vChi2hist_v3 MC16a nonAss
+./bin/IsolationStudy_vChi2hist_v3 MC16a otherPV
+./bin/IsolationStudy_vChi2hist_v3 MC16d assPV
+./bin/IsolationStudy_vChi2hist_v3 MC16d nonAss
+./bin/IsolationStudy_vChi2hist_v3 MC16d otherPV
+./bin/IsolationStudy_vChi2hist_v3 MC16e assPV
+./bin/IsolationStudy_vChi2hist_v3 MC16e nonAss
+./bin/IsolationStudy_vChi2hist_v3 MC16e otherPV
+
+
+//v4 uses MC weights/
+./bin/IsolationStudy_vChi2hist_v4 MC16a loose
+./bin/IsolationStudy_vChi2hist_v4 MC16a nominal
+./bin/IsolationStudy_vChi2hist_v4 MC16a tight
+
+./bin/IsolationStudy_vChi2hist_v4 MC16d loose
+./bin/IsolationStudy_vChi2hist_v4 MC16d nominal
+./bin/IsolationStudy_vChi2hist_v4 MC16d tight
+
+./bin/IsolationStudy_vChi2hist_v4 MC16e loose
+./bin/IsolationStudy_vChi2hist_v4 MC16e nominal
+./bin/IsolationStudy_vChi2hist_v4 MC16e tight
+
+
+./bin/IsolationStudy_vChi2hist_v4 MC16a assPV
+./bin/IsolationStudy_vChi2hist_v4 MC16a nonAss
+./bin/IsolationStudy_vChi2hist_v4 MC16a otherPV
+
+./bin/IsolationStudy_vChi2hist_v4 MC16d assPV
+./bin/IsolationStudy_vChi2hist_v4 MC16d nonAss
+./bin/IsolationStudy_vChi2hist_v4 MC16d otherPV
+
+./bin/IsolationStudy_vChi2hist_v4 MC16e assPV
+./bin/IsolationStudy_vChi2hist_v4 MC16e nonAss
+./bin/IsolationStudy_vChi2hist_v4 MC16e otherPV
+
+
+
+./bin/IsolationStudy_vChi2hist_v5 2017 loose low
+./bin/IsolationStudy_vChi2hist_v5 2017 nominal low
+./bin/IsolationStudy_vChi2hist_v5 2017 tight low
+
+./bin/IsolationStudy_vChi2hist_v5 2017 loose medium
+./bin/IsolationStudy_vChi2hist_v5 2017 nominal medium
+./bin/IsolationStudy_vChi2hist_v5 2017 tight medium
+
+./bin/IsolationStudy_vChi2hist_v5 2017 loose high
+./bin/IsolationStudy_vChi2hist_v5 2017 nominal high
+./bin/IsolationStudy_vChi2hist_v5 2017 tight high
+
+./bin/IsolationStudy_vChi2hist_v5 MC16d loose low
+./bin/IsolationStudy_vChi2hist_v5 MC16d nominal low
+./bin/IsolationStudy_vChi2hist_v5 MC16d tight low
+
+./bin/IsolationStudy_vChi2hist_v5 MC16d loose medium
+./bin/IsolationStudy_vChi2hist_v5 MC16d nominal medium
+./bin/IsolationStudy_vChi2hist_v5 MC16d tight medium
+
+./bin/IsolationStudy_vChi2hist_v5 MC16d loose high
+./bin/IsolationStudy_vChi2hist_v5 MC16d nominal high
+./bin/IsolationStudy_vChi2hist_v5 MC16d tight high
+
+
+./bin/IsolationStudy_vChi2hist_v5 2017 assPV low
+./bin/IsolationStudy_vChi2hist_v5 2017 nonAss low
+./bin/IsolationStudy_vChi2hist_v5 2017 otherPV low
+
+./bin/IsolationStudy_vChi2hist_v5 2017 assPV medium
+./bin/IsolationStudy_vChi2hist_v5 2017 nonAss medium
+./bin/IsolationStudy_vChi2hist_v5 2017 otherPV medium
+
+./bin/IsolationStudy_vChi2hist_v5 2017 assPV high
+./bin/IsolationStudy_vChi2hist_v5 2017 nonAss high
+./bin/IsolationStudy_vChi2hist_v5 2017 otherPV high
+
+./bin/IsolationStudy_vChi2hist_v5 MC16d assPV low
+./bin/IsolationStudy_vChi2hist_v5 MC16d nonAss low
+./bin/IsolationStudy_vChi2hist_v5 MC16d otherPV low
+
+./bin/IsolationStudy_vChi2hist_v5 MC16d assPV medium
+./bin/IsolationStudy_vChi2hist_v5 MC16d nonAss medium
+./bin/IsolationStudy_vChi2hist_v5 MC16d otherPV medium
+
+./bin/IsolationStudy_vChi2hist_v5 MC16d assPV high
+./bin/IsolationStudy_vChi2hist_v5 MC16d nonAss high
+./bin/IsolationStudy_vChi2hist_v5 MC16d otherPV high
+
+
+./bin/IsolationStudy_vChi2hist_v6 2017 loose low
+./bin/IsolationStudy_vChi2hist_v6 2017 loose medium
+./bin/IsolationStudy_vChi2hist_v6 2017 loose high
+./bin/IsolationStudy_vChi2hist_v6 MC16d loose low
+./bin/IsolationStudy_vChi2hist_v6 MC16d loose medium
+./bin/IsolationStudy_vChi2hist_v6 MC16d loose high
+
+./bin/IsolationStudy_vChi2hist_v6 2017 nominal low
+./bin/IsolationStudy_vChi2hist_v6 2017 tight low
+
+./bin/IsolationStudy_vChi2hist_v6 2017 nominal medium
+./bin/IsolationStudy_vChi2hist_v6 2017 tight medium
+
+./bin/IsolationStudy_vChi2hist_v6 2017 nominal high
+./bin/IsolationStudy_vChi2hist_v6 2017 tight high
+
+./bin/IsolationStudy_vChi2hist_v6 MC16d nominal low
+./bin/IsolationStudy_vChi2hist_v6 MC16d tight low
+
+./bin/IsolationStudy_vChi2hist_v6 MC16d nominal medium
+./bin/IsolationStudy_vChi2hist_v6 MC16d tight medium
+
+./bin/IsolationStudy_vChi2hist_v6 MC16d nominal high
+./bin/IsolationStudy_vChi2hist_v6 MC16d tight high
+
+
+./bin/IsolationStudy_vChi2hist_v6 2017 assPV loose
+./bin/IsolationStudy_vChi2hist_v6 2017 nonAss loose
+./bin/IsolationStudy_vChi2hist_v6 2017 otherPV loose
+
+./bin/IsolationStudy_vChi2hist_v6 2017 assPV nominal
+./bin/IsolationStudy_vChi2hist_v6 2017 nonAss nominal
+./bin/IsolationStudy_vChi2hist_v6 2017 otherPV nominal
+
+./bin/IsolationStudy_vChi2hist_v6 2017 assPV tight
+./bin/IsolationStudy_vChi2hist_v6 2017 nonAss tight
+./bin/IsolationStudy_vChi2hist_v6 2017 otherPV tight
+
+./bin/IsolationStudy_vChi2hist_v6 MC16d assPV loose
+./bin/IsolationStudy_vChi2hist_v6 MC16d nonAss loose
+./bin/IsolationStudy_vChi2hist_v6 MC16d otherPV loose
+
+./bin/IsolationStudy_vChi2hist_v6 MC16d assPV nominal
+./bin/IsolationStudy_vChi2hist_v6 MC16d nonAss nominal
+./bin/IsolationStudy_vChi2hist_v6 MC16d otherPV nominal
+
+./bin/IsolationStudy_vChi2hist_v6 MC16d assPV tight
+./bin/IsolationStudy_vChi2hist_v6 MC16d nonAss tight
+./bin/IsolationStudy_vChi2hist_v6 MC16d otherPV tight
+
+
+/////ID HITS/////
+
+./bin/IsolationStudy_IDhits 2016 loose
+./bin/IsolationStudy_IDhits 2016 nominal
+./bin/IsolationStudy_IDhits 2016 tight
+./bin/IsolationStudy_IDhits 2016 chi2Study
+
+./bin/IsolationStudy_IDhits 2017 loose
+./bin/IsolationStudy_IDhits 2017 nominal
+./bin/IsolationStudy_IDhits 2017 tight
+./bin/IsolationStudy_IDhits 2017 chi2Study
+
+./bin/IsolationStudy_IDhits 2018 loose
+./bin/IsolationStudy_IDhits 2018 nominal
+./bin/IsolationStudy_IDhits 2018 tight
+./bin/IsolationStudy_IDhits 2018 chi2Study
+
+./bin/IsolationStudy_IDhits MC16a loose
+./bin/IsolationStudy_IDhits MC16a nominal
+./bin/IsolationStudy_IDhits MC16a tight
+./bin/IsolationStudy_IDhits MC16a chi2Study
+
+./bin/IsolationStudy_IDhits MC16d loose
+./bin/IsolationStudy_IDhits MC16d nominal
+./bin/IsolationStudy_IDhits MC16d tight
+./bin/IsolationStudy_IDhits MC16d chi2Study
+
+./bin/IsolationStudy_IDhits MC16e loose
+./bin/IsolationStudy_IDhits MC16e nominal
+./bin/IsolationStudy_IDhits MC16e tight
+./bin/IsolationStudy_IDhits MC16e chi2Study
+
+
+
+./bin/IsolationStudy_IDhits 2016 assPV PIX
+./bin/IsolationStudy_IDhits 2016 nonAss PIX
+./bin/IsolationStudy_IDhits 2016 otherPV PIX
+./bin/IsolationStudy_IDhits 2016 chi2Study PIX
+
+./bin/IsolationStudy_IDhits 2017 assPV PIX
+./bin/IsolationStudy_IDhits 2017 nonAss PIX
+./bin/IsolationStudy_IDhits 2017 otherPV PIX
+./bin/IsolationStudy_IDhits 2017 chi2Study PIX
+
+./bin/IsolationStudy_IDhits 2018 assPV PIX
+./bin/IsolationStudy_IDhits 2018 nonAss PIX
+./bin/IsolationStudy_IDhits 2018 otherPV PIX
+./bin/IsolationStudy_IDhits 2018 chi2Study PIX
+
+./bin/IsolationStudy_IDhits MC16a assPV PIX
+./bin/IsolationStudy_IDhits MC16a nonAss PIX
+./bin/IsolationStudy_IDhits MC16a otherPV PIX
+./bin/IsolationStudy_IDhits MC16a chi2Study PIX
+
+./bin/IsolationStudy_IDhits MC16d assPV PIX
+./bin/IsolationStudy_IDhits MC16d nonAss PIX
+./bin/IsolationStudy_IDhits MC16d otherPV PIX
+./bin/IsolationStudy_IDhits MC16d chi2Study PIX
+
+./bin/IsolationStudy_IDhits MC16e assPV PIX
+./bin/IsolationStudy_IDhits MC16e nonAss PIX
+./bin/IsolationStudy_IDhits MC16e otherPV PIX
+./bin/IsolationStudy_IDhits MC16e chi2Study PIX
+
+./bin/IsolationStudy_IDhits 2016 assPV SCT
+./bin/IsolationStudy_IDhits 2016 nonAss SCT
+./bin/IsolationStudy_IDhits 2016 otherPV SCT
+./bin/IsolationStudy_IDhits 2016 chi2Study SCT
+
+./bin/IsolationStudy_IDhits 2017 assPV SCT
+./bin/IsolationStudy_IDhits 2017 nonAss SCT
+./bin/IsolationStudy_IDhits 2017 otherPV SCT
+./bin/IsolationStudy_IDhits 2017 chi2Study SCT
+
+./bin/IsolationStudy_IDhits 2018 assPV SCT
+./bin/IsolationStudy_IDhits 2018 nonAss SCT
+./bin/IsolationStudy_IDhits 2018 otherPV SCT
+./bin/IsolationStudy_IDhits 2018 chi2Study SCT
+
+./bin/IsolationStudy_IDhits MC16a assPV SCT
+./bin/IsolationStudy_IDhits MC16a nonAss SCT
+./bin/IsolationStudy_IDhits MC16a otherPV SCT
+./bin/IsolationStudy_IDhits MC16a chi2Study SCT
+
+./bin/IsolationStudy_IDhits MC16d assPV SCT
+./bin/IsolationStudy_IDhits MC16d nonAss SCT
+./bin/IsolationStudy_IDhits MC16d otherPV SCT
+./bin/IsolationStudy_IDhits MC16d chi2Study SCT
+
+./bin/IsolationStudy_IDhits MC16e assPV SCT
+./bin/IsolationStudy_IDhits MC16e nonAss SCT
+./bin/IsolationStudy_IDhits MC16e otherPV SCT
+./bin/IsolationStudy_IDhits MC16e chi2Study SCT
+
+
+////ID Hits v2///
+
+./bin/IsolationStudy_IDhits_v2 2016 
+./bin/IsolationStudy_IDhits_v2 2017 
+./bin/IsolationStudy_IDhits_v2 2018 
+./bin/IsolationStudy_IDhits_v2 MC16a 
+./bin/IsolationStudy_IDhits_v2 MC16d 
+./bin/IsolationStudy_IDhits_v2 MC16e
+
+./bin/IsolationStudy_IDhits_v2 2016 PIX
+./bin/IsolationStudy_IDhits_v2 2016 SCT
+./bin/IsolationStudy_IDhits_v2 2016 IBL
+
+./bin/IsolationStudy_IDhits_v2 2017 PIX
+./bin/IsolationStudy_IDhits_v2 2017 SCT
+./bin/IsolationStudy_IDhits_v2 2017 IBL
+
+./bin/IsolationStudy_IDhits_v2 2018 PIX
+./bin/IsolationStudy_IDhits_v2 2018 SCT
+./bin/IsolationStudy_IDhits_v2 2018 IBL
+
+./bin/IsolationStudy_IDhits_v2 MC16a PIX
+./bin/IsolationStudy_IDhits_v2 MC16a SCT
+./bin/IsolationStudy_IDhits_v2 MC16a IBL
+
+./bin/IsolationStudy_IDhits_v2 MC16d PIX
+./bin/IsolationStudy_IDhits_v2 MC16d SCT
+./bin/IsolationStudy_IDhits_v2 MC16d IBL
+
+./bin/IsolationStudy_IDhits_v2 MC16e PIX
+./bin/IsolationStudy_IDhits_v2 MC16e SCT
+./bin/IsolationStudy_IDhits_v2 MC16e IBL
+
+
+March 3, 2020:
+
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample/
+need to compile with make
+
+run and specify year and nTuple version:
+
+v3: (run over data)
+./bin/IsolationStudy_IDhits_v3 2016 new
+./bin/IsolationStudy_IDhits_v3 2016 old
+./bin/IsolationStudy_IDhits_v3 2017 new
+./bin/IsolationStudy_IDhits_v3 2017 old
+./bin/IsolationStudy_IDhits_v3 2018 new
+./bin/IsolationStudy_IDhits_v3 2018 old
+
+./bin/IsolationStudy_IDhits_v3 MC16a new
+./bin/IsolationStudy_IDhits_v3 MC16a old
+./bin/IsolationStudy_IDhits_v3 MC16d new
+./bin/IsolationStudy_IDhits_v3 MC16d old
+./bin/IsolationStudy_IDhits_v3 MC16e new
+./bin/IsolationStudy_IDhits_v3 MC16e old
+
+v4: (run over data)
+./bin/IsolationStudy_IDhits_v4 2016 new
+./bin/IsolationStudy_IDhits_v4 2016 old
+./bin/IsolationStudy_IDhits_v4 2017 new
+./bin/IsolationStudy_IDhits_v4 2017 old
+./bin/IsolationStudy_IDhits_v4 2018 new
+./bin/IsolationStudy_IDhits_v4 2018 old
+
+./bin/IsolationStudy_IDhits_v4 MC16a new
+./bin/IsolationStudy_IDhits_v4 MC16a old
+./bin/IsolationStudy_IDhits_v4 MC16d new
+./bin/IsolationStudy_IDhits_v4 MC16d old
+./bin/IsolationStudy_IDhits_v4 MC16e new
+./bin/IsolationStudy_IDhits_v4 MC16e old
+
+v3: (run over saved files)
+
+./bin/IsolationStudy_IDhits_v3 2016 PIX
+./bin/IsolationStudy_IDhits_v3 2016 SCT
+./bin/IsolationStudy_IDhits_v3 2017 PIX
+./bin/IsolationStudy_IDhits_v3 2017 SCT
+./bin/IsolationStudy_IDhits_v3 2018 PIX
+./bin/IsolationStudy_IDhits_v3 2018 SCT
+
+./bin/IsolationStudy_IDhits_v3 MC16a PIX
+./bin/IsolationStudy_IDhits_v3 MC16a SCT
+./bin/IsolationStudy_IDhits_v3 MC16d PIX
+./bin/IsolationStudy_IDhits_v3 MC16d SCT
+./bin/IsolationStudy_IDhits_v3 MC16e PIX
+./bin/IsolationStudy_IDhits_v3 MC16e SCT
+
+v4: (run over saved files)
+
+./bin/IsolationStudy_IDhits_v4 2016 PIX
+./bin/IsolationStudy_IDhits_v4 2016 SCT
+./bin/IsolationStudy_IDhits_v4 2017 PIX
+./bin/IsolationStudy_IDhits_v4 2017 SCT
+./bin/IsolationStudy_IDhits_v4 2018 PIX
+./bin/IsolationStudy_IDhits_v4 2018 SCT
+
+./bin/IsolationStudy_IDhits_v4 MC16a PIX
+./bin/IsolationStudy_IDhits_v4 MC16a SCT
+./bin/IsolationStudy_IDhits_v4 MC16d PIX
+./bin/IsolationStudy_IDhits_v4 MC16d SCT
+./bin/IsolationStudy_IDhits_v4 MC16e PIX
+./bin/IsolationStudy_IDhits_v4 MC16e SCT
+
+
+chi2 v7: (run over data)
+
+
+
+./bin/IsolationStudy_vChi2hist_v7 2016 loose new
+./bin/IsolationStudy_vChi2hist_v7 2016 custom new
+./bin/IsolationStudy_vChi2hist_v7 2016 loose old
+./bin/IsolationStudy_vChi2hist_v7 2016 custom old
+
+./bin/IsolationStudy_vChi2hist_v7 2017 loose new
+./bin/IsolationStudy_vChi2hist_v7 2017 custom new
+./bin/IsolationStudy_vChi2hist_v7 2017 loose old
+./bin/IsolationStudy_vChi2hist_v7 2017 custom old
+
+./bin/IsolationStudy_vChi2hist_v7 2018 loose new
+./bin/IsolationStudy_vChi2hist_v7 2018 custom new
+./bin/IsolationStudy_vChi2hist_v7 2018 loose old
+./bin/IsolationStudy_vChi2hist_v7 2018 custom old
+
+./bin/IsolationStudy_vChi2hist_v7 MC16a loose new
+./bin/IsolationStudy_vChi2hist_v7 MC16a custom new
+./bin/IsolationStudy_vChi2hist_v7 MC16a loose old
+./bin/IsolationStudy_vChi2hist_v7 MC16a custom old
+
+./bin/IsolationStudy_vChi2hist_v7 MC16d loose new
+./bin/IsolationStudy_vChi2hist_v7 MC16d custom new
+./bin/IsolationStudy_vChi2hist_v7 MC16d loose old
+./bin/IsolationStudy_vChi2hist_v7 MC16d custom old
+
+./bin/IsolationStudy_vChi2hist_v7 MC16e loose new
+
+./bin/IsolationStudy_vChi2hist_v7 MC16e custom new
+./bin/IsolationStudy_vChi2hist_v7 MC16a loose old
+
+./bin/IsolationStudy_vChi2hist_v7 MC16e loose old
+./bin/IsolationStudy_vChi2hist_v7 MC16a custom old
+
+./bin/IsolationStudy_vChi2hist_v7 MC16e custom old
+
+
+chi2 v7: (run over saved files)
+./bin/IsolationStudy_vChi2hist_v7 2016 assPV loose
+./bin/IsolationStudy_vChi2hist_v7 2016 nonAss loose
+./bin/IsolationStudy_vChi2hist_v7 2016 otherPV loose
+./bin/IsolationStudy_vChi2hist_v7 2016 assPV custom
+./bin/IsolationStudy_vChi2hist_v7 2016 nonAss custom
+./bin/IsolationStudy_vChi2hist_v7 2016 otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v7 2017 assPV loose
+./bin/IsolationStudy_vChi2hist_v7 2017 nonAss loose
+./bin/IsolationStudy_vChi2hist_v7 2017 otherPV loose
+./bin/IsolationStudy_vChi2hist_v7 2017 assPV custom
+./bin/IsolationStudy_vChi2hist_v7 2017 nonAss custom
+./bin/IsolationStudy_vChi2hist_v7 2017 otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v7 2018 assPV loose
+./bin/IsolationStudy_vChi2hist_v7 2018 nonAss loose
+./bin/IsolationStudy_vChi2hist_v7 2018 otherPV loose
+./bin/IsolationStudy_vChi2hist_v7 2018 assPV custom
+./bin/IsolationStudy_vChi2hist_v7 2018 nonAss custom
+./bin/IsolationStudy_vChi2hist_v7 2018 otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v7 MC16a assPV loose
+./bin/IsolationStudy_vChi2hist_v7 MC16a nonAss loose
+./bin/IsolationStudy_vChi2hist_v7 MC16a otherPV loose
+./bin/IsolationStudy_vChi2hist_v7 MC16a assPV custom
+./bin/IsolationStudy_vChi2hist_v7 MC16a nonAss custom
+./bin/IsolationStudy_vChi2hist_v7 MC16a otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v7 MC16d assPV loose
+./bin/IsolationStudy_vChi2hist_v7 MC16d nonAss loose
+./bin/IsolationStudy_vChi2hist_v7 MC16d otherPV loose
+./bin/IsolationStudy_vChi2hist_v7 MC16d assPV custom
+./bin/IsolationStudy_vChi2hist_v7 MC16d nonAss custom
+./bin/IsolationStudy_vChi2hist_v7 MC16d otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v7 MC16e assPV loose
+./bin/IsolationStudy_vChi2hist_v7 MC16e nonAss loose
+./bin/IsolationStudy_vChi2hist_v7 MC16e otherPV loose
+./bin/IsolationStudy_vChi2hist_v7 MC16e assPV custom
+./bin/IsolationStudy_vChi2hist_v7 MC16e nonAss custom
+./bin/IsolationStudy_vChi2hist_v7 MC16e otherPV custom
+
+
+
+
+
+chi2 v8: (run over data)
+
+
+
+./bin/IsolationStudy_vChi2hist_v8 2016 loose new
+./bin/IsolationStudy_vChi2hist_v8 2017 loose new
+./bin/IsolationStudy_vChi2hist_v8 2018 loose new
+./bin/IsolationStudy_vChi2hist_v8 2016 custom new
+./bin/IsolationStudy_vChi2hist_v8 2017 custom new
+./bin/IsolationStudy_vChi2hist_v8 2018 custom new
+./bin/IsolationStudy_vChi2hist_v8 MC16a loose new
+./bin/IsolationStudy_vChi2hist_v8 MC16a custom new
+
+./bin/IsolationStudy_vChi2hist_v8 MC16d loose new
+./bin/IsolationStudy_vChi2hist_v8 MC16e loose new
+
+
+./bin/IsolationStudy_vChi2hist_v8 MC16d custom new
+./bin/IsolationStudy_vChi2hist_v8 MC16e custom new
+
+./bin/IsolationStudy_vChi2hist_v8 2016 loose old
+./bin/IsolationStudy_vChi2hist_v8 2017 loose old
+./bin/IsolationStudy_vChi2hist_v8 2018 loose old
+./bin/IsolationStudy_vChi2hist_v8 2016 custom old
+./bin/IsolationStudy_vChi2hist_v8 2017 custom old
+./bin/IsolationStudy_vChi2hist_v8 2018 custom old
+./bin/IsolationStudy_vChi2hist_v8 MC16a loose old
+./bin/IsolationStudy_vChi2hist_v8 MC16a custom old
+
+./bin/IsolationStudy_vChi2hist_v8 MC16d loose old
+./bin/IsolationStudy_vChi2hist_v8 MC16e loose old
+
+
+./bin/IsolationStudy_vChi2hist_v8 MC16d custom old
+./bin/IsolationStudy_vChi2hist_v8 MC16e custom old
+
+
+
+
+chi2 v8: (run over saved files)
+./bin/IsolationStudy_vChi2hist_v8 2016 assPV loose
+./bin/IsolationStudy_vChi2hist_v8 2016 nonAss loose
+./bin/IsolationStudy_vChi2hist_v8 2016 otherPV loose
+./bin/IsolationStudy_vChi2hist_v8 2016 assPV custom
+./bin/IsolationStudy_vChi2hist_v8 2016 nonAss custom
+./bin/IsolationStudy_vChi2hist_v8 2016 otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v8 2017 assPV loose
+./bin/IsolationStudy_vChi2hist_v8 2017 nonAss loose
+./bin/IsolationStudy_vChi2hist_v8 2017 otherPV loose
+./bin/IsolationStudy_vChi2hist_v8 2017 assPV custom
+./bin/IsolationStudy_vChi2hist_v8 2017 nonAss custom
+./bin/IsolationStudy_vChi2hist_v8 2017 otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v8 2018 assPV loose
+./bin/IsolationStudy_vChi2hist_v8 2018 nonAss loose
+./bin/IsolationStudy_vChi2hist_v8 2018 otherPV loose
+./bin/IsolationStudy_vChi2hist_v8 2018 assPV custom
+./bin/IsolationStudy_vChi2hist_v8 2018 nonAss custom
+./bin/IsolationStudy_vChi2hist_v8 2018 otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v8 MC16a assPV loose
+./bin/IsolationStudy_vChi2hist_v8 MC16a nonAss loose
+./bin/IsolationStudy_vChi2hist_v8 MC16a otherPV loose
+./bin/IsolationStudy_vChi2hist_v8 MC16a assPV custom
+./bin/IsolationStudy_vChi2hist_v8 MC16a nonAss custom
+./bin/IsolationStudy_vChi2hist_v8 MC16a otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v8 MC16d assPV loose
+./bin/IsolationStudy_vChi2hist_v8 MC16d nonAss loose
+./bin/IsolationStudy_vChi2hist_v8 MC16d otherPV loose
+./bin/IsolationStudy_vChi2hist_v8 MC16d assPV custom
+./bin/IsolationStudy_vChi2hist_v8 MC16d nonAss custom
+./bin/IsolationStudy_vChi2hist_v8 MC16d otherPV custom
+
+./bin/IsolationStudy_vChi2hist_v8 MC16e assPV loose
+./bin/IsolationStudy_vChi2hist_v8 MC16e nonAss loose
+./bin/IsolationStudy_vChi2hist_v8 MC16e otherPV loose
+./bin/IsolationStudy_vChi2hist_v8 MC16e assPV custom
+./bin/IsolationStudy_vChi2hist_v8 MC16e nonAss custom
+./bin/IsolationStudy_vChi2hist_v8 MC16e otherPV custom
+
+
+
+
+
+
+numTrks: (run over data)
+./bin/IsolationStudy_NumTracks 2016 new
+./bin/IsolationStudy_NumTracks 2016 old
+./bin/IsolationStudy_NumTracks 2017 new
+./bin/IsolationStudy_NumTracks 2017 old
+./bin/IsolationStudy_NumTracks 2018 new
+./bin/IsolationStudy_NumTracks 2018 old
+
+./bin/IsolationStudy_NumTracks MC16a new
+./bin/IsolationStudy_NumTracks MC16a old
+./bin/IsolationStudy_NumTracks MC16d new
+./bin/IsolationStudy_NumTracks MC16d old
+./bin/IsolationStudy_NumTracks MC16e new
+./bin/IsolationStudy_NumTracks MC16e old
+
+numTrks: (run over saved files)
+./bin/IsolationStudy_NumTracks 2016
+./bin/IsolationStudy_NumTracks 2017
+./bin/IsolationStudy_NumTracks 2018
+
+./bin/IsolationStudy_NumTracks MC16a
+./bin/IsolationStudy_NumTracks MC16d
+./bin/IsolationStudy_NumTracks MC16e

@@ -1,0 +1,19 @@
+ifile2016 = "/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_ntup/data16_main_00302393/Bmumu/v1/*.root"
+
+ifileMC16e = "/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/skimmed_MC/Bsmumu/v2/mc16e/*.root"
+
+TChain* ch1 = new TChain("T_mv");
+
+ch1->Add(ifileMC16e);
+ch1->Draw("closeTrkNtrksChi2>>ntrk1", "", "egoff")
+ch1->Draw("closeTrkNtrksChi2_T0000000035_LooSiHi1Pt05_201516>>ntrk2", "", "egoff")
+ch1->Draw("closeTrkNtrksChi2_T0134217728_LooSiHi1Pt05_f2dc2>>ntrk3", "", "egoff")
+ntrk1->SetLineColor(2)
+ntrk1->SetLineStyle(2)
+ntrk2->GetXaxis()->SetTitle("NcloseTracks")
+ntrk2->Draw("hist")
+ntrk1->Draw("same hist")
+ntrk3->SetLineColor(3)
+ntrk3->SetLineStyle(4)
+ntrk3->Draw("same hist")
+

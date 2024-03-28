@@ -1,0 +1,50 @@
+First - apply QLC+DDW WEIGHTS
+
+May 24:
+
+starting with MC (WorkSpace/BsmumuData/SignalMC/LASTskim.MC16Bs.root):
+
+makes LASTskim.MC16Bs_CombWeights.root
+Processing applyKinematicWeights.C...
+Applying Kinematic Weights to Signal MC
+150000 of 169262
+Entries in input tree: 169262
+even events: 84402
+odd events: 84860
+Entries in input tree: 169262
+Entries in new tree: 169262
+Entries Cut: 0
+
+makes LASTskim.MC16Bs_CombWeights_DOCAlt500.root:
+Processing DOCAcut500.C...
+Cutting on DCA variable
+0 of 169262
+30000 of 169262
+60000 of 169262
+90000 of 169262
+120000 of 169262
+150000 of 169262
+Entries in input tree: 169262
+Entries in new tree: 167988
+Entries Cut: 1274
+
+makes LASTskim.MC16Bs_CombWeights_DOCAlt500_TrainTestSet.root:
+Processing Mod4MC_v2.C...
+Splitting MC 3/4 and 1/4
+30000 of 167988
+60000 of 167988
+150000 of 167988
+Entries in input tree: 167988
+Entries in new tree: 126055
+Entries Cut: 41933
+
+makes LASTskim.MC16Bs_CombWeights_DOCAlt500_EvalSet.root:
+Processing Mod4MC_v2.C...
+Splitting MC 3/4 and 1/4
+0 of 167988
+90000 of 167988
+120000 of 167988
+Entries in input tree: 167988
+Entries in new tree: 41933
+Entries Cut: 126055
+

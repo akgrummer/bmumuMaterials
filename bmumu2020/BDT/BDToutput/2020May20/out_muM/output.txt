@@ -1,0 +1,176 @@
+
+Processing /home/agrummer/bmumu2020/BDT/runMVA_pc01.cxx("BDToutput/2020May20/out_muM", ":MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500")...
+look at outdir: BDToutput/2020May20/out_muM
+Opening the cfg file ./2020Apr7_IsoStudy.cfg
+INFO: including variable: muMACH
+INFO: including variable: muMBDI
+INFO: including variable: muMBEJ
+INFO: including variable: muMBGJ
+INFO adding input variable: muM_iso_7_Chi2_5_LoosePt05 muM Iso ACH (OOO)  F
+INFO adding input variable: muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 muM Iso BDI (PVP)  As in Run 1  F
+INFO adding input variable: muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728 muM Iso BEJ (PPP)  Custom TVA Trk Perigee  F
+INFO adding input variable: muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608 muM Iso BGJ (PPP)  Loose TVA  F
+
+SET FOLLOWING MVA TRAINING OPTIONS:  
+mymva.SIG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root
+mymva.BKG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root
+mymva.SIGtrain_inputFileName: 
+mymva.BKGtrain_inputFileName: 
+mymva.SIGtest_inputFileName: 
+mymva.BKGtest_inputFileName: 
+mymva.SIG_treeName: T_mv
+mymva.BKG_treeName: T_mv
+mymva.valSIG_inputFileName: 
+mymva.valBKG_inputFileName: 
+mymva.valSIG_treeName: 
+mymva.valBKG_treeName: 
+mymva.OUT_DIR: BDToutput/2020May20/out_muM
+mymva.OUT_FILE: bdt2020.root
+mymva.factoryName: bdt2020
+mymva.factory_prepareTrainingOpt: nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=EqualNumEvents:!V
+mymva.SIGweightexp: (PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf)
+mymva.BKGweightexp: 
+mymva.GradBDToptions: 
+mymva.AdaBDToptions: !H:!V:BoostType=AdaBoost:UseBaggedBoost:BaggedSampleFraction=0.6:SeparationType=GiniIndex:nCuts=100:DoBoostMonitor:MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500
+mymva.MLPoptions: 
+mymva.SVMoptions: 
+mymva.MyCutSignal: 
+mymva.MyCutBkgnd: 
+
+Retrieving tree branches ... 
+ * Initialise TMVA...
+DataSetInfo              : [BDToutput/2020May20/out_muM] : Added class "Signal"
+                         : Add Tree T_mv of type Signal with 166752 events
+DataSetInfo              : [BDToutput/2020May20/out_muM] : Added class "Background"
+                         : Add Tree T_mv of type Background with 2455576 events
+ * Prepare Training and Test Tree...
+ * Book AdaBDT Training Method...
+Factory                  : Booking method: [1mBDT[0m
+                         : 
+DataSetFactory           : [BDToutput/2020May20/out_muM] : Number of events in input trees
+                         : 
+                         : 
+                         : Dataset[BDToutput/2020May20/out_muM] : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+                         : Dataset[BDToutput/2020May20/out_muM] :  such that the effective (weighted) number of events in each class is the same 
+                         : Dataset[BDToutput/2020May20/out_muM] :  (and equals the number of events (entries) given for class=0 )
+                         : Dataset[BDToutput/2020May20/out_muM] : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+                         : Dataset[BDToutput/2020May20/out_muM] : ... (note that N_j is the sum of TRAINING events
+                         : Dataset[BDToutput/2020May20/out_muM] :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 83376
+                         : Signal     -- testing events             : 83376
+                         : Signal     -- training and testing events: 166752
+                         : Background -- training events            : 1227788
+                         : Background -- testing events             : 1227788
+                         : Background -- training and testing events: 2455576
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                                  muM_iso_7_Chi2_5_LoosePt05 muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728 muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608
+                         :                      muM_iso_7_Chi2_5_LoosePt05:                     +1.000                                          +0.907                                     +0.782                                     +0.809
+                         : muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127:                     +0.907                                          +1.000                                     +0.757                                     +0.755
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728:                     +0.782                                          +0.757                                     +1.000                                     +0.943
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608:                     +0.809                                          +0.755                                     +0.943                                     +1.000
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                                  muM_iso_7_Chi2_5_LoosePt05 muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728 muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608
+                         :                      muM_iso_7_Chi2_5_LoosePt05:                     +1.000                                          +0.939                                     +0.829                                     +0.840
+                         : muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127:                     +0.939                                          +1.000                                     +0.842                                     +0.836
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728:                     +0.829                                          +0.842                                     +1.000                                     +0.960
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608:                     +0.840                                          +0.836                                     +0.960                                     +1.000
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetFactory           : [BDToutput/2020May20/out_muM] :  
+                         : 
+Factory                  : [1mTrain all methods[0m
+Factory                  : [BDToutput/2020May20/out_muM] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'muM_iso_7_Chi2_5_LoosePt05' <---> Output : variable 'muM_iso_7_Chi2_5_LoosePt05'
+                         : Input : variable 'muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127' <---> Output : variable 'muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127'
+                         : Input : variable 'muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728' <---> Output : variable 'muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728'
+                         : Input : variable 'muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608' <---> Output : variable 'muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608'
+TFHandler_Factory        :                                        Variable                                               Mean                                               RMS                                       [        Min                                               Max ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                      muM_iso_7_Chi2_5_LoosePt05:                                          0.71116                                          0.23610   [                                        0.0014613                                           1.0000 ]
+                         : muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127:                                          0.67246                                          0.23764   [                                       0.00076875                                           1.0000 ]
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728:                                          0.57843                                          0.24708   [                                       0.00016692                                           1.0000 ]
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608:                                          0.58026                                          0.25183   [                                       0.00016692                                           1.0000 ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : ------------------------------------------------------------------
+                         : Rank : Variable                                  : Separation
+                         : ------------------------------------------------------------------
+                         :    1 : muM Iso BGJ (PPP)  Loose TVA              : 3.458e-01
+                         :    2 : muM Iso BEJ (PPP)  Custom TVA Trk Perigee : 3.385e-01
+                         :    3 : muM Iso BDI (PVP)  As in Run 1            : 3.157e-01
+                         :    4 : muM Iso ACH (OOO)                         : 2.875e-01
+                         : ------------------------------------------------------------------
+Factory                  : Train method: BDT for Classification
+                         : 
+                         : Events with weight == 0 are going to be simply ignored 
+BDT                      : #events: (reweighted) sig: 655540 bkg: 655540
+                         : #events: (unweighted) sig: 83292 bkg: 1227788
+                         : Training 500 Decision Trees ... patience please
+                         : Elapsed time for training with 1311164 events: 819 sec         
+BDT                      : [BDToutput/2020May20/out_muM] : Evaluation of BDT on training sample (1311164 events)
+                         : Elapsed time for evaluation of 1311164 events: 108 sec       
+                         : Creating xml weight file: [0;36mBDToutput/2020May20/out_muM/weights/bdt2020_BDT.weights.xml[0m
+                         : Creating standalone class: [0;36mBDToutput/2020May20/out_muM/weights/bdt2020_BDT.class.C[0m
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+BDT                      : Ranking result (top variable is best ranked)
+                         : ---------------------------------------------------------------------------------
+                         : Rank : Variable                                        : Variable Importance
+                         : ---------------------------------------------------------------------------------
+                         :    1 : muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608      : 3.230e-01
+                         :    2 : muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127 : 2.771e-01
+                         :    3 : muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728      : 2.199e-01
+                         :    4 : muM_iso_7_Chi2_5_LoosePt05                      : 1.799e-01
+                         : ---------------------------------------------------------------------------------
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+                         : Reading weight file: [0;36mBDToutput/2020May20/out_muM/weights/bdt2020_BDT.weights.xml[0m
+Factory                  : [1mTest all methods[0m
+Factory                  : Test method: BDT for Classification performance
+                         : 
+BDT                      : [BDToutput/2020May20/out_muM] : Evaluation of BDT on testing sample (1311164 events)
+                         : Elapsed time for evaluation of 1311164 events: 78.8 sec       
+Factory                  : [1mEvaluate all methods[0m
+Factory                  : Evaluate classifier: BDT
+                         : 
+BDT                      : [BDToutput/2020May20/out_muM] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_BDT            :                                        Variable                                               Mean                                               RMS                                       [        Min                                               Max ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                      muM_iso_7_Chi2_5_LoosePt05:                                          0.59821                                          0.23698   [                                        0.0010556                                           1.0000 ]
+                         : muM_iso_7_Chi2_5_noAbs_LooSiHi1Pt05_T0000000127:                                          0.55380                                          0.23035   [                                       0.00038948                                           1.0000 ]
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0134217728:                                          0.45252                                          0.22405   [                                       0.00015594                                           1.0000 ]
+                         :      muM_iso_10_noChi2_LooSiHi1Pt05_T0008388608:                                          0.45008                                          0.22617   [                                       8.8839e-05                                           1.0000 ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : BDToutput/2020May20/out_muM BDT            : 0.843
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : BDToutput/2020May20/out_muM BDT            : 0.075 (0.076)       0.494 (0.494)      0.843 (0.842)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:BDToutput/2020...: Created tree 'TestTree' with 1311164 events
+                         : 
+Dataset:BDToutput/2020...: Created tree 'TrainTree' with 1311164 events
+                         : 
+Factory                  : [1mThank you for using TMVA![0m
+                         : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m
+(int) 0

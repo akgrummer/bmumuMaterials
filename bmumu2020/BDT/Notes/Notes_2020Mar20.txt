@@ -1,0 +1,40 @@
+Notes_2020Mar20.txt
+
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd www/bmumu/myMVA
+
+run from MultiCoreSubmit_pc01.sh
+- it calls SubmitmyMVA_lxplus.sh 
+
+
+2020Apr9
+to make TMVA plots
+
+mkdir out_*_2018_MC16a
+mkdir out_*_2018_MC16a/plots
+root -l -b -q -e 'TMVA::variables("out_BIso_2018_MC16a","bdt2016.root","InputVariables_Id", "")'
+root -l -b -q -e 'TMVA::variables("out_nCloseTracks_2018_MC16a","bdt2016.root","InputVariables_Id", "")'
+
+root -l -b -q -e 'TMVA::variables("out_DOCA_2018_MC16a","bdt2016.root","InputVariables_Id", "")'
+root -l -b -q -e 'TMVA::variables("out_muM_2018_MC16a","bdt2016.root","InputVariables_Id", "")'
+root -l -b -q -e 'TMVA::variables("out_muP_2018_MC16a","bdt2016.root","InputVariables_Id", "")'
+
+mkdir out_SomeVars_2018_MC16a
+mkdir out_SomeVars_2018_MC16a/plots
+root -l -b -q -e 'TMVA::variables("out_SomeVars_2018_MC16a","bdt2016.root","InputVariables_Id", "")'
+
+
+Input expression resolves to indeterminate value (NaN): B_MUCALC_mass (2 times)
+
+cd /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromBsmumu_ct_300426_skimmed_MC/
+cd /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/OneTestFile_2ndRoundVal/fromData2018_ct_bsmumu_skimmed/
+
+root -l bsmumu.root
+find number of events with closeTrkDCA == -999
+T_mv->Draw("Lxy", "closeTrkDCA == -999", "egoff")
+T_mv->Draw("Lxy", "closeTrkDCA_T0134217728_LooSiHi1Pt05_f2dc2 == -999", "egoff")
+T_mv->Draw("Lxy", "closeTrkDCA_T0008388608_LooSiHi1Pt05_f2dc2 == -999", "egoff")
+
+MC: 29, 4, 15
+Data: 0,0,0

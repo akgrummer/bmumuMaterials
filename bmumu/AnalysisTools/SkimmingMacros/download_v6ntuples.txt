@@ -1,0 +1,75 @@
+
+
+Full list of files:
+user.ibragimo.20649270.Bmumu._000001.root
+user.ibragimo.20649270.Bmumu._000002.root
+user.ibragimo.20649270.Bmumu._000003.root
+user.ibragimo.20649270.Bmumu._000004.root
+user.ibragimo.20649270.Bmumu._000005.root
+user.ibragimo.20649270.Bmumu._000006.root
+user.ibragimo.20649270.Bmumu._000007.root
+user.ibragimo.20649270.Bmumu._000008.root
+user.ibragimo.20649270.Bmumu._000009.root
+user.ibragimo.20649270.Bmumu._000010.root
+user.ibragimo.20649270.Bmumu._000021.root
+user.ibragimo.20649270.Bmumu._000022.root
+user.ibragimo.20649270.Bmumu._000023.root
+user.ibragimo.20649270.Bmumu._000024.root
+user.ibragimo.20649270.Bmumu._000025.root
+user.ibragimo.20649270.Bmumu._000026.root
+user.ibragimo.20649270.Bmumu._000027.root
+user.ibragimo.20649270.Bmumu._000028.root
+user.ibragimo.20649270.Bmumu._000029.root
+user.ibragimo.20649270.Bmumu._000030.root
+
+Files fully downloaded
+user.ibragimo.20649270.Bmumu._000001.root
+user.ibragimo.20649270.Bmumu._000002.root
+user.ibragimo.20649270.Bmumu._000003.root
+user.ibragimo.20649270.Bmumu._000004.root
+user.ibragimo.20649270.Bmumu._000005.root
+user.ibragimo.20649270.Bmumu._000006.root
+user.ibragimo.20649270.Bmumu._000007.root
+user.ibragimo.20649270.Bmumu._000008.root
+user.ibragimo.20649270.Bmumu._000010.root
+user.ibragimo.20649270.Bmumu._000022.root
+
+partial downloads
+user.ibragimo.20649270.Bmumu._000009.root.part
+user.ibragimo.20649270.Bmumu._000023.root.part
+user.ibragimo.20649270.Bmumu._000021.root.part
+
+Need to be downloaded:s
+rucio download user.ibragimo.20649270.Bmumu._000009.root
+rucio download user.ibragimo.20649270.Bmumu._000021.root
+rucio download user.ibragimo.20649270.Bmumu._000023.root
+rucio download user.ibragimo.20649270.Bmumu._000024.root
+rucio download user.ibragimo.20649270.Bmumu._000025.root
+rucio download user.ibragimo.20649270.Bmumu._000026.root
+rucio download user.ibragimo.20649270.Bmumu._000027.root
+rucio download user.ibragimo.20649270.Bmumu._000028.root
+rucio download user.ibragimo.20649270.Bmumu._000029.root
+rucio download user.ibragimo.20649270.Bmumu._000030.root
+
+
+user.ibragimo.20649270.Bmumu._000001.root
+user.ibragimo.20649270.Bmumu._000002.root
+user.ibragimo.20649270.Bmumu._000003.root
+user.ibragimo.20649270.Bmumu._000004.root
+user.ibragimo.20649270.Bmumu._000005.root
+user.ibragimo.20649270.Bmumu._000006.root
+user.ibragimo.20649270.Bmumu._000007.root
+user.ibragimo.20649270.Bmumu._000008.root
+user.ibragimo.20649270.Bmumu._000009.root
+user.ibragimo.20649270.Bmumu._000010.root
+user.ibragimo.20649270.Bmumu._000021.root
+user.ibragimo.20649270.Bmumu._000022.root
+user.ibragimo.20649270.Bmumu._000023.root
+user.ibragimo.20649270.Bmumu._000024.root
+user.ibragimo.20649270.Bmumu._000025.root
+user.ibragimo.20649270.Bmumu._000026.root
+user.ibragimo.20649270.Bmumu._000027.root
+user.ibragimo.20649270.Bmumu._000028.root
+user.ibragimo.20649270.Bmumu._000029.root
+user.ibragimo.20649270.Bmumu._000030.root
+

@@ -1,0 +1,38 @@
+Open windows
+Desktop 1:
+- iTerm 2 with multiple connections to lxplus
+- shRunCommands workspace
+Desktop 2:
+- iTerm 2 with 2 or 3 tabs
+- Notes and syncs workspace 
+- follow the notes at the top of the files to 
+    run syncInterest.sh (sync codes from cernbox/.../v8Isoscripts and v8IsoscriptsIntersct to lxplus:~/Workspace/IsoVarRocs/) 
+    nd syncBack.sh from (sync the err.txt and out.txt files from Workspace/.../ to MacDesktop/Bmumu/Bmumu2019/IsoFigures/datedFolder/...)
+    /Users/agrummer/cernbox/www/bmumu/IsoVarROCs
+    and syncPlots.sh from lxplus:~/www/bmumu/IsoVarRocs/Figures to
+    /Users/agrummer/Desktop/Bmumu/Bmumu2019/IsoFigures/
+
+Desktop 3:
+- HeaderFiles workspace
+- NewVarComps workspace
+- OldVarComps Repeated workspace
+- newVarComps muons  workspace
+finder window to IsoVarRocs/v8Isoscripts
+- note that v8Isoscripts is used for Derivation (D) comparisons and v8IsoscriptsIntersect is used for nTuple (N) comparisons
+Desktop 4:
+- this is where the track construction are looked at
+- PileupStats.txt from /Users/agrummer/cernbox/www/bmumu/AnalysisTools/Examples/alltrksExample/src
+- Examples workspace
+Skimming commands are in:
+- /Users/agrummer/cernbox/www/bmumu/AnalysisTools/SkimmingMacros
+- in the skimmingMacros workspace
+new run 1 dataset was made with if (doca>3) doca=3 condition from this folder in the
+- Run1doca3Macro workspace
+
+Desktop 5:
+- PythonPower workspace 
+- iTerm 2 open to /Users/agrummer/Desktop/Weekly2020/PythonPower
+- the plots converted to images and loaded into powerpoint.
+    - the DPI pixel count is around 400 (which is pretty large and make large power point slides. could reoptimize this)
+
+

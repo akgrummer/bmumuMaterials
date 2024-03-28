@@ -1,0 +1,196 @@
+Notes:
+
+Apr11 - 14 variables
+April 19 - all 15 variables
+
+"mchi2pv","B_minChi2MuonsIPtoAnyPV",80,-10,10,true,"#chi^{2}_{#mu,xPV}","",'F'
+added back in
+**used to have Log in the axis name??
+
+compare to this one, which was already included in the training:
+"ch2pvsv","chi2_PVSV_log2D",60,-6,12,false,"Log(#chi^{2}_{xy})","",'F'
+
+Apr27
+include muon iso variables
+
+"muPiso","muP_iso_7_chi2_5_LoosePt05",-1,0.0,1.1,false,"#mu+ Isolation (I^{#mu+}_{0.7})","",'F'},
+"muMiso","muM_iso_7_chi2_5_LoosePt05",-1,0.0,1.1,false,"#mu- Isolation (I^{#mu-}_{0.7})","",'F'}
+
+
+Apr30 
+lxy, a_2D, iso
+
+May2 
+blxy,pa,muPiso,muMiso
+
+May 3:
+15 vars, 0.1, 0.2 learning rates
+bpt,blxy,ctdoca,ctntrk,d0mins,d0maxs,plng,ch2pvsv,pa,dr,iso,dphi,mdca,bip,mchi2pv
+
+May 10_first:
+15 vars, 0.5 learning rate
+bpt,blxy,ctdoca,ctntrk,d0mins,d0maxs,plng,ch2pvsv,pa,dr,iso,dphi,mdca,bip,mchi2pv
+
+May 10:
+7 vars
+pa,iso,dr,bpt,mchi2pv,ch2pvsv,bip
+
+May19 
+15 vars, even distributed node size hyper parameters
+- about 1/2 jobs did not go through - error: that the file could no open:
+/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskim.MC16Bs_DOCAlt500_TrainTestSet.root
+/afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LastSkimGBR4_Mar26/LASTskim.bbmumuX2Bsmumu_combinatorial_GBRweight_DOCAlt500.root
+
+
+
+
+First Grid Search - May 3 and May 10 had over these ranges in MultiCoreSubmit_pc01.sh:
+
+mdval_core1=( 3 5 7 9 11 13 15 )
+ndsize_core1=( 0.1 0.2 )
+bbeta_core1=( 0.1 0.2 0.5 )
+ntrees_core1=( 500 )
+
+mdval_core2=( 2 4 6 8 10 12 14 )
+ndsize_core2=( 0.1 0.2 )
+bbeta_core2=( 0.1 0.2 0.5 )
+ntrees_core2=( 500 )
+
+mdval_core3=( 3 5 7 9 11 13 15 )
+ndsize_core3=( 0.5 1.0 )
+bbeta_core3=( 0.1 0.2 0.5 )
+ntrees_core3=( 500 )
+
+mdval_core4=( 2 4 6 8 10 12 14 )
+ndsize_core4=( 0.5 1.0 )
+bbeta_core4=( 0.1 0.2 0.5 )
+ntrees_core4=( 500 )
+
+mdval_core5=( 3 5 7 9 11 13 15 )
+ndsize_core5=( 2.0 4.0 )
+bbeta_core5=( 0.1 0.2 0.5 )
+ntrees_core5=( 500 )
+
+mdval_core6=( 2 4 6 8 10 12 14 )
+ndsize_core6=( 2.0 4.0 )
+bbeta_core6=( 0.1 0.2 0.5 )
+ntrees_core6=( 500 )
+
+mdval_core7=( 3 5 7 9 11 13 15 )
+ndsize_core7=( 6.0 10.0 )
+bbeta_core7=( 0.1 0.2 0.5 )
+ntrees_core7=( 500 )
+
+mdval_core8=( 2 4 6 8 10 12 14 )
+ndsize_core8=( 6.0 10.0 )
+bbeta_core8=( 0.1 0.2 0.5 )
+ntrees_core8=( 500 )
+
+
+
+Configuration for May 19 run
+mdval_core1=( 3 5 7 9 11 )
+ndsize_core1=( 0.3 0.4 0.6 0.7 )
+bbeta_core1=( 0.1 0.2 0.5 )
+ntrees_core1=( 500 )
+
+mdval_core2=( 2 4 6 8 10 )
+ndsize_core2=( 0.3 0.4 0.6 0.7 )
+bbeta_core2=( 0.1 0.2 0.5 )
+ntrees_core2=( 500 )
+
+mdval_core3=( 3 5 7 9 11 )
+ndsize_core3=( 0.8 0.9 1.1 1.2 )
+bbeta_core3=( 0.1 0.2 0.5 )
+ntrees_core3=( 500 )
+
+mdval_core4=( 2 4 6 8 10 )
+ndsize_core4=( 0.8 0.9 1.1 1.2 )
+bbeta_core4=( 0.1 0.2 0.5 )
+ntrees_core4=( 500 )
+
+mdval_core5=( 3 5 7 9 11 )
+ndsize_core5=( 1.3 1.4 1.5 1.6 )
+bbeta_core5=( 0.1 0.2 0.5 )
+ntrees_core5=( 500 )
+
+mdval_core6=( 2 4 6 8 10 )
+ndsize_core6=( 1.3 1.4 1.5 1.6 )
+bbeta_core6=( 0.1 0.2 0.5 )
+ntrees_core6=( 500 )
+
+mdval_core7=( 3 5 7 9 11 )
+ndsize_core7=( 1.7 1.8 1.9 2.1 )
+bbeta_core7=( 0.1 0.2 0.5 )
+ntrees_core7=( 500 )
+
+mdval_core8=( 2 4 6 8 10 )
+ndsize_core8=( 1.7 1.8 1.9 2.1 )
+bbeta_core8=( 0.1 0.2 0.5 )
+ntrees_core8=( 500 )
+
+mdval_core9=( 3 5 7 9 11 )
+ndsize_core9=( 2.3 2.4 2.5 2.6 )
+bbeta_core9=( 0.1 0.2 0.5 )
+ntrees_core9=( 500 )
+
+mdval_core10=( 2 4 6 8 10 )
+ndsize_core10=( 2.3 2.4 2.5 2.6 )
+bbeta_core10=( 0.1 0.2 0.5 )
+ntrees_core10=( 500 )
+
+mdval_core11=( 3 5 7 9 11 )
+ndsize_core11=( 2.7 2.8 2.9 3.0 )
+bbeta_core11=( 0.1 0.2 0.5 )
+ntrees_core11=( 500 )
+
+mdval_core12=( 2 4 6 8 10 )
+ndsize_core12=( 2.7 2.8 2.9 3.0 )
+bbeta_core12=( 0.1 0.2 0.5 )
+ntrees_core12=( 500 )
+
+
+
+May 22:
+
+mdval_core1=( 3 5 7 9 11 )
+ndsize_core1=( 0.3 0.4 0.6 0.7 2.2 2.3 2.4)
+bbeta_core1=( 0.5 )
+ntrees_core1=( 500 )
+
+mdval_core2=( 2 4 6 8 10 )
+ndsize_core2=( 0.3 0.4 0.6 0.7 2.2 2.3 2.4)
+bbeta_core2=( 0.5 )
+ntrees_core2=( 500 )
+
+mdval_core3=( 3 5 7 9 11 )
+ndsize_core3=( 0.8 0.9 1.1 1.2 2.5 2.6 )
+bbeta_core3=( 0.5 )
+ntrees_core3=( 500 )
+
+mdval_core4=( 2 4 6 8 10 )
+ndsize_core4=( 0.8 0.9 1.1 1.2 2.5 2.6 )
+bbeta_core4=( 0.5 )
+ntrees_core4=( 500 )
+
+mdval_core5=( 3 5 7 9 11 )
+ndsize_core5=( 1.3 1.4 1.5 1.6 2.7 2.8 )
+bbeta_core5=( 0.5 )
+ntrees_core5=( 500 )
+
+mdval_core6=( 2 4 6 8 10 )
+ndsize_core6=( 1.3 1.4 1.5 1.6 2.7 2.8 )
+bbeta_core6=( 0.5 )
+ntrees_core6=( 500 )
+
+mdval_core7=( 3 5 7 9 11 )
+ndsize_core7=( 1.7 1.8 1.9 2.1 2.9 3.0 )
+bbeta_core7=( 0.5 )
+ntrees_core7=( 500 )
+
+mdval_core8=( 2 4 6 8 10 )
+ndsize_core8=( 1.7 1.8 1.9 2.1 2.9 3.0 )
+bbeta_core8=( 0.5 )
+ntrees_core8=( 500 )
+
+

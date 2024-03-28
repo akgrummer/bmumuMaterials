@@ -1,0 +1,7 @@
+bmumu2020/AnalysisTools/SkimmingMacros/BranchNamesMacro_withType.cpp
+bmumu2020/NotesAndSyncs/ExampleTypeExtraction.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/BranchNamesMacro_withType_Tmv.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/BranchNamesReadMe.txt
+bmumu2020/AnalysisTools/SkimmingMacros/ScanTree.cpp
+bmumu2020/AnalysisTools/SkimmingMacros/RoundFloats.cpp
+/Users/agrummer/Desktop/Notes_2020Nov6.md - maybe this was on UNM PC in building 40 (pcatlunm01?)

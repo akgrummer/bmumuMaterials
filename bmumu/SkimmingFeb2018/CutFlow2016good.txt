@@ -1,0 +1,187 @@
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16A.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 138416
+Blind Cut not passed: 18536
+B_fitChi2NDFCut not passed: 11073
+TriggerCut not passed: 8531
+BCuts not passed: 25
+MuonCombinedCut not passed: 4
+MuonTightCut not passed: 18284
+MuonCuts not passed: 0
+EventsNotCut: 53822
+Entries in final tree: 53822
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16B.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 351298
+Blind Cut not passed: 50947
+B_fitChi2NDFCut not passed: 30197
+TriggerCut not passed: 44463
+BCuts not passed: 70
+MuonCombinedCut not passed: 15
+MuonTightCut not passed: 44784
+MuonCuts not passed: 0
+EventsNotCut: 131436
+Entries in final tree: 131436
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16C.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 558824
+Blind Cut not passed: 79943
+B_fitChi2NDFCut not passed: 46873
+TriggerCut not passed: 55630
+BCuts not passed: 103
+MuonCombinedCut not passed: 32
+MuonTightCut not passed: 73417
+MuonCuts not passed: 0
+EventsNotCut: 216935
+Entries in final tree: 216935
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16D.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 150650
+Blind Cut not passed: 31029
+B_fitChi2NDFCut not passed: 16025
+TriggerCut not passed: 18407
+BCuts not passed: 30
+MuonCombinedCut not passed: 14
+MuonTightCut not passed: 20636
+MuonCuts not passed: 0
+EventsNotCut: 66741
+Entries in final tree: 66741
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16D.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 862395
+Blind Cut not passed: 128937
+B_fitChi2NDFCut not passed: 78199
+TriggerCut not passed: 80154
+BCuts not passed: 157
+MuonCombinedCut not passed: 42
+MuonTightCut not passed: 120497
+MuonCuts not passed: 0
+EventsNotCut: 352531
+Entries in final tree: 352531
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16E.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 80182
+Blind Cut not passed: 15957
+B_fitChi2NDFCut not passed: 8435
+TriggerCut not passed: 8375
+BCuts not passed: 22
+MuonCombinedCut not passed: 6
+MuonTightCut not passed: 11090
+MuonCuts not passed: 0
+EventsNotCut: 35482
+Entries in final tree: 35482
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16E.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 312745
+Blind Cut not passed: 45026
+B_fitChi2NDFCut not passed: 27671
+TriggerCut not passed: 21279
+BCuts not passed: 52
+MuonCombinedCut not passed: 22
+MuonTightCut not passed: 43944
+MuonCuts not passed: 0
+EventsNotCut: 130389
+Entries in final tree: 130389
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16F.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 146076
+Blind Cut not passed: 29133
+B_fitChi2NDFCut not passed: 15669
+TriggerCut not passed: 29818
+BCuts not passed: 30
+MuonCombinedCut not passed: 11
+MuonTightCut not passed: 16447
+MuonCuts not passed: 0
+EventsNotCut: 54278
+Entries in final tree: 54278
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16F.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 577453
+Blind Cut not passed: 87380
+B_fitChi2NDFCut not passed: 53055
+TriggerCut not passed: 74340
+BCuts not passed: 104
+MuonCombinedCut not passed: 38
+MuonTightCut not passed: 76499
+MuonCuts not passed: 0
+EventsNotCut: 224676
+Entries in final tree: 224676
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16G.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 160285
+Blind Cut not passed: 31744
+B_fitChi2NDFCut not passed: 17077
+TriggerCut not passed: 35848
+BCuts not passed: 39
+MuonCombinedCut not passed: 14
+MuonTightCut not passed: 17529
+MuonCuts not passed: 0
+EventsNotCut: 57171
+Entries in final tree: 57171
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16G.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 622933
+Blind Cut not passed: 93602
+B_fitChi2NDFCut not passed: 56835
+TriggerCut not passed: 95154
+BCuts not passed: 105
+MuonCombinedCut not passed: 39
+MuonTightCut not passed: 77835
+MuonCuts not passed: 0
+EventsNotCut: 228748
+Entries in final tree: 228748
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16I.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 253062
+Blind Cut not passed: 43900
+B_fitChi2NDFCut not passed: 23590
+TriggerCut not passed: 50663
+BCuts not passed: 42
+MuonCombinedCut not passed: 21
+MuonTightCut not passed: 23369
+MuonCuts not passed: 0
+EventsNotCut: 77712
+Entries in final tree: 77712
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16I.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 1193839
+Blind Cut not passed: 167927
+B_fitChi2NDFCut not passed: 102821
+TriggerCut not passed: 250926
+BCuts not passed: 126
+MuonCombinedCut not passed: 60
+MuonTightCut not passed: 119625
+MuonCuts not passed: 0
+EventsNotCut: 353614
+Entries in final tree: 353614
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16K.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 99923
+Blind Cut not passed: 19617
+B_fitChi2NDFCut not passed: 10291
+TriggerCut not passed: 18772
+BCuts not passed: 25
+MuonCombinedCut not passed: 11
+MuonTightCut not passed: 11509
+MuonCuts not passed: 0
+EventsNotCut: 37789
+Entries in final tree: 37789
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16K.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 536411
+Blind Cut not passed: 73031
+B_fitChi2NDFCut not passed: 44581
+TriggerCut not passed: 111114
+BCuts not passed: 70
+MuonCombinedCut not passed: 39
+MuonTightCut not passed: 52591
+MuonCuts not passed: 0
+EventsNotCut: 155252
+Entries in final tree: 155252
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16L.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 237624
+Blind Cut not passed: 46606
+B_fitChi2NDFCut not passed: 25009
+TriggerCut not passed: 62669
+BCuts not passed: 62
+MuonCombinedCut not passed: 11
+MuonTightCut not passed: 22508
+MuonCuts not passed: 0
+EventsNotCut: 77027
+Entries in final tree: 77027
+Directory Name: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16L.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root/output*.root
+Vars Cut not passed: 1309591
+Blind Cut not passed: 187229
+B_fitChi2NDFCut not passed: 114058
+TriggerCut not passed: 322462
+BCuts not passed: 173
+MuonCombinedCut not passed: 45
+MuonTightCut not passed: 121753
+MuonCuts not passed: 0
+EventsNotCut: 360684
+Entries in final tree: 360684

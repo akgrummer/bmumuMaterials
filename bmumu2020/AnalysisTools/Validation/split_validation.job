@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#SBATCH --job-name=Validation
+#SBATCH --output=out/output-%j.out
+#SBATCH --error=err/output-%j.err
+#SBATCH --account=staff
+#SBATCH --partition=medium
+#SBATCH --time=60:00
+#SBATCH --constraint="computeserver|clusternode"
+
+MINEVNT=$1
+MAXEVNT=$2
+IPTCODE=$3
+TYPE=$4
+PROCESS=$5
+
+OPTFILE=output_${SLURM_JOB_ID}.root
+
+HOST=$(hostname)
+SUBMDIR=$(pwd)
+SCRATCHDIR="/nfs/${HOST}/scratch/${USER}"
+JOBDIR="${SCRATCHDIR}/$JOBNAME/${SLURM_JOB_ID}"
+
+mkdir -p out err
+#**********************************************setup enviroment variables
+echo "INFO::ARGUMENTS USED:"
+echo " $*"
+
+echo "INFO::RUNNING ON: $HOST"
+echo "  SUBMDIR    = $SUBMDIR"
+echo "  SCRATCHDIR = $SCRATCHDIR"
+echo "  JOBDIR     = $JOBDIR"
+echo ""
+echo "  FIRST ENTRY= $MINEVNT"
+echo "  LAST ENTRY = $MAXEVNT"
+echo "  EXECUTABLE = $IPTCODE"
+#**********************************************setup directories and ROOT
+if [ -d $SCRATCHDIR ]; then
+  mkdir -p $JOBDIR
+  cd $JOBDIR
+else
+  echo "ERROR::No SCRATCHDIR=$SCRATCHDIR present"
+  kill -INT $$
+fi
+
+echo "INFO::CURRENT JOB DIRECTORY:"
+pwd
+
+source /products/atlas/rc/localSetup/setupRootCoreSi
+lsetup python
+lsetup root
+#**********************************************compile and run
+cp -r $SUBMDIR/* .
+echo "INFO::BEFORE RUNNING:"
+ls -ltr
+
+python "$IPTCODE" "$MINEVNT" "$MAXEVNT" "$OPTFILE"
+#**********************************************retrieve output and clean
+echo "INFO::AFTER RUNNING:"
+OUTPUT_DIR="Output_"$TYPE"_"$PROCESS
+
+ls -ltr
+mkdir -p $SUBMDIR/$OUTPUT_DIR
+cp $OPTFILE $SUBMDIR/$OUTPUT_DIR
+
+cd ${SCRATCHDIR}
+rm -rf $JOBDIR
+#**********************************************

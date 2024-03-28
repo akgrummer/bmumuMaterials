@@ -1,0 +1,2 @@
+rsync -avz /Users/agrummer/cernbox/www/bmumu/IsoVarROCs/v8IsoScripts $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/WorkSpace/IsoVarROCs/
+# rsync -avz /Users/agrummer/cernbox/www/bmumu/IsoVarROCs $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/WorkSpace/IsoVarROCs

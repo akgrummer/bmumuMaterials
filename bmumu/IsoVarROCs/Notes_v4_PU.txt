@@ -1,0 +1,23 @@
+Notes_v4_PU.txt
+
+version 4 makes 4 plots (one for each pileup bin)
+4 plots for variable comparisons
+4 plots for ROC curves
+each plot has 5 variables
+
+new version (v5):
+for B Iso:
+5 plots (for each Var), each with 4 PU bins
+for DOCA:
+4 plots (for each Var, no <2 options), each with 4 PU bins
+for NcloseTracks:
+6 plots, each with 4 PU bins
+
+ROCs for the same
+
+Efficiency versus variable plots
+
+BDT efficiency plots - all, better axis limits
+BDT efficiency plots - linear scale, axis limits
+
+Efficiency (I > 0.8) versus pileup

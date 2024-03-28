@@ -1,0 +1,51 @@
+Run Commands:
+
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd /afs/cern.ch/user/a/agrummer/www/bmumu/AnalysisTools/Examples/alltrksExample
+
+
+Output from first run (on files:
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal1/final_ntup/data17/Bmumu/v5/LASTskim.data17_run339849.Bmumu.Allv5.root
+and
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuVal2020/final_ntup/data17_00339849/Bmumu/v1/*.root
+)
+
+ Entries in original tree of file 1: 30015
+ Entries in original tree of file 2: 30031
+# of unique events in file 1: 30014 # of unique events in file 2: 1451 intersection of both: 1426
+Union of both: 30039
+Only in first: 28588 only in second: 25 sum of both: 28613
+
+
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/
+
+
+Iskander's run:
+
+ Entries in original tree of file 1: 30015
+ Entries in original tree of file 2: 30031
+# of unique events in file 1: 30014 # of unique events in file 2: 30030 intersection of both: 29388
+Union of both: 30656
+Only in first: 626 only in second: 642 sum of both: 1268
+
+
+
+
+
+ Entries in original tree of file 1: 30015
+ Entries in original tree of file 2: 30031
+# of unique events in file 1: 30014 # of unique events in file 2: 30030 intersection of both: 29388
+Union of both: 30656
+Only in first: 626 only in second: 642 sum of both: 1268
+
+
+
+
+ Entries in original tree of file 1: 30015
+ Entries in original tree of file 2: 30031
+# of unique events in file 1: 30014 # of unique events in file 2: 30030 intersection of both: 29388
+number of en2 in the intersect set: 29389
+Union of both: 30656
+Only in first: 626 only in second: 642 sum of both: 1268

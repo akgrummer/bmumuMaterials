@@ -1,0 +1,120 @@
+MCstatsV2nTuples.txt
+
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/MC16a/*.root
+Entries in original tree of file 1: 166718
+Entries in original tree of file 2: 166718
+# of unique events in file 1: 166713
+# of unique events in file 2: 166713
+intersection of both: 166713
+Union of both: 166713
+Only in first: 0
+ only in second: 0
+ sum of both: 0
+
+ MC16a v19:
+ number of intersect events so far: 166718
+number of tracks so far: 528933
+
+MC16a v16common
+number of intersect events so far: 166718
+number of tracks so far: 528933
+
+
+MC16d:
+Entries in original tree of file 1: 201786
+Entries in original tree of file 2: 201787
+# of unique events in file 1: 201776
+# of unique events in file 2: 201777
+intersection of both: 201776
+Union of both: 201777
+Only in first: 0
+ only in second: 1
+ sum of both: 1
+
+MC16d v19:
+number of intersect events so far: 201786
+number of tracks so far: 4693450
+
+MC16d v16common
+number of intersect events so far: 201786
+number of tracks so far: 4693450
+
+
+MC16e:
+ Entries in original tree of file 1: 275413
+Entries in original tree of file 2: 275413
+# of unique events in file 1: 275401
+# of unique events in file 2: 275401
+intersection of both: 275401
+Union of both: 275401
+Only in first: 0
+ only in second: 0
+ sum of both: 0
+
+ MC16e v19:
+
+
+ MC16e v16common:
+ number of intersect events so far: 275413
+number of tracks so far: 404164
+
+
+v18: (don't have version 2 for data)
+MC16a:number of tracks so far: 528933
+MC16d:number of tracks so far: 4693450
+MC16e:number of tracks so far: 404164
+
+
+
+-bash-4.2$ bin/IsolationStudy_v16common 2016
+Applying ATLAS style settings...
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/2016main/*.root
+Entries in original tree of file 1: 40955
+Entries in original tree of file 2: 40987
+# of unique events in file 1: 40954
+# of unique events in file 2: 40986
+intersection of both: 40357
+Union of both: 41583
+Only in first: 597
+ only in second: 629
+ sum of both: 1226
+
+number of intersect events so far: 40358
+number of tracks so far: 10247111
+
+
+ -bash-4.2$ bin/IsolationStudy_v16common 2017
+Applying ATLAS style settings...
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/2017/*.root
+Entries in original tree of file 1: 30031
+Entries in original tree of file 2: 30015
+# of unique events in file 1: 30030
+# of unique events in file 2: 30014
+intersection of both: 29388
+Union of both: 30656
+Only in first: 642
+ only in second: 626
+ sum of both: 1268
+
+number of intersect events so far: 29389
+number of tracks so far: 17052236
+
+ -bash-4.2$ bin/IsolationStudy_v16common 2018
+Applying ATLAS style settings...
+/eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v1/2018/*.root
+Entries in original tree of file 1: 25629
+Entries in original tree of file 2: 25666
+# of unique events in file 1: 25628
+# of unique events in file 2: 25665
+intersection of both: 25269
+Union of both: 26024
+Only in first: 359
+ only in second: 396
+ sum of both: 755
+
+number of intersect events so far: 25270
+number of tracks so far: 8685085
+
+
+
+

@@ -1,0 +1,281 @@
+The following is a collection of commands (or setting up commands) for performing the last skimming code -- see RunLastSkimming.txt for more details...
+
+Feb. 11, 2018:
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/
+These are all directories:
+user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root
+user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root
+user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root
+user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root
+user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root
+user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root
+
+user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root
+user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root
+user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root
+user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root
+user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root
+user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root
+user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root
+user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root
+user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root
+user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root
+
+MC eos directory:
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/test_bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu
+
+
+
+merge root files together:
+hadd test_merge.root test1.root test2.root
+
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data_v1/user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root
+
+
+
+hadd LASTskim.Data_2015Main_11Feb.root LASTskim.user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root.root
+
+hadd LASTskim.Data_2016Main_11Feb.root LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root.root
+
+hadd LASTskim.Data_2016Main_11Feb_toomany.root LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root.root
+
+hadd LASTskim.Data_ALLMain_11Feb.root LASTskim.user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root.root
+
+
+
+hadd LASTskim.Data_2016Main_HLT_Lxy0_13Feb.root LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root.root
+
+
+LASTskimFeb13/ on Workspace/BsmumuData/ has:
+2016 periods A,B,C,D made with HLT_mu6_mu4_Lxy0 trigger, 
+combined number of events: 749,174
+
+41M Feb 13 14:38 LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root
+98M Feb 13 14:39 LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root
+161M Feb 13 14:40 LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root
+261M
+
+LASTskimFeb11/ on Workspace/BsmumuData/ has:
+2015 and 2016 Main periods with HLT_mu6_mu4 trigger
+2016 combined number of events: 667,729
+
+43M Feb 11 21:10 LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root
+89M Feb 11 21:11 LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root
+149M Feb 11 21:13 LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root
+220M Feb 11 21:16 LASTskim.user.acampove.data16D
+
+LASTskimFeb13_HLT_mu6_mu4_2016/ on Workspace/BsmumuData/ has:
+2016 Main periods with HLT_mu6_mu4 trigger
+2016 combined number of events: 667,729
+
+
+
+MC eos directory:
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/test_bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu
+
+
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu
+
+
+hadd LASTskim.Data_2015HLTand2016HLTLxy_Main_13Feb.root /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskimFeb11/LASTskim.Data_2015Main_11Feb.root LASTskim.Data_2016Main_HLT_Lxy0_13Feb.root
+
+Feb 14:
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu
+
+
+error on HLT_mu6mu4 mc skim:
+Processing event 4900000
+SysError in <TFile::ReadBuffer>: error reading from file /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu/output_1191564.root (No such file or directory)
+Error in <TFile::Init>: /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu/output_1191564.root failed to read the file type data.
+
+17491794
+
+Feb 15, 2018:
+
+hadd LASTskim.Data_2015HLTand2016HLTLxy_Main_13Feb.root /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskimFeb11/LASTskim.Data_2015Main_11Feb.root LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root.root
+
+
+
+hadd LASTskim.Data_2015HLTand2016HLTLxy_Main_B_VTX_mass.root LASTskim.user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root.root
+
+
+In /afs/cern.ch/user/a/agrummer/WorkSpace/SkimNotBlinded2015trigger at 9:22 pm 
+for MCMC comparison: and then same command in /afs/cern.ch/user/a/agrummer/WorkSpace/SkimNotBlindedB_VTX_mass:
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC_v1/bbmumuX/mc16_13TeV.300307.Pythia8B_A14_CTEQ6L1_bb_mu3p5mu3p5_Py8RepDec_4to6p5GeV.deriv.NTUP_SKIMMED_BPHY8.e6179_e5984_a875_r9364_r9315_p3371_Bmumu
+
+
+---------------------------------------------
+May 9
+Running in folder /afs/cern.ch/user/a/agrummer/WorkSpace/SkimBlindedMediumMuonsApr27
+
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1
+
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root
+
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root
+./cutBatchBsmumu /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v1/user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root
+
+
+and then combine them with:
+
+hadd LASTskim.Data_2015HLTand2016HLTLxy_RightSideband.root LASTskim.user.acampove.data15D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15H_undefined_BPHY8_NTUP_SKIMMED.periodH.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data15J_undefined_BPHY8_NTUP_SKIMMED.periodJ.grp15_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16A_undefined_BPHY8_NTUP_SKIMMED.periodA.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16B_undefined_BPHY8_NTUP_SKIMMED.periodB.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16C_undefined_BPHY8_NTUP_SKIMMED.periodC.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16D_undefined_BPHY8_NTUP_SKIMMED.periodD.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16E_undefined_BPHY8_NTUP_SKIMMED.periodE.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16F_undefined_BPHY8_NTUP_SKIMMED.periodF.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16G_undefined_BPHY8_NTUP_SKIMMED.periodG.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16I_undefined_BPHY8_NTUP_SKIMMED.periodI.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16K_undefined_BPHY8_NTUP_SKIMMED.periodK.grp16_v01_p3372_Bmumu.root.root LASTskim.user.acampove.data16L_undefined_BPHY8_NTUP_SKIMMED.periodL.grp16_v01_p3372_Bmumu.root.root
+
+
+
+
+-------------------------------
+July 6
+/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2
+
+user.acampove.data15D.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root
+user.acampove.data15E.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root
+user.acampove.data15F.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root
+user.acampove.data15G.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root
+user.acampove.data15H.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root
+user.acampove.data15J.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root
+user.acampove.data16A.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16B.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16C.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16D.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16D.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16E.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16E.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16F.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16F.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16G.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16G.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16I.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16I.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16K.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16K.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16L.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+user.acampove.data16L.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root
+
+
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data15D.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data15E.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data15F.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data15G.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data15H.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data15J.physics_Main.BPHY8_FNTUP.grp15_v01_p3372_Bmumu.root\")"
+
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16A.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16B.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16C.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16D.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16E.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16F.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16G.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16I.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16K.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16L.physics_Main.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16D.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16E.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16F.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16G.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16I.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16K.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v2/user.acampove.data16L.physics_BphysDelayed.BPHY8_FNTUP.grp16_v01_p3372_Bmumu.root\")"
+
+
+
+-------------------------------
+2018 July 17
+
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/bbmumuX/v2/user.acampove.300307.BPHY8_FNTUP.e6179_e5984_a875_r9364_r9315_p3371_Bmumu.root\")"
+
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/Bsmumu/v2.1/user.acampove.300426.BPHY8_FNTUP.e4889_e5984_a875_r9364_r9315_p3371_v2.1_Bmumu.root\")"
+
+root -l -q cutFlowValues.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/Bmumu/v2.1/user.acampove.300430.BPHY8_FNTUP.e4889_e5984_a875_r9364_r9315_p3371_v2.1_Bmumu.root\")"
+
+
+-------------------------------
+2018 Aug 16
+
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/Bsmumu/v3/user.acampove.300426.BPHY8_FNTUP.e4889_e5984_a875_r9364_r9315_p3582_Bmumu.root\")"
+root -l -q cutFlowValues_v2Weights.cpp"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/Bsmumu/v3/user.acampove.300426.BPHY8_FNTUP.e4889_e5984_a875_r9364_r9315_p3582_Bmumu.root\")"
+
+
+
+
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodD.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodE.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodF.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodG.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_002_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodH.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_002_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodJ.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodA.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodB.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodC.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodD.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodE.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodF.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodG.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodI.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodK.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v2.cxx"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodL.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+
+
+-------------------------------
+2018 Aug 21
+
+cutFlowValues_v3_Events
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodD.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodE.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodF.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodG.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_002_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodH.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_002_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data15_13TeV.periodJ.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_retry_001_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodA.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodB.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodC.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodD.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodE.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodF.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodG.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodI.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodK.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_data/v3/user.acampove.data16_13TeV.periodL.physics_Main.BPHY8_FNTUP.grp16_v01_p3583_Bmumu.root\")"
+
+root -l -q cutFlowValues_v3_Events.C"(\"/eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun2/BsMuMuRel21Prod1/ntup/skimmed_MC/Bsmumu/v3/user.acampove.300426.BPHY8_FNTUP.e4889_e5984_a875_r9364_r9315_p3582_Bmumu.root\")"
+

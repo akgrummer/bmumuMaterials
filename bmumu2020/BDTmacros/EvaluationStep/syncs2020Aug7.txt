@@ -1,0 +1,18 @@
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Run1/ROC_accept_error.pdf /Users/agrummer/Documents/bmumu2020plots/ROCcurves/Run1.pdf
+
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Custom/ROC_accept_error.pdf /Users/agrummer/Documents/bmumu2020plots/ROCcurves/Custom.pdf
+
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July16/out_Run1privxmu_round/ROC_accept_error.pdf /Users/agrummer/Documents/bmumu2020plots/ROCcurves/Run1privxmu_round.pdf
+
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July16/out_Run1nPV_npvweights/ROC_accept_error.pdf /Users/agrummer/Documents/bmumu2020plots/ROCcurves/Run1nPV_npvweights.pdf
+
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July16/ROC_Run1PUtrained_2020Aug6.pdf /Users/agrummer/Documents/bmumu2020plots/ROCcurves/ROC_Run1PUtrained_2020Aug6.pdf
+
+rsync -avz $USER@lxplus.cern.ch:/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Aug6/ROC_CustomPUtrained_2020Aug6.pdf /Users/agrummer/Documents/bmumu2020plots/ROCcurves/
+
+/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Run1/ROC_accept_error.pdf
+/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020Jun16/out_Custom/ROC_accept_error.pdf
+
+/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July16/out_Run1privxmu_round/ROC_accept_error.pdf
+/afs/cern.ch/user/a/agrummer/www/bmumu2020/BDT/BDToutput/2020July16/out_Run1nPV_npvweights/ROC_accept_error.pdf
+

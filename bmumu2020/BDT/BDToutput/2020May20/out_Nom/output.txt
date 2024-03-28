@@ -1,0 +1,275 @@
+
+Processing /home/agrummer/bmumu2020/BDT/runMVA_pc01.cxx("BDToutput/2020May20/out_Nom", ":MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500")...
+look at outdir: BDToutput/2020May20/out_Nom
+Opening the cfg file ./2020Apr7_IsoStudy.cfg
+INFO: including variable: BIsoACH
+INFO: including variable: docaACK
+INFO: including variable: nCloseTracksACK
+INFO: including variable: bpt
+INFO: including variable: blxy
+INFO: including variable: d0mins
+INFO: including variable: d0maxs
+INFO: including variable: plng
+INFO: including variable: ch2pvsv
+INFO: including variable: pa
+INFO: including variable: dr
+INFO: including variable: dphi
+INFO: including variable: mdca
+INFO: including variable: bip
+INFO: including variable: mchi2pv
+INFO adding input variable: B_iso_7_Chi2_5_LoosePt05 B Iso ACH (OOO)  F
+INFO adding input variable: closeTrkDOCA_3 DOCA ACK (OOO) mm F
+INFO adding input variable: closeTrkNtrksChi2 nCloseTracks ACK (OOO)  I
+INFO adding input variable: B_pT p_{T}^{B} MeV F
+INFO adding input variable: Lxy L_{xy} mm F
+INFO adding input variable: TMath::Abs(d0Min_sig) |d_{0}|^{min} sig.  F
+INFO adding input variable: TMath::Abs(d0Max_sig) |d_{0}|^{max} sig.  F
+INFO adding input variable: PlngMin2D P^{min}_{L} MeV F
+INFO adding input variable: chi2_PVSV_log2D Log(#chi^{2}_{xy})  F
+INFO adding input variable: TMath::Abs(a_2D) |#alpha_{2D}| rad F
+INFO adding input variable: DR #DeltaR  F
+INFO adding input variable: TMath::Abs(B_IDtrks_deltaPhi) |#Delta#phi_{#mu#mu}|  F
+INFO adding input variable: TMath::Abs(B_IDtrks_DCA) DOCA_{#mu#mu} mm F
+INFO adding input variable: Bvtx3DIP |IP_{B}^{3D}|  F
+INFO adding input variable: B_minChi2MuonsIPtoAnyPV Log(#chi^{2}_{#mu,xPV})  F
+
+SET FOLLOWING MVA TRAINING OPTIONS:  
+mymva.SIG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.mcBsmumu.merged.root
+mymva.BKG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/AnalysisNtuples2020/v4/LASTskim.user.agrummer.Data1516.merged.root
+mymva.SIGtrain_inputFileName: 
+mymva.BKGtrain_inputFileName: 
+mymva.SIGtest_inputFileName: 
+mymva.BKGtest_inputFileName: 
+mymva.SIG_treeName: T_mv
+mymva.BKG_treeName: T_mv
+mymva.valSIG_inputFileName: 
+mymva.valBKG_inputFileName: 
+mymva.valSIG_treeName: 
+mymva.valBKG_treeName: 
+mymva.OUT_DIR: BDToutput/2020May20/out_Nom
+mymva.OUT_FILE: bdt2020.root
+mymva.factoryName: bdt2020
+mymva.factory_prepareTrainingOpt: nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=EqualNumEvents:!V
+mymva.SIGweightexp: (PVWeights*Muon1_reco_eff_sf*Muon2_reco_eff_sf)
+mymva.BKGweightexp: 
+mymva.GradBDToptions: 
+mymva.AdaBDToptions: !H:!V:BoostType=AdaBoost:UseBaggedBoost:BaggedSampleFraction=0.6:SeparationType=GiniIndex:nCuts=100:DoBoostMonitor:MaxDepth=4:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500
+mymva.MLPoptions: 
+mymva.SVMoptions: 
+mymva.MyCutSignal: 
+mymva.MyCutBkgnd: 
+
+Retrieving tree branches ... 
+ * Initialise TMVA...
+DataSetInfo              : [BDToutput/2020May20/out_Nom] : Added class "Signal"
+                         : Add Tree T_mv of type Signal with 166752 events
+DataSetInfo              : [BDToutput/2020May20/out_Nom] : Added class "Background"
+                         : Add Tree T_mv of type Background with 2455576 events
+ * Prepare Training and Test Tree...
+ * Book AdaBDT Training Method...
+Factory                  : Booking method: [1mBDT[0m
+                         : 
+DataSetFactory           : [BDToutput/2020May20/out_Nom] : Number of events in input trees
+                         : 
+                         : 
+                         : Dataset[BDToutput/2020May20/out_Nom] : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+                         : Dataset[BDToutput/2020May20/out_Nom] :  such that the effective (weighted) number of events in each class is the same 
+                         : Dataset[BDToutput/2020May20/out_Nom] :  (and equals the number of events (entries) given for class=0 )
+                         : Dataset[BDToutput/2020May20/out_Nom] : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+                         : Dataset[BDToutput/2020May20/out_Nom] : ... (note that N_j is the sum of TRAINING events
+                         : Dataset[BDToutput/2020May20/out_Nom] :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 83376
+                         : Signal     -- testing events             : 83376
+                         : Signal     -- training and testing events: 166752
+                         : Background -- training events            : 1227788
+                         : Background -- testing events             : 1227788
+                         : Background -- training and testing events: 2455576
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                B_iso_7_Chi2_5_LoosePt05 closeTrkDOCA_3 closeTrkNtrksChi2    B_pT     Lxy TMath::Abs(d0Min_sig) TMath::Abs(d0Max_sig) PlngMin2D chi2_PVSV_log2D TMath::Abs(a_2D)      DR TMath::Abs(B_IDtrks_deltaPhi) TMath::Abs(B_IDtrks_DCA) Bvtx3DIP B_minChi2MuonsIPtoAnyPV
+                         :      B_iso_7_Chi2_5_LoosePt05:                   +1.000         +0.257            -0.169  +0.056  +0.022                -0.001                +0.004    +0.044          +0.008           -0.010  -0.014                        -0.041                   -0.023   +0.016                  +0.005
+                         :                closeTrkDOCA_3:                   +0.257         +1.000            -0.351  +0.145  +0.636                +0.525                +0.523    +0.112          +0.607           -0.254  -0.289                        -0.074                   -0.075   +0.056                  +0.566
+                         :             closeTrkNtrksChi2:                   -0.169         -0.351            +1.000  -0.097  -0.335                -0.316                -0.305    -0.074          -0.635           +0.542  +0.544                        +0.074                   +0.042   -0.050                  -0.612
+                         :                          B_pT:                   +0.056         +0.145            -0.097  +1.000  +0.372                +0.067                +0.148    +0.769          +0.124           -0.138  -0.148                        -0.525                   -0.123   -0.045                  +0.066
+                         :                           Lxy:                   +0.022         +0.636            -0.335  +0.372  +1.000                +0.745                +0.791    +0.276          +0.746           -0.287  -0.323                        -0.199                   -0.063   +0.040                  +0.682
+                         :         TMath::Abs(d0Min_sig):                   -0.001         +0.525            -0.316  +0.067  +0.745                +1.000                +0.941    +0.086          +0.770           -0.266  -0.293                        +0.199                   +0.066   +0.058                  +0.773
+                         :         TMath::Abs(d0Max_sig):                   +0.004         +0.523            -0.305  +0.148  +0.791                +0.941                +1.000    +0.080          +0.763           -0.250  -0.284                        +0.156                   +0.064   +0.055                  +0.737
+                         :                     PlngMin2D:                   +0.044         +0.112            -0.074  +0.769  +0.276                +0.086                +0.080    +1.000          +0.088           -0.111  -0.117                        -0.495                   -0.132   -0.036                  +0.077
+                         :               chi2_PVSV_log2D:                   +0.008         +0.607            -0.635  +0.124  +0.746                +0.770                +0.763    +0.088          +1.000           -0.516  -0.553                        +0.061                   +0.023   +0.073                  +0.960
+                         :              TMath::Abs(a_2D):                   -0.010         -0.254            +0.542  -0.138  -0.287                -0.266                -0.250    -0.111          -0.516           +1.000  +0.628                        +0.127                   +0.044   -0.016                  -0.523
+                         :                            DR:                   -0.014         -0.289            +0.544  -0.148  -0.323                -0.293                -0.284    -0.117          -0.553           +0.628  +1.000                        +0.110                   +0.075   +0.375                  -0.500
+                         : TMath::Abs(B_IDtrks_deltaPhi):                   -0.041         -0.074            +0.074  -0.525  -0.199                +0.199                +0.156    -0.495          +0.061           +0.127  +0.110                        +1.000                   +0.258   +0.016                  +0.131
+                         :      TMath::Abs(B_IDtrks_DCA):                   -0.023         -0.075            +0.042  -0.123  -0.063                +0.066                +0.064    -0.132          +0.023           +0.044  +0.075                        +0.258                   +1.000   +0.040                  +0.049
+                         :                      Bvtx3DIP:                   +0.016         +0.056            -0.050  -0.045  +0.040                +0.058                +0.055    -0.036          +0.073           -0.016  +0.375                        +0.016                   +0.040   +1.000                  +0.098
+                         :       B_minChi2MuonsIPtoAnyPV:                   +0.005         +0.566            -0.612  +0.066  +0.682                +0.773                +0.737    +0.077          +0.960           -0.523  -0.500                        +0.131                   +0.049   +0.098                  +1.000
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                B_iso_7_Chi2_5_LoosePt05 closeTrkDOCA_3 closeTrkNtrksChi2    B_pT     Lxy TMath::Abs(d0Min_sig) TMath::Abs(d0Max_sig) PlngMin2D chi2_PVSV_log2D TMath::Abs(a_2D)      DR TMath::Abs(B_IDtrks_deltaPhi) TMath::Abs(B_IDtrks_DCA) Bvtx3DIP B_minChi2MuonsIPtoAnyPV
+                         :      B_iso_7_Chi2_5_LoosePt05:                   +1.000         +0.159            -0.150  +0.151  -0.006                -0.066                -0.092    +0.119          -0.186           -0.011  +0.035                        -0.087                   -0.100   -0.042                  -0.107
+                         :                closeTrkDOCA_3:                   +0.159         +1.000            -0.339  -0.014  +0.456                +0.207                +0.322    -0.013          +0.383           -0.067  -0.135                        -0.021                   +0.042   +0.488                  +0.235
+                         :             closeTrkNtrksChi2:                   -0.150         -0.339            +1.000  -0.018  -0.204                -0.282                -0.407    -0.013          -0.583           +0.132  +0.292                        +0.017                   -0.087   -0.341                  -0.405
+                         :                          B_pT:                   +0.151         -0.014            -0.018  +1.000  +0.038                +0.033                -0.001    +0.731          -0.068           -0.216  -0.200                        -0.475                   -0.124   -0.078                  -0.013
+                         :                           Lxy:                   -0.006         +0.456            -0.204  +0.038  +1.000                +0.200                +0.318    +0.028          +0.368           -0.108  -0.157                        -0.074                   +0.138   +0.587                  +0.173
+                         :         TMath::Abs(d0Min_sig):                   -0.066         +0.207            -0.282  +0.033  +0.200                +1.000                +0.464    +0.010          +0.499           +0.008  -0.112                        +0.023                   +0.114   +0.314                  +0.653
+                         :         TMath::Abs(d0Max_sig):                   -0.092         +0.322            -0.407  -0.001  +0.318                +0.464                +1.000    -0.008          +0.761           +0.094  -0.145                        +0.136                   +0.201   +0.612                  +0.417
+                         :                     PlngMin2D:                   +0.119         -0.013            -0.013  +0.731  +0.028                +0.010                -0.008    +1.000          -0.066           -0.186  -0.169                        -0.457                   -0.136   -0.069                  -0.015
+                         :               chi2_PVSV_log2D:                   -0.186         +0.383            -0.583  -0.068  +0.368                +0.499                +0.761    -0.066          +1.000           +0.077  -0.254                        +0.132                   +0.241   +0.596                  +0.604
+                         :              TMath::Abs(a_2D):                   -0.011         -0.067            +0.132  -0.216  -0.108                +0.008                +0.094    -0.186          +0.077           +1.000  +0.601                        +0.287                   +0.077   +0.097                  -0.003
+                         :                            DR:                   +0.035         -0.135            +0.292  -0.200  -0.157                -0.112                -0.145    -0.169          -0.254           +0.601  +1.000                        +0.200                   +0.045   +0.077                  -0.065
+                         : TMath::Abs(B_IDtrks_deltaPhi):                   -0.087         -0.021            +0.017  -0.475  -0.074                +0.023                +0.136    -0.457          +0.132           +0.287  +0.200                        +1.000                   +0.259   +0.035                  +0.042
+                         :      TMath::Abs(B_IDtrks_DCA):                   -0.100         +0.042            -0.087  -0.124  +0.138                +0.114                +0.201    -0.136          +0.241           +0.077  +0.045                        +0.259                   +1.000   +0.180                  +0.173
+                         :                      Bvtx3DIP:                   -0.042         +0.488            -0.341  -0.078  +0.587                +0.314                +0.612    -0.069          +0.596           +0.097  +0.077                        +0.035                   +0.180   +1.000                  +0.357
+                         :       B_minChi2MuonsIPtoAnyPV:                   -0.107         +0.235            -0.405  -0.013  +0.173                +0.653                +0.417    -0.015          +0.604           -0.003  -0.065                        +0.042                   +0.173   +0.357                  +1.000
+                         : -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetFactory           : [BDToutput/2020May20/out_Nom] :  
+                         : 
+Factory                  : [1mTrain all methods[0m
+Factory                  : [BDToutput/2020May20/out_Nom] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'B_iso_7_Chi2_5_LoosePt05' <---> Output : variable 'B_iso_7_Chi2_5_LoosePt05'
+                         : Input : variable 'closeTrkDOCA_3' <---> Output : variable 'closeTrkDOCA_3'
+                         : Input : variable 'closeTrkNtrksChi2' <---> Output : variable 'closeTrkNtrksChi2'
+                         : Input : variable 'B_pT' <---> Output : variable 'B_pT'
+                         : Input : variable 'Lxy' <---> Output : variable 'Lxy'
+                         : Input : variable 'TMath::Abs(d0Min_sig)' <---> Output : variable 'TMath::Abs(d0Min_sig)'
+                         : Input : variable 'TMath::Abs(d0Max_sig)' <---> Output : variable 'TMath::Abs(d0Max_sig)'
+                         : Input : variable 'PlngMin2D' <---> Output : variable 'PlngMin2D'
+                         : Input : variable 'chi2_PVSV_log2D' <---> Output : variable 'chi2_PVSV_log2D'
+                         : Input : variable 'TMath::Abs(a_2D)' <---> Output : variable 'TMath::Abs(a_2D)'
+                         : Input : variable 'DR' <---> Output : variable 'DR'
+                         : Input : variable 'TMath::Abs(B_IDtrks_deltaPhi)' <---> Output : variable 'TMath::Abs(B_IDtrks_deltaPhi)'
+                         : Input : variable 'TMath::Abs(B_IDtrks_DCA)' <---> Output : variable 'TMath::Abs(B_IDtrks_DCA)'
+                         : Input : variable 'Bvtx3DIP' <---> Output : variable 'Bvtx3DIP'
+                         : Input : variable 'B_minChi2MuonsIPtoAnyPV' <---> Output : variable 'B_minChi2MuonsIPtoAnyPV'
+TFHandler_Factory        :                      Variable                             Mean                             RMS                     [        Min                             Max ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :      B_iso_7_Chi2_5_LoosePt05:                        0.79075                        0.19124   [                      0.0049442                         1.0000 ]
+                         :                closeTrkDOCA_3:                        0.39638                        0.64728   [                     3.2510e-05                         3.0000 ]
+                         :             closeTrkNtrksChi2:                         7.8350                         10.676   [                         0.0000                         115.00 ]
+                         :                          B_pT:                         16506.                         7823.9   [                         8011.7                     6.2973e+05 ]
+                         :                           Lxy:                        0.85933                         1.4479   [                     0.00038471                         188.15 ]
+                         :         TMath::Abs(d0Min_sig):                         7.4011                         12.763   [                     1.9090e-06                         312.85 ]
+                         :         TMath::Abs(d0Max_sig):                         11.203                         16.018   [                      0.0029104                         372.72 ]
+                         :                     PlngMin2D:                         5977.5                         2582.8   [                         2596.2                     2.2132e+05 ]
+                         :               chi2_PVSV_log2D:                         3.9972                         2.5456   [                        -9.5204                         15.000 ]
+                         :              TMath::Abs(a_2D):                        0.16399                        0.21352   [                     2.5942e-07                         1.0000 ]
+                         :                            DR:                        0.31019                        0.33411   [                     9.0759e-05                         1.5000 ]
+                         : TMath::Abs(B_IDtrks_deltaPhi):                        0.52810                        0.27201   [                     8.9142e-07                         1.2876 ]
+                         :      TMath::Abs(B_IDtrks_DCA):                       0.048847                       0.042733   [                     2.8521e-08                         4.2038 ]
+                         :                      Bvtx3DIP:                       0.081534                        0.13639   [                     4.1569e-05                         25.580 ]
+                         :       B_minChi2MuonsIPtoAnyPV:                         2.5504                         2.6663   [                        -14.592                         11.512 ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : ------------------------------------------------
+                         : Rank : Variable                : Separation
+                         : ------------------------------------------------
+                         :    1 : #DeltaR                 : 5.731e-01
+                         :    2 : |#alpha_{2D}|           : 5.579e-01
+                         :    3 : Log(#chi^{2}_{#mu,xPV}) : 4.364e-01
+                         :    4 : nCloseTracks ACK (OOO)  : 4.087e-01
+                         :    5 : |d_{0}|^{min} sig.      : 3.939e-01
+                         :    6 : DOCA ACK (OOO)          : 3.873e-01
+                         :    7 : L_{xy}                  : 3.670e-01
+                         :    8 : B Iso ACH (OOO)         : 3.537e-01
+                         :    9 : Log(#chi^{2}_{xy})      : 2.983e-01
+                         :   10 : |d_{0}|^{max} sig.      : 1.682e-01
+                         :   11 : |IP_{B}^{3D}|           : 1.382e-01
+                         :   12 : DOCA_{#mu#mu}           : 6.732e-02
+                         :   13 : P^{min}_{L}             : 8.266e-03
+                         :   14 : |#Delta#phi_{#mu#mu}|   : 5.445e-03
+                         :   15 : p_{T}^{B}               : 4.634e-03
+                         : ------------------------------------------------
+Factory                  : Train method: BDT for Classification
+                         : 
+                         : Events with weight == 0 are going to be simply ignored 
+BDT                      : #events: (reweighted) sig: 655540 bkg: 655540
+                         : #events: (unweighted) sig: 83292 bkg: 1227788
+                         : Training 500 Decision Trees ... patience please
+                         : Elapsed time for training with 1311164 events: 1.53e+03 sec         
+BDT                      : [BDToutput/2020May20/out_Nom] : Evaluation of BDT on training sample (1311164 events)
+                         : Elapsed time for evaluation of 1311164 events: 122 sec       
+                         : Creating xml weight file: [0;36mBDToutput/2020May20/out_Nom/weights/bdt2020_BDT.weights.xml[0m
+                         : Creating standalone class: [0;36mBDToutput/2020May20/out_Nom/weights/bdt2020_BDT.class.C[0m
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+BDT                      : Ranking result (top variable is best ranked)
+                         : ---------------------------------------------------------------
+                         : Rank : Variable                      : Variable Importance
+                         : ---------------------------------------------------------------
+                         :    1 : DR                            : 1.229e-01
+                         :    2 : TMath::Abs(a_2D)              : 1.099e-01
+                         :    3 : B_iso_7_Chi2_5_LoosePt05      : 9.635e-02
+                         :    4 : chi2_PVSV_log2D               : 8.244e-02
+                         :    5 : B_minChi2MuonsIPtoAnyPV       : 7.732e-02
+                         :    6 : TMath::Abs(B_IDtrks_deltaPhi) : 7.183e-02
+                         :    7 : B_pT                          : 7.158e-02
+                         :    8 : closeTrkDOCA_3                : 5.286e-02
+                         :    9 : closeTrkNtrksChi2             : 5.225e-02
+                         :   10 : TMath::Abs(B_IDtrks_DCA)      : 5.124e-02
+                         :   11 : Bvtx3DIP                      : 4.839e-02
+                         :   12 : TMath::Abs(d0Max_sig)         : 4.742e-02
+                         :   13 : Lxy                           : 4.601e-02
+                         :   14 : TMath::Abs(d0Min_sig)         : 3.688e-02
+                         :   15 : PlngMin2D                     : 3.267e-02
+                         : ---------------------------------------------------------------
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+                         : Reading weight file: [0;36mBDToutput/2020May20/out_Nom/weights/bdt2020_BDT.weights.xml[0m
+Factory                  : [1mTest all methods[0m
+Factory                  : Test method: BDT for Classification performance
+                         : 
+BDT                      : [BDToutput/2020May20/out_Nom] : Evaluation of BDT on testing sample (1311164 events)
+                         : Elapsed time for evaluation of 1311164 events: 85.7 sec       
+Factory                  : [1mEvaluate all methods[0m
+Factory                  : Evaluate classifier: BDT
+                         : 
+BDT                      : [BDToutput/2020May20/out_Nom] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_BDT            :                      Variable                             Mean                             RMS                     [        Min                             Max ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :      B_iso_7_Chi2_5_LoosePt05:                        0.69155                        0.19846   [                       0.010237                         1.0000 ]
+                         :                closeTrkDOCA_3:                        0.13274                        0.28771   [                     5.5614e-05                         3.0000 ]
+                         :             closeTrkNtrksChi2:                         12.651                         11.906   [                         0.0000                         114.00 ]
+                         :                          B_pT:                         16213.                         7878.9   [                         8005.1                     3.5089e+05 ]
+                         :                           Lxy:                        0.34174                        0.99668   [                     0.00044289                         151.65 ]
+                         :         TMath::Abs(d0Min_sig):                         2.1719                         4.9248   [                     1.3055e-06                         231.24 ]
+                         :         TMath::Abs(d0Max_sig):                         6.2909                         8.9347   [                      0.0024185                         401.13 ]
+                         :                     PlngMin2D:                         5809.1                         2485.0   [                         2492.0                     1.3250e+05 ]
+                         :               chi2_PVSV_log2D:                         2.7642                         2.1313   [                        -8.8508                         14.733 ]
+                         :              TMath::Abs(a_2D):                        0.27756                        0.23122   [                     4.1583e-07                         1.0000 ]
+                         :                            DR:                        0.49317                        0.33172   [                     8.6712e-05                         1.5000 ]
+                         : TMath::Abs(B_IDtrks_deltaPhi):                        0.53835                        0.27346   [                     1.6548e-06                         1.3052 ]
+                         :      TMath::Abs(B_IDtrks_DCA):                       0.058505                       0.047208   [                     1.5405e-08                         2.1035 ]
+                         :                      Bvtx3DIP:                        0.10544                        0.15023   [                     4.8830e-05                         17.115 ]
+                         :       B_minChi2MuonsIPtoAnyPV:                         1.0288                         1.9627   [                        -12.790                         11.350 ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : BDToutput/2020May20/out_Nom BDT            : 0.982
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : BDToutput/2020May20/out_Nom BDT            : 0.816 (0.817)       0.943 (0.943)      0.988 (0.988)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:BDToutput/2020...: Created tree 'TestTree' with 1311164 events
+                         : 
+Dataset:BDToutput/2020...: Created tree 'TrainTree' with 1311164 events
+                         : 
+Factory                  : [1mThank you for using TMVA![0m
+                         : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m
+(int) 0

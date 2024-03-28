@@ -1,0 +1,513 @@
+Filename: .
+Filename: ..
+Filename: merged
+Filename: user.mghneima.20791575.Bmumu._000001.root
+processing file: user.mghneima.20791575.Bmumu._000001.root
+# of candidates: 3376
+Now loop over original tree
+Processing event 0
+Entries in final tree: 19
+MassWindowCut: 1001
+BlindCut: 297
+TriggerCut: 2045
+MuonTightCut: 7
+MuonConditionsCut: 0
+MuonKinCuts: 1
+B_fitChi2NDFCut: 2
+BKinCut: 0
+AddCuts: 4
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_1.root
+Filename: user.mghneima.20791575.Bmumu._000002.root
+processing file: user.mghneima.20791575.Bmumu._000002.root
+# of candidates: 3566
+Now loop over original tree
+Processing event 0
+Entries in final tree: 13
+MassWindowCut: 1081
+BlindCut: 293
+TriggerCut: 2167
+MuonTightCut: 4
+MuonConditionsCut: 0
+MuonKinCuts: 0
+B_fitChi2NDFCut: 3
+BKinCut: 0
+AddCuts: 5
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_2.root
+Filename: user.mghneima.20791575.Bmumu._000003.root
+processing file: user.mghneima.20791575.Bmumu._000003.root
+# of candidates: 3847
+Now loop over original tree
+Processing event 0
+Entries in final tree: 17
+MassWindowCut: 1190
+BlindCut: 355
+TriggerCut: 2265
+MuonTightCut: 7
+MuonConditionsCut: 0
+MuonKinCuts: 0
+B_fitChi2NDFCut: 5
+BKinCut: 0
+AddCuts: 8
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_3.root
+Filename: user.mghneima.20791575.Bmumu._000004.root
+processing file: user.mghneima.20791575.Bmumu._000004.root
+# of candidates: 8035
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1347
+MassWindowCut: 2367
+BlindCut: 766
+TriggerCut: 2187
+MuonTightCut: 712
+MuonConditionsCut: 0
+MuonKinCuts: 64
+B_fitChi2NDFCut: 227
+BKinCut: 0
+AddCuts: 365
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_4.root
+Filename: user.mghneima.20791575.Bmumu._000005.root
+processing file: user.mghneima.20791575.Bmumu._000005.root
+# of candidates: 8984
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1622
+MassWindowCut: 2640
+BlindCut: 849
+TriggerCut: 2201
+MuonTightCut: 870
+MuonConditionsCut: 0
+MuonKinCuts: 91
+B_fitChi2NDFCut: 275
+BKinCut: 0
+AddCuts: 436
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_5.root
+Filename: user.mghneima.20791575.Bmumu._000006.root
+processing file: user.mghneima.20791575.Bmumu._000006.root
+# of candidates: 8949
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1476
+MassWindowCut: 2699
+BlindCut: 840
+TriggerCut: 2308
+MuonTightCut: 822
+MuonConditionsCut: 0
+MuonKinCuts: 80
+B_fitChi2NDFCut: 281
+BKinCut: 0
+AddCuts: 443
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_6.root
+Filename: user.mghneima.20791575.Bmumu._000007.root
+processing file: user.mghneima.20791575.Bmumu._000007.root
+# of candidates: 8896
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1485
+MassWindowCut: 2572
+BlindCut: 854
+TriggerCut: 2485
+MuonTightCut: 745
+MuonConditionsCut: 0
+MuonKinCuts: 94
+B_fitChi2NDFCut: 249
+BKinCut: 0
+AddCuts: 412
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_7.root
+Filename: user.mghneima.20791575.Bmumu._000008.root
+processing file: user.mghneima.20791575.Bmumu._000008.root
+# of candidates: 9104
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1439
+MassWindowCut: 2682
+BlindCut: 911
+TriggerCut: 2593
+MuonTightCut: 756
+MuonConditionsCut: 0
+MuonKinCuts: 83
+B_fitChi2NDFCut: 242
+BKinCut: 0
+AddCuts: 398
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_8.root
+Filename: user.mghneima.20791575.Bmumu._000009.root
+processing file: user.mghneima.20791575.Bmumu._000009.root
+# of candidates: 9085
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1418
+MassWindowCut: 2639
+BlindCut: 907
+TriggerCut: 2610
+MuonTightCut: 808
+MuonConditionsCut: 0
+MuonKinCuts: 74
+B_fitChi2NDFCut: 217
+BKinCut: 0
+AddCuts: 412
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_9.root
+Filename: user.mghneima.20791575.Bmumu._000010.root
+processing file: user.mghneima.20791575.Bmumu._000010.root
+# of candidates: 9061
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1510
+MassWindowCut: 2621
+BlindCut: 854
+TriggerCut: 2584
+MuonTightCut: 771
+MuonConditionsCut: 0
+MuonKinCuts: 68
+B_fitChi2NDFCut: 240
+BKinCut: 0
+AddCuts: 413
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_10.root
+Filename: user.mghneima.20791575.Bmumu._000011.root
+processing file: user.mghneima.20791575.Bmumu._000011.root
+# of candidates: 11115
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1718
+MassWindowCut: 3253
+BlindCut: 1126
+TriggerCut: 3181
+MuonTightCut: 943
+MuonConditionsCut: 0
+MuonKinCuts: 98
+B_fitChi2NDFCut: 287
+BKinCut: 0
+AddCuts: 509
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_11.root
+Filename: user.mghneima.20791575.Bmumu._000012.root
+processing file: user.mghneima.20791575.Bmumu._000012.root
+# of candidates: 11720
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1858
+MassWindowCut: 3355
+BlindCut: 1155
+TriggerCut: 3402
+MuonTightCut: 1023
+MuonConditionsCut: 0
+MuonKinCuts: 100
+B_fitChi2NDFCut: 309
+BKinCut: 0
+AddCuts: 518
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_12.root
+Filename: user.mghneima.20791575.Bmumu._000013.root
+processing file: user.mghneima.20791575.Bmumu._000013.root
+# of candidates: 11619
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1816
+MassWindowCut: 3277
+BlindCut: 1188
+TriggerCut: 3391
+MuonTightCut: 1004
+MuonConditionsCut: 0
+MuonKinCuts: 91
+B_fitChi2NDFCut: 344
+BKinCut: 0
+AddCuts: 508
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_13.root
+Filename: user.mghneima.20791575.Bmumu._000014.root
+processing file: user.mghneima.20791575.Bmumu._000014.root
+# of candidates: 11979
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1931
+MassWindowCut: 3439
+BlindCut: 1137
+TriggerCut: 3561
+MuonTightCut: 938
+MuonConditionsCut: 0
+MuonKinCuts: 117
+B_fitChi2NDFCut: 309
+BKinCut: 0
+AddCuts: 547
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_14.root
+Filename: user.mghneima.20791575.Bmumu._000015.root
+processing file: user.mghneima.20791575.Bmumu._000015.root
+# of candidates: 11493
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1750
+MassWindowCut: 3220
+BlindCut: 1153
+TriggerCut: 3454
+MuonTightCut: 989
+MuonConditionsCut: 0
+MuonKinCuts: 118
+B_fitChi2NDFCut: 302
+BKinCut: 0
+AddCuts: 507
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_15.root
+Filename: user.mghneima.20791575.Bmumu._000017.root
+processing file: user.mghneima.20791575.Bmumu._000017.root
+# of candidates: 9075
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1414
+MassWindowCut: 2597
+BlindCut: 876
+TriggerCut: 2741
+MuonTightCut: 730
+MuonConditionsCut: 0
+MuonKinCuts: 77
+B_fitChi2NDFCut: 242
+BKinCut: 0
+AddCuts: 398
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_16.root
+Filename: user.mghneima.20791575.Bmumu._000018.root
+processing file: user.mghneima.20791575.Bmumu._000018.root
+# of candidates: 9631
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1529
+MassWindowCut: 2803
+BlindCut: 941
+TriggerCut: 2854
+MuonTightCut: 772
+MuonConditionsCut: 0
+MuonKinCuts: 86
+B_fitChi2NDFCut: 250
+BKinCut: 0
+AddCuts: 396
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_17.root
+Filename: user.mghneima.20791575.Bmumu._000019.root
+processing file: user.mghneima.20791575.Bmumu._000019.root
+# of candidates: 9560
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1441
+MassWindowCut: 2790
+BlindCut: 956
+TriggerCut: 2958
+MuonTightCut: 711
+MuonConditionsCut: 0
+MuonKinCuts: 86
+B_fitChi2NDFCut: 235
+BKinCut: 0
+AddCuts: 383
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_18.root
+Filename: user.mghneima.20791575.Bmumu._000020.root
+processing file: user.mghneima.20791575.Bmumu._000020.root
+# of candidates: 9832
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1497
+MassWindowCut: 2816
+BlindCut: 984
+TriggerCut: 2937
+MuonTightCut: 828
+MuonConditionsCut: 0
+MuonKinCuts: 79
+B_fitChi2NDFCut: 275
+BKinCut: 0
+AddCuts: 416
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_19.root
+Filename: user.mghneima.20791575.Bmumu._000021.root
+processing file: user.mghneima.20791575.Bmumu._000021.root
+# of candidates: 9504
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1444
+MassWindowCut: 2745
+BlindCut: 951
+TriggerCut: 2839
+MuonTightCut: 812
+MuonConditionsCut: 0
+MuonKinCuts: 87
+B_fitChi2NDFCut: 236
+BKinCut: 0
+AddCuts: 390
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_20.root
+Filename: user.mghneima.20791575.Bmumu._000022.root
+processing file: user.mghneima.20791575.Bmumu._000022.root
+# of candidates: 10148
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1589
+MassWindowCut: 2828
+BlindCut: 977
+TriggerCut: 3018
+MuonTightCut: 934
+MuonConditionsCut: 0
+MuonKinCuts: 82
+B_fitChi2NDFCut: 297
+BKinCut: 0
+AddCuts: 423
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_21.root
+Filename: user.mghneima.20791575.Bmumu._000023.root
+processing file: user.mghneima.20791575.Bmumu._000023.root
+# of candidates: 10160
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1593
+MassWindowCut: 2958
+BlindCut: 1007
+TriggerCut: 2995
+MuonTightCut: 822
+MuonConditionsCut: 0
+MuonKinCuts: 80
+B_fitChi2NDFCut: 243
+BKinCut: 0
+AddCuts: 462
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_22.root
+Filename: user.mghneima.20791575.Bmumu._000024.root
+processing file: user.mghneima.20791575.Bmumu._000024.root
+# of candidates: 10451
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1591
+MassWindowCut: 3057
+BlindCut: 1070
+TriggerCut: 3028
+MuonTightCut: 858
+MuonConditionsCut: 0
+MuonKinCuts: 112
+B_fitChi2NDFCut: 268
+BKinCut: 0
+AddCuts: 467
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_23.root
+Filename: user.mghneima.20791575.Bmumu._000025.root
+processing file: user.mghneima.20791575.Bmumu._000025.root
+# of candidates: 10597
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1647
+MassWindowCut: 2997
+BlindCut: 1086
+TriggerCut: 3194
+MuonTightCut: 883
+MuonConditionsCut: 0
+MuonKinCuts: 84
+B_fitChi2NDFCut: 255
+BKinCut: 0
+AddCuts: 451
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_24.root
+Filename: user.mghneima.20791575.Bmumu._000026.root
+processing file: user.mghneima.20791575.Bmumu._000026.root
+# of candidates: 10622
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1650
+MassWindowCut: 3052
+BlindCut: 1069
+TriggerCut: 3157
+MuonTightCut: 884
+MuonConditionsCut: 0
+MuonKinCuts: 84
+B_fitChi2NDFCut: 282
+BKinCut: 0
+AddCuts: 444
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_25.root
+Filename: user.mghneima.20791575.Bmumu._000027.root
+processing file: user.mghneima.20791575.Bmumu._000027.root
+# of candidates: 9906
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1503
+MassWindowCut: 2871
+BlindCut: 1006
+TriggerCut: 2966
+MuonTightCut: 795
+MuonConditionsCut: 0
+MuonKinCuts: 96
+B_fitChi2NDFCut: 258
+BKinCut: 0
+AddCuts: 411
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_26.root
+Filename: user.mghneima.20791575.Bmumu._000028.root
+processing file: user.mghneima.20791575.Bmumu._000028.root
+# of candidates: 10143
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1522
+MassWindowCut: 2955
+BlindCut: 1012
+TriggerCut: 2984
+MuonTightCut: 914
+MuonConditionsCut: 0
+MuonKinCuts: 99
+B_fitChi2NDFCut: 239
+BKinCut: 0
+AddCuts: 418
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_27.root
+Filename: user.mghneima.20791575.Bmumu._000029.root
+processing file: user.mghneima.20791575.Bmumu._000029.root
+# of candidates: 10678
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1687
+MassWindowCut: 3099
+BlindCut: 1037
+TriggerCut: 3124
+MuonTightCut: 920
+MuonConditionsCut: 0
+MuonKinCuts: 104
+B_fitChi2NDFCut: 257
+BKinCut: 0
+AddCuts: 450
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_28.root
+Filename: user.mghneima.20791575.Bmumu._000030.root
+processing file: user.mghneima.20791575.Bmumu._000030.root
+# of candidates: 662
+Now loop over original tree
+Processing event 0
+Entries in final tree: 100
+MassWindowCut: 203
+BlindCut: 52
+TriggerCut: 200
+MuonTightCut: 50
+MuonConditionsCut: 0
+MuonKinCuts: 5
+B_fitChi2NDFCut: 16
+BKinCut: 0
+AddCuts: 36
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_29.root
+Filename: user.mghneima.20791575.Bmumu._000031.root
+processing file: user.mghneima.20791575.Bmumu._000031.root
+# of candidates: 8848
+Now loop over original tree
+Processing event 0
+Entries in final tree: 1329
+MassWindowCut: 2511
+BlindCut: 861
+TriggerCut: 2653
+MuonTightCut: 747
+MuonConditionsCut: 0
+MuonKinCuts: 77
+B_fitChi2NDFCut: 250
+BKinCut: 0
+AddCuts: 420
+grlCut: 0
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/2016main/LASTskim_2016main_30.root

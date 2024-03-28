@@ -1,0 +1,19 @@
+Filename: .:
+Filename: ..:
+
+Filename: user.mghneima.20808995.Bmumu._000001.root:Filename: user.mghneima.20808995.Bmumu._000002.root:Filename: user.mghneima.20808995.Bmumu._000003.root:Filename: user.mghneima.20808995.Bmumu._000004.root:Filename: user.mghneima.20808995.Bmumu._000005.root:Filename: user.mghneima.20808995.Bmumu._000006.root:
+processing file: user.mghneima.20808995.Bmumu._000001.root:processing file: user.mghneima.20808995.Bmumu._000002.root:processing file: user.mghneima.20808995.Bmumu._000003.root:processing file: user.mghneima.20808995.Bmumu._000004.root:processing file: user.mghneima.20808995.Bmumu._000005.root:processing file: user.mghneima.20808995.Bmumu._000006.root:
+# of candidates: 128882:# of candidates: 123008:# of candidates: 117781:# of candidates: 31818:# of candidates: 117789:# of candidates: 16278:
+Now loop over original tree:Now loop over original tree:Now loop over original tree:Now loop over original tree:Now loop over original tree:Now loop over original tree:
+Entries in final tree: 40141:Entries in final tree: 38266:Entries in final tree: 36643:Entries in final tree: 9816:Entries in final tree: 36830:Entries in final tree: 5022:
+MassWindowCut: 417:MassWindowCut: 398:MassWindowCut: 371:MassWindowCut: 107:MassWindowCut: 367:MassWindowCut: 61:
+BlindCut: 0:BlindCut: 0:BlindCut: 0:BlindCut: 0:BlindCut: 0:BlindCut: 0:
+TriggerCut: 75916:TriggerCut: 72548:TriggerCut: 69493:TriggerCut: 18754:TriggerCut: 69178:TriggerCut: 9535:
+MuonTightCut: 9851:MuonTightCut: 9307:MuonTightCut: 8937:MuonTightCut: 2481:MuonTightCut: 9081:MuonTightCut: 1321:
+MuonConditionsCut: 0:MuonConditionsCut: 0:MuonConditionsCut: 0:MuonConditionsCut: 0:MuonConditionsCut: 0:MuonConditionsCut: 0:
+MuonKinCuts: 1181:MuonKinCuts: 1126:MuonKinCuts: 1020:MuonKinCuts: 300:MuonKinCuts: 1053:MuonKinCuts: 148:
+B_fitChi2NDFCut: 556:B_fitChi2NDFCut: 584:B_fitChi2NDFCut: 586:B_fitChi2NDFCut: 153:B_fitChi2NDFCut: 548:B_fitChi2NDFCut: 91:
+BKinCut: 0:BKinCut: 0:BKinCut: 0:BKinCut: 0:BKinCut: 0:BKinCut: 0:
+AddCuts: 820:AddCuts: 779:AddCuts: 731:AddCuts: 207:AddCuts: 732:AddCuts: 100:
+grlCut: 0:grlCut: 0:grlCut: 0:grlCut: 0:grlCut: 0:grlCut: 0:
+Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/MC16a/LASTskim_MC16a_1.root:Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/MC16a/LASTskim_MC16a_2.root:Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/MC16a/LASTskim_MC16a_3.root:Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/MC16a/LASTskim_MC16a_4.root:Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/MC16a/LASTskim_MC16a_5.root:Wrote file: /eos/home-a/agrummer/BsmumuData/2020nTuples/FinalSkim/v3/MC16a/LASTskim_MC16a_6.root:

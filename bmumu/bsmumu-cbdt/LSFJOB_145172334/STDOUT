@@ -1,0 +1,562 @@
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/agrummer/145172334> on <b68c0996ae.cern.ch>
+
+Opening the cfg file /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/cfg/bdt2012final.cfg
+INFO: including variable: bpt
+INFO: including variable: blxy
+INFO: including variable: d0mins
+INFO: including variable: d0maxs
+INFO: including variable: plng
+INFO: including variable: ch2pvsv
+INFO: including variable: pa
+INFO: including variable: dr
+INFO: including variable: iso
+INFO: including variable: dphi
+INFO: including variable: mdca
+INFO: including variable: bip
+INFO adding input variable: B_pT p_{T}^{B} MeV F
+INFO adding input variable: Lxy L_{xy} mm F
+INFO adding input variable: TMath::Abs(d0Min_sig) |d_{0}|^{min} sig.  F
+INFO adding input variable: TMath::Abs(d0Max_sig) |d_{0}|^{max} sig.  F
+INFO adding input variable: PlngMin2D P^{min}_{L} MeV F
+INFO adding input variable: chi2_PVSV_log2D Log(#chi^{2}_{xy})  F
+INFO adding input variable: TMath::Abs(a_2D) |#alpha_{2D}| rad F
+INFO adding input variable: DR #DeltaR  F
+INFO adding input variable: B_iso_7_Chi2_5_LoosePt05 B Isolation (I^{B}_{0.7})  F
+INFO adding input variable: TMath::Abs(B_IDtrks_deltaPhi) |#Delta#phi_{#mu#mu}|  F
+INFO adding input variable: TMath::Abs(B_IDtrks_DCA) DOCA_{#mu#mu} mm F
+INFO adding input variable: Bvtx3DIP |IP_{B}^{3D}|  F
+
+SET FOLLOWING MVA TRAINING OPTIONS:  
+mymva.SIG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskim.MC16Bs.root
+mymva.BKG_inputFileName: /afs/cern.ch/user/a/agrummer/WorkSpace/BsmumuData/LASTskimFeb13/LASTskim.mc16_13TeV.300307.HLT_mu6_mu4_bBmumu_Lxy0.Feb14_testweight_CombBkg.root
+mymva.SIG_treeName: T_mv
+mymva.BKG_treeName: T_mv
+mymva.valSIG_inputFileName: 
+mymva.valBKG_inputFileName: 
+mymva.valSIG_treeName: 
+mymva.valBKG_treeName: 
+mymva.OUT_DIR: out
+mymva.OUT_FILE: bdt2016test_0.root
+mymva.factoryName: bdt2016test_0
+mymva.factory_prepareTrainingOpt: nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=EqualNumEvents:!V
+mymva.SIGweightexp: CombWeights
+mymva.BKGweightexp: CombWeights
+mymva.GradBDToptions: 
+mymva.AdaBDToptions: !H:!V:BoostType=AdaBoost:UseBaggedBoost:BaggedSampleFraction=0.6:SeparationType=GiniIndex:nCuts=100:DoBoostMonitor:MaxDepth=2:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500
+mymva.MLPoptions: 
+mymva.SVMoptions: 
+mymva.MyCutSignal: 
+mymva.MyCutBkgnd: 
+
+Retrieving tree branches ... 
+ * Initialise TMVA...
+DataSetInfo              : [out] : Added class "Signal"
+                         : Add Tree T_mv of type Signal with 169262 events
+DataSetInfo              : [out] : Added class "Background"
+                         : Add Tree T_mv of type Background with 1804502 events
+ * Prepare Training and Test Tree...
+ * Book AdaBDT Training Method...
+Factory                  : Booking method: [1mBDT[0m
+                         : 
+DataSetFactory           : [out] : Number of events in input trees
+                         : 
+                         : 
+                         : Dataset[out] : Weight renormalisation mode: "EqualNumEvents": renormalises all event classes ...
+                         : Dataset[out] :  such that the effective (weighted) number of events in each class is the same 
+                         : Dataset[out] :  (and equals the number of events (entries) given for class=0 )
+                         : Dataset[out] : ... i.e. such that Sum[i=1..N_j]{w_i} = N_classA, j=classA, classB, ...
+                         : Dataset[out] : ... (note that N_j is the sum of TRAINING events
+                         : Dataset[out] :  ..... Testing events are not renormalised nor included in the renormalisation factor!)
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 84631
+                         : Signal     -- testing events             : 84631
+                         : Signal     -- training and testing events: 169262
+                         : Background -- training events            : 902251
+                         : Background -- testing events             : 902251
+                         : Background -- training and testing events: 1804502
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                   B_pT     Lxy TMath::Abs(d0Min_sig) TMath::Abs(d0Max_sig) PlngMin2D chi2_PVSV_log2D TMath::Abs(a_2D)      DR B_iso_7_Chi2_5_LoosePt05 TMath::Abs(B_IDtrks_deltaPhi) TMath::Abs(B_IDtrks_DCA) Bvtx3DIP
+                         :                          B_pT:  +1.000  +0.387                +0.074                +0.156    +0.773          +0.129           -0.141  -0.147                   +0.059                        -0.525                   -0.120   -0.041
+                         :                           Lxy:  +0.387  +1.000                +0.739                +0.786    +0.290          +0.743           -0.290  -0.321                   +0.020                        -0.203                   -0.059   +0.043
+                         :         TMath::Abs(d0Min_sig):  +0.074  +0.739                +1.000                +0.942    +0.092          +0.772           -0.271  -0.292                   -0.004                        +0.194                   +0.072   +0.063
+                         :         TMath::Abs(d0Max_sig):  +0.156  +0.786                +0.942                +1.000    +0.088          +0.765           -0.254  -0.283                   +0.001                        +0.149                   +0.070   +0.060
+                         :                     PlngMin2D:  +0.773  +0.290                +0.092                +0.088    +1.000          +0.093           -0.113  -0.119                   +0.047                        -0.496                   -0.130   -0.032
+                         :               chi2_PVSV_log2D:  +0.129  +0.743                +0.772                +0.765    +0.093          +1.000           -0.519  -0.548                   +0.005                        +0.057                   +0.024   +0.076
+                         :              TMath::Abs(a_2D):  -0.141  -0.290                -0.271                -0.254    -0.113          -0.519           +1.000  +0.616                   -0.008                        +0.130                   +0.041   -0.018
+                         :                            DR:  -0.147  -0.321                -0.292                -0.283    -0.119          -0.548           +0.616  +1.000                   -0.007                        +0.109                   +0.075   +0.375
+                         :      B_iso_7_Chi2_5_LoosePt05:  +0.059  +0.020                -0.004                +0.001    +0.047          +0.005           -0.008  -0.007                   +1.000                        -0.039                   -0.021   +0.014
+                         : TMath::Abs(B_IDtrks_deltaPhi):  -0.525  -0.203                +0.194                +0.149    -0.496          +0.057           +0.130  +0.109                   -0.039                        +1.000                   +0.252   +0.019
+                         :      TMath::Abs(B_IDtrks_DCA):  -0.120  -0.059                +0.072                +0.070    -0.130          +0.024           +0.041  +0.075                   -0.021                        +0.252                   +1.000   +0.042
+                         :                      Bvtx3DIP:  -0.041  +0.043                +0.063                +0.060    -0.032          +0.076           -0.018  +0.375                   +0.014                        +0.019                   +0.042   +1.000
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                                   B_pT     Lxy TMath::Abs(d0Min_sig) TMath::Abs(d0Max_sig) PlngMin2D chi2_PVSV_log2D TMath::Abs(a_2D)      DR B_iso_7_Chi2_5_LoosePt05 TMath::Abs(B_IDtrks_deltaPhi) TMath::Abs(B_IDtrks_DCA) Bvtx3DIP
+                         :                          B_pT:  +1.000  +0.245                +0.111                +0.088    +0.719          +0.086           -0.241  -0.252                   -0.014                        -0.556                   -0.086   -0.037
+                         :                           Lxy:  +0.245  +1.000                +0.482                +0.800    +0.187          +0.723           -0.241  -0.365                   -0.005                        -0.141                   +0.060   +0.642
+                         :         TMath::Abs(d0Min_sig):  +0.111  +0.482                +1.000                +0.435    +0.068          +0.497           -0.030  -0.125                   -0.013                        -0.018                   +0.087   +0.375
+                         :         TMath::Abs(d0Max_sig):  +0.088  +0.800                +0.435                +1.000    +0.064          +0.793           +0.074  -0.159                   +0.003                        +0.087                   +0.155   +0.785
+                         :                     PlngMin2D:  +0.719  +0.187                +0.068                +0.064    +1.000          +0.059           -0.205  -0.209                   -0.022                        -0.520                   -0.104   -0.034
+                         :               chi2_PVSV_log2D:  +0.086  +0.723                +0.497                +0.793    +0.059          +1.000           +0.045  -0.273                   -0.023                        +0.072                   +0.173   +0.694
+                         :              TMath::Abs(a_2D):  -0.241  -0.241                -0.030                +0.074    -0.205          +0.045           +1.000  +0.639                   +0.070                        +0.287                   +0.062   +0.172
+                         :                            DR:  -0.252  -0.365                -0.125                -0.159    -0.209          -0.273           +0.639  +1.000                   +0.064                        +0.217                   +0.062   +0.148
+                         :      B_iso_7_Chi2_5_LoosePt05:  -0.014  -0.005                -0.013                +0.003    -0.022          -0.023           +0.070  +0.064                   +1.000                        +0.020                   -0.017   +0.045
+                         : TMath::Abs(B_IDtrks_deltaPhi):  -0.556  -0.141                -0.018                +0.087    -0.520          +0.072           +0.287  +0.217                   +0.020                        +1.000                   +0.226   +0.056
+                         :      TMath::Abs(B_IDtrks_DCA):  -0.086  +0.060                +0.087                +0.155    -0.104          +0.173           +0.062  +0.062                   -0.017                        +0.226                   +1.000   +0.128
+                         :                      Bvtx3DIP:  -0.037  +0.642                +0.375                +0.785    -0.034          +0.694           +0.172  +0.148                   +0.045                        +0.056                   +0.128   +1.000
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DataSetFactory           : [out] :  
+                         : 
+Factory                  : [1mTrain all methods[0m
+Factory                  : [out] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'B_pT' <---> Output : variable 'B_pT'
+                         : Input : variable 'Lxy' <---> Output : variable 'Lxy'
+                         : Input : variable 'TMath::Abs(d0Min_sig)' <---> Output : variable 'TMath::Abs(d0Min_sig)'
+                         : Input : variable 'TMath::Abs(d0Max_sig)' <---> Output : variable 'TMath::Abs(d0Max_sig)'
+                         : Input : variable 'PlngMin2D' <---> Output : variable 'PlngMin2D'
+                         : Input : variable 'chi2_PVSV_log2D' <---> Output : variable 'chi2_PVSV_log2D'
+                         : Input : variable 'TMath::Abs(a_2D)' <---> Output : variable 'TMath::Abs(a_2D)'
+                         : Input : variable 'DR' <---> Output : variable 'DR'
+                         : Input : variable 'B_iso_7_Chi2_5_LoosePt05' <---> Output : variable 'B_iso_7_Chi2_5_LoosePt05'
+                         : Input : variable 'TMath::Abs(B_IDtrks_deltaPhi)' <---> Output : variable 'TMath::Abs(B_IDtrks_deltaPhi)'
+                         : Input : variable 'TMath::Abs(B_IDtrks_DCA)' <---> Output : variable 'TMath::Abs(B_IDtrks_DCA)'
+                         : Input : variable 'Bvtx3DIP' <---> Output : variable 'Bvtx3DIP'
+TFHandler_Factory        :                      Variable                             Mean                             RMS                     [        Min                             Max ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                          B_pT:                         15811.                         6949.0   [                         8000.3                     1.8355e+05 ]
+                         :                           Lxy:                        0.88746                         1.3234   [                     0.00092211                         52.895 ]
+                         :         TMath::Abs(d0Min_sig):                         7.7095                         12.653   [                     3.1727e-07                         254.75 ]
+                         :         TMath::Abs(d0Max_sig):                         12.524                         16.164   [                      0.0074689                         401.13 ]
+                         :                     PlngMin2D:                         5829.3                         2368.6   [                         2625.7                         71900. ]
+                         :               chi2_PVSV_log2D:                         4.4238                         2.2798   [                        -9.2083                         13.289 ]
+                         :              TMath::Abs(a_2D):                        0.17472                        0.22109   [                     4.1968e-07                         1.0000 ]
+                         :                            DR:                        0.30872                        0.32695   [                     8.6712e-05                         1.5000 ]
+                         :      B_iso_7_Chi2_5_LoosePt05:                        0.81038                        0.16252   [                       0.011229                         1.0000 ]
+                         : TMath::Abs(B_IDtrks_deltaPhi):                        0.56624                        0.27330   [                     2.3499e-06                         1.3108 ]
+                         :      TMath::Abs(B_IDtrks_DCA):                       0.052219                       0.044495   [                     4.7774e-08                        0.68870 ]
+                         :                      Bvtx3DIP:                       0.098154                        0.13596   [                     6.2236e-05                         8.5898 ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : --------------------------------------------------
+                         : Rank : Variable                  : Separation
+                         : --------------------------------------------------
+                         :    1 : |#alpha_{2D}|             : 5.962e-01
+                         :    2 : #DeltaR                   : 5.813e-01
+                         :    3 : |d_{0}|^{min} sig.        : 3.263e-01
+                         :    4 : B Isolation (I^{B}_{0.7}) : 3.176e-01
+                         :    5 : L_{xy}                    : 3.014e-01
+                         :    6 : |IP_{B}^{3D}|             : 2.702e-01
+                         :    7 : Log(#chi^{2}_{xy})        : 1.892e-01
+                         :    8 : DOCA_{#mu#mu}             : 1.088e-01
+                         :    9 : |d_{0}|^{max} sig.        : 7.851e-02
+                         :   10 : |#Delta#phi_{#mu#mu}|     : 3.088e-02
+                         :   11 : P^{min}_{L}               : 2.376e-02
+                         :   12 : p_{T}^{B}                 : 2.350e-02
+                         : --------------------------------------------------
+Factory                  : Train method: BDT for Classification
+                         : 
+BDT                      : #events: (reweighted) sig: 493441 bkg: 493441
+                         : #events: (unweighted) sig: 84631 bkg: 902251
+                         : Training 500 Decision Trees ... patience please
+0%, time left: unknown
+6%, time left: 5 mins
+12%, time left: 269 sec
+19%, time left: 240 sec
+25%, time left: 220 sec
+31%, time left: 214 sec
+37%, time left: 185 sec
+44%, time left: 170 sec
+50%, time left: 146 sec
+56%, time left: 131 sec
+62%, time left: 116 sec
+69%, time left: 94 sec
+75%, time left: 74 sec
+81%, time left: 58 sec
+87%, time left: 37 sec
+94%, time left: 18 sec
+                         : Elapsed time for training with 986882 events: 339 sec         
+BDT                      : [out] : Evaluation of BDT on training sample (986882 events)
+0%, time left: unknown
+6%, time left: 24 sec
+12%, time left: 22 sec
+18%, time left: 21 sec
+25%, time left: 19 sec
+31%, time left: 17 sec
+37%, time left: 16 sec
+43%, time left: 14 sec
+50%, time left: 12 sec
+56%, time left: 11 sec
+62%, time left: 9 sec
+68%, time left: 8 sec
+75%, time left: 6 sec
+81%, time left: 4 sec
+87%, time left: 3 sec
+93%, time left: 1 sec
+                         : Elapsed time for evaluation of 986882 events: 26.3 sec       
+                         : Creating xml weight file: [0;36mout/weights/bdt2016test_0_BDT.weights.xml[0m
+                         : Creating standalone class: [0;36mout/weights/bdt2016test_0_BDT.class.C[0m
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+BDT                      : Ranking result (top variable is best ranked)
+                         : ---------------------------------------------------------------
+                         : Rank : Variable                      : Variable Importance
+                         : ---------------------------------------------------------------
+                         :    1 : TMath::Abs(a_2D)              : 1.352e-01
+                         :    2 : DR                            : 1.258e-01
+                         :    3 : B_iso_7_Chi2_5_LoosePt05      : 1.210e-01
+                         :    4 : chi2_PVSV_log2D               : 9.200e-02
+                         :    5 : B_pT                          : 8.166e-02
+                         :    6 : TMath::Abs(d0Max_sig)         : 7.778e-02
+                         :    7 : TMath::Abs(B_IDtrks_deltaPhi) : 7.418e-02
+                         :    8 : TMath::Abs(d0Min_sig)         : 7.299e-02
+                         :    9 : Bvtx3DIP                      : 6.912e-02
+                         :   10 : TMath::Abs(B_IDtrks_DCA)      : 6.894e-02
+                         :   11 : Lxy                           : 5.756e-02
+                         :   12 : PlngMin2D                     : 2.385e-02
+                         : ---------------------------------------------------------------
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+Factory                  : [1mTest all methods[0m
+Factory                  : Test method: BDT for Classification performance
+                         : 
+BDT                      : [out] : Evaluation of BDT on testing sample (986882 events)
+0%, time left: unknown
+6%, time left: 19 sec
+12%, time left: 18 sec
+18%, time left: 17 sec
+25%, time left: 15 sec
+31%, time left: 14 sec
+37%, time left: 13 sec
+43%, time left: 11 sec
+50%, time left: 10 sec
+56%, time left: 9 sec
+62%, time left: 7 sec
+68%, time left: 6 sec
+75%, time left: 5 sec
+81%, time left: 3 sec
+87%, time left: 2 sec
+93%, time left: 1 sec
+                         : Elapsed time for evaluation of 986882 events: 21 sec       
+Factory                  : [1mEvaluate all methods[0m
+Factory                  : Evaluate classifier: BDT
+                         : 
+BDT                      : [out] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_BDT            :                      Variable                             Mean                             RMS                     [        Min                             Max ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         :                          B_pT:                         15009.                         6015.0   [                         8000.0                     1.5565e+05 ]
+                         :                           Lxy:                        0.43360                        0.68149   [                      0.0011482                         35.057 ]
+                         :         TMath::Abs(d0Min_sig):                         3.1549                         6.2810   [                     2.4967e-07                         241.10 ]
+                         :         TMath::Abs(d0Max_sig):                         9.1050                         11.273   [                      0.0057241                         372.72 ]
+                         :                     PlngMin2D:                         5544.5                         2042.8   [                         2614.1                         55410. ]
+                         :               chi2_PVSV_log2D:                         3.6410                         1.9910   [                        -6.9722                         13.273 ]
+                         :              TMath::Abs(a_2D):                        0.28863                        0.23614   [                     3.0384e-07                         1.0000 ]
+                         :                            DR:                        0.47451                        0.32463   [                     9.0759e-05                         1.5000 ]
+                         :      B_iso_7_Chi2_5_LoosePt05:                        0.73767                        0.16520   [                     0.00028363                         1.0000 ]
+                         : TMath::Abs(B_IDtrks_deltaPhi):                        0.60453                        0.26781   [                     3.0907e-06                         1.3165 ]
+                         :      TMath::Abs(B_IDtrks_DCA):                       0.063924                       0.048832   [                     1.1649e-07                        0.60187 ]
+                         :                      Bvtx3DIP:                        0.13236                        0.13698   [                     7.8019e-05                         10.309 ]
+                         : --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : out           BDT            : 0.981
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : out                  BDT            : 0.761 (0.760)       0.944 (0.944)      0.989 (0.989)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:out              : Created tree 'TestTree' with 986882 events
+                         : 
+Dataset:out              : Created tree 'TrainTree' with 986882 events
+                         : 
+Factory                  : [1mThank you for using TMVA![0m
+                         : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m
+*** glibc detected *** /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/bin/runMVA: double free or corruption (!prev): 0x0000000002587120 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x75dee)[0x2b7f9b933dee]
+/lib64/libc.so.6(+0x78c80)[0x2b7f9b936c80]
+/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTree.so(_ZN4TCutD2Ev+0x1c)[0x2b7f98029e3c]
+/lib64/libc.so.6(__cxa_finalize+0x9d)[0x2b7f9b8f3d2d]
+/afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/lib/libmvaInterface.so(+0x64a6)[0x2b7f961344a6]
+======= Memory map: ========
+00400000-0040c000 r-xp 00000000 00:26 301290169108004864                 /eos/user/a/agrummer/www/bmumu/bsmumu-cbdt/bin/runMVA
+0060b000-0060c000 rw-p 0000b000 00:26 301290169108004864                 /eos/user/a/agrummer/www/bmumu/bsmumu-cbdt/bin/runMVA
+0060c000-0060e000 rw-p 00000000 00:00 0 
+024b3000-44004000 rw-p 00000000 00:00 0                                  [heap]
+2b7f95f0b000-2b7f95f2b000 r-xp 00000000 fc:03 186579                     /lib64/ld-2.12.so
+2b7f95f2b000-2b7f95f2d000 rw-p 00000000 00:00 0 
+2b7f9612b000-2b7f9612c000 r--p 00020000 fc:03 186579                     /lib64/ld-2.12.so
+2b7f9612c000-2b7f9612d000 rw-p 00021000 fc:03 186579                     /lib64/ld-2.12.so
+2b7f9612d000-2b7f9612e000 rw-p 00000000 00:00 0 
+2b7f9612e000-2b7f9613e000 r-xp 00000000 00:26 301290122131800064         /eos/user/a/agrummer/www/bmumu/bsmumu-cbdt/lib/libmvaInterface.so
+2b7f9613e000-2b7f9633e000 ---p 00010000 00:26 301290122131800064         /eos/user/a/agrummer/www/bmumu/bsmumu-cbdt/lib/libmvaInterface.so
+2b7f9633e000-2b7f9633f000 rw-p 00010000 00:26 301290122131800064         /eos/user/a/agrummer/www/bmumu/bsmumu-cbdt/lib/libmvaInterface.so
+2b7f9633f000-2b7f96341000 rw-p 00000000 00:00 0 
+2b7f96341000-2b7f96713000 r-xp 00000000 00:1f 238768                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCore.so
+2b7f96713000-2b7f96913000 ---p 003d2000 00:1f 238768                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCore.so
+2b7f96913000-2b7f9693a000 r--p 003d2000 00:1f 238768                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCore.so
+2b7f9693a000-2b7f96943000 rw-p 003f9000 00:1f 238768                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCore.so
+2b7f96943000-2b7f96976000 rw-p 00000000 00:00 0 
+2b7f96976000-2b7f96c48000 r-xp 00000000 00:1f 238726                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRIO.so
+2b7f96c48000-2b7f96e48000 ---p 002d2000 00:1f 238726                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRIO.so
+2b7f96e48000-2b7f96e54000 r--p 002d2000 00:1f 238726                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRIO.so
+2b7f96e54000-2b7f96e57000 rw-p 002de000 00:1f 238726                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRIO.so
+2b7f96e57000-2b7f96e5a000 rw-p 00000000 00:00 0 
+2b7f96e5a000-2b7f96f13000 r-xp 00000000 00:1f 238711                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libNet.so
+2b7f96f13000-2b7f97113000 ---p 000b9000 00:1f 238711                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libNet.so
+2b7f97113000-2b7f9711e000 r--p 000b9000 00:1f 238711                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libNet.so
+2b7f9711e000-2b7f97120000 rw-p 000c4000 00:1f 238711                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libNet.so
+2b7f97120000-2b7f97127000 rw-p 00000000 00:00 0 
+2b7f97127000-2b7f97470000 r-xp 00000000 00:1f 238736                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libHist.so
+2b7f97470000-2b7f97670000 ---p 00349000 00:1f 238736                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libHist.so
+2b7f97670000-2b7f97698000 r--p 00349000 00:1f 238736                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libHist.so
+2b7f97698000-2b7f9769c000 rw-p 00371000 00:1f 238736                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libHist.so
+2b7f9769c000-2b7f976a8000 rw-p 00000000 00:00 0 
+2b7f976a8000-2b7f977d9000 r-xp 00000000 00:1f 238987                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf.so
+2b7f977d9000-2b7f979d9000 ---p 00131000 00:1f 238987                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf.so
+2b7f979d9000-2b7f979e6000 r--p 00131000 00:1f 238987                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf.so
+2b7f979e6000-2b7f979ea000 rw-p 0013e000 00:1f 238987                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf.so
+2b7f979ea000-2b7f979f8000 rw-p 00000000 00:00 0 
+2b7f979f8000-2b7f97a85000 r-xp 00000000 00:1f 239081                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf3d.so
+2b7f97a85000-2b7f97c85000 ---p 0008d000 00:1f 239081                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf3d.so
+2b7f97c85000-2b7f97c8e000 r--p 0008d000 00:1f 239081                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf3d.so
+2b7f97c8e000-2b7f97c90000 rw-p 00096000 00:1f 239081                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGraf3d.so
+2b7f97c90000-2b7f97c95000 rw-p 00000000 00:00 0 
+2b7f97c95000-2b7f97d5c000 r-xp 00000000 00:1f 238790                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGpad.so
+2b7f97d5c000-2b7f97f5c000 ---p 000c7000 00:1f 238790                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGpad.so
+2b7f97f5c000-2b7f97f66000 r--p 000c7000 00:1f 238790                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGpad.so
+2b7f97f66000-2b7f97f68000 rw-p 000d1000 00:1f 238790                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGpad.so
+2b7f97f68000-2b7f97f69000 rw-p 00000000 00:00 0 
+2b7f97f69000-2b7f980a0000 r-xp 00000000 00:1f 239080                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTree.so
+2b7f980a0000-2b7f982a0000 ---p 00137000 00:1f 239080                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTree.so
+2b7f982a0000-2b7f982ae000 r--p 00137000 00:1f 239080                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTree.so
+2b7f982ae000-2b7f982b1000 rw-p 00145000 00:1f 239080                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTree.so
+2b7f982b1000-2b7f982b5000 rw-p 00000000 00:00 0 
+2b7f982b5000-2b7f982db000 r-xp 00000000 00:1f 238725                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRint.so
+2b7f982db000-2b7f984da000 ---p 00026000 00:1f 238725                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRint.so
+2b7f984da000-2b7f984dc000 r--p 00025000 00:1f 238725                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRint.so
+2b7f984dc000-2b7f984dd000 rw-p 00027000 00:1f 238725                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libRint.so
+2b7f984dd000-2b7f984de000 rw-p 00000000 00:00 0 
+2b7f984de000-2b7f98541000 r-xp 00000000 00:1f 238814                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPostscript.so
+2b7f98541000-2b7f98740000 ---p 00063000 00:1f 238814                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPostscript.so
+2b7f98740000-2b7f98747000 r--p 00062000 00:1f 238814                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPostscript.so
+2b7f98747000-2b7f98748000 rw-p 00069000 00:1f 238814                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPostscript.so
+2b7f98748000-2b7f98749000 rw-p 00000000 00:00 0 
+2b7f98749000-2b7f98894000 r-xp 00000000 00:1f 238891                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMatrix.so
+2b7f98894000-2b7f98a94000 ---p 0014b000 00:1f 238891                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMatrix.so
+2b7f98a94000-2b7f98a9b000 r--p 0014b000 00:1f 238891                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMatrix.so
+2b7f98a9b000-2b7f98a9d000 rw-p 00152000 00:1f 238891                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMatrix.so
+2b7f98a9d000-2b7f98aa1000 rw-p 00000000 00:00 0 
+2b7f98aa1000-2b7f98ae5000 r-xp 00000000 00:1f 238823                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPhysics.so
+2b7f98ae5000-2b7f98ce5000 ---p 00044000 00:1f 238823                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPhysics.so
+2b7f98ce5000-2b7f98ce8000 r--p 00044000 00:1f 238823                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPhysics.so
+2b7f98ce8000-2b7f98ce9000 rw-p 00047000 00:1f 238823                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libPhysics.so
+2b7f98ce9000-2b7f98ceb000 rw-p 00000000 00:00 0 
+2b7f98ceb000-2b7f98ebc000 r-xp 00000000 00:1f 238870                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMathCore.so
+2b7f98ebc000-2b7f990bb000 ---p 001d1000 00:1f 238870                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMathCore.so
+2b7f990bb000-2b7f990c5000 r--p 001d0000 00:1f 238870                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMathCore.so
+2b7f990c5000-2b7f990c8000 rw-p 001da000 00:1f 238870                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMathCore.so
+2b7f990c8000-2b7f990d1000 rw-p 00000000 00:00 0 
+2b7f990d1000-2b7f990fb000 r-xp 00000000 00:1f 238712                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libThread.so
+2b7f990fb000-2b7f992fb000 ---p 0002a000 00:1f 238712                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libThread.so
+2b7f992fb000-2b7f992fe000 r--p 0002a000 00:1f 238712                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libThread.so
+2b7f992fe000-2b7f992ff000 rw-p 0002d000 00:1f 238712                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libThread.so
+2b7f992ff000-2b7f99301000 rw-p 00000000 00:00 0 
+2b7f99301000-2b7f9930f000 r-xp 00000000 00:1f 238744                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMultiProc.so
+2b7f9930f000-2b7f9950e000 ---p 0000e000 00:1f 238744                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMultiProc.so
+2b7f9950e000-2b7f9950f000 r--p 0000d000 00:1f 238744                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMultiProc.so
+2b7f9950f000-2b7f99510000 rw-p 0000e000 00:1f 238744                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMultiProc.so
+2b7f99533000-2b7f99535000 r-xp 00000000 fc:03 186597                     /lib64/libdl-2.12.so
+2b7f99535000-2b7f99735000 ---p 00002000 fc:03 186597                     /lib64/libdl-2.12.so
+2b7f99735000-2b7f99736000 r--p 00002000 fc:03 186597                     /lib64/libdl-2.12.so
+2b7f99736000-2b7f99737000 rw-p 00003000 fc:03 186597                     /lib64/libdl-2.12.so
+2b7f99737000-2b7f99b1e000 r-xp 00000000 00:1f 238764                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGui.so
+2b7f99b1e000-2b7f99d1e000 ---p 003e7000 00:1f 238764                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGui.so
+2b7f99d1e000-2b7f99d69000 r--p 003e7000 00:1f 238764                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGui.so
+2b7f99d69000-2b7f99d6f000 rw-p 00432000 00:1f 238764                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libGui.so
+2b7f99d6f000-2b7f99d7f000 rw-p 00000000 00:00 0 
+2b7f99d7f000-2b7f99e02000 r-xp 00000000 fc:03 186599                     /lib64/libm-2.12.so
+2b7f99e02000-2b7f9a001000 ---p 00083000 fc:03 186599                     /lib64/libm-2.12.so
+2b7f9a001000-2b7f9a002000 r--p 00082000 fc:03 186599                     /lib64/libm-2.12.so
+2b7f9a002000-2b7f9a003000 rw-p 00083000 fc:03 186599                     /lib64/libm-2.12.so
+2b7f9a003000-2b7f9a004000 rw-p 00000000 00:00 0 
+2b7f9a004000-2b7f9a43f000 r-xp 00000000 00:1f 239099                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTMVA.so
+2b7f9a43f000-2b7f9a63f000 ---p 0043b000 00:1f 239099                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTMVA.so
+2b7f9a63f000-2b7f9a664000 r--p 0043b000 00:1f 239099                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTMVA.so
+2b7f9a664000-2b7f9a66a000 rw-p 00460000 00:1f 239099                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTMVA.so
+2b7f9a66a000-2b7f9a676000 rw-p 00000000 00:00 0 
+2b7f9a676000-2b7f9a6d6000 r-xp 00000000 00:1f 238853                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMinuit.so
+2b7f9a6d6000-2b7f9a8d6000 ---p 00060000 00:1f 238853                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMinuit.so
+2b7f9a8d6000-2b7f9a8d9000 r--p 00060000 00:1f 238853                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMinuit.so
+2b7f9a8d9000-2b7f9a8da000 rw-p 00063000 00:1f 238853                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMinuit.so
+2b7f9a8da000-2b7f9a8db000 rw-p 00000000 00:00 0 
+2b7f9a8db000-2b7f9a936000 r-xp 00000000 00:1f 238827                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libXMLIO.so
+2b7f9a936000-2b7f9ab35000 ---p 0005b000 00:1f 238827                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libXMLIO.so
+2b7f9ab35000-2b7f9ab38000 r--p 0005a000 00:1f 238827                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libXMLIO.so
+2b7f9ab38000-2b7f9ab3a000 rw-p 0005d000 00:1f 238827                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libXMLIO.so
+2b7f9ab3a000-2b7f9ab3b000 rw-p 00000000 00:00 0 
+2b7f9ab3b000-2b7f9ab65000 r-xp 00000000 00:1f 238899                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMLP.so
+2b7f9ab65000-2b7f9ad64000 ---p 0002a000 00:1f 238899                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMLP.so
+2b7f9ad64000-2b7f9ad66000 r--p 00029000 00:1f 238899                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMLP.so
+2b7f9ad66000-2b7f9ad75000 rw-p 0002b000 00:1f 238899                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libMLP.so
+2b7f9ad75000-2b7f9aee2000 r-xp 00000000 00:1f 239050                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTreePlayer.so
+2b7f9aee2000-2b7f9b0e2000 ---p 0016d000 00:1f 239050                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTreePlayer.so
+2b7f9b0e2000-2b7f9b0ed000 r--p 0016d000 00:1f 239050                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTreePlayer.so
+2b7f9b0ed000-2b7f9b0f0000 rw-p 00178000 00:1f 239050                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libTreePlayer.so
+2b7f9b0f0000-2b7f9b0f7000 rw-p 00000000 00:00 0 
+2b7f9b0f7000-2b7f9b27b000 r-xp 00000000 00:17 1524759252                 /afs/cern.ch/sw/lcg/contrib/gcc/6.2.0native/x86_64-slc6/lib64/libstdc++.so.6.0.22
+2b7f9b27b000-2b7f9b47b000 ---p 00184000 00:17 1524759252                 /afs/cern.ch/sw/lcg/contrib/gcc/6.2.0native/x86_64-slc6/lib64/libstdc++.so.6.0.22
+2b7f9b47b000-2b7f9b485000 r--p 00184000 00:17 1524759252                 /afs/cern.ch/sw/lcg/contrib/gcc/6.2.0native/x86_64-slc6/lib64/libstdc++.so.6.0.22
+2b7f9b485000-2b7f9b487000 rw-p 0018e000 00:17 1524759252                 /afs/cern.ch/sw/lcg/contrib/gcc/6.2.0native/x86_64-slc6/lib64/libstdc++.so.6.0.22
+2b7f9b487000-2b7f9b48b000 rw-p 00000000 00:00 0 
+2b7f9b48b000-2b7f9b4a1000 r-xp 00000000 00:17 1524759250                 /afs/cern.ch/sw/lcg/contrib/gcc/6.2.0native/x86_64-slc6/lib64/libgcc_s.so.1
+2b7f9b4a1000-2b7f9b6a0000 ---p 00016000 00:17 1524759250                 /afs/cern.ch/sw/lcg/contrib/gcc/6.2.0native/x86_64-slc6/lib64/libgcc_s.so.1
+2b7f9b6a0000-2b7f9b6a1000 rw-p 00015000 00:17 1524759250                 /afs/cern.ch/sw/lcg/contrib/gcc/6.2.0native/x86_64-slc6/lib64/libgcc_s.so.1
+2b7f9b6a1000-2b7f9b6b8000 r-xp 00000000 fc:03 186615                     /lib64/libpthread-2.12.so
+2b7f9b6b8000-2b7f9b8b8000 ---p 00017000 fc:03 186615                     /lib64/libpthread-2.12.so
+2b7f9b8b8000-2b7f9b8b9000 r--p 00017000 fc:03 186615                     /lib64/libpthread-2.12.so
+2b7f9b8b9000-2b7f9b8ba000 rw-p 00018000 fc:03 186615                     /lib64/libpthread-2.12.so
+2b7f9b8ba000-2b7f9b8be000 rw-p 00000000 00:00 0 
+2b7f9b8be000-2b7f9ba48000 r-xp 00000000 fc:03 186591                     /lib64/libc-2.12.so
+2b7f9ba48000-2b7f9bc48000 ---p 0018a000 fc:03 186591                     /lib64/libc-2.12.so
+2b7f9bc48000-2b7f9bc4c000 r--p 0018a000 fc:03 186591                     /lib64/libc-2.12.so
+2b7f9bc4c000-2b7f9bc4e000 rw-p 0018e000 fc:03 186591                     /lib64/libc-2.12.so
+2b7f9bc4e000-2b7f9bc53000 rw-p 00000000 00:00 0 
+2b7f9bc53000-2b7f9bc68000 r-xp 00000000 fc:03 186642                     /lib64/libz.so.1.2.3
+2b7f9bc68000-2b7f9be67000 ---p 00015000 fc:03 186642                     /lib64/libz.so.1.2.3
+2b7f9be67000-2b7f9be68000 r--p 00014000 fc:03 186642                     /lib64/libz.so.1.2.3
+2b7f9be68000-2b7f9be69000 rw-p 00015000 fc:03 186642                     /lib64/libz.so.1.2.3
+2b7f9be69000-2b7f9becb000 r-xp 00000000 fc:03 626509                     /usr/lib64/libssl.so.1.0.1e
+2b7f9becb000-2b7f9c0cb000 ---p 00062000 fc:03 626509                     /usr/lib64/libssl.so.1.0.1e
+2b7f9c0cb000-2b7f9c0cf000 r--p 00062000 fc:03 626509                     /usr/lib64/libssl.so.1.0.1e
+2b7f9c0cf000-2b7f9c0d5000 rw-p 00066000 fc:03 626509                     /usr/lib64/libssl.so.1.0.1e
+2b7f9c0d5000-2b7f9c28f000 r-xp 00000000 fc:03 626507                     /usr/lib64/libcrypto.so.1.0.1e
+2b7f9c28f000-2b7f9c48f000 ---p 001ba000 fc:03 626507                     /usr/lib64/libcrypto.so.1.0.1e
+2b7f9c48f000-2b7f9c4aa000 r--p 001ba000 fc:03 626507                     /usr/lib64/libcrypto.so.1.0.1e
+2b7f9c4aa000-2b7f9c4b6000 rw-p 001d5000 fc:03 626507                     /usr/lib64/libcrypto.so.1.0.1e
+2b7f9c4b6000-2b7f9c4bb000 rw-p 00000000 00:00 0 
+2b7f9c4bb000-2b7f9c4c2000 r-xp 00000000 fc:03 186595                     /lib64/libcrypt-2.12.so
+2b7f9c4c2000-2b7f9c6c2000 ---p 00007000 fc:03 186595                     /lib64/libcrypt-2.12.so
+2b7f9c6c2000-2b7f9c6c3000 r--p 00007000 fc:03 186595                     /lib64/libcrypt-2.12.so
+2b7f9c6c3000-2b7f9c6c4000 rw-p 00008000 fc:03 186595                     /lib64/libcrypt-2.12.so
+2b7f9c6c4000-2b7f9c6f2000 rw-p 00000000 00:00 0 
+2b7f9c6f2000-2b7f9c786000 r-xp 00000000 fc:03 625231                     /usr/lib64/libfreetype.so.6.3.22
+2b7f9c786000-2b7f9c985000 ---p 00094000 fc:03 625231                     /usr/lib64/libfreetype.so.6.3.22
+2b7f9c985000-2b7f9c98b000 rw-p 00093000 fc:03 625231                     /usr/lib64/libfreetype.so.6.3.22
+2b7f9c98b000-2b7f9c98c000 rw-p 00000000 00:00 0 
+2b7f9c98c000-2b7f9c9c3000 r-xp 00000000 00:1f 157327                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/tbb/44_20160413-x86_64-slc6-gcc62-opt/lib/libtbb.so.2
+2b7f9c9c3000-2b7f9cbc3000 ---p 00037000 00:1f 157327                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/tbb/44_20160413-x86_64-slc6-gcc62-opt/lib/libtbb.so.2
+2b7f9cbc3000-2b7f9cbc7000 rw-p 00037000 00:1f 157327                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/tbb/44_20160413-x86_64-slc6-gcc62-opt/lib/libtbb.so.2
+2b7f9cbc7000-2b7f9cbc9000 rw-p 00000000 00:00 0 
+2b7f9cbc9000-2b7f9cbd2000 r-xp 00000000 00:1f 239055                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libImt.so
+2b7f9cbd2000-2b7f9cdd1000 ---p 00009000 00:1f 239055                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libImt.so
+2b7f9cdd1000-2b7f9cdd2000 r--p 00008000 00:1f 239055                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libImt.so
+2b7f9cdd2000-2b7f9cdd3000 rw-p 00009000 00:1f 239055                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libImt.so
+2b7f9cdd3000-2b7f9cdd4000 rw-p 00000000 00:00 0 
+2b7f9cdd4000-2b7f9ce15000 r-xp 00000000 fc:03 186689                     /lib64/libgssapi_krb5.so.2.2
+2b7f9ce15000-2b7f9d015000 ---p 00041000 fc:03 186689                     /lib64/libgssapi_krb5.so.2.2
+2b7f9d015000-2b7f9d016000 r--p 00041000 fc:03 186689                     /lib64/libgssapi_krb5.so.2.2
+2b7f9d016000-2b7f9d018000 rw-p 00042000 fc:03 186689                     /lib64/libgssapi_krb5.so.2.2
+2b7f9d018000-2b7f9d019000 rw-p 00000000 00:00 0 
+2b7f9d019000-2b7f9d0f5000 r-xp 00000000 fc:03 186695                     /lib64/libkrb5.so.3.3
+2b7f9d0f5000-2b7f9d2f4000 ---p 000dc000 fc:03 186695                     /lib64/libkrb5.so.3.3
+2b7f9d2f4000-2b7f9d2fe000 r--p 000db000 fc:03 186695                     /lib64/libkrb5.so.3.3
+2b7f9d2fe000-2b7f9d300000 rw-p 000e5000 fc:03 186695                     /lib64/libkrb5.so.3.3
+2b7f9d300000-2b7f9d303000 r-xp 00000000 fc:03 186643                     /lib64/libcom_err.so.2.1
+2b7f9d303000-2b7f9d502000 ---p 00003000 fc:03 186643                     /lib64/libcom_err.so.2.1
+2b7f9d502000-2b7f9d503000 r--p 00002000 fc:03 186643                     /lib64/libcom_err.so.2.1
+2b7f9d503000-2b7f9d504000 rw-p 00003000 fc:03 186643                     /lib64/libcom_err.so.2.1
+2b7f9d504000-2b7f9d52d000 r-xp 00000000 fc:03 186693                     /lib64/libk5crypto.so.3.1
+2b7f9d52d000-2b7f9d72d000 ---p 00029000 fc:03 186693                     /lib64/libk5crypto.so.3.1
+2b7f9d72d000-2b7f9d72e000 r--p 00029000 fc:03 186693                     /lib64/libk5crypto.so.3.1
+2b7f9d72e000-2b7f9d72f000 rw-p 0002a000 fc:03 186693                     /lib64/libk5crypto.so.3.1
+2b7f9d72f000-2b7f9d731000 rw-p 00000000 00:00 0 
+2b7f9d731000-2b7f9d747000 r-xp 00000000 fc:03 186617                     /lib64/libresolv-2.12.so
+2b7f9d747000-2b7f9d947000 ---p 00016000 fc:03 186617                     /lib64/libresolv-2.12.so
+2b7f9d947000-2b7f9d948000 r--p 00016000 fc:03 186617                     /lib64/libresolv-2.12.so
+2b7f9d948000-2b7f9d949000 rw-p 00017000 fc:03 186617                     /lib64/libresolv-2.12.so
+2b7f9d949000-2b7f9d94b000 rw-p 00000000 00:00 0 
+2b7f9d94b000-2b7f9d94d000 r-xp 00000000 fc:03 186581                     /lib64/libfreebl3.so
+2b7f9d94d000-2b7f9db4c000 ---p 00002000 fc:03 186581                     /lib64/libfreebl3.so
+2b7f9db4c000-2b7f9db4d000 r--p 00001000 fc:03 186581                     /lib64/libfreebl3.so
+2b7f9db4d000-2b7f9db4e000 rw-p 00002000 fc:03 186581                     /lib64/libfreebl3.so
+2b7f9db4e000-2b7f9db55000 r-xp 00000000 fc:03 186619                     /lib64/librt-2.12.so
+2b7f9db55000-2b7f9dd54000 ---p 00007000 fc:03 186619                     /lib64/librt-2.12.so
+2b7f9dd54000-2b7f9dd55000 r--p 00006000 fc:03 186619                     /lib64/librt-2.12.so
+2b7f9dd55000-2b7f9dd56000 rw-p 00007000 fc:03 186619                     /lib64/librt-2.12.so
+2b7f9dd56000-2b7f9dd57000 rw-p 00000000 00:00 0 
+2b7f9dd57000-2b7f9dd61000 r-xp 00000000 fc:03 186697                     /lib64/libkrb5support.so.0.1
+2b7f9dd61000-2b7f9df60000 ---p 0000a000 fc:03 186697                     /lib64/libkrb5support.so.0.1
+2b7f9df60000-2b7f9df61000 r--p 00009000 fc:03 186697                     /lib64/libkrb5support.so.0.1
+2b7f9df61000-2b7f9df62000 rw-p 0000a000 fc:03 186697                     /lib64/libkrb5support.so.0.1
+2b7f9df62000-2b7f9df64000 r-xp 00000000 fc:03 186688                     /lib64/libkeyutils.so.1.3
+2b7f9df64000-2b7f9e163000 ---p 00002000 fc:03 186688                     /lib64/libkeyutils.so.1.3
+2b7f9e163000-2b7f9e164000 r--p 00001000 fc:03 186688                     /lib64/libkeyutils.so.1.3
+2b7f9e164000-2b7f9e165000 rw-p 00002000 fc:03 186688                     /lib64/libkeyutils.so.1.3
+2b7f9e165000-2b7f9e166000 rw-p 00000000 00:00 0 
+2b7f9e166000-2b7f9e183000 r-xp 00000000 fc:03 187018                     /lib64/libselinux.so.1
+2b7f9e183000-2b7f9e382000 ---p 0001d000 fc:03 187018                     /lib64/libselinux.so.1
+2b7f9e382000-2b7f9e383000 r--p 0001c000 fc:03 187018                     /lib64/libselinux.so.1
+2b7f9e383000-2b7f9e384000 rw-p 0001d000 fc:03 187018                     /lib64/libselinux.so.1
+2b7f9e384000-2b7f9e394000 rw-p 00000000 00:00 0 
+2b7f9e394000-2b7f9e3a1000 r-xp 00000000 fc:03 186607                     /lib64/libnss_files-2.12.so
+2b7f9e3a1000-2b7f9e5a0000 ---p 0000d000 fc:03 186607                     /lib64/libnss_files-2.12.so
+2b7f9e5a0000-2b7f9e5a1000 r--p 0000c000 fc:03 186607                     /lib64/libnss_files-2.12.so
+2b7f9e5a1000-2b7f9e5a2000 rw-p 0000d000 fc:03 186607                     /lib64/libnss_files-2.12.so
+2b7f9e5a2000-2b7f9e5aa000 r-xp 00000000 fc:03 186648                     /lib64/libnss_sss.so.2
+2b7f9e5aa000-2b7f9e7a9000 ---p 00008000 fc:03 186648                     /lib64/libnss_sss.so.2
+2b7f9e7a9000-2b7f9e7aa000 rw-p 00007000 fc:03 186648                     /lib64/libnss_sss.so.2
+2b7f9e7aa000-2b7f9efaf000 r--s 00000000 fc:05 519665                     /var/lib/sss/mc/passwd
+2b7f9efaf000-2b7f9efe4000 r--s 00000000 fc:05 259732                     /var/db/nscd/hosts
+2b7f9efe4000-2b7f9efe5000 rw-p 00000000 00:00 0 
+2b7f9efe5000-2b7fa14ce000 r-xp 00000000 00:1f 238822                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCling.so
+2b7fa14ce000-2b7fa16ce000 ---p 024e9000 00:1f 238822                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCling.so
+2b7fa16ce000-2b7fa189d000 r--p 024e9000 00:1f 238822                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCling.so
+2b7fa189d000-2b7fa18a3000 rw-p 026b8000 00:1f 238822                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib/libCling.so
+2b7fa18a3000-2b7fa18c4000 rw-p 00000000 00:00 0 
+2b7fa18e7000-2b7fa1904000 r-xp 00000000 fc:03 186634                     /lib64/libtinfo.so.5.7
+2b7fa1904000-2b7fa1b03000 ---p 0001d000 fc:03 186634                     /lib64/libtinfo.so.5.7
+2b7fa1b03000-2b7fa1b07000 rw-p 0001c000 fc:03 186634                     /lib64/libtinfo.so.5.7
+2b7fa1b07000-2b7fa1b39000 rw-p 00000000 00:00 0 
+2b7fa1b39000-2b7fa8d19000 r--p 00000000 00:1f 239188                     /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/etc/allDict.cxx.pch
+2b7fa8d19000-2b7fa9870000 rw-p 00000000 00:00 0 
+2b7fa9870000-2b7fa9872000 r-xp 00000000 00:00 0 
+2b7fa9872000-2b7fa9873000 rw-p 00000000 00:00 0 
+2b7fa98b2000-2b7fa9920000 rw-p 00000000 00:00 0 
+2b7fa99a1000-2b7fa99e6000 rw-p 00000000 00:00 0 
+2b7fa99e6000-2b7fa99e8000 r-xp 00000000 00:00 0 
+2b7fa99e8000-2b7fa9a08000 r-xp 00000000 fc:03 186579                     /lib64/ld-2.12.so
+2b7fa9a08000-2b7fa9c08000 ---p 00020000 fc:03 186579                     /lib64/ld-2.12.so
+2b7fa9c08000-2b7fa9c09000 r--p 00020000 fc:03 186579                     /lib64/ld-2.12.so
+2b7fa9c09000-2b7fa9c0a000 rw-p 00021000 fc:03 186579                     /lib64/ld-2.12.so
+2b7fa9c0a000-2b7fa9f8d000 rw-p 00000000 00:00 0 
+2b7fa9f8d000-2b7fa9faa000 r-xp 00000000 00:00 0 
+2b7fa9faa000-2b7fa9fab000 rw-p 00000000 00:00 0 
+2b7fba5d9000-2b7fba5da000 r-xp 00000000 00:00 0 
+2b7fbe072000-2b7fbe68f000 r--s 00000000 fc:05 519666                     /var/lib/sss/mc/group
+7ffe90227000-7ffe90260000 rw-p 00000000 00:00 0                          [stack]
+7ffe90318000-7ffe90319000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+/afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/job_0.sh: line 9:  4341 Aborted                 (core dumped) /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/bin/runMVA /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/cfg/bdt2012final.cfg :MaxDepth=2:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500 0
+
+Job finished at Tue Feb 20 18:39:04 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.9 (Carbon)
+
+CERN statistics: This process used approximately : 0:20:11 KSI2K hours (1211 KSI2K seconds)
+                 This process corresponds to     : 1:18:45 HS06  hours (4725 HS06  seconds)

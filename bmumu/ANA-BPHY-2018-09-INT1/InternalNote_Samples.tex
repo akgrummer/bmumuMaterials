@@ -1,0 +1,200 @@
+\section{Data and Monte Carlo Samples}
+\label{sec:Samples}
+
+\subsection{Data Samples}
+\label{ssec:DataSamples}
+
+This analysis uses the first part of the ATLAS Run~2 dataset
+consisting of $\sqrt{s} = 13$~TeV collision data taken with stable LHC
+beams in the years 2015 and 2016.  The ATLAS muon and tracking
+detectors, which are essential for the reconstruction of the \Bds\ and
+\Bpm\ mesons, are required to be fully operational.  These
+requirements yield an integrated luminosity of $\approx
+39\;\mathrm{fb}^{-1}$.
+
+For the \Bmumu signal channel a region of 360~MeV width around the
+\Bs\ mass \yel[This sentence will need
+to be adjusted once we have the reprocessed DAODs.]
+{is omitted} during the analysis development to avoid any bias 
+(``blinding'')\footnote{Future footnote text: Only once the unblinding
+  decision will be given we will decrypt the blinded mass values using
+  our unblinding key.  This procedure avoids the time needed to re-run the
+  derivation on data once we are allowed to unblind while it still
+  keeps us from accidentally looking at the mass values in the
+  blinded region.}.
+
+The derived AOD (DAOD) samples used in this analysis are produced
+by the BPHY8 derivation format:\skp[10]\com{
+  Please note that the p-tags of these data samples will change again
+  as we reprocess our data DAODs to include the mass values from the
+  blinded region in a blinded/ encrypted way.}
+\begin{itemize}
+\item Data 2015, physics\_Main stream:\\
+  data15\_13TeV.period[$P$
+  ].physics\_Main.PhysCont.DAOD\_BPHY8.grp15\_v01\_p3372\\
+  with periods $P$  A, C, D, E, F, G, H, J.
+\item Data 2106, physics\_Main stream:\\
+  data16\_13TeV.period[$P$].physics\_Main.PhysCont.DAOD\_BPHY8.grp16\_v01\_p3372\\
+  with periods $P$ A, B, C, D, E, F, G, I, K, L.
+\item Data 2016, physics\_BphysDelayed stream:\\  
+  data16\_13TeV.period[$P$].physics\_BphysDelayed.PhysCont.DAOD\_BPHY8.grp16\_v01\_p3372
+  \\
+  with periods $P$ D, E, F, G, I, K, L.
+\end{itemize}
+
+
+\subsection{Monte Carlo Samples}
+\label{ssec:MCSamples}
+
+Simulated Monte Carlo data samples are required for most of the analysis
+steps. Dedicated MC data samples were produced, see
+Table~\ref{tab:MCsamples}.
+
+For each sample, the number of events generated is given together
+with the details on the generation: \Pythia 8B plus EvtGen is used
+for most samples except for the \Bhh\ peaking background and
+the \bbmumuX\ continuum background channels where only \Pythia 8B is used.
+EvtGen is used for the reference channels including a $J/\psi$ in the
+final state in order to correctly account for the $J/\psi$
+polarisation
+effects.
+The \BsJpsiPhi\ control channel, using \Pythia 8B and Photos is taken
+from the samples produced for the \BsJpsiPhi\ analysis
+within the {\it $J/\psi$} analysis subgroup: the sample is generated
+flat from the angular point of view
+and maps are used to obtain the correct angular distribution.
+Most of the samples are processed with Atlfast-II that employs
+the fast detector simulation for the calorimeter by means of
+parameterisations of the longitudinal and lateral energy profile,
+while the muon and tracking parts are fully simulated.
+Due the less accurate simulation of calorimetry in Atlfast-II,
+this cannot be used to estimate the muon fake rates, so
+the \Bhh\ peaking background are
+processed with the full simulation in order to have an accurate
+description of the hadronic contributions.
+
+
+\begin{table}[h]
+  \begin{center}
+    \hspace*{-1.5cm}
+    \begin{tabular}{|l|l|r|l|l|}
+        \hline
+        Channel & Type & \multicolumn{1}{|l|}{Events}
+        & Generator & Simulation \\
+        \hline
+        \Bsmumu & signal & 1,000,000 & \Pythia 8B + EvtGen & Atlfast-II
+        \\
+        \Bmumu & signal & 1,000,000 & \Pythia 8B + EvtGen & Atlfast-II
+        \\
+        \BpKpJpsi\ with \JpsiMuMu & reference & 1,997,000 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \BmKmJpsi\ with \JpsiMuMu & reference & 1,999,500 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \BpPipJpsi\ with \JpsiMuMu & reference & 498,000 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \BmPimJpsi\ with \JpsiMuMu & reference & 500,000 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \BsJpsiPhi\ with \JpsiMuMu, \Phikk & control & 5,000,000 &
+        \Pythia 8B + Photospp & Atlfast-II \\
+        \Bhh & peaking bkg. & 5,000,000 &
+        \Pythia 8B & full simulation \\
+        \BsKmMupNu & part. rec. bkg. & 250,000 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \BsPimMuPNu & part. rec. bkg. & 500,000 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \LPMuNu & part. rec. bkg. & 250,000 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \bbJpsiX with \JpsiMuMu & cont. bkg. & 10,000,000 &
+        \Pythia 8B + EvtGen & Atlfast-II \\
+        \bbmumuX & cont. bkg. & 200,000,000 &
+        \Pythia 8B & Atlfast-II \\
+        \hline
+    \end{tabular}
+    \caption{Monte Carlo data samples for signal, reference, control and
+      background channels.  The background channels are sub-divided
+      into peaking background (peaking bkg.),
+      partially reconstructed background (part. rec. bkg.) and
+      continuum background (cont. bkg.).
+    }
+    \label{tab:MCsamples}
+  \end{center}
+\end{table}
+
+Further details on the datasets are given
+in Table~\ref{tab:MCAODsamples} (for AODs) and Table~\ref{tab:MCDAODsamples}
+(for DAODs). \com{Please note that the DAOD datasets will need
+  adjustment once we will have produced the final round of MC DAOD.}
+
+\begin{table}[h]
+  \centering
+  \footnotesize
+  \begin{adjustbox}{angle=90}
+    \begin{tabular}{|l|r|l|}
+      \hline
+      Channel & \multicolumn{1}{|c|}{\#events}  & Dataset \\
+      \hline
+      Bsmumu & 1,000,000 &
+    mc16\_13TeV.300426.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bs\_mu3p5mu3p5.merge.AOD.e4889\_e5984\_a875\_r9364\_r9315 \\ 
+Bdmumu  &  1,000,000 &
+mc16\_13TeV.300430.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bd\_mu3p5mu3p5.merge.AOD.e4889\_e5984\_a875\_r9364\_r9315
+\\
+BpJpsiKp	  &  1,997,000 & mc16\_13TeV.300404.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bp\_Jpsi\_mu3p5mu3p5\_Kp\_BMassFix.merge.AOD.e4862\_e5984\_a875\_r9364\_r9315 \\
+BmJpsiKm  &  1,999,500 &
+mc16\_13TeV.300405.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bm\_Jpsi\_mu3p5mu3p5\_Km\_BMassFix.merge.AOD.e4862\_e5984\_a875\_r9364\_r9315
+\\
+BsJpsiPhi  &  5,000,000 &
+mc16\_13TeV.300438.Pythia8BPhotospp\_A14\_CTEQ6L1\_Bs\_Jpsimu3p5mu3p5\_phi.merge.AOD.e4922\_e5984\_a875\_r9364\_r9315 \\
+BpJpsiPip  &  498,000 &
+mc16\_13TeV.300406.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bp\_Jpsi\_mu3p5mu3p5\_Pip\_BMassFix.merge.AOD.e4862\_e5984\_a875\_r9364\_r9315 \\
+BmJpsiPim  &  500,000 & mc16\_13TeV.300437.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bm\_Jpsi\_mu3p5mu3p5\_Pim\_BMassFix.merge.AOD.e4862\_e5984\_a875\_r9364\_r9315  \\
+Bhh  &  500,0000 &
+mc16\_13TeV.300431.Pythia8B\_A14\_CTEQ6L1\_B\_hh.merge.AOD.e4889\_e5984\_s3126\_r9364\_r9315
+\\
+BsKmunu  &  250,000 &
+mc16\_13TeV.300432.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bs\_K3p5mu3p5nu.merge.AOD.e4720\_e5984\_a875\_r9364\_r9315
+\\
+BdPimunu  &  500,000 &
+mc16\_13TeV.300433.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bd\_pi3p5mu3p5nu.merge.AOD.e4720\_e5984\_a875\_r9364\_r9315 \\
+LbPmunu  &  250,000 & mc16\_13TeV.300434.Pythia8BEvtGen\_A14\_CTEQ6L1\_Lambda0b\_p3p5mu3p5nu.merge.AOD.e4720\_e5984\_a875\_r9364\_r9315 \\
+bbmumu  &  49,999,000 & mc16\_13TeV.300306.Pythia8B\_A14\_CTEQ6L1\_bb\_mu3p5mu3p5\_Py8RepDec.merge.AOD.e4911\_e5984\_a875\_r9364\_r9315 \\
+bbJpsimumu &  10,000,000 & mc16\_13TeV.300203.Pythia8BPhotospp\_A14\_CTEQ6L1\_bb\_Jpsimu3p5mu3p5.merge.AOD.e4889\_e5984\_a875\_r9364\_r9315 \\
+bbmumuX  & 200,000,000 &
+mc16\_13TeV.300307.Pythia8B\_A14\_CTEQ6L1\_bb\_mu3p5mu3p5\_Py8RepDec\_4to6p5GeV.merge.AOD.e6179\_e5984\_a875\_r9364\_r9315 \\
+\hline
+    \end{tabular}
+  \end{adjustbox}
+  \caption{Monte Carlo data samples used (AOD).}
+  \label{tab:MCAODsamples}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \scriptsize
+  \begin{adjustbox}{angle=90}
+    \begin{tabular}{|l|r|l|}
+      \hline
+      Channel & \multicolumn{1}{|c|}{\#events}  & Dataset \\
+      \hline
+      Bsmumu  &  918,488 & mc16\_13TeV.300426.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bs\_mu3p5mu3p5.deriv.DAOD\_BPHY8.e4889\_e5984\_a875\_r9364\_r9315\_p3371 \\
+Bdmumu  &  913,507 &
+mc16\_13TeV.300430.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bd\_mu3p5mu3p5.deriv.DAOD\_BPHY8.e4889\_e5984\_a875\_r9364\_r9315\_p3371
+\\
+BpJpsiKp  &  1,610,177 & mc16\_13TeV.300404.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bp\_Jpsi\_mu3p5mu3p5\_Kp\_BMassFix.deriv.DAOD\_BPHY8.e4862\_e5984\_a875\_r9364\_r9315\_p3371 \\
+BmJpsiKm  &  1,617,566 & mc16\_13TeV.300405.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bm\_Jpsi\_mu3p5mu3p5\_Km\_BMassFix.deriv.DAOD\_BPHY8.e4862\_e5984\_a875\_r9364\_r9315\_p3371 \\
+BsJpsiPhi  &  3,555,942 & mc16\_13TeV.300438.Pythia8BPhotospp\_A14\_CTEQ6L1\_Bs\_Jpsimu3p5mu3p5\_phi.deriv.DAOD\_BPHY8.e4922\_e5984\_a875\_r9364\_r9315\_p3371 \\
+BpJpsiPip  &  399,607 & mc16\_13TeV.300406.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bp\_Jpsi\_mu3p5mu3p5\_Pip\_BMassFix.deriv.DAOD\_BPHY8.e4862\_e5984\_a875\_r9364\_r9315\_p3371 \\
+BmJpsiPim  &  405,710 & mc16\_13TeV.300437.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bm\_Jpsi\_mu3p5mu3p5\_Pim\_BMassFix.deriv.DAOD\_BPHY8.e4862\_e5984\_a875\_r9364\_r9315\_p3371 \\
+Bhh  & 4,002,651& mc16\_13TeV.300431.Pythia8B\_A14\_CTEQ6L1\_B\_hh.deriv.DAOD\_BPHY8.e4889\_e5984\_s3126\_r9364\_r9315\_p3371 \\
+BsKmunu  &  15,786 & mc16\_13TeV.300432.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bs\_K3p5mu3p5nu.deriv.DAOD\_BPHY8.e4720\_e5984\_a875\_r9364\_r9315\_p3371 \\
+BdPimunu  &  30,932 & mc16\_13TeV.300433.Pythia8BEvtGen\_A14\_CTEQ6L1\_Bd\_pi3p5mu3p5nu.deriv.DAOD\_BPHY8.e4720\_e5984\_a875\_r9364\_r9315\_p3371  \\ 
+LbPmunu  &  15,768 & mc16\_13TeV.300434.Pythia8BEvtGen\_A14\_CTEQ6L1\_Lambda0b\_p3p5mu3p5nu.deriv.DAOD\_BPHY8.e4720\_e5984\_a875\_r9364\_r9315\_p3371 \\
+bbmumuX  &  14,666,736 & mc16\_13TeV.300306.Pythia8B\_A14\_CTEQ6L1\_bb\_mu3p5mu3p5\_Py8RepDec.deriv.DAOD\_BPHY8.e4911\_e5984\_a875\_r9364\_r9315\_p3371 \\
+bbJpsimumuX &  6,807,750 & mc16\_13TeV.300203.Pythia8BPhotospp\_A14\_CTEQ6L1\_bb\_Jpsimu3p5mu3p5.deriv.DAOD\_BPHY8.e4889\_e5984\_a875\_r9364\_r9315\_p3371 \\
+      \hline
+    \end{tabular}
+  \end{adjustbox}
+  \caption{Derived Monte Carlo data samples used (DAOD).}
+  \label{tab:MCDAODsamples}
+\end{table}
+
+\clearpage

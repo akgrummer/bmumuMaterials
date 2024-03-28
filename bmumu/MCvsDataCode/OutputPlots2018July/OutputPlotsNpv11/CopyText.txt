@@ -1,0 +1,64 @@
+Use paste special in iterm
+need to run in folder ../
+write new copy commands for middle pileup
+
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/fabs_a_2D__dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/DR_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/Lxy_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/fabs_d0Min_sig__dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/fabs_d0Max_sig__dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/B_iso_7_Chi2_5_LoosePt05_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/B_pT_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/PlngMin2D_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/closeTrkNtrksChi2_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/fabs_B_IDtrks_DCA__dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/Bvtx3DIP_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/B_eta_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/Npv_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/B_minChi2MuonsIPtoAnyPV_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/Sqrt_pow_closeTrkDCA_2_pluspow_closeTrkZCA_2___dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlotsNpv15/chi2_PVSV_log2D_dt_mcXs.pdf ./HighPileup
+cp /Users/agrummer/cernbox/www/bmumu/MCvsDataCode/OutputPlots11Npv15/fabs_B_IDtrks_deltaPhi__dt_mcXs.pdf ./HighPileup
+
+
+mv Sqrt_pow_closeTrkDCA_2_pluspow_closeTrkZCA_2___dt_mcXs.pdf closeTrkDOCA_dt_mcXs.pdf
+mv 
+
+Old names
+B_pT.pdf
+closeTrkNtrksChi2.pdf
+Lxy.pdf
+d0Min_sig.pdf
+closeTrkDOCA.pdf
+d0Max_sig.pdf
+PlngMin2D.pdf
+DR.pdf
+chi2_PVSV_log2D.pdf
+B_iso_7_Chi2_5_LoosePt05.pdf
+a_2D.pdf
+B_IDtrks_deltaPhi.pdf
+B_IDtrks_DCA.pdf
+Bvtx3DIP.pdf
+B_minChi2MuonsIPtoAnyPV.pdf
+
+New Names:
+B_pT_dt_mcXs.pdf
+closeTrkNtrksChi2_dt_mcXs.pdf
+Lxy_dt_mcXs.pdf
+fabs_d0Min_sig__dt_mcXs.pdf
+closeTrkDOCA_dt_mcXs.pdf
+fabs_d0Max_sig__dt_mcXs.pdf
+PlngMin2D_dt_mcXs.pdf
+
+DR_dt_mcXs.pdf
+chi2_PVSV_log2D_dt_mcXs.pdf
+B_iso_7_Chi2_5_LoosePt05_dt_mcXs.pdf
+fabs_a_2D__dt_mcXs.pdf
+
+fabs_B_IDtrks_deltaPhi__dt_mcXs.pdf
+fabs_B_IDtrks_DCA__dt_mcXs.pdf
+
+Bvtx3DIP_dt_mcXs.pdf
+B_minChi2MuonsIPtoAnyPV_dt_mcXs.pdf
+
+Npv_dt_mcXs.pdf

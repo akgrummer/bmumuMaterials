@@ -1,0 +1,10 @@
+This is a template that shows how to read a json file in C++.
+The code uses boost and to build the library you have to:
+
+mkdir build
+cd build
+cmake ..
+
+This will create a lib directory with the library that needs to
+be loaded. It also has a bin directory with an executable
+that tests that library.

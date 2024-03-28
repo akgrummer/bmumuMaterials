@@ -1,0 +1,10 @@
+#!/bin/bash
+#############################################################################
+# Job for submitting a batch job (on lxplus batch system)
+# This script sets parameters steering each job
+# Then each individual job is executed
+#############################################################################
+
+export LD_LIBRARY_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/xrootd/4.6.0-x86_64-slc6-gcc62-opt/4.6.0-ef575/x86_64-slc6-gcc62-opt/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.10.02-x86_64-slc6-gcc62-opt/lib:/afs/cern.ch/sw/lcg/external/gcc/6.2/x86_64-slc6-gcc62-opt/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/tbb/44_20160413-x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/davix/0.6.2-x86_64-slc6-gcc62-opt/x86_64-slc6-gcc62-opt/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/fftw/3.3.4-x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/gsl/2.1-x86_64-slc6-gcc62-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/boost/boost-1.62.0-python2.7-x86_64-slc6-gcc62/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc620_x86_64_slc6/6.2.0/x86_64-slc6/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc620_x86_64_slc6/6.2.0/x86_64-slc6/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/git/2.11.1-x86_64-slc6/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.4-x86_64-slc6-gcc48/sw/lcg/external/Python/2.7.4/x86_64-slc6-gcc48-opt/lib:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc484_x86_64_slc6/slc6/gcc48/lib64:/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/Gcc/gcc484_x86_64_slc6/slc6/gcc48/lib:/afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt:/afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/src:/afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/lib
+/afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/bin/runMVA /afs/cern.ch/user/a/agrummer/www/bmumu/bsmumu-cbdt/cfg/bdt2012final.cfg :MaxDepth=2:MinNodeSize=0.2:AdaBoostBeta=0.5:NTrees=500 0
+

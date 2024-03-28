@@ -1,0 +1,18 @@
+2020 March 24:
+
+lxplus
+setupATLAS
+lsetup "root 6.10.06-x86_64-slc6-gcc62-opt"
+cd www/bmumu/AnalysisTools/SkimmingMacros
+!need to make!
+
+ 
+
+run Run1doca3Macro.cpp from the AnalysisTools/SkimmingMacros directory:
+
+make with:
+make Run1doca3Macro.exe
+
+Run1doca3Macro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun1/data/Bsmumu/data12_8TeVBsAllPeriodsUnblinded.root Data
+
+Run1doca3Macro /eos/atlas/atlascerngroupdisk/phys-beauty/BsMuMuRun1/mc12/Bsmumu/mc12_8TeV.208426.Pythia8B_AU2_CTEQ6L1_Bs_mu3p5mu3p5.r3549.172133.staco.Bs2mumu_Bs.v12.s1.wTRUTHvarsANDnoMCPcuts.root MC

@@ -1,0 +1,815 @@
+Latexmk: applying rule 'lualatex'...
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/MacPorts 2019.50896_2) 
+ restricted system commands enabled.
+
+(/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1Custom/S
+et2/Importance.tex
+LaTeX2e <2018-12-01>
+
+luaotfload | main : initialization completed in 0.064 seconds
+(/Users/agrummer/cernbox/www/bmumu/Data/TrainedMVAs/DocPreamble.tex
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size12.clo))
+(/opt/local/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+(/opt/local/share/texmf-texlive/tex/latex/ms/everyshi.sty))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/graphics.cfg)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-def/luatex.def)))
+(/opt/local/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def)))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/xcolor/xcolor.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/color.cfg))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.cod
+e.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+ (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetic
+s.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfint.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.te
+x) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.
+tex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty))
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/math/pgfmath.sty
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ytopaths.code.tex)))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikz-feynman.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty)
+(/opt/local/share/texmf-texlive/tex/latex/pgfopts/pgfopts.sty)
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzlibraryfeynman.code.
+tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.te
+x)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ycalc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.markings.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.markings.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathmorphing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathmorphing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathreplacing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathreplacing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tik
+zlibrarygraphs.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypatterns.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypositioning.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+yshapes.geometric.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geome
+tric.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/tikzlibrarygraphdrawin
+g.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/pgflibrarygraphdrawing
+.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzfeynman.keys.code.te
+x))) (/opt/local/share/texmf-texlive/tex/latex/caption/caption.sty
+(/opt/local/share/texmf-texlive/tex/latex/caption/caption3.sty))
+(/opt/local/share/texmf-texlive/tex/latex/caption/subcaption.sty)
+(/opt/local/share/texmf-texlive/tex/latex/float/float.sty)
+(/opt/local/share/texmf-texlive/tex/latex/natbib/natbib.sty)
+(/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+(/opt/local/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty))
+(/opt/local/share/texmf-texlive/tex/latex/url/url.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsgen.sty))
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsopn.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/bm.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty))
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mathtools.sty
+(/opt/local/share/texmf-texlive/tex/latex/tools/calc.sty)
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mhsetup.sty))
+(/opt/local/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/opt/local/share/texmf-texlive/tex/latex/tools/longtable.sty)
+(/opt/local/share/texmf-texlive/tex/latex/booktabs/booktabs.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/array.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/lscape.sty)
+(./Importance.aux) ABD: EveryShipout initializing macros
+(/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty)
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvdefinekeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty)
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+Package tikz-feynman Warning: The preamble requested version 1.0.0, but the sys
+tem version is 1.1.0. This may change some diagrams. on input line 2.
+
+(/opt/local/share/texmf-texlive/tex/latex/caption/ltcaption.sty)
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd)
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 1 on input line 31.
+
+[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+(./Importance.aux))
+ 519 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 58 glue_spec
+, 8 attribute_list, 3 write nodes
+   avail lists: 1:8,2:426,3:17,4:5,5:81,6:1,7:1910,8:12,9:320,11:18
+</opt/local/share/texmf-texlive/fonts/opentype/public/lm/lmroman12-regular.otf>
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt
+/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Importance.pdf (1 page, 52566 bytes).
+Transcript written on Importance.log.
+=== TeX engine is 'LuaTeX'
+Latexmk: applying rule 'lualatex'...
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/MacPorts 2019.50896_2) 
+ restricted system commands enabled.
+
+(/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1Custom/S
+et2/Importance.tex
+LaTeX2e <2018-12-01>
+
+luaotfload | main : initialization completed in 0.064 seconds
+(/Users/agrummer/cernbox/www/bmumu/Data/TrainedMVAs/DocPreamble.tex
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size12.clo))
+(/opt/local/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+(/opt/local/share/texmf-texlive/tex/latex/ms/everyshi.sty))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/graphics.cfg)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-def/luatex.def)))
+(/opt/local/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def)))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/xcolor/xcolor.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/color.cfg))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.cod
+e.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+ (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetic
+s.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfint.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.te
+x) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.
+tex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty))
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/math/pgfmath.sty
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ytopaths.code.tex)))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikz-feynman.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty)
+(/opt/local/share/texmf-texlive/tex/latex/pgfopts/pgfopts.sty)
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzlibraryfeynman.code.
+tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.te
+x)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ycalc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.markings.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.markings.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathmorphing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathmorphing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathreplacing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathreplacing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tik
+zlibrarygraphs.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypatterns.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypositioning.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+yshapes.geometric.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geome
+tric.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/tikzlibrarygraphdrawin
+g.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/pgflibrarygraphdrawing
+.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzfeynman.keys.code.te
+x))) (/opt/local/share/texmf-texlive/tex/latex/caption/caption.sty
+(/opt/local/share/texmf-texlive/tex/latex/caption/caption3.sty))
+(/opt/local/share/texmf-texlive/tex/latex/caption/subcaption.sty)
+(/opt/local/share/texmf-texlive/tex/latex/float/float.sty)
+(/opt/local/share/texmf-texlive/tex/latex/natbib/natbib.sty)
+(/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+(/opt/local/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty))
+(/opt/local/share/texmf-texlive/tex/latex/url/url.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsgen.sty))
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsopn.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/bm.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty))
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mathtools.sty
+(/opt/local/share/texmf-texlive/tex/latex/tools/calc.sty)
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mhsetup.sty))
+(/opt/local/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/opt/local/share/texmf-texlive/tex/latex/tools/longtable.sty)
+(/opt/local/share/texmf-texlive/tex/latex/booktabs/booktabs.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/array.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/lscape.sty)
+(./Importance.aux) ABD: EveryShipout initializing macros
+(/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty)
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvdefinekeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty)
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+Package tikz-feynman Warning: The preamble requested version 1.0.0, but the sys
+tem version is 1.1.0. This may change some diagrams. on input line 2.
+
+(/opt/local/share/texmf-texlive/tex/latex/caption/ltcaption.sty)
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd) [1{/opt/local/var/d
+b/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Importance.aux))
+ 519 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 58 glue_spec
+, 8 attribute_list, 3 write nodes
+   avail lists: 1:8,2:426,3:17,4:5,5:80,6:1,7:1910,8:12,9:320,11:18
+</opt/local/share/texmf-texlive/fonts/opentype/public/lm/lmroman12-regular.otf>
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt
+/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Importance.pdf (1 page, 52559 bytes).
+Transcript written on Importance.log.
+=== TeX engine is 'LuaTeX'
+Latexmk: All targets () are up-to-date
+Latexmk: applying rule 'lualatex'...
+Latexmk: applying rule 'lualatex'...
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/MacPorts 2019.50896_2) 
+ restricted system commands enabled.
+
+(/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1Custom/S
+et2/Importance.tex
+LaTeX2e <2018-12-01>
+
+luaotfload | main : initialization completed in 0.072 seconds
+(/Users/agrummer/cernbox/www/bmumu/Data/TrainedMVAs/DocPreamble.tex
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size12.clo))
+(/opt/local/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+(/opt/local/share/texmf-texlive/tex/latex/ms/everyshi.sty))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/graphics.cfg)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-def/luatex.def)))
+(/opt/local/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def)))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/xcolor/xcolor.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/color.cfg))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.cod
+e.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+ (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetic
+s.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfint.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.te
+x) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.
+tex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty))
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/math/pgfmath.sty
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ytopaths.code.tex)))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikz-feynman.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty)
+(/opt/local/share/texmf-texlive/tex/latex/pgfopts/pgfopts.sty)
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzlibraryfeynman.code.
+tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.te
+x)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ycalc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.markings.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.markings.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathmorphing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathmorphing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathreplacing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathreplacing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tik
+zlibrarygraphs.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypatterns.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypositioning.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+yshapes.geometric.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geome
+tric.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/tikzlibrarygraphdrawin
+g.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/pgflibrarygraphdrawing
+.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzfeynman.keys.code.te
+x))) (/opt/local/share/texmf-texlive/tex/latex/caption/caption.sty
+(/opt/local/share/texmf-texlive/tex/latex/caption/caption3.sty))
+(/opt/local/share/texmf-texlive/tex/latex/caption/subcaption.sty)
+(/opt/local/share/texmf-texlive/tex/latex/float/float.sty)
+(/opt/local/share/texmf-texlive/tex/latex/natbib/natbib.sty)
+(/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+(/opt/local/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty))
+(/opt/local/share/texmf-texlive/tex/latex/url/url.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsgen.sty))
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsopn.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/bm.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty))
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mathtools.sty
+(/opt/local/share/texmf-texlive/tex/latex/tools/calc.sty)
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mhsetup.sty))
+(/opt/local/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/opt/local/share/texmf-texlive/tex/latex/tools/longtable.sty)
+(/opt/local/share/texmf-texlive/tex/latex/booktabs/booktabs.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/array.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/lscape.sty)
+(./Importance.aux) ABD: EveryShipout initializing macros
+(/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty)
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvdefinekeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty)
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+Package tikz-feynman Warning: The preamble requested version 1.0.0, but the sys
+tem version is 1.1.0. This may change some diagrams. on input line 2.
+
+(/opt/local/share/texmf-texlive/tex/latex/caption/ltcaption.sty)
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd)
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 1 on input line 31.
+
+[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+(./Importance.aux))
+ 519 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 58 glue_spec
+, 8 attribute_list, 3 write nodes
+   avail lists: 1:8,2:426,3:17,4:5,5:81,6:1,7:1910,8:12,9:320,11:18
+</opt/local/share/texmf-texlive/fonts/opentype/public/lm/lmroman12-regular.otf>
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt
+/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Importance.pdf (1 page, 52586 bytes).
+Transcript written on Importance.log.
+=== TeX engine is 'LuaTeX'
+Latexmk: applying rule 'lualatex'...
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/MacPorts 2019.50896_2) 
+ restricted system commands enabled.
+
+(/Users/agrummer/cernbox/www/bmumu2020/BDT/BDToutput/2020Jun26/out_Run1Custom/S
+et2/Importance.tex
+LaTeX2e <2018-12-01>
+
+luaotfload | main : initialization completed in 0.065 seconds
+(/Users/agrummer/cernbox/www/bmumu/Data/TrainedMVAs/DocPreamble.tex
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size12.clo))
+(/opt/local/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+(/opt/local/share/texmf-texlive/tex/latex/ms/everyshi.sty))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/graphics.cfg)
+(/opt/local/share/texmf-texlive/tex/latex/graphics-def/luatex.def)))
+(/opt/local/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def)))
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/xcolor/xcolor.sty
+(/opt/local/share/texmf-texlive/tex/latex/graphics-cfg/color.cfg))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.cod
+e.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+ (/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetic
+s.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfint.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.te
+x) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.
+tex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty)
+(/opt/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty))
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/opt/local/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/opt/local/share/texmf/tex/latex/pgf/math/pgfmath.sty
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex)))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.t
+ex) (/opt/local/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ytopaths.code.tex)))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikz-feynman.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty)
+(/opt/local/share/texmf-texlive/tex/latex/pgfopts/pgfopts.sty)
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzlibraryfeynman.code.
+tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.te
+x)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ycalc.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.markings.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.markings.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathmorphing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathmorphing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathreplacing.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathreplacing.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/graphs/tik
+zlibrarygraphs.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypatterns.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex))
+
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ypositioning.code.tex)
+(/opt/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+yshapes.geometric.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geome
+tric.code.tex))
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/tikzlibrarygraphdrawin
+g.code.tex
+(/opt/local/share/texmf/tex/generic/pgf/graphdrawing/tex/pgflibrarygraphdrawing
+.code.tex))
+(/opt/local/share/texmf-texlive/tex/latex/tikz-feynman/tikzfeynman.keys.code.te
+x))) (/opt/local/share/texmf-texlive/tex/latex/caption/caption.sty
+(/opt/local/share/texmf-texlive/tex/latex/caption/caption3.sty))
+(/opt/local/share/texmf-texlive/tex/latex/caption/subcaption.sty)
+(/opt/local/share/texmf-texlive/tex/latex/float/float.sty)
+(/opt/local/share/texmf-texlive/tex/latex/natbib/natbib.sty)
+(/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+(/opt/local/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty))
+(/opt/local/share/texmf-texlive/tex/latex/url/url.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsgen.sty))
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsopn.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/bm.sty)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty))
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mathtools.sty
+(/opt/local/share/texmf-texlive/tex/latex/tools/calc.sty)
+(/opt/local/share/texmf-texlive/tex/latex/mathtools/mhsetup.sty))
+(/opt/local/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/opt/local/share/texmf-texlive/tex/latex/tools/longtable.sty)
+(/opt/local/share/texmf-texlive/tex/latex/booktabs/booktabs.sty))
+(/opt/local/share/texmf-texlive/tex/latex/tools/array.sty)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/lscape.sty)
+(./Importance.aux) ABD: EveryShipout initializing macros
+(/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty)
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvdefinekeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty)))
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty)
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg))
+
+Package tikz-feynman Warning: The preamble requested version 1.0.0, but the sys
+tem version is 1.1.0. This may change some diagrams. on input line 2.
+
+(/opt/local/share/texmf-texlive/tex/latex/caption/ltcaption.sty)
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd) [1{/opt/local/var/d
+b/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Importance.aux))
+ 519 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 58 glue_spec
+, 8 attribute_list, 3 write nodes
+   avail lists: 1:8,2:426,3:17,4:5,5:80,6:1,7:1910,8:12,9:320,11:18
+</opt/local/share/texmf-texlive/fonts/opentype/public/lm/lmroman12-regular.otf>
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt
+/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Importance.pdf (1 page, 52581 bytes).
+Transcript written on Importance.log.
+=== TeX engine is 'LuaTeX'
+Latexmk: All targets () are up-to-date
